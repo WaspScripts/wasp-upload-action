@@ -28,8 +28,34 @@ jobs:
       - name: Compile test scripts
         uses: ./
         with:
-          SB_URL: ${{ secrets.SB_URL }}
-          SB_ANON_KEY: ${{ secrets.SB_ANON_KEY }}
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          SB_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           PATH: test
           SCRIPTS: all
           DRY_RUN: true
+
+  # Every push to main that passes the tests is released as YYYY.MM.DD-HASH, like WaspLib.
+  release:
+    needs: [build, compile]
+    if: ${{ github.repository_owner == 'WaspScripts' && github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: release
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Get version
+        run: echo "VERSION=$(date -u +'%Y.%m.%d')-$(git rev-parse --short=7 HEAD)" >> "$GITHUB_ENV"
+
+      - name: Create GitHub release
+        run: |
+          if gh release view "$VERSION" > /dev/null 2>&1; then
+            echo "Release $VERSION already exists"
+          else
+            gh release create "$VERSION" --target "$GITHUB_SHA" --title "$VERSION" --generate-notes
+          fi

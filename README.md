@@ -68,7 +68,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0 # needed to find which scripts changed
-      - uses: WaspScripts/wasp-upload-action@v1
+      - uses: WaspScripts/wasp-upload-action@2026.10.06-c0b57e6 # any release tag
         with:
           SB_URL: ${{ secrets.SUPABASE_URL }}
           SB_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
@@ -100,3 +100,5 @@ jobs:
 pnpm install
 pnpm run all # builds lib/ and bundles it into dist/, which has to be committed
 ```
+
+Every push to `main` that passes the tests is released as `YYYY.MM.DD-HASH`, like WaspLib.
