@@ -22,6 +22,19 @@ function getBaseCommit(): string | null {
 	}
 }
 
+async function isCommit(root: string, sha: string) {
+	return (await exec("git", ["cat-file", "-e", sha + "^{commit}"], { cwd: root })).code === 0
+}
+
+// Subjects of the commits that changed a script folder, or of its last commit when there's nothing
+// to compare against.
+export async function getCommitMessages(root: string, folder: string) {
+	const base = getBaseCommit()
+	const range = base && (await isCommit(root, base)) ? `${base}..HEAD` : "-1"
+	const log = await exec("git", ["log", "--format=%s", range, "--", folder], { cwd: root })
+	return log.code === 0 ? log.output.split("\n").filter((line) => line.trim() !== "") : []
+}
+
 // Returns the script folders whose files or manifest entry changed, or null if changes can't be
 // detected and everything should be processed instead.
 export async function getChangedFolders(
@@ -35,7 +48,7 @@ export async function getChangedFolders(
 		return null
 	}
 
-	if ((await exec("git", ["cat-file", "-e", base + "^{commit}"], { cwd: root })).code !== 0) {
+	if (!(await isCommit(root, base))) {
 		core.warning(
 			`Base commit ${base} isn't available, processing every script. ` +
 				"Use actions/checkout with fetch-depth: 0 so changes can be detected."

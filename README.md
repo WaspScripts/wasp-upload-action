@@ -42,6 +42,8 @@ my-scripts/
 3. Compiles every script exactly as it will be uploaded.
 4. Uploads the scripts that compiled as a new revision, recording the Simba and WaspLib versions
    they were tested with.
+5. Optionally announces the uploaded scripts on Discord with their name, link, revision and the
+   commits that changed them. Unpublished scripts are not announced.
 
 Scripts that fail to compile are not uploaded. Compile errors are shown as annotations on the files
 and the job fails, but the other scripts are still uploaded.
@@ -66,12 +68,13 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0 # needed to find which scripts changed
-      - uses: Torwent/wasp-upload-action@v2
+      - uses: WaspScripts/wasp-upload-action@v1
         with:
-          SB_URL: ${{ secrets.SB_URL }}
-          SB_ANON_KEY: ${{ secrets.SB_ANON_KEY }}
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          SB_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DRY_RUN: ${{ github.event_name == 'pull_request' }}
 ```
 
@@ -87,6 +90,7 @@ jobs:
 | `MANIFEST`        | `scripts.json` | Manifest file inside `PATH`.                                        |
 | `SCRIPTS`         | `changed`      | `changed`, `all` or a space/comma separated list of script folders. |
 | `DRY_RUN`         | `false`        | Only compile test, don't upload.                                    |
+| `DISCORD_WEBHOOK` |                | Discord webhook URL to announce uploaded scripts on.                |
 | `SIMBA_VERSION`   | `latest`       | Simba version to compile with.                                      |
 | `WASPLIB_VERSION` | `latest`       | WaspLib version to compile with.                                    |
 

@@ -38,6 +38,10 @@ inputs:
     description: Only compile test the scripts, don't upload anything
     required: false
     default: "false"
+  DISCORD_WEBHOOK:
+    description: Discord webhook URL to announce the uploaded scripts on, nothing is posted if empty
+    required: false
+    default: ""
   SIMBA_VERSION:
     description: Simba version to compile with, "latest" uses the newest one on waspscripts.com
     required: false
@@ -69,5 +73,6 @@ runs:
         INPUT_MANIFEST: ${{ inputs.MANIFEST }}
         INPUT_SCRIPTS: ${{ inputs.SCRIPTS }}
         INPUT_DRY_RUN: ${{ inputs.DRY_RUN }}
+        INPUT_DISCORD_WEBHOOK: ${{ inputs.DISCORD_WEBHOOK }}
         INPUT_SIMBA_VERSION: ${{ inputs.SIMBA_VERSION }}
         INPUT_WASPLIB_VERSION: ${{ inputs.WASPLIB_VERSION }}

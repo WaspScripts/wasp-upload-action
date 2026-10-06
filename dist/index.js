@@ -56077,6 +56077,17 @@ function getBaseCommit() {
             return null;
     }
 }
+async function isCommit(root, sha) {
+    return (await lib_exec_exec("git", ["cat-file", "-e", sha + "^{commit}"], { cwd: root })).code === 0;
+}
+// Subjects of the commits that changed a script folder, or of its last commit when there's nothing
+// to compare against.
+async function getCommitMessages(root, folder) {
+    const base = getBaseCommit();
+    const range = base && (await isCommit(root, base)) ? `${base}..HEAD` : "-1";
+    const log = await lib_exec_exec("git", ["log", "--format=%s", range, "--", folder], { cwd: root });
+    return log.code === 0 ? log.output.split("\n").filter((line) => line.trim() !== "") : [];
+}
 // Returns the script folders whose files or manifest entry changed, or null if changes can't be
 // detected and everything should be processed instead.
 async function getChangedFolders(root, manifestFile, manifest) {
@@ -56085,7 +56096,7 @@ async function getChangedFolders(root, manifestFile, manifest) {
         info("No base commit to compare against, processing every script.");
         return null;
     }
-    if ((await lib_exec_exec("git", ["cat-file", "-e", base + "^{commit}"], { cwd: root })).code !== 0) {
+    if (!(await isCommit(root, base))) {
         warning(`Base commit ${base} isn't available, processing every script. ` +
             "Use actions/checkout with fetch-depth: 0 so changes can be detected.");
         return null;
@@ -56111,6 +56122,69 @@ async function getChangedFolders(root, manifestFile, manifest) {
         }
     }
     return changed;
+}
+
+;// CONCATENATED MODULE: ./lib/discord.js
+
+const WEBSITE = "https://waspscripts.com";
+// Same color the website uses for its script notifications.
+const COLOR = 0xf56f27;
+// Discord's limit of embeds per message.
+const MAX_EMBEDS = 10;
+const MAX_COMMITS = 10;
+function describe(commits) {
+    if (commits.length === 0)
+        return undefined;
+    const lines = commits.slice(0, MAX_COMMITS).map((commit) => "- " + commit);
+    if (commits.length > MAX_COMMITS)
+        lines.push(`- ...and ${commits.length - MAX_COMMITS} more`);
+    return lines.join("\n").slice(0, 4000);
+}
+// Posts the uploaded scripts to a Discord webhook. Unpublished scripts are left out since their
+// page isn't public. Failing to notify only warns, the scripts are already uploaded at this point.
+async function notifyDiscord(supabase, webhook, updates, versions) {
+    const { data, error } = await supabase
+        .schema("scripts")
+        .from("scripts")
+        .select("id, title, url, published, protected!left (username, avatar)")
+        .in("id", updates.map((update) => update.id))
+        .overrideTypes();
+    if (error)
+        return warning("Failed to get the scripts info for Discord: " + error.message);
+    const scripts = new Map(data.map((script) => [script.id, script]));
+    const embeds = [];
+    for (const update of updates) {
+        const script = scripts.get(update.id);
+        if (!script?.published || !script.url) {
+            info(`Not posting ${update.id} to Discord since it's not published.`);
+            continue;
+        }
+        embeds.push({
+            title: "Script Updated: " + script.title,
+            url: `${WEBSITE}/scripts/${script.url}`,
+            description: describe(update.commits),
+            color: COLOR,
+            fields: [
+                { name: "Revision", value: update.revision.toString(), inline: true },
+                { name: "Simba", value: versions.simba, inline: true },
+                { name: "WaspLib", value: versions.wasplib, inline: true }
+            ],
+            footer: script.protected
+                ? { text: "Author: " + script.protected.username, icon_url: script.protected.avatar }
+                : undefined
+        });
+    }
+    for (let i = 0; i < embeds.length; i += MAX_EMBEDS) {
+        const res = await fetch(webhook, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ embeds: embeds.slice(i, i + MAX_EMBEDS) })
+        });
+        if (!res.ok)
+            warning(`Discord webhook failed (${res.status}): ${await res.text()}`);
+    }
+    if (embeds.length > 0)
+        info(`Posted ${embeds.length} script update(s) to Discord.`);
 }
 
 ;// CONCATENATED MODULE: external "node:fs/promises"
@@ -56337,6 +56411,7 @@ async function uploadScript(supabase, script, versions) {
 
 
 
+
 function readManifest(root, file) {
     const path = (0,external_node_path_namespaceObject.join)(root, file);
     if (!(0,external_node_fs_namespaceObject.existsSync)(path)) {
@@ -56405,6 +56480,7 @@ async function run() {
         startGroup("Installing Simba");
         const exe = await installSimba(supabase, versions, simbaDir);
         endGroup();
+        const updates = [];
         for (const script of scripts) {
             startGroup(`${script.folder} (main: ${script.main})`);
             info("Files: " + script.files.map((file) => file.name).join(", "));
@@ -56433,7 +56509,10 @@ async function run() {
             }
             else {
                 try {
-                    result.uploaded = "✅ Revision " + (await uploadScript(supabase, script, versions));
+                    const revision = await uploadScript(supabase, script, versions);
+                    result.uploaded = "✅ Revision " + revision;
+                    const commits = await getCommitMessages(root, script.folder);
+                    updates.push({ id: script.id, revision, commits });
                 }
                 catch (err) {
                     error(err.message);
@@ -56443,6 +56522,9 @@ async function run() {
             }
             endGroup();
         }
+        const webhook = getInput("DISCORD_WEBHOOK");
+        if (webhook && updates.length > 0)
+            await notifyDiscord(supabase, webhook, updates, versions);
         await summary
             .addHeading("WaspScripts", 3)
             .addRaw(`Simba <code>${versions.simba}</code> · WaspLib <code>${versions.wasplib}</code>`, true)

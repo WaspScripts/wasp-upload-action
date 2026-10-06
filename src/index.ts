@@ -3,7 +3,8 @@ import { tmpdir } from "node:os"
 import { join, resolve } from "node:path"
 import * as core from "@actions/core"
 import { createClient } from "@supabase/supabase-js"
-import { getChangedFolders } from "./changes.js"
+import { getChangedFolders, getCommitMessages } from "./changes.js"
+import { notifyDiscord, type Update } from "./discord.js"
 import { compileScript, getVersions, installSimba } from "./simba.js"
 import {
 	discoverFolders,
@@ -116,6 +117,8 @@ async function run() {
 		const exe = await installSimba(supabase, versions, simbaDir)
 		core.endGroup()
 
+		const updates: Update[] = []
+
 		for (const script of scripts) {
 			core.startGroup(`${script.folder} (main: ${script.main})`)
 			core.info("Files: " + script.files.map((file) => file.name).join(", "))
@@ -143,7 +146,10 @@ async function run() {
 				core.warning(`${script.folder} has no ID in ${manifestFile} so it was only compile tested.`)
 			} else {
 				try {
-					result.uploaded = "✅ Revision " + (await uploadScript(supabase, script, versions))
+					const revision = await uploadScript(supabase, script, versions)
+					result.uploaded = "✅ Revision " + revision
+					const commits = await getCommitMessages(root, script.folder)
+					updates.push({ id: script.id, revision, commits })
 				} catch (err) {
 					core.error((err as Error).message)
 					result.uploaded = "❌ Failed"
@@ -152,6 +158,9 @@ async function run() {
 			}
 			core.endGroup()
 		}
+
+		const webhook = core.getInput("DISCORD_WEBHOOK")
+		if (webhook && updates.length > 0) await notifyDiscord(supabase, webhook, updates, versions)
 
 		await core.summary
 			.addHeading("WaspScripts", 3)
