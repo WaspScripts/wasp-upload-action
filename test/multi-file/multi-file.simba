@@ -1,0 +1,6 @@
+{$I WaspLib/main.simba}
+{$I helper.simba}
+
+begin
+  WriteLn(HelperMessage());
+end.

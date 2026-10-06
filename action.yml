@@ -1,40 +1,73 @@
 name: wasp-upload-action
-description: Upload Simba scripts to waspscripts.com
+description: Compile test Simba scripts with the latest Simba and WaspLib and upload them to waspscripts.com
 author: Torwent
-branding: upload-cloud
+branding:
+  icon: upload-cloud
+  color: orange
 
 inputs:
   SB_URL:
     description: Supabase URL
     required: true
-    type: string
   SB_ANON_KEY:
-    description: Supabase ANON Key
+    description: Supabase anon key
     required: true
-    type: string
   EMAIL:
-    description: User email
-    required: true
-    type: string
+    description: Email of the waspscripts.com account that owns the scripts. Not needed with DRY_RUN.
+    required: false
+    default: ""
   PASSWORD:
-    description: User password
-    required: true
-    type: string
-  ONLY_MODIFIED:
-    default: "true"
-    description: Wether to upload everything or only the modified simba scripts
+    description: Password of the waspscripts.com account that owns the scripts. Not needed with DRY_RUN.
     required: false
-    type: string
+    default: ""
   PATH:
-    default: ""
-    description: Directory path where the files are located
+    description: Directory with the script folders, relative to the repository root
     required: false
-    type: string
-  MODIFIED_FILES:
-    default: ""
-    description: JSON Input of the modified files
+    default: "."
+  MANIFEST:
+    description: JSON file inside PATH that maps script folders to their waspscripts.com IDs
     required: false
-    type: string
+    default: "scripts.json"
+  SCRIPTS:
+    description: >
+      Which scripts to process: "changed" (scripts changed by the push or pull request),
+      "all", or a space/comma separated list of script folders
+    required: false
+    default: "changed"
+  DRY_RUN:
+    description: Only compile test the scripts, don't upload anything
+    required: false
+    default: "false"
+  SIMBA_VERSION:
+    description: Simba version to compile with, "latest" uses the newest one on waspscripts.com
+    required: false
+    default: "latest"
+  WASPLIB_VERSION:
+    description: WaspLib version to compile with, "latest" uses the newest one on waspscripts.com
+    required: false
+    default: "latest"
+
 runs:
-  using: node16
-  main: dist/index.js
+  using: composite
+  steps:
+    - name: Install Simba dependencies
+      shell: bash
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq --no-install-recommends xvfb xauth unzip patchelf libgtk2.0-0t64 \
+          || sudo apt-get install -y -qq --no-install-recommends xvfb xauth unzip patchelf libgtk2.0-0
+
+    - name: Compile and upload scripts
+      shell: bash
+      run: node "${{ github.action_path }}/dist/index.js"
+      env:
+        INPUT_SB_URL: ${{ inputs.SB_URL }}
+        INPUT_SB_ANON_KEY: ${{ inputs.SB_ANON_KEY }}
+        INPUT_EMAIL: ${{ inputs.EMAIL }}
+        INPUT_PASSWORD: ${{ inputs.PASSWORD }}
+        INPUT_PATH: ${{ inputs.PATH }}
+        INPUT_MANIFEST: ${{ inputs.MANIFEST }}
+        INPUT_SCRIPTS: ${{ inputs.SCRIPTS }}
+        INPUT_DRY_RUN: ${{ inputs.DRY_RUN }}
+        INPUT_SIMBA_VERSION: ${{ inputs.SIMBA_VERSION }}
+        INPUT_WASPLIB_VERSION: ${{ inputs.WASPLIB_VERSION }}

@@ -1,0 +1,4 @@
+function HelperMessage(): String;
+begin
+  Result := 'Hello from a multi-file script!';
+end;

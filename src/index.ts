@@ -1,164 +1,185 @@
-import { getInput } from "@actions/core"
+import { existsSync, mkdtempSync, readFileSync } from "node:fs"
+import { tmpdir } from "node:os"
+import { join, resolve } from "node:path"
+import * as core from "@actions/core"
 import { createClient } from "@supabase/supabase-js"
-import fs, { readFileSync } from "fs"
+import { getChangedFolders } from "./changes.js"
+import { compileScript, getVersions, installSimba } from "./simba.js"
+import {
+	discoverFolders,
+	loadScript,
+	parseManifest,
+	type Manifest,
+	type Script
+} from "./scripts.js"
+import { login, uploadScript } from "./upload.js"
 
-const SB_URL = getInput("SB_URL")
-const SB_ANON_KEY = getInput("SB_ANON_KEY")
-const EMAIL = getInput("EMAIL")
-const PASSWORD = getInput("PASSWORD")
-const ONLY_MODIFIED = getInput("ONLY_MODIFIED")
-const PATH = getInput("PATH")
-const MODIFIED_FILES = getInput("MODIFIED_FILES").split(/ /g)
-const REGEX_SCRIPT_ID =
-	/{\$DEFINE SCRIPT_ID := '[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}'}/
-
-let workingDir = process.cwd() + "/"
-if (PATH !== "") workingDir += PATH + "/"
-
-console.log("PROCESS CURRENT WORKING DIRECTORY: ", process.cwd())
-console.log("WORKING DIRECTORY: ", workingDir)
-
-interface Script {
-	id: string
-	name: string
-	path: string
-	file: string
+interface Result {
+	folder: string
+	id: string | null
+	compiled: string
+	uploaded: string
+	failed: boolean
 }
 
-let scriptArray: Script[] = []
+function readManifest(root: string, file: string): Manifest {
+	const path = join(root, file)
+	if (!existsSync(path)) {
+		core.warning(`${file} not found, scripts will only be compile tested.`)
+		return {}
+	}
+	return parseManifest(readFileSync(path, "utf8"), file)
+}
 
-const files = fs.readdirSync(workingDir)
+async function selectFolders(root: string, manifestFile: string, manifest: Manifest) {
+	const input = core.getInput("SCRIPTS") || "changed"
+	const folders = discoverFolders(root)
 
-files.forEach((file) => {
-	const CURRENT_PATH = workingDir + file
-	if (fs.lstatSync(CURRENT_PATH).isDirectory()) return
-	console.log("Found file: ", CURRENT_PATH)
-	if (!file.endsWith(".simba")) return
-
-	const NAME = file.replace(".simba", "").replace("_", " ")
-	let content = readFileSync(CURRENT_PATH, "utf8")
-	const MATCHES = content.match(REGEX_SCRIPT_ID)
-
-	fs.writeFileSync(file, content, "utf8")
-
-	if (MATCHES == null) return
-	const ID = MATCHES[0].replace("{$DEFINE SCRIPT_ID := '", "").replace("'}", "")
-
-	const script: Script = {
-		id: ID,
-		name: NAME,
-		path: CURRENT_PATH,
-		file: file
+	for (const folder of Object.keys(manifest)) {
+		if (!folders.includes(folder))
+			core.warning(`${manifestFile} has "${folder}" but there's no such script folder.`)
 	}
 
-	console.log("Found script: ", script.name)
-	scriptArray.push(script)
-})
+	if (input === "all") return folders
+	if (input !== "changed") return input.split(/[\s,]+/).filter((folder) => folder !== "")
 
-if (ONLY_MODIFIED === "true") {
-	console.log("ONLY_MODIFIED is on so we will filter the scripts!")
-	const tmp: Script[] = []
+	const changed = await getChangedFolders(root, manifestFile, manifest)
+	return changed ? folders.filter((folder) => changed.has(folder)) : folders
+}
 
-	MODIFIED_FILES.forEach((file) => {
-		if (!file.endsWith(".simba")) return
+async function run() {
+	const dryRun = core.getBooleanInput("DRY_RUN")
+	const root = resolve(core.getInput("PATH") || ".")
+	const manifestFile = core.getInput("MANIFEST") || "scripts.json"
 
-		const splittedStr = file.split("/")
-		file = splittedStr[splittedStr.length - 1]
+	const manifest = readManifest(root, manifestFile)
+	const folders = await selectFolders(root, manifestFile, manifest)
 
-		for (let i = 0; i < scriptArray.length; i++) {
-			if (scriptArray[i].file === file) {
-				console.log("Modified file found: ", scriptArray[i].name)
-				tmp.push(scriptArray[i])
-			}
+	if (folders.length === 0) {
+		core.info("No scripts to process.")
+		return
+	}
+	core.info("Scripts to process: " + folders.join(", "))
+
+	const results: Result[] = []
+	const scripts: Script[] = []
+
+	for (const folder of folders) {
+		try {
+			scripts.push(loadScript(root, folder, manifest[folder]))
+		} catch (err) {
+			core.error((err as Error).message)
+			results.push({
+				folder,
+				id: manifest[folder]?.id ?? null,
+				compiled: "❌ Invalid",
+				uploaded: "-",
+				failed: true
+			})
 		}
-	})
-
-	scriptArray = tmp
-}
-
-const supabase = createClient(SB_URL, SB_ANON_KEY, {
-	auth: { autoRefreshToken: true, persistSession: false }
-})
-
-let isLoggedIn: boolean = false
-
-const pad = (n: number, size: number) => {
-	let s = n + ""
-	while (s.length < size) s = "0" + s
-	return s
-}
-
-const loginSupabase = async () => {
-	const { error } = await supabase.auth.signInWithPassword({
-		email: EMAIL,
-		password: PASSWORD
-	})
-
-	if (error) return console.error(error)
-	isLoggedIn = true
-	console.log("LOGGED IN TO: https://waspscripts.com")
-}
-
-const getRevision = async (id: string) => {
-	console.log("GETTING ", id, " REVISION")
-	const { data, error } = await supabase
-		.schema("scripts")
-		.from("protected")
-		.select("revision")
-		.eq("id", id)
-
-	if (error) {
-		console.error(error)
-		return 0
 	}
 
-	console.log("CURRENT REVISION: ", data[0])
-	const revision = data[0].revision as number
-	return revision + 1
-}
-
-const updateFileRevision = async (path: string, revision: number) => {
-	console.log("UPDATING ", path, " REVISION TO: ", revision)
-	let content = fs.readFileSync(path, "utf8")
-
-	content = content.toString()
-	const regex = /{\$DEFINE SCRIPT_REVISION := '(\d*?)'}/
-
-	const replaceStr = "{$DEFINE SCRIPT_REVISION := '" + revision.toString() + "'}"
-
-	if (content.match(regex)) {
-		content = content.replace(regex, replaceStr)
-	} else {
-		content = replaceStr.concat("\n").concat(content)
-	}
-
-	fs.writeFileSync(path, content, "utf8")
-}
-
-export const uploadFile = async (path: string, file: string) => {
-	console.log("UPLOADING FILE TO: ", path)
-	const { error } = await supabase.storage.from("scripts").upload(path, file)
-
-	if (error) return console.error(error)
-}
-
-const run = async (id: string, path: string) => {
-	if (!isLoggedIn) await loginSupabase()
-	if (!isLoggedIn) {
-		console.error("FAILED TO LOG IN.")
+	if (scripts.length === 0) {
+		core.setFailed("None of the scripts are valid.")
 		return
 	}
 
-	const rev = await getRevision(id)
-	await updateFileRevision(path, rev)
+	const supabase = createClient(
+		core.getInput("SB_URL", { required: true }),
+		core.getInput("SB_ANON_KEY", { required: true }),
+		{
+			auth: { autoRefreshToken: false, persistSession: false }
+		}
+	)
 
-	const file = fs.readFileSync(path, "utf8")
+	const uploading = !dryRun && scripts.some((script) => script.id)
+	if (uploading) {
+		await login(
+			supabase,
+			core.getInput("EMAIL", { required: true }),
+			core.getInput("PASSWORD", { required: true })
+		)
+	}
 
-	await uploadFile(id + "/" + pad(rev, 9) + "/script.simba", file)
+	try {
+		const versions = await getVersions(
+			supabase,
+			core.getInput("SIMBA_VERSION") || "latest",
+			core.getInput("WASPLIB_VERSION") || "latest"
+		)
+		core.info(
+			`Simba: ${versions.simba}, WaspLib: ${versions.wasplib}, wasp-plugins: ${versions.plugins}`
+		)
+
+		const simbaDir = mkdtempSync(join(process.env.RUNNER_TEMP || tmpdir(), "simba-"))
+		core.startGroup("Installing Simba")
+		const exe = await installSimba(supabase, versions, simbaDir)
+		core.endGroup()
+
+		for (const script of scripts) {
+			core.startGroup(`${script.folder} (main: ${script.main})`)
+			core.info("Files: " + script.files.map((file) => file.name).join(", "))
+			if (script.skipped.length > 0) core.info("Skipped: " + script.skipped.join(", "))
+
+			const result: Result = {
+				folder: script.folder,
+				id: script.id,
+				compiled: "",
+				uploaded: "-",
+				failed: false
+			}
+			results.push(result)
+
+			const compile = await compileScript(simbaDir, exe, script)
+			core.info(compile.output)
+			result.compiled = compile.success ? "✅" : "❌ Failed"
+
+			if (!compile.success) {
+				result.failed = true
+			} else if (dryRun) {
+				result.uploaded = "Dry run"
+			} else if (!script.id) {
+				result.uploaded = "No ID"
+				core.warning(`${script.folder} has no ID in ${manifestFile} so it was only compile tested.`)
+			} else {
+				try {
+					result.uploaded = "✅ Revision " + (await uploadScript(supabase, script, versions))
+				} catch (err) {
+					core.error((err as Error).message)
+					result.uploaded = "❌ Failed"
+					result.failed = true
+				}
+			}
+			core.endGroup()
+		}
+
+		await core.summary
+			.addHeading("WaspScripts", 3)
+			.addRaw(
+				`Simba <code>${versions.simba}</code> · WaspLib <code>${versions.wasplib}</code>`,
+				true
+			)
+			.addTable([
+				[
+					{ data: "Script", header: true },
+					{ data: "ID", header: true },
+					{ data: "Compiled", header: true },
+					{ data: "Uploaded", header: true }
+				],
+				...results.map((r) => [
+					r.folder,
+					r.id ? `<code>${r.id}</code>` : "-",
+					r.compiled,
+					r.uploaded
+				])
+			])
+			.write()
+	} finally {
+		if (uploading) await supabase.auth.signOut()
+	}
+
+	const failed = results.filter((result) => result.failed).map((result) => result.folder)
+	if (failed.length > 0) core.setFailed("Failed scripts: " + failed.join(", "))
 }
 
-for (let i = 0; i < scriptArray.length; i++) {
-	run(scriptArray[i].id, workingDir + scriptArray[i].file)
-}
-
-if (isLoggedIn) supabase.auth.signOut()
+run().catch((err) => core.setFailed(err instanceof Error ? err.message : String(err)))

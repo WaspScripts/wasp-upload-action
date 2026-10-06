@@ -1,9 +1,0 @@
-{$DEFINE SCRIPT_ID := '90615e6f-5766-4dde-b29a-c69c7863dcb9'}
-{$DEFINE SCRIPT_REVISION := '1'}             
-{$IFDEF WINDOWS}{$DEFINE SCRIPT_GUI}{$ENDIF}
-{$I SRL-T/osr.simba}
-{$I WaspLib/osr.simba}    
-begin
-	Hello world2!
-	Hello world2!
-end;

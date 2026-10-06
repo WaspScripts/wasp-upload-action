@@ -1,42 +1,32 @@
 {
 	"name": "wasp-upload-action",
-	"version": "1.0.0",
-	"description": "GitHub Action to upload simba scripts to waspscripts.com",
-	"main": "lib/index.js",
+	"version": "2.0.0",
+	"description": "GitHub Action to compile test and upload Simba scripts to waspscripts.com",
+	"type": "module",
+	"private": true,
+	"main": "dist/index.js",
 	"scripts": {
-		"start": "ts-node src/index.ts",
-		"dev": "ts-node-dev src/index.ts",
-		"prod": "node dist/index.js",
 		"build": "tsc",
-		"package": "ncc build --source-map --license licenses.txt",
-		"watch": "tsc -w",
-		"test": "ts-node src/test.ts",
-		"dev-test": "ts-node-dev src/test.ts",
+		"package": "ncc build lib/index.js -o dist --source-map --license licenses.txt",
 		"all": "pnpm run build && pnpm run package",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
 	},
 	"keywords": [],
 	"author": "Torwent",
 	"license": "GPL-3.0-or-later",
 	"dependencies": {
-		"@actions/core": "^1.10.1",
-		"@supabase/supabase-js": "^2.39.0",
-		"@typescript-eslint/eslint-plugin": "^6.14.0",
-		"@typescript-eslint/parser": "^6.14.0",
-		"@vercel/ncc": "^0.34.0",
-		"fs": "0.0.1-security",
-		"glob": "^8.1.0"
+		"@actions/core": "^3.0.1",
+		"@supabase/supabase-js": "^2.117.2"
 	},
 	"devDependencies": {
-		"@types/node": "^18.19.3",
-		"@types/ws": "^8.5.10",
-		"eslint": "^8.55.0",
-		"eslint-config-prettier": "^9.1.0",
-		"prettier": "^3.1.1",
-		"ts-node": "^10.9.2",
-		"ts-node-dev": "^2.0.0",
-		"tslib": "^2.6.2",
-		"typescript": "^4.9.5"
+		"@eslint/js": "^10.0.0",
+		"@types/node": "^24.0.0",
+		"@vercel/ncc": "^0.45.0",
+		"eslint": "^10.12.0",
+		"eslint-config-prettier": "^10.1.0",
+		"prettier": "^3.9.9",
+		"typescript": "~6.0.3",
+		"typescript-eslint": "~8.70.1"
 	}
 }

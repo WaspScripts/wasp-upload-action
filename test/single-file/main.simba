@@ -1,0 +1,5 @@
+{$I WaspLib/main.simba}
+
+begin
+  WriteLn('Hello from a single file script!');
+end.

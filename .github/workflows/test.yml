@@ -1,37 +1,35 @@
-name: wasp-upload-action
+name: Test
 
 on:
   push:
-    branches: master
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v29.0.3
-      - name: List all changed files
-        run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
-          done
-      - name: Show system
-        shell: bash
-        run: |
-          ls -a
-          pwd
-          ls test_files -a
-      - name: wasp-upload-action test
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - run: npm install -g pnpm@11
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint
+      - run: pnpm run all
+      - name: Check dist is up to date
+        run: git diff --exit-code -- dist || (echo "::error::dist is outdated, run pnpm run all and commit it" && exit 1)
+
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Compile test scripts
         uses: ./
         with:
           SB_URL: ${{ secrets.SB_URL }}
           SB_ANON_KEY: ${{ secrets.SB_ANON_KEY }}
-          EMAIL: ${{ secrets.WS_EMAIL }}
-          PASSWORD: ${{ secrets.WS_PASSWORD }}
-          PATH: "test_files"
-          SCRIPTS: |
-            6d828069-d5d6-48d0-9e3b-ba7d8de14106=test1.simba
-            7b173a61-b3a0-4010-ac77-16e36645387d=test2.simba
-          MODIFIED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          PATH: test
+          SCRIPTS: all
+          DRY_RUN: true
