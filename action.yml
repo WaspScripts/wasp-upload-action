@@ -6,10 +6,10 @@ branding:
   color: orange
 
 inputs:
-  SB_URL:
+  SUPABASE_URL:
     description: Supabase URL
     required: true
-  SB_ANON_KEY:
+  SUPABASE_ANON_KEY:
     description: Supabase anon key
     required: true
   EMAIL:
@@ -65,8 +65,8 @@ runs:
       shell: bash
       run: node "${{ github.action_path }}/dist/index.js"
       env:
-        INPUT_SB_URL: ${{ inputs.SB_URL }}
-        INPUT_SB_ANON_KEY: ${{ inputs.SB_ANON_KEY }}
+        INPUT_SUPABASE_URL: ${{ inputs.SUPABASE_URL }}
+        INPUT_SUPABASE_ANON_KEY: ${{ inputs.SUPABASE_ANON_KEY }}
         INPUT_EMAIL: ${{ inputs.EMAIL }}
         INPUT_PASSWORD: ${{ inputs.PASSWORD }}
         INPUT_PATH: ${{ inputs.PATH }}

@@ -28,8 +28,8 @@ jobs:
       - name: Compile test scripts
         uses: ./
         with:
-          SB_URL: ${{ secrets.SUPABASE_URL }}
-          SB_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           PATH: test
           SCRIPTS: all
           DRY_RUN: true

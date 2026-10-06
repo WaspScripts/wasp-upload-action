@@ -86,8 +86,8 @@ async function run() {
 	}
 
 	const supabase = createClient(
-		core.getInput("SB_URL", { required: true }),
-		core.getInput("SB_ANON_KEY", { required: true }),
+		core.getInput("SUPABASE_URL", { required: true }),
+		core.getInput("SUPABASE_ANON_KEY", { required: true }),
 		{
 			auth: { autoRefreshToken: false, persistSession: false }
 		}

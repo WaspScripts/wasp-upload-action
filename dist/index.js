@@ -56466,7 +56466,7 @@ async function run() {
         setFailed("None of the scripts are valid.");
         return;
     }
-    const supabase = createClient(getInput("SB_URL", { required: true }), getInput("SB_ANON_KEY", { required: true }), {
+    const supabase = createClient(getInput("SUPABASE_URL", { required: true }), getInput("SUPABASE_ANON_KEY", { required: true }), {
         auth: { autoRefreshToken: false, persistSession: false }
     });
     const uploading = !dryRun && scripts.some((script) => script.id);

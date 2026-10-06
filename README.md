@@ -70,8 +70,8 @@ jobs:
           fetch-depth: 0 # needed to find which scripts changed
       - uses: WaspScripts/wasp-upload-action@2026.10.06-c0b57e6 # any release tag
         with:
-          SB_URL: ${{ secrets.SUPABASE_URL }}
-          SB_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -80,19 +80,19 @@ jobs:
 
 ## Inputs
 
-| Input             | Default        | Description                                                         |
-| ----------------- | -------------- | ------------------------------------------------------------------- |
-| `SB_URL`          |                | Supabase URL.                                                       |
-| `SB_ANON_KEY`     |                | Supabase anon key.                                                  |
-| `EMAIL`           |                | waspscripts.com account email. Not needed with `DRY_RUN`.           |
-| `PASSWORD`        |                | waspscripts.com account password. Not needed with `DRY_RUN`.        |
-| `PATH`            | `.`            | Folder with the scripts, relative to the repository root.           |
-| `MANIFEST`        | `scripts.json` | Manifest file inside `PATH`.                                        |
-| `SCRIPTS`         | `changed`      | `changed`, `all` or a space/comma separated list of script folders. |
-| `DRY_RUN`         | `false`        | Only compile test, don't upload.                                    |
-| `DISCORD_WEBHOOK` |                | Discord webhook URL to announce uploaded scripts on.                |
-| `SIMBA_VERSION`   | `latest`       | Simba version to compile with.                                      |
-| `WASPLIB_VERSION` | `latest`       | WaspLib version to compile with.                                    |
+| Input               | Default        | Description                                                         |
+| ------------------- | -------------- | ------------------------------------------------------------------- |
+| `SUPABASE_URL`      |                | Supabase URL.                                                       |
+| `SUPABASE_ANON_KEY` |                | Supabase anon key.                                                  |
+| `EMAIL`             |                | waspscripts.com account email. Not needed with `DRY_RUN`.           |
+| `PASSWORD`          |                | waspscripts.com account password. Not needed with `DRY_RUN`.        |
+| `PATH`              | `.`            | Folder with the scripts, relative to the repository root.           |
+| `MANIFEST`          | `scripts.json` | Manifest file inside `PATH`.                                        |
+| `SCRIPTS`           | `changed`      | `changed`, `all` or a space/comma separated list of script folders. |
+| `DRY_RUN`           | `false`        | Only compile test, don't upload.                                    |
+| `DISCORD_WEBHOOK`   |                | Discord webhook URL to announce uploaded scripts on.                |
+| `SIMBA_VERSION`     | `latest`       | Simba version to compile with.                                      |
+| `WASPLIB_VERSION`   | `latest`       | WaspLib version to compile with.                                    |
 
 ## Development
 
