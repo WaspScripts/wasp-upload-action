@@ -16,6 +16,8 @@ import type { Script } from "./scripts.js"
 
 const WASPLIB_REPO = "https://github.com/WaspScripts/WaspLib.git"
 const COMPILE_TIMEOUT = 5 * 60 * 1000
+const SIMBA_ARCHIVE =
+	"https://raw.githubusercontent.com/Villavu/Simba-Build-Archive/refs/heads/main/README.md"
 
 export interface Versions {
 	simba: string
@@ -49,18 +51,32 @@ export async function getVersions(
 	return { simba: latestSimba, wasplib: latestWaspLib, plugins }
 }
 
-async function downloadAndExtract(
-	supabase: SupabaseClient,
-	bucket: string,
-	path: string,
-	dest: string
-) {
+async function downloadFromStorage(supabase: SupabaseClient, bucket: string, path: string) {
 	core.info(`Downloading ${bucket}/${path}`)
 	const { data, error } = await supabase.storage.from(bucket).download(path)
 	if (error) throw new Error(`Failed to download ${bucket}/${path}: ${error.message}`)
+	return data.arrayBuffer()
+}
 
+// Not every Simba version has its Linux build on waspscripts.com, but every build is in the Simba
+// build archive, which is also where WaspLib's tests get Simba from.
+async function downloadFromArchive(version: string) {
+	const res = await fetch(SIMBA_ARCHIVE)
+	if (!res.ok) throw new Error(`Failed to fetch the Simba build archive: ${res.status}`)
+
+	const line = (await res.text()).split("\n").find((line) => line.includes(`[${version}]`))
+	const url = line?.match(/\((https:\/\/[^)]+\/Simba_linux_x86_64\.zip)\)/)?.[1]
+	if (!url) throw new Error(`Simba ${version} has no Linux build in the Simba build archive`)
+
+	core.info("Downloading " + url)
+	const zip = await fetch(url)
+	if (!zip.ok) throw new Error(`Failed to download ${url}: ${zip.status}`)
+	return zip.arrayBuffer()
+}
+
+async function extract(data: ArrayBuffer, dest: string) {
 	const zip = dest + ".zip"
-	await writeFile(zip, Buffer.from(await data.arrayBuffer()))
+	await writeFile(zip, Buffer.from(data))
 	rmSync(dest, { recursive: true, force: true })
 	await execOrThrow("unzip", ["-q", "-o", zip, "-d", dest])
 	rmSync(zip)
@@ -79,7 +95,15 @@ export async function installSimba(supabase: SupabaseClient, versions: Versions,
 
 	await Promise.all([
 		(async () => {
-			await downloadAndExtract(supabase, "simba", `${versions.simba}/linux64.zip`, simbaZip)
+			const data = await downloadFromStorage(
+				supabase,
+				"simba",
+				`${versions.simba}/linux64.zip`
+			).catch((err: Error) => {
+				core.info(err.message + ", downloading it from the Simba build archive instead.")
+				return downloadFromArchive(versions.simba)
+			})
+			await extract(data, simbaZip)
 			const files = readdirSync(simbaZip)
 			if (files.length !== 1) {
 				throw new Error(`Expected 1 file in the Simba zip, found: ${files.join(", ")}`)
@@ -89,7 +113,10 @@ export async function installSimba(supabase: SupabaseClient, versions: Versions,
 			chmodSync(exe, 0o755)
 		})(),
 		(async () => {
-			await downloadAndExtract(supabase, "plugins", `${versions.plugins}.zip`, plugins)
+			await extract(
+				await downloadFromStorage(supabase, "plugins", `${versions.plugins}.zip`),
+				plugins
+			)
 			// RemoteInput requests an executable stack which newer glibc versions refuse to load.
 			const remoteInput = join(plugins, "libremoteinput", "libremoteinput64.so")
 			if (existsSync(remoteInput)) {

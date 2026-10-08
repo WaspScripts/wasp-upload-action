@@ -2,7 +2,6 @@ import { existsSync, mkdtempSync, readFileSync } from "node:fs"
 import { tmpdir } from "node:os"
 import { join, resolve } from "node:path"
 import * as core from "@actions/core"
-import { createClient } from "@supabase/supabase-js"
 import { getChangedFolders, getCommitMessages } from "./changes.js"
 import { notifyDiscord, type Update } from "./discord.js"
 import { compileScript, getVersions, installSimba } from "./simba.js"
@@ -13,7 +12,7 @@ import {
 	type Manifest,
 	type Script
 } from "./scripts.js"
-import { login, uploadScript } from "./upload.js"
+import { createSession, login, uploadScript } from "./website.js"
 
 interface Result {
 	folder: string
@@ -85,18 +84,17 @@ async function run() {
 		return
 	}
 
-	const supabase = createClient(
+	const website = core.getInput("WEBSITE") || "https://waspscripts.com"
+	const session = createSession(
 		core.getInput("SUPABASE_URL", { required: true }),
-		core.getInput("SUPABASE_ANON_KEY", { required: true }),
-		{
-			auth: { autoRefreshToken: false, persistSession: false }
-		}
+		core.getInput("SUPABASE_ANON_KEY", { required: true })
 	)
+	const { supabase } = session
 
 	const uploading = !dryRun && scripts.some((script) => script.id)
 	if (uploading) {
 		await login(
-			supabase,
+			session,
 			core.getInput("EMAIL", { required: true }),
 			core.getInput("PASSWORD", { required: true })
 		)
@@ -146,7 +144,7 @@ async function run() {
 				core.warning(`${script.folder} has no ID in ${manifestFile} so it was only compile tested.`)
 			} else {
 				try {
-					const revision = await uploadScript(supabase, script, versions)
+					const revision = await uploadScript(website, session, script, versions)
 					result.uploaded = "✅ Revision " + revision
 					const commits = await getCommitMessages(root, script.folder)
 					updates.push({ id: script.id, revision, commits })
@@ -160,7 +158,8 @@ async function run() {
 		}
 
 		const webhook = core.getInput("DISCORD_WEBHOOK")
-		if (webhook && updates.length > 0) await notifyDiscord(supabase, webhook, updates, versions)
+		if (webhook && updates.length > 0)
+			await notifyDiscord(supabase, website, webhook, updates, versions)
 
 		await core.summary
 			.addHeading("WaspScripts", 3)
@@ -184,7 +183,8 @@ async function run() {
 			])
 			.write()
 	} finally {
-		if (uploading) await supabase.auth.signOut()
+		// Only ends this session, the default would log the account out everywhere.
+		if (uploading) await supabase.auth.signOut({ scope: "local" })
 	}
 
 	const failed = results.filter((result) => result.failed).map((result) => result.folder)

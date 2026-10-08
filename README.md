@@ -40,8 +40,10 @@ my-scripts/
    entries changed by the push or pull request.
 2. Installs the latest Simba, WaspLib and wasp-plugins the same way wasp-launcher does.
 3. Compiles every script exactly as it will be uploaded.
-4. Uploads the scripts that compiled as a new revision, recording the Simba and WaspLib versions
-   they were tested with.
+4. Uploads the scripts that compiled as a new revision through the "edit files" page of
+   waspscripts.com, the same way you would by hand, with the Simba and WaspLib versions they were
+   tested with. The website does all the permission checks, so no keys besides the anon key are
+   needed.
 5. Optionally announces the uploaded scripts on Discord with their name, link, revision and the
    commits that changed them. Unpublished scripts are not announced.
 
@@ -49,6 +51,10 @@ Scripts that fail to compile are not uploaded. Compile errors are shown as annot
 and the job fails, but the other scripts are still uploaded.
 
 ## Usage
+
+The action logs in with the email and password of your waspscripts.com account. If you only ever
+logged in with Discord, set a password on your profile page on waspscripts.com first and use your
+Discord email. Add them as the `EMAIL` and `PASSWORD` secrets of your repository.
 
 ```yaml
 on:
@@ -80,19 +86,20 @@ jobs:
 
 ## Inputs
 
-| Input               | Default        | Description                                                         |
-| ------------------- | -------------- | ------------------------------------------------------------------- |
-| `SUPABASE_URL`      |                | Supabase URL.                                                       |
-| `SUPABASE_ANON_KEY` |                | Supabase anon key.                                                  |
-| `EMAIL`             |                | waspscripts.com account email. Not needed with `DRY_RUN`.           |
-| `PASSWORD`          |                | waspscripts.com account password. Not needed with `DRY_RUN`.        |
-| `PATH`              | `.`            | Folder with the scripts, relative to the repository root.           |
-| `MANIFEST`          | `scripts.json` | Manifest file inside `PATH`.                                        |
-| `SCRIPTS`           | `changed`      | `changed`, `all` or a space/comma separated list of script folders. |
-| `DRY_RUN`           | `false`        | Only compile test, don't upload.                                    |
-| `DISCORD_WEBHOOK`   |                | Discord webhook URL to announce uploaded scripts on.                |
-| `SIMBA_VERSION`     | `latest`       | Simba version to compile with.                                      |
-| `WASPLIB_VERSION`   | `latest`       | WaspLib version to compile with.                                    |
+| Input               | Default                   | Description                                                         |
+| ------------------- | ------------------------- | ------------------------------------------------------------------- |
+| `SUPABASE_URL`      |                           | Supabase URL.                                                       |
+| `SUPABASE_ANON_KEY` |                           | Supabase anon key.                                                  |
+| `EMAIL`             |                           | waspscripts.com account email. Not needed with `DRY_RUN`.           |
+| `PASSWORD`          |                           | waspscripts.com account password. Not needed with `DRY_RUN`.        |
+| `PATH`              | `.`                       | Folder with the scripts, relative to the repository root.           |
+| `WEBSITE`           | `https://waspscripts.com` | Website the scripts are uploaded through.                           |
+| `MANIFEST`          | `scripts.json`            | Manifest file inside `PATH`.                                        |
+| `SCRIPTS`           | `changed`                 | `changed`, `all` or a space/comma separated list of script folders. |
+| `DRY_RUN`           | `false`                   | Only compile test, don't upload.                                    |
+| `DISCORD_WEBHOOK`   |                           | Discord webhook URL to announce uploaded scripts on.                |
+| `SIMBA_VERSION`     | `latest`                  | Simba version to compile with.                                      |
+| `WASPLIB_VERSION`   | `latest`                  | WaspLib version to compile with.                                    |
 
 ## Development
 

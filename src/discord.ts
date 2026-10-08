@@ -2,7 +2,6 @@ import * as core from "@actions/core"
 import type { SupabaseClient } from "@supabase/supabase-js"
 import type { Versions } from "./simba.js"
 
-const WEBSITE = "https://waspscripts.com"
 // Same color the website uses for its script notifications.
 const COLOR = 0xf56f27
 // Discord's limit of embeds per message.
@@ -34,6 +33,7 @@ function describe(commits: string[]) {
 // page isn't public. Failing to notify only warns, the scripts are already uploaded at this point.
 export async function notifyDiscord(
 	supabase: SupabaseClient,
+	website: string,
 	webhook: string,
 	updates: Update[],
 	versions: Versions
@@ -62,7 +62,7 @@ export async function notifyDiscord(
 
 		embeds.push({
 			title: "Script Updated: " + script.title,
-			url: `${WEBSITE}/scripts/${script.url}`,
+			url: `${website}/scripts/${script.url}`,
 			description: describe(update.commits),
 			color: COLOR,
 			fields: [

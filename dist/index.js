@@ -10410,18 +10410,17 @@ exports.resolveFetch = resolveFetch;
 /***/ 7559:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
-var __webpack_unused_export__;
 
-__webpack_unused_export__ = ({ value: true });
-__webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = exports.FS = void 0;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.FunctionRegion = exports.FunctionsRelayError = exports.FunctionsHttpError = exports.FunctionsFetchError = exports.FunctionsError = exports.FunctionsClient = void 0;
 var FunctionsClient_1 = __nccwpck_require__(5137);
-Object.defineProperty(exports, "FS", ({ enumerable: true, get: function () { return FunctionsClient_1.FunctionsClient; } }));
+Object.defineProperty(exports, "FunctionsClient", ({ enumerable: true, get: function () { return FunctionsClient_1.FunctionsClient; } }));
 var types_1 = __nccwpck_require__(190);
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return types_1.FunctionsError; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return types_1.FunctionsFetchError; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return types_1.FunctionsHttpError; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return types_1.FunctionsRelayError; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return types_1.FunctionRegion; } });
+Object.defineProperty(exports, "FunctionsError", ({ enumerable: true, get: function () { return types_1.FunctionsError; } }));
+Object.defineProperty(exports, "FunctionsFetchError", ({ enumerable: true, get: function () { return types_1.FunctionsFetchError; } }));
+Object.defineProperty(exports, "FunctionsHttpError", ({ enumerable: true, get: function () { return types_1.FunctionsHttpError; } }));
+Object.defineProperty(exports, "FunctionsRelayError", ({ enumerable: true, get: function () { return types_1.FunctionsRelayError; } }));
+Object.defineProperty(exports, "FunctionRegion", ({ enumerable: true, get: function () { return types_1.FunctionRegion; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -14151,26 +14150,25 @@ exports["default"] = RealtimePresence;
 /***/ 209:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
-var __webpack_unused_export__;
 
-__webpack_unused_export__ = ({ value: true });
-__webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = exports.d1 = __webpack_unused_export__ = __webpack_unused_export__ = void 0;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.WebSocketFactory = exports.REALTIME_CHANNEL_STATES = exports.REALTIME_SUBSCRIBE_STATES = exports.REALTIME_PRESENCE_LISTEN_EVENTS = exports.REALTIME_POSTGRES_CHANGES_LISTEN_EVENT = exports.REALTIME_LISTEN_TYPES = exports.postgresChangesFilter = exports.RealtimePostgresFilterBuilder = exports.RealtimeClient = exports.RealtimeChannel = exports.RealtimePresence = void 0;
 const tslib_1 = __nccwpck_require__(1440);
 const RealtimeClient_1 = tslib_1.__importDefault(__nccwpck_require__(1875));
-exports.d1 = RealtimeClient_1.default;
+exports.RealtimeClient = RealtimeClient_1.default;
 const RealtimeChannel_1 = tslib_1.__importStar(__nccwpck_require__(4557));
-__webpack_unused_export__ = RealtimeChannel_1.default;
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimeChannel_1.RealtimePostgresFilterBuilder; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimeChannel_1.postgresChangesFilter; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_LISTEN_TYPES; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_POSTGRES_CHANGES_LISTEN_EVENT; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_SUBSCRIBE_STATES; } });
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_CHANNEL_STATES; } });
+exports.RealtimeChannel = RealtimeChannel_1.default;
+Object.defineProperty(exports, "RealtimePostgresFilterBuilder", ({ enumerable: true, get: function () { return RealtimeChannel_1.RealtimePostgresFilterBuilder; } }));
+Object.defineProperty(exports, "postgresChangesFilter", ({ enumerable: true, get: function () { return RealtimeChannel_1.postgresChangesFilter; } }));
+Object.defineProperty(exports, "REALTIME_LISTEN_TYPES", ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_LISTEN_TYPES; } }));
+Object.defineProperty(exports, "REALTIME_POSTGRES_CHANGES_LISTEN_EVENT", ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_POSTGRES_CHANGES_LISTEN_EVENT; } }));
+Object.defineProperty(exports, "REALTIME_SUBSCRIBE_STATES", ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_SUBSCRIBE_STATES; } }));
+Object.defineProperty(exports, "REALTIME_CHANNEL_STATES", ({ enumerable: true, get: function () { return RealtimeChannel_1.REALTIME_CHANNEL_STATES; } }));
 const RealtimePresence_1 = tslib_1.__importStar(__nccwpck_require__(1309));
-__webpack_unused_export__ = RealtimePresence_1.default;
-__webpack_unused_export__ = ({ enumerable: true, get: function () { return RealtimePresence_1.REALTIME_PRESENCE_LISTEN_EVENTS; } });
+exports.RealtimePresence = RealtimePresence_1.default;
+Object.defineProperty(exports, "REALTIME_PRESENCE_LISTEN_EVENTS", ({ enumerable: true, get: function () { return RealtimePresence_1.REALTIME_PRESENCE_LISTEN_EVENTS; } }));
 const websocket_factory_1 = tslib_1.__importDefault(__nccwpck_require__(41));
-__webpack_unused_export__ = websocket_factory_1.default;
+exports.WebSocketFactory = websocket_factory_1.default;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -15152,6 +15150,1713 @@ class SocketAdapter {
 }
 exports["default"] = SocketAdapter;
 //# sourceMappingURL=socketAdapter.js.map
+
+/***/ }),
+
+/***/ 1887:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.clearAuthCookiesAtScopes = clearAuthCookiesAtScopes;
+const utils_1 = __nccwpck_require__(7831);
+/**
+ * One-shot helper to clear Supabase auth cookies at one or more explicit
+ * scopes. Use after a deploy that changes cookie `Domain`, `Path`, or other
+ * scope-affecting options, to remove stale cookies that the runtime `signOut`
+ * cannot reach because they live at a different scope.
+ *
+ * The helper issues a `Set-Cookie` with `Max-Age=0` for every known chunk of
+ * the given `storageKey` at each scope. The browser silently ignores
+ * `Set-Cookie` attempts for scopes the current host doesn't own, so passing
+ * more scopes than necessary is safe — only the ones that actually held
+ * stale cookies will have any observable effect.
+ *
+ * For the common host-only -> parent-domain migration, this helper is not
+ * required: `signOut` already clears the host-only counterpart automatically
+ * when `cookieOptions.domain` is set on the current client.
+ *
+ * @example
+ *   // After migrating from `.foo.com` to `.bar.com`:
+ *   await clearAuthCookiesAtScopes({
+ *     getAll,
+ *     setAll,
+ *     storageKey: 'sb-<project-ref>-auth-token',
+ *     scopes: [{ domain: '.foo.com' }],
+ *   });
+ *
+ * @example
+ *   // Path migration from `/app` to `/`:
+ *   await clearAuthCookiesAtScopes({
+ *     getAll,
+ *     setAll,
+ *     storageKey: 'sb-<project-ref>-auth-token',
+ *     scopes: [{ path: '/app' }],
+ *   });
+ *
+ * @category Cookies
+ */
+async function clearAuthCookiesAtScopes(input) {
+    const { getAll, setAll, storageKey, scopes } = input;
+    if (scopes.length === 0) {
+        return;
+    }
+    const allCookies = (await getAll([storageKey])) ?? [];
+    const chunkNames = allCookies
+        .map(({ name }) => name)
+        .filter((name) => (0, utils_1.isChunkLike)(name, storageKey));
+    if (chunkNames.length === 0) {
+        return;
+    }
+    const toSet = scopes.flatMap((scope) => {
+        const cookieOptions = {
+            ...utils_1.DEFAULT_COOKIE_OPTIONS,
+            ...scope,
+            maxAge: 0,
+        };
+        // Same NextJS cookieStore guard as createStorageFromOptions.
+        delete cookieOptions.name;
+        return chunkNames.map((name) => ({
+            name,
+            value: "",
+            options: cookieOptions,
+        }));
+    });
+    await setAll(toSet, {});
+}
+//# sourceMappingURL=clearAuthCookiesAtScopes.js.map
+
+/***/ }),
+
+/***/ 5494:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isPkceVerifierSlotKey = isPkceVerifierSlotKey;
+exports.isPkceFlowIndexKey = isPkceFlowIndexKey;
+exports.createStorageFromOptions = createStorageFromOptions;
+exports.applyServerStorage = applyServerStorage;
+const cookie_1 = __nccwpck_require__(1169);
+const utils_1 = __nccwpck_require__(7831);
+const BASE64_PREFIX = "base64-";
+/**
+ * Matches the storage key auth-js uses for a single in-flight PKCE flow's code
+ * verifier: `<storageKey>-flow-<flowId>-code-verifier`.
+ *
+ * The length bound mirrors auth-js's own flow id validation, so a storage key
+ * that happens to contain `-flow-` is not mistaken for a verifier slot.
+ *
+ * Deliberately does not match the two neighbouring keys:
+ * - `<storageKey>-code-verifier`, the fixed key written for every flow.
+ * - `<storageKey>-flows-code-verifier`, the index of pending flow ids. There is
+ *   no `-` after `flow` there, so the pattern cannot match it.
+ */
+const PKCE_VERIFIER_SLOT_KEY = /-flow-[A-Za-z0-9_-]{8,64}-code-verifier$/;
+function isPkceVerifierSlotKey(key) {
+    return PKCE_VERIFIER_SLOT_KEY.test(key);
+}
+const PKCE_FLOW_INDEX_SUFFIX = "-flows-code-verifier";
+/**
+ * Matches auth-js's index of pending PKCE flow ids,
+ * `<storageKey>-flows-code-verifier`. Storage adapters cannot enumerate keys,
+ * so this entry is what makes the verifier slots discoverable for eviction and
+ * for teardown on sign-out.
+ */
+function isPkceFlowIndexKey(key) {
+    return key.endsWith(PKCE_FLOW_INDEX_SUFFIX);
+}
+/**
+ * Decodes a chunked cookie value that may carry the `base64-` prefix written
+ * by this module. When the prefix is present, the underlying payload is always
+ * JSON encoded by auth-js (`setItemAsync` runs `JSON.stringify` on every
+ * write). If the decoded value cannot be parsed as JSON, the chunks are
+ * mismatched (e.g. a partial cookie write left the browser holding a mix of
+ * old and new generations) and we treat the entry as absent so the SDK does
+ * not propagate or re-save the corrupted payload.
+ */
+function decodeChunkedCookieValue(value) {
+    if (!value.startsWith(BASE64_PREFIX)) {
+        return value;
+    }
+    let decoded;
+    try {
+        decoded = (0, utils_1.stringFromBase64URL)(value.substring(BASE64_PREFIX.length));
+    }
+    catch (error) {
+        console.warn("@supabase/ssr: could not base64url-decode chunked cookie value, treating as absent. Cookie chunks may have been written partially across responses.", error);
+        return null;
+    }
+    try {
+        JSON.parse(decoded);
+    }
+    catch {
+        console.warn("@supabase/ssr: chunked cookie decoded to invalid JSON, treating as absent. This usually indicates that cookie chunks from different writes were combined (e.g. response committed before all Set-Cookie headers were sent).");
+        return null;
+    }
+    return decoded;
+}
+/**
+ * Creates a storage client that handles cookies correctly for browser and
+ * server clients with or without properly provided cookie methods.
+ *
+ * @param options The options passed to createBrowserClient or createServer client.
+ *
+ * @param isServerClient Whether it's called from createServerClient.
+ */
+function createStorageFromOptions(options, isServerClient) {
+    // A cookies object without accessors (e.g. only `encode`) is treated the
+    // same as omitting cookies, so the runtime-specific defaults below apply.
+    const cookies = options.cookies && ("get" in options.cookies || "getAll" in options.cookies)
+        ? options.cookies
+        : null;
+    const cookieEncoding = options.cookieEncoding;
+    const setItems = {};
+    const removedItems = {};
+    let getAll;
+    let setAll;
+    const documentCookieGetAll = () => {
+        const parsed = (0, cookie_1.parse)(document.cookie);
+        return Object.keys(parsed).map((name) => ({
+            name,
+            value: parsed[name] ?? "",
+        }));
+    };
+    const documentCookieSetAll = (setCookies) => {
+        setCookies.forEach(({ name, value, options }) => {
+            document.cookie = (0, cookie_1.serialize)(name, value, options);
+        });
+    };
+    if (cookies) {
+        if ("get" in cookies) {
+            // Just get is not enough, because the client needs to see what cookies
+            // are already set and unset them if necessary. To attempt to fix this
+            // behavior for most use cases, we pass "hints" which is the keys of the
+            // storage items. They are then converted to their corresponding cookie
+            // chunk names and are fetched with get. Only 5 chunks are fetched, which
+            // should be enough for the majority of use cases, but does not solve
+            // those with very large sessions.
+            const getWithHints = async (keyHints) => {
+                // optimistically find the first 5 potential chunks for the specified key
+                const chunkNames = keyHints.flatMap((keyHint) => [
+                    keyHint,
+                    ...Array.from({ length: 5 }).map((_, i) => `${keyHint}.${i}`),
+                ]);
+                const chunks = [];
+                for (let i = 0; i < chunkNames.length; i += 1) {
+                    const value = await cookies.get(chunkNames[i]);
+                    if (!value && typeof value !== "string") {
+                        continue;
+                    }
+                    chunks.push({ name: chunkNames[i], value });
+                }
+                // TODO: detect and log stale chunks error
+                return chunks;
+            };
+            getAll = async (keyHints) => await getWithHints(keyHints);
+            if ("set" in cookies && "remove" in cookies) {
+                setAll = async (setCookies) => {
+                    for (let i = 0; i < setCookies.length; i += 1) {
+                        const { name, value, options } = setCookies[i];
+                        if (value) {
+                            await cookies.set(name, value, options);
+                        }
+                        else {
+                            await cookies.remove(name, options);
+                        }
+                    }
+                };
+            }
+            else if (isServerClient) {
+                setAll = async () => {
+                    console.warn("@supabase/ssr: createServerClient was configured without set and remove cookie methods, but the client needs to set cookies. This can lead to issues such as random logouts, early session termination or increased token refresh requests. If in NextJS, check your middleware.ts file, route handlers and server actions for correctness. Consider switching to the getAll and setAll cookie methods instead of get, set and remove which are deprecated and can be difficult to use correctly.");
+                };
+            }
+            else {
+                throw new Error("@supabase/ssr: createBrowserClient requires configuring a getAll and setAll cookie method (deprecated: alternatively both get, set and remove can be used)");
+            }
+        }
+        else if ("getAll" in cookies) {
+            getAll = async () => await cookies.getAll();
+            if ("setAll" in cookies) {
+                setAll = cookies.setAll;
+            }
+            else if (isServerClient) {
+                setAll = async () => {
+                    console.warn("@supabase/ssr: createServerClient was configured without the setAll cookie method, but the client needs to set cookies. This can lead to issues such as random logouts, early session termination or increased token refresh requests. If in NextJS, check your middleware.ts file, route handlers and server actions for correctness.");
+                };
+            }
+            else {
+                throw new Error("@supabase/ssr: createBrowserClient requires configuring both getAll and setAll cookie methods (deprecated: alternatively both get, set and remove can be used)");
+            }
+        }
+        else {
+            // neither get nor getAll is present on cookies, only will occur if pure JavaScript is used, but cookies is an object
+            throw new Error(`@supabase/ssr: ${isServerClient ? "createServerClient" : "createBrowserClient"} requires configuring getAll and setAll cookie methods (deprecated: alternatively use get, set and remove).${(0, utils_1.isBrowser)() ? " As this is called in a browser runtime, consider removing the cookies option object to use the document.cookie API automatically." : ""}`);
+        }
+    }
+    else if (!isServerClient && (0, utils_1.isBrowser)()) {
+        // The environment is browser, so use the document.cookie API to implement getAll and setAll.
+        getAll = () => documentCookieGetAll();
+        setAll = documentCookieSetAll;
+    }
+    else if (isServerClient) {
+        throw new Error("@supabase/ssr: createServerClient must be initialized with cookie options that specify getAll and setAll functions (deprecated, not recommended: alternatively use get, set and remove)");
+    }
+    else {
+        // getting cookies when there's no window but we're in browser mode can be OK, because the developer probably is not using auth functions
+        getAll = () => {
+            return [];
+        };
+        // this is NOT OK because the developer is using auth functions that require setting some state, so that must error out
+        setAll = () => {
+            throw new Error("@supabase/ssr: createBrowserClient in non-browser runtimes (including Next.js pre-rendering mode) was not initialized cookie options that specify getAll and setAll functions (deprecated: alternatively use get, set and remove), but they were needed");
+        };
+    }
+    if (!isServerClient) {
+        // This is the storage client to be used in browsers. It only
+        // works on the cookies abstraction, unlike the server client
+        // which only uses cookies to read the initial state. When an
+        // item is set, cookies are both cleared and set to values so
+        // that stale chunks are not left remaining.
+        return {
+            getAll, // for type consistency
+            setAll, // for type consistency
+            setItems, // for type consistency
+            removedItems, // for type consistency
+            storage: {
+                isServer: false,
+                getItem: async (key) => {
+                    const allCookies = await getAll([key]);
+                    const chunkedCookie = await (0, utils_1.combineChunks)(key, async (chunkName) => {
+                        const cookie = allCookies?.find(({ name }) => name === chunkName) || null;
+                        if (!cookie) {
+                            return null;
+                        }
+                        return cookie.value;
+                    });
+                    if (!chunkedCookie) {
+                        return null;
+                    }
+                    return decodeChunkedCookieValue(chunkedCookie);
+                },
+                setItem: async (key, value) => {
+                    const allCookies = await getAll([key]);
+                    const cookieNames = allCookies?.map(({ name }) => name) || [];
+                    const removeCookies = new Set(cookieNames.filter((name) => (0, utils_1.isChunkLike)(name, key)));
+                    let encoded = value;
+                    if (cookieEncoding === "base64url") {
+                        encoded = BASE64_PREFIX + (0, utils_1.stringToBase64URL)(value);
+                    }
+                    const setCookies = (0, utils_1.createChunks)(key, encoded);
+                    setCookies.forEach(({ name }) => {
+                        removeCookies.delete(name);
+                    });
+                    const removeCookieOptions = {
+                        ...utils_1.DEFAULT_COOKIE_OPTIONS,
+                        ...options?.cookieOptions,
+                        maxAge: 0,
+                    };
+                    const setCookieOptions = {
+                        ...utils_1.DEFAULT_COOKIE_OPTIONS,
+                        ...options?.cookieOptions,
+                        maxAge: utils_1.DEFAULT_COOKIE_OPTIONS.maxAge,
+                    };
+                    // the NextJS cookieStore API can get confused if the `name` from
+                    // options.cookieOptions leaks
+                    delete removeCookieOptions.name;
+                    delete setCookieOptions.name;
+                    // See removeItem below for the host-only also-clear rationale.
+                    // Same logic applies here: when overwriting an existing session,
+                    // stale chunks at a previous scope must be cleared at that scope.
+                    const hostOnlyRemoveOptions = removeCookieOptions.domain
+                        ? (() => {
+                            const { domain: _domain, ...rest } = removeCookieOptions;
+                            return rest;
+                        })()
+                        : null;
+                    const allToSet = [
+                        ...(hostOnlyRemoveOptions
+                            ? [...removeCookies].map((name) => ({
+                                name,
+                                value: "",
+                                options: hostOnlyRemoveOptions,
+                            }))
+                            : []),
+                        ...[...removeCookies].map((name) => ({
+                            name,
+                            value: "",
+                            options: removeCookieOptions,
+                        })),
+                        ...setCookies.map(({ name, value }) => ({
+                            name,
+                            value,
+                            options: setCookieOptions,
+                        })),
+                    ];
+                    if (allToSet.length > 0) {
+                        await setAll(allToSet, {});
+                    }
+                },
+                removeItem: async (key) => {
+                    const allCookies = await getAll([key]);
+                    const cookieNames = allCookies?.map(({ name }) => name) || [];
+                    const removeCookies = cookieNames.filter((name) => (0, utils_1.isChunkLike)(name, key));
+                    if (removeCookies.length === 0) {
+                        return;
+                    }
+                    const removeCookieOptions = {
+                        ...utils_1.DEFAULT_COOKIE_OPTIONS,
+                        ...options?.cookieOptions,
+                        maxAge: 0,
+                    };
+                    // the NextJS cookieStore API can get confused if the `name` from
+                    // options.cookieOptions leaks
+                    delete removeCookieOptions.name;
+                    // When a parent Domain is configured, also clear the host-only
+                    // counterpart. Migrating host-only -> `.parent.tld` leaves the old
+                    // host-only cookies behind; the browser returns both in the Cookie
+                    // header and parsers may pick the stale one, resurrecting the
+                    // session after signOut. A Set-Cookie clear for a scope the host
+                    // doesn't own is silently ignored, so this is a no-op when there's
+                    // nothing stale to clear.
+                    //
+                    // The host-only clear is emitted *before* the domain-scoped one so
+                    // that cookie stores keyed by name only (e.g. Next.js
+                    // ResponseCookies) keep the domain-scoped deletion -- the one that
+                    // matches the cookies this library set -- instead of letting the
+                    // best-effort host-only clear overwrite it, which would leave the
+                    // session cookie undeleted (#256). Stores that emit a Set-Cookie
+                    // per entry still receive both.
+                    const hostOnlyOptions = removeCookieOptions.domain
+                        ? (() => {
+                            const { domain: _domain, ...rest } = removeCookieOptions;
+                            return rest;
+                        })()
+                        : null;
+                    const toSet = [
+                        ...(hostOnlyOptions
+                            ? removeCookies.map((name) => ({
+                                name,
+                                value: "",
+                                options: hostOnlyOptions,
+                            }))
+                            : []),
+                        ...removeCookies.map((name) => ({
+                            name,
+                            value: "",
+                            options: removeCookieOptions,
+                        })),
+                    ];
+                    await setAll(toSet, {});
+                },
+            },
+        };
+    }
+    const originalSetAll = setAll;
+    let hasSentHeaders = false;
+    setAll = async (setCookies, headers) => {
+        const shouldSendHeaders = !hasSentHeaders && Object.keys(headers).length > 0;
+        await originalSetAll(setCookies, shouldSendHeaders ? headers : {});
+        if (shouldSendHeaders) {
+            hasSentHeaders = true;
+        }
+    };
+    // This is the server client. It only uses getAll to read the initial
+    // state. Any subsequent changes to the items is persisted in the
+    // setItems and removedItems objects. createServerClient *must* use
+    // getAll, setAll and the values in setItems and removedItems to
+    // persist the changes *at once* when appropriate (usually only when
+    // the TOKEN_REFRESHED, USER_UPDATED or SIGNED_OUT events are fired by
+    // the Supabase Auth client).
+    return {
+        getAll,
+        setAll,
+        setItems,
+        removedItems,
+        storage: {
+            // to signal to the libraries that these cookies are
+            // coming from a server environment and their value
+            // should not be trusted
+            isServer: true,
+            getItem: async (key) => {
+                if (typeof setItems[key] === "string") {
+                    return setItems[key];
+                }
+                if (removedItems[key]) {
+                    return null;
+                }
+                const allCookies = await getAll([key]);
+                const chunkedCookie = await (0, utils_1.combineChunks)(key, async (chunkName) => {
+                    const cookie = allCookies?.find(({ name }) => name === chunkName) || null;
+                    if (!cookie) {
+                        return null;
+                    }
+                    return cookie.value;
+                });
+                if (!chunkedCookie) {
+                    return null;
+                }
+                if (typeof chunkedCookie !== "string") {
+                    return chunkedCookie;
+                }
+                return decodeChunkedCookieValue(chunkedCookie);
+            },
+            setItem: async (key, value) => {
+                // We don't have an `onAuthStateChange` event that can let us know that
+                // the PKCE code verifier is being set. Therefore, if we see it being
+                // set, we need to apply the storage (call `setAll` so the cookie is
+                // set properly).
+                if (key.endsWith("-code-verifier")) {
+                    await applyServerStorage({
+                        getAll,
+                        setAll,
+                        // pretend only that the code verifier was set
+                        setItems: { [key]: value },
+                        // pretend that nothing was removed
+                        removedItems: {},
+                    }, {
+                        cookieOptions: options?.cookieOptions ?? null,
+                        cookieEncoding,
+                    });
+                }
+                setItems[key] = value;
+                delete removedItems[key];
+            },
+            removeItem: async (key) => {
+                // Intentionally not applying the storage when the key is the fixed
+                // PKCE code verifier, as usually right after it's removed other items
+                // are set, so application of the storage will be handled by the
+                // `onAuthStateChange` callback that follows removal -- usually as part
+                // of the `exchangeCodeForSession` call. That key holds a single value
+                // which the next flow's `setItem` overwrites (applied immediately, see
+                // setItem above), so a removal that never reaches the browser is not
+                // observable.
+                //
+                // The per-flow verifier slots and the index of pending flow ids are
+                // the exception, because they can be removed on paths that emit no
+                // auth event at all: auth-js's ring evicts the oldest slot during a
+                // flow *start*, and a flow that fails removes its own slot (and the
+                // index entry, when it was the last one) from a catch block. Leaving
+                // those buffered would strand a verifier cookie in the browser with
+                // nothing referencing it, or an index that names a slot which is
+                // already gone.
+                if (isPkceVerifierSlotKey(key) || isPkceFlowIndexKey(key)) {
+                    await applyServerStorage({
+                        getAll,
+                        setAll,
+                        // pretend that nothing was set
+                        setItems: {},
+                        // pretend only that this verifier key was removed
+                        removedItems: { [key]: true },
+                    }, {
+                        cookieOptions: options?.cookieOptions ?? null,
+                        cookieEncoding,
+                    });
+                }
+                delete setItems[key];
+                removedItems[key] = true;
+            },
+        },
+    };
+}
+/**
+ * When createServerClient needs to apply the created storage to cookies, it
+ * should call this function which handles correctly setting cookies for stored
+ * and removed items in the storage.
+ */
+async function applyServerStorage({ getAll, setAll, setItems, removedItems, }, options) {
+    const cookieEncoding = options.cookieEncoding;
+    const cookieOptions = options.cookieOptions ?? null;
+    const allCookies = await getAll([
+        ...(setItems ? Object.keys(setItems) : []),
+        ...(removedItems ? Object.keys(removedItems) : []),
+    ]);
+    const cookieNames = allCookies?.map(({ name }) => name) || [];
+    const currentByName = new Map(allCookies?.map(({ name, value }) => [name, value]) || []);
+    const removeCookies = Object.keys(removedItems).flatMap((itemName) => {
+        return cookieNames.filter((name) => (0, utils_1.isChunkLike)(name, itemName));
+    });
+    const setCookies = Object.keys(setItems).flatMap((itemName) => {
+        const removeExistingCookiesForItem = new Set(cookieNames.filter((name) => (0, utils_1.isChunkLike)(name, itemName)));
+        let encoded = setItems[itemName];
+        if (cookieEncoding === "base64url") {
+            encoded = BASE64_PREFIX + (0, utils_1.stringToBase64URL)(encoded);
+        }
+        const chunks = (0, utils_1.createChunks)(itemName, encoded);
+        chunks.forEach((chunk) => {
+            removeExistingCookiesForItem.delete(chunk.name);
+        });
+        removeCookies.push(...removeExistingCookiesForItem);
+        return chunks;
+    });
+    const setCookiesToWrite = setCookies.filter(({ name, value }) => currentByName.get(name) !== value);
+    const removeCookiesToWrite = removeCookies.filter((name) => currentByName.has(name));
+    const removeCookieOptions = {
+        ...utils_1.DEFAULT_COOKIE_OPTIONS,
+        ...cookieOptions,
+        maxAge: 0,
+    };
+    const setCookieOptions = {
+        ...utils_1.DEFAULT_COOKIE_OPTIONS,
+        ...cookieOptions,
+        maxAge: utils_1.DEFAULT_COOKIE_OPTIONS.maxAge,
+    };
+    // the NextJS cookieStore API can get confused if the `name` from
+    // options.cookieOptions leaks
+    delete removeCookieOptions.name;
+    delete setCookieOptions.name;
+    // See removeItem in createStorageFromOptions for the host-only also-clear
+    // rationale. Same logic on the server-side response path.
+    const hostOnlyRemoveOptions = removeCookieOptions.domain && removeCookiesToWrite.length > 0
+        ? (() => {
+            const { domain: _domain, ...rest } = removeCookieOptions;
+            return rest;
+        })()
+        : null;
+    if (removeCookiesToWrite.length === 0 && setCookiesToWrite.length === 0) {
+        return;
+    }
+    await setAll([
+        ...(hostOnlyRemoveOptions
+            ? removeCookiesToWrite.map((name) => ({
+                name,
+                value: "",
+                options: hostOnlyRemoveOptions,
+            }))
+            : []),
+        ...removeCookiesToWrite.map((name) => ({
+            name,
+            value: "",
+            options: removeCookieOptions,
+        })),
+        ...setCookiesToWrite.map(({ name, value }) => ({
+            name,
+            value,
+            options: setCookieOptions,
+        })),
+    ], {
+        "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+        Expires: "0",
+        Pragma: "no-cache",
+    });
+}
+//# sourceMappingURL=cookies.js.map
+
+/***/ }),
+
+/***/ 6726:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.createBrowserClient = createBrowserClient;
+const supabase_js_1 = __nccwpck_require__(2060);
+const cookies_1 = __nccwpck_require__(5494);
+const utils_1 = __nccwpck_require__(7831);
+const version_1 = __nccwpck_require__(9597);
+const warnOnce_1 = __nccwpck_require__(1864);
+const warnDeprecatedPackage_1 = __nccwpck_require__(9497);
+let cachedBrowserClient;
+function createBrowserClient(supabaseUrl, supabaseKey, options) {
+    (0, warnDeprecatedPackage_1.warnIfUsingDeprecatedAuthHelpersPackage)();
+    // singleton client is created only if isSingleton is set to true, or if isSingleton is not defined and we detect a browser
+    const shouldUseSingleton = options?.isSingleton === true ||
+        ((!options || !("isSingleton" in options)) && (0, utils_1.isBrowser)());
+    if (shouldUseSingleton && cachedBrowserClient) {
+        return cachedBrowserClient;
+    }
+    if (!supabaseUrl || !supabaseKey) {
+        throw new Error(`@supabase/ssr: Your project's URL and API key are required to create a Supabase client!\n\nCheck your Supabase project's API settings to find these values\n\nhttps://supabase.com/dashboard/project/_/settings/api`);
+    }
+    if (options?.auth?.storage) {
+        (0, warnOnce_1.warnOnce)("@supabase/ssr: createBrowserClient always manages the session via cookies, so the `auth.storage` option you passed is ignored. If you don't need the session to be readable on the server, use @supabase/supabase-js's createClient directly with your own `storage` instead.");
+    }
+    const { storage } = (0, cookies_1.createStorageFromOptions)({
+        ...options,
+        cookieEncoding: options?.cookieEncoding ?? "base64url",
+    }, false);
+    const client = (0, supabase_js_1.createClient)(supabaseUrl, supabaseKey, {
+        // TODO: resolve type error
+        ...options,
+        global: {
+            ...options?.global,
+            headers: {
+                ...options?.global?.headers,
+                "X-Client-Info": `supabase-ssr/${version_1.VERSION} createBrowserClient`,
+            },
+        },
+        auth: {
+            ...options?.auth,
+            ...(options?.cookieOptions?.name
+                ? { storageKey: options.cookieOptions.name }
+                : null),
+            flowType: "pkce",
+            autoRefreshToken: options?.auth?.autoRefreshToken ?? (0, utils_1.isBrowser)(),
+            detectSessionInUrl: options?.auth?.detectSessionInUrl ?? (0, utils_1.isBrowser)(),
+            persistSession: options?.auth?.persistSession ?? true,
+            storage,
+            ...(options?.cookies &&
+                "encode" in options.cookies &&
+                options.cookies.encode === "tokens-only"
+                ? {
+                    userStorage: options?.auth?.userStorage ??
+                        ((0, utils_1.isBrowser)() ? window.localStorage : (0, utils_1.memoryLocalStorageAdapter)()),
+                }
+                : null),
+        },
+    });
+    if (shouldUseSingleton) {
+        cachedBrowserClient = client;
+    }
+    return client;
+}
+//# sourceMappingURL=createBrowserClient.js.map
+
+/***/ }),
+
+/***/ 2849:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.createServerClient = createServerClient;
+const supabase_js_1 = __nccwpck_require__(2060);
+const cookies_1 = __nccwpck_require__(5494);
+const helpers_1 = __nccwpck_require__(9206);
+const version_1 = __nccwpck_require__(9597);
+const warnOnce_1 = __nccwpck_require__(1864);
+const warnDeprecatedPackage_1 = __nccwpck_require__(9497);
+function createServerClient(supabaseUrl, supabaseKey, options) {
+    (0, warnDeprecatedPackage_1.warnIfUsingDeprecatedAuthHelpersPackage)();
+    if (!supabaseUrl || !supabaseKey) {
+        throw new Error(`Your project's URL and Key are required to create a Supabase client!\n\nCheck your Supabase project's API settings to find these values\n\nhttps://supabase.com/dashboard/project/_/settings/api`);
+    }
+    if (options?.auth?.storage) {
+        (0, warnOnce_1.warnOnce)("@supabase/ssr: createServerClient always manages the session via cookies, so the `auth.storage` option you passed is ignored. If you want to source the session from somewhere other than the request cookies, use @supabase/supabase-js's createClient directly with your own `storage` instead.");
+    }
+    const { storage, getAll, setAll, setItems, removedItems } = (0, cookies_1.createStorageFromOptions)({
+        ...options,
+        cookieEncoding: options?.cookieEncoding ?? "base64url",
+    }, true);
+    const client = (0, supabase_js_1.createClient)(supabaseUrl, supabaseKey, {
+        // TODO: resolve type error
+        ...options,
+        global: {
+            ...options?.global,
+            headers: {
+                ...options?.global?.headers,
+                "X-Client-Info": `supabase-ssr/${version_1.VERSION} createServerClient`,
+            },
+        },
+        auth: {
+            ...(options?.cookieOptions?.name
+                ? { storageKey: options.cookieOptions.name }
+                : null),
+            ...options?.auth,
+            flowType: "pkce",
+            autoRefreshToken: false,
+            detectSessionInUrl: false,
+            persistSession: true,
+            skipAutoInitialize: true,
+            storage,
+            ...(options?.cookies &&
+                "encode" in options.cookies &&
+                options.cookies.encode === "tokens-only"
+                ? {
+                    userStorage: options?.auth?.userStorage ?? (0, helpers_1.memoryLocalStorageAdapter)(),
+                }
+                : null),
+        },
+    });
+    client.auth.onAuthStateChange(async (event) => {
+        // The SIGNED_IN event is fired very often, but we don't need to
+        // apply the storage each time it fires, only if there are changes
+        // that need to be set -- which is if setItems / removeItems have
+        // data.
+        const hasStorageChanges = Object.keys(setItems).length > 0 || Object.keys(removedItems).length > 0;
+        if (hasStorageChanges &&
+            (event === "SIGNED_IN" ||
+                event === "TOKEN_REFRESHED" ||
+                event === "USER_UPDATED" ||
+                event === "PASSWORD_RECOVERY" ||
+                event === "SIGNED_OUT" ||
+                event === "MFA_CHALLENGE_VERIFIED")) {
+            await (0, cookies_1.applyServerStorage)({ getAll, setAll, setItems, removedItems }, {
+                cookieOptions: options?.cookieOptions ?? null,
+                cookieEncoding: options?.cookieEncoding ?? "base64url",
+            });
+        }
+    });
+    return client;
+}
+//# sourceMappingURL=createServerClient.js.map
+
+/***/ }),
+
+/***/ 9045:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// IMPORTANT: this file MUST stay free of top-level side effects so the
+// package can advertise `"sideEffects": false` in package.json. Any new
+// runtime initialization belongs inside a function called explicitly by a
+// consumer entry point (createBrowserClient / createServerClient), not at
+// module load time.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.warnIfUsingDeprecatedAuthHelpersPackage = exports.clearAuthCookiesAtScopes = void 0;
+__exportStar(__nccwpck_require__(6726), exports);
+__exportStar(__nccwpck_require__(2849), exports);
+__exportStar(__nccwpck_require__(1900), exports);
+__exportStar(__nccwpck_require__(7831), exports);
+var clearAuthCookiesAtScopes_1 = __nccwpck_require__(1887);
+Object.defineProperty(exports, "clearAuthCookiesAtScopes", ({ enumerable: true, get: function () { return clearAuthCookiesAtScopes_1.clearAuthCookiesAtScopes; } }));
+var warnDeprecatedPackage_1 = __nccwpck_require__(9497);
+Object.defineProperty(exports, "warnIfUsingDeprecatedAuthHelpersPackage", ({ enumerable: true, get: function () { return warnDeprecatedPackage_1.warnIfUsingDeprecatedAuthHelpersPackage; } }));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1900:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+//# sourceMappingURL=types.js.map
+
+/***/ }),
+
+/***/ 9459:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+/**
+ * Avoid modifying this file. It's part of
+ * https://github.com/supabase-community/base64url-js.  Submit all fixes on
+ * that repo!
+ */
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.stringToBase64URL = stringToBase64URL;
+exports.stringFromBase64URL = stringFromBase64URL;
+exports.codepointToUTF8 = codepointToUTF8;
+exports.stringToUTF8 = stringToUTF8;
+exports.stringFromUTF8 = stringFromUTF8;
+/**
+ * An array of characters that encode 6 bits into a Base64-URL alphabet
+ * character.
+ */
+const TO_BASE64URL = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_".split("");
+/**
+ * An array of characters that can appear in a Base64-URL encoded string but
+ * should be ignored.
+ */
+const IGNORE_BASE64URL = " \t\n\r=".split("");
+/**
+ * An array of 128 numbers that map a Base64-URL character to 6 bits, or if -2
+ * used to skip the character, or if -1 used to error out.
+ */
+const FROM_BASE64URL = (() => {
+    const charMap = new Array(128);
+    for (let i = 0; i < charMap.length; i += 1) {
+        charMap[i] = -1;
+    }
+    for (let i = 0; i < IGNORE_BASE64URL.length; i += 1) {
+        charMap[IGNORE_BASE64URL[i].charCodeAt(0)] = -2;
+    }
+    for (let i = 0; i < TO_BASE64URL.length; i += 1) {
+        charMap[TO_BASE64URL[i].charCodeAt(0)] = i;
+    }
+    return charMap;
+})();
+/**
+ * Converts a JavaScript string (which may include any valid character) into a
+ * Base64-URL encoded string. The string is first encoded in UTF-8 which is
+ * then encoded as Base64-URL.
+ *
+ * @param str The string to convert.
+ */
+function stringToBase64URL(str) {
+    const base64 = [];
+    let queue = 0;
+    let queuedBits = 0;
+    const emitter = (byte) => {
+        queue = (queue << 8) | byte;
+        queuedBits += 8;
+        while (queuedBits >= 6) {
+            const pos = (queue >> (queuedBits - 6)) & 63;
+            base64.push(TO_BASE64URL[pos]);
+            queuedBits -= 6;
+        }
+    };
+    stringToUTF8(str, emitter);
+    if (queuedBits > 0) {
+        queue = queue << (6 - queuedBits);
+        queuedBits = 6;
+        while (queuedBits >= 6) {
+            const pos = (queue >> (queuedBits - 6)) & 63;
+            base64.push(TO_BASE64URL[pos]);
+            queuedBits -= 6;
+        }
+    }
+    return base64.join("");
+}
+/**
+ * Converts a Base64-URL encoded string into a JavaScript string. It is assumed
+ * that the underlying string has been encoded as UTF-8.
+ *
+ * @param str The Base64-URL encoded string.
+ */
+function stringFromBase64URL(str) {
+    const conv = [];
+    const emit = (codepoint) => {
+        conv.push(String.fromCodePoint(codepoint));
+    };
+    const state = {
+        utf8seq: 0,
+        codepoint: 0,
+    };
+    let queue = 0;
+    let queuedBits = 0;
+    for (let i = 0; i < str.length; i += 1) {
+        const codepoint = str.charCodeAt(i);
+        const bits = FROM_BASE64URL[codepoint];
+        if (bits > -1) {
+            // valid Base64-URL character
+            queue = (queue << 6) | bits;
+            queuedBits += 6;
+            while (queuedBits >= 8) {
+                stringFromUTF8((queue >> (queuedBits - 8)) & 0xff, state, emit);
+                queuedBits -= 8;
+            }
+        }
+        else if (bits === -2) {
+            // ignore spaces, tabs, newlines, =
+            continue;
+        }
+        else {
+            throw new Error(`Invalid Base64-URL character "${str.at(i)}" at position ${i}`);
+        }
+    }
+    return conv.join("");
+}
+/**
+ * Converts a Unicode codepoint to a multi-byte UTF-8 sequence.
+ *
+ * @param codepoint The Unicode codepoint.
+ * @param emit      Function which will be called for each UTF-8 byte that represents the codepoint.
+ */
+function codepointToUTF8(codepoint, emit) {
+    if (codepoint <= 0x7f) {
+        emit(codepoint);
+        return;
+    }
+    else if (codepoint <= 0x7ff) {
+        emit(0xc0 | (codepoint >> 6));
+        emit(0x80 | (codepoint & 0x3f));
+        return;
+    }
+    else if (codepoint <= 0xffff) {
+        emit(0xe0 | (codepoint >> 12));
+        emit(0x80 | ((codepoint >> 6) & 0x3f));
+        emit(0x80 | (codepoint & 0x3f));
+        return;
+    }
+    else if (codepoint <= 0x10ffff) {
+        emit(0xf0 | (codepoint >> 18));
+        emit(0x80 | ((codepoint >> 12) & 0x3f));
+        emit(0x80 | ((codepoint >> 6) & 0x3f));
+        emit(0x80 | (codepoint & 0x3f));
+        return;
+    }
+    throw new Error(`Unrecognized Unicode codepoint: ${codepoint.toString(16)}`);
+}
+/**
+ * Converts a JavaScript string to a sequence of UTF-8 bytes.
+ *
+ * @param str  The string to convert to UTF-8.
+ * @param emit Function which will be called for each UTF-8 byte of the string.
+ */
+function stringToUTF8(str, emit) {
+    for (let i = 0; i < str.length; i += 1) {
+        let codepoint = str.charCodeAt(i);
+        if (codepoint > 0xd7ff && codepoint <= 0xdbff) {
+            // most UTF-16 codepoints are Unicode codepoints, except values in this
+            // range where the next UTF-16 codepoint needs to be combined with the
+            // current one to get the Unicode codepoint
+            const highSurrogate = ((codepoint - 0xd800) * 0x400) & 0xffff;
+            const lowSurrogate = (str.charCodeAt(i + 1) - 0xdc00) & 0xffff;
+            codepoint = (lowSurrogate | highSurrogate) + 0x10000;
+            i += 1;
+        }
+        codepointToUTF8(codepoint, emit);
+    }
+}
+/**
+ * Converts a UTF-8 byte to a Unicode codepoint.
+ *
+ * @param byte  The UTF-8 byte next in the sequence.
+ * @param state The shared state between consecutive UTF-8 bytes in the
+ *              sequence, an object with the shape `{ utf8seq: 0, codepoint: 0 }`.
+ * @param emit  Function which will be called for each codepoint.
+ */
+function stringFromUTF8(byte, state, emit) {
+    if (state.utf8seq === 0) {
+        if (byte <= 0x7f) {
+            emit(byte);
+            return;
+        }
+        // count the number of 1 leading bits until you reach 0
+        for (let leadingBit = 1; leadingBit < 6; leadingBit += 1) {
+            if (((byte >> (7 - leadingBit)) & 1) === 0) {
+                state.utf8seq = leadingBit;
+                break;
+            }
+        }
+        if (state.utf8seq === 2) {
+            state.codepoint = byte & 31;
+        }
+        else if (state.utf8seq === 3) {
+            state.codepoint = byte & 15;
+        }
+        else if (state.utf8seq === 4) {
+            state.codepoint = byte & 7;
+        }
+        else {
+            throw new Error("Invalid UTF-8 sequence");
+        }
+        state.utf8seq -= 1;
+    }
+    else if (state.utf8seq > 0) {
+        if (byte <= 0x7f) {
+            throw new Error("Invalid UTF-8 sequence");
+        }
+        state.codepoint = (state.codepoint << 6) | (byte & 63);
+        state.utf8seq -= 1;
+        if (state.utf8seq === 0) {
+            emit(state.codepoint);
+        }
+    }
+}
+//# sourceMappingURL=base64url.js.map
+
+/***/ }),
+
+/***/ 1373:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.MAX_CHUNK_SIZE = void 0;
+exports.isChunkLike = isChunkLike;
+exports.createChunks = createChunks;
+exports.combineChunks = combineChunks;
+exports.deleteChunks = deleteChunks;
+exports.MAX_CHUNK_SIZE = 3180;
+const CHUNK_LIKE_REGEX = /^(.*)[.](0|[1-9][0-9]*)$/;
+function isChunkLike(cookieName, key) {
+    if (cookieName === key) {
+        return true;
+    }
+    const chunkLike = cookieName.match(CHUNK_LIKE_REGEX);
+    if (chunkLike && chunkLike[1] === key) {
+        return true;
+    }
+    return false;
+}
+/**
+ * create chunks from a string and return an array of object
+ */
+function createChunks(key, value, chunkSize) {
+    const resolvedChunkSize = chunkSize ?? exports.MAX_CHUNK_SIZE;
+    let encodedValue = encodeURIComponent(value);
+    if (encodedValue.length <= resolvedChunkSize) {
+        return [{ name: key, value }];
+    }
+    const chunks = [];
+    while (encodedValue.length > 0) {
+        let encodedChunkHead = encodedValue.slice(0, resolvedChunkSize);
+        const lastEscapePos = encodedChunkHead.lastIndexOf("%");
+        // Check if the last escaped character is truncated.
+        if (lastEscapePos > resolvedChunkSize - 3) {
+            // If so, reslice the string to exclude the whole escape sequence.
+            // We only reduce the size of the string as the chunk must
+            // be smaller than the chunk size.
+            encodedChunkHead = encodedChunkHead.slice(0, lastEscapePos);
+        }
+        let valueHead = "";
+        // Check if the chunk was split along a valid unicode boundary.
+        while (encodedChunkHead.length > 0) {
+            try {
+                // Try to decode the chunk back and see if it is valid.
+                // Stop when the chunk is valid.
+                valueHead = decodeURIComponent(encodedChunkHead);
+                break;
+            }
+            catch (error) {
+                if (error instanceof URIError &&
+                    encodedChunkHead.at(-3) === "%" &&
+                    encodedChunkHead.length > 3) {
+                    encodedChunkHead = encodedChunkHead.slice(0, encodedChunkHead.length - 3);
+                }
+                else {
+                    throw error;
+                }
+            }
+        }
+        chunks.push(valueHead);
+        encodedValue = encodedValue.slice(encodedChunkHead.length);
+    }
+    return chunks.map((value, i) => ({ name: `${key}.${i}`, value }));
+}
+// Get fully constructed chunks
+async function combineChunks(key, retrieveChunk) {
+    const value = await retrieveChunk(key);
+    if (value) {
+        return value;
+    }
+    let values = [];
+    for (let i = 0;; i++) {
+        const chunkName = `${key}.${i}`;
+        const chunk = await retrieveChunk(chunkName);
+        if (!chunk) {
+            break;
+        }
+        values.push(chunk);
+    }
+    if (values.length > 0) {
+        return values.join("");
+    }
+    return null;
+}
+async function deleteChunks(key, retrieveChunk, removeChunk) {
+    const value = await retrieveChunk(key);
+    if (value) {
+        await removeChunk(key);
+    }
+    for (let i = 0;; i++) {
+        const chunkName = `${key}.${i}`;
+        const chunk = await retrieveChunk(chunkName);
+        if (!chunk) {
+            break;
+        }
+        await removeChunk(chunkName);
+    }
+}
+//# sourceMappingURL=chunker.js.map
+
+/***/ }),
+
+/***/ 6122:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DEFAULT_COOKIE_OPTIONS = void 0;
+exports.DEFAULT_COOKIE_OPTIONS = {
+    path: "/",
+    sameSite: "lax",
+    httpOnly: false,
+    // https://developer.chrome.com/blog/cookie-max-age-expires
+    // https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html#name-cookie-lifetime-limits
+    maxAge: 400 * 24 * 60 * 60,
+};
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ 9206:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.serialize = exports.parse = void 0;
+exports.parseCookieHeader = parseCookieHeader;
+exports.serializeCookieHeader = serializeCookieHeader;
+exports.isBrowser = isBrowser;
+exports.memoryLocalStorageAdapter = memoryLocalStorageAdapter;
+const cookie = __importStar(__nccwpck_require__(1169));
+/**
+ * @deprecated Since v0.4.0: Please use {@link parseCookieHeader}. `parse` will
+ * not be available for import starting v1.0.0 of `@supabase/ssr`.
+ */
+exports.parse = cookie.parse;
+/**
+ * @deprecated Since v0.4.0: Please use {@link serializeCookieHeader}.
+ * `serialize` will not be available for import starting v1.0.0 of
+ * `@supabase/ssr`.
+ */
+exports.serialize = cookie.serialize;
+/**
+ * Parses the `Cookie` HTTP header into an array of cookie name-value objects.
+ *
+ * @param header The `Cookie` HTTP header. Decodes cookie names and values from
+ * URI encoding first.
+ */
+function parseCookieHeader(header) {
+    const parsed = cookie.parse(header);
+    return Object.keys(parsed ?? {}).map((name) => ({
+        name,
+        value: parsed[name] ?? "",
+    }));
+}
+/**
+ * Converts the arguments to a valid `Set-Cookie` header. Non US-ASCII chars
+ * and other forbidden cookie chars will be URI encoded.
+ *
+ * @param name Name of cookie.
+ * @param value Value of cookie.
+ */
+function serializeCookieHeader(name, value, options) {
+    return cookie.serialize(name, value, options);
+}
+function isBrowser() {
+    return (typeof window !== "undefined" && typeof window.document !== "undefined");
+}
+/**
+ * Returns a localStorage-like object that stores the key-value pairs in
+ * memory.
+ */
+function memoryLocalStorageAdapter(store = {}) {
+    return {
+        getItem: (key) => {
+            return store[key] || null;
+        },
+        setItem: (key, value) => {
+            store[key] = value;
+        },
+        removeItem: (key) => {
+            delete store[key];
+        },
+    };
+}
+//# sourceMappingURL=helpers.js.map
+
+/***/ }),
+
+/***/ 7831:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__nccwpck_require__(9206), exports);
+__exportStar(__nccwpck_require__(6122), exports);
+__exportStar(__nccwpck_require__(1373), exports);
+__exportStar(__nccwpck_require__(9459), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 9597:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.VERSION = void 0;
+exports.VERSION = '0.12.7';
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
+/***/ 9497:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.warnIfUsingDeprecatedAuthHelpersPackage = warnIfUsingDeprecatedAuthHelpersPackage;
+let warned = false;
+const DEPRECATED_PACKAGES = [
+    "@supabase/auth-helpers-nextjs",
+    "@supabase/auth-helpers-react",
+    "@supabase/auth-helpers-remix",
+    "@supabase/auth-helpers-sveltekit",
+];
+/**
+ * Emits a one-time console warning when the running app still declares one of
+ * the deprecated `@supabase/auth-helpers-*` packages, nudging consumers to
+ * migrate to `@supabase/ssr`. No-op outside Node-like runtimes.
+ *
+ * @category Deprecated
+ */
+function warnIfUsingDeprecatedAuthHelpersPackage() {
+    if (warned) {
+        return;
+    }
+    if (typeof process === "undefined" || !process.env?.npm_package_name) {
+        return;
+    }
+    const packageName = process.env.npm_package_name;
+    if (!DEPRECATED_PACKAGES.includes(packageName)) {
+        return;
+    }
+    warned = true;
+    console.warn(`
+╔════════════════════════════════════════════════════════════════════════════╗
+║ ⚠️  IMPORTANT: Package Consolidation Notice                                ║
+║                                                                            ║
+║ The ${packageName.padEnd(35)} package name is deprecated.  ║
+║                                                                            ║
+║ You are now using @supabase/ssr - a unified solution for all frameworks.  ║
+║                                                                            ║
+║ The auth-helpers packages have been consolidated into @supabase/ssr       ║
+║ to provide better maintenance and consistent APIs across frameworks.      ║
+║                                                                            ║
+║ Please update your package.json to use @supabase/ssr directly:            ║
+║   npm uninstall ${packageName.padEnd(42)} ║
+║   npm install @supabase/ssr                                               ║
+║                                                                            ║
+║ For more information, visit:                                              ║
+║ https://supabase.com/docs/guides/auth/server-side                         ║
+╚════════════════════════════════════════════════════════════════════════════╝
+    `);
+}
+//# sourceMappingURL=warnDeprecatedPackage.js.map
+
+/***/ }),
+
+/***/ 1864:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.warnOnce = warnOnce;
+exports.resetWarnOnceForTesting = resetWarnOnceForTesting;
+const warnedMessages = new Set();
+/**
+ * Logs a warning to the console only once per process for each distinct
+ * message. Used for configuration warnings that would otherwise fire on
+ * every client creation (e.g. once per server request).
+ */
+function warnOnce(message) {
+    if (warnedMessages.has(message)) {
+        return;
+    }
+    warnedMessages.add(message);
+    console.warn(message);
+}
+/**
+ * Clears the set of already-logged messages. Only for use in tests.
+ */
+function resetWarnOnceForTesting() {
+    warnedMessages.clear();
+}
+//# sourceMappingURL=warnOnce.js.map
+
+/***/ }),
+
+/***/ 1169:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.parseCookie = parseCookie;
+exports.parse = parseCookie;
+exports.stringifyCookie = stringifyCookie;
+exports.stringifySetCookie = stringifySetCookie;
+exports.serialize = stringifySetCookie;
+exports.parseSetCookie = parseSetCookie;
+exports.stringifySetCookie = stringifySetCookie;
+exports.serialize = stringifySetCookie;
+/**
+ * RegExp to match cookie-name in RFC 6265 sec 4.1.1
+ * This refers out to the obsoleted definition of token in RFC 2616 sec 2.2
+ * which has been replaced by the token definition in RFC 7230 appendix B.
+ *
+ * cookie-name       = token
+ * token             = 1*tchar
+ * tchar             = "!" / "#" / "$" / "%" / "&" / "'" /
+ *                     "*" / "+" / "-" / "." / "^" / "_" /
+ *                     "`" / "|" / "~" / DIGIT / ALPHA
+ *
+ * Note: Allowing more characters - https://github.com/jshttp/cookie/issues/191
+ * Allow same range as cookie value, except `=`, which delimits end of name.
+ */
+const cookieNameRegExp = /^[\u0021-\u003A\u003C\u003E-\u007E]+$/;
+/**
+ * RegExp to match cookie-value in RFC 6265 sec 4.1.1
+ *
+ * cookie-value      = *cookie-octet / ( DQUOTE *cookie-octet DQUOTE )
+ * cookie-octet      = %x21 / %x23-2B / %x2D-3A / %x3C-5B / %x5D-7E
+ *                     ; US-ASCII characters excluding CTLs,
+ *                     ; whitespace DQUOTE, comma, semicolon,
+ *                     ; and backslash
+ *
+ * Allowing more characters: https://github.com/jshttp/cookie/issues/191
+ * Comma, backslash, and DQUOTE are not part of the parsing algorithm.
+ */
+const cookieValueRegExp = /^[\u0021-\u003A\u003C-\u007E]*$/;
+/**
+ * RegExp to match domain-value in RFC 6265 sec 4.1.1
+ *
+ * domain-value      = <subdomain>
+ *                     ; defined in [RFC1034], Section 3.5, as
+ *                     ; enhanced by [RFC1123], Section 2.1
+ * <subdomain>       = <label> | <subdomain> "." <label>
+ * <label>           = <let-dig> [ [ <ldh-str> ] <let-dig> ]
+ *                     Labels must be 63 characters or less.
+ *                     'let-dig' not 'letter' in the first char, per RFC1123
+ * <ldh-str>         = <let-dig-hyp> | <let-dig-hyp> <ldh-str>
+ * <let-dig-hyp>     = <let-dig> | "-"
+ * <let-dig>         = <letter> | <digit>
+ * <letter>          = any one of the 52 alphabetic characters A through Z in
+ *                     upper case and a through z in lower case
+ * <digit>           = any one of the ten digits 0 through 9
+ *
+ * Keep support for leading dot: https://github.com/jshttp/cookie/issues/173
+ *
+ * > (Note that a leading %x2E ("."), if present, is ignored even though that
+ * character is not permitted, but a trailing %x2E ("."), if present, will
+ * cause the user agent to ignore the attribute.)
+ */
+const domainValueRegExp = /^([.]?[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)([.][a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)*$/i;
+/**
+ * RegExp to match path-value in RFC 6265 sec 4.1.1
+ *
+ * path-value        = <any CHAR except CTLs or ";">
+ * CHAR              = %x01-7F
+ *                     ; defined in RFC 5234 appendix B.1
+ */
+const pathValueRegExp = /^[\u0020-\u003A\u003D-\u007E]*$/;
+/**
+ * RegExp to match max-age-value in RFC 6265 sec 5.6.2
+ */
+const maxAgeRegExp = /^-?\d+$/;
+const __toString = Object.prototype.toString;
+const NullObject = /* @__PURE__ */ (() => {
+    const C = function () { };
+    C.prototype = Object.create(null);
+    return C;
+})();
+/**
+ * Parse a `Cookie` header.
+ *
+ * Parse the given cookie header string into an object
+ * The object has the various cookies as keys(names) => values
+ */
+function parseCookie(str, options) {
+    const obj = new NullObject();
+    const len = str.length;
+    // RFC 6265 sec 4.1.1, RFC 2616 2.2 defines a cookie name consists of one char minimum, plus '='.
+    if (len < 2)
+        return obj;
+    const dec = options?.decode || decode;
+    let index = 0;
+    do {
+        const eqIdx = eqIndex(str, index, len);
+        if (eqIdx === -1)
+            break; // No more cookie pairs.
+        const endIdx = endIndex(str, index, len);
+        if (eqIdx > endIdx) {
+            // backtrack on prior semicolon
+            index = str.lastIndexOf(";", eqIdx - 1) + 1;
+            continue;
+        }
+        const key = valueSlice(str, index, eqIdx);
+        // only assign once
+        if (obj[key] === undefined) {
+            obj[key] = dec(valueSlice(str, eqIdx + 1, endIdx));
+        }
+        index = endIdx + 1;
+    } while (index < len);
+    return obj;
+}
+/**
+ * Stringifies an object into an HTTP `Cookie` header.
+ */
+function stringifyCookie(cookie, options) {
+    const enc = options?.encode || encodeURIComponent;
+    const cookieStrings = [];
+    for (const name of Object.keys(cookie)) {
+        const val = cookie[name];
+        if (val === undefined)
+            continue;
+        if (!cookieNameRegExp.test(name)) {
+            throw new TypeError(`cookie name is invalid: ${name}`);
+        }
+        const value = enc(val);
+        if (!cookieValueRegExp.test(value)) {
+            throw new TypeError(`cookie val is invalid: ${val}`);
+        }
+        cookieStrings.push(`${name}=${value}`);
+    }
+    return cookieStrings.join("; ");
+}
+function stringifySetCookie(_name, _val, _opts) {
+    const cookie = typeof _name === "object"
+        ? _name
+        : { ..._opts, name: _name, value: String(_val) };
+    const options = typeof _val === "object" ? _val : _opts;
+    const enc = options?.encode || encodeURIComponent;
+    if (!cookieNameRegExp.test(cookie.name)) {
+        throw new TypeError(`argument name is invalid: ${cookie.name}`);
+    }
+    const value = cookie.value ? enc(cookie.value) : "";
+    if (!cookieValueRegExp.test(value)) {
+        throw new TypeError(`argument val is invalid: ${cookie.value}`);
+    }
+    let str = cookie.name + "=" + value;
+    if (cookie.maxAge !== undefined) {
+        if (!Number.isInteger(cookie.maxAge)) {
+            throw new TypeError(`option maxAge is invalid: ${cookie.maxAge}`);
+        }
+        str += "; Max-Age=" + cookie.maxAge;
+    }
+    if (cookie.domain) {
+        if (!domainValueRegExp.test(cookie.domain)) {
+            throw new TypeError(`option domain is invalid: ${cookie.domain}`);
+        }
+        str += "; Domain=" + cookie.domain;
+    }
+    if (cookie.path) {
+        if (!pathValueRegExp.test(cookie.path)) {
+            throw new TypeError(`option path is invalid: ${cookie.path}`);
+        }
+        str += "; Path=" + cookie.path;
+    }
+    if (cookie.expires) {
+        if (!isDate(cookie.expires) || !Number.isFinite(cookie.expires.valueOf())) {
+            throw new TypeError(`option expires is invalid: ${cookie.expires}`);
+        }
+        str += "; Expires=" + cookie.expires.toUTCString();
+    }
+    if (cookie.httpOnly) {
+        str += "; HttpOnly";
+    }
+    if (cookie.secure) {
+        str += "; Secure";
+    }
+    if (cookie.partitioned) {
+        str += "; Partitioned";
+    }
+    if (cookie.priority) {
+        const priority = typeof cookie.priority === "string"
+            ? cookie.priority.toLowerCase()
+            : undefined;
+        switch (priority) {
+            case "low":
+                str += "; Priority=Low";
+                break;
+            case "medium":
+                str += "; Priority=Medium";
+                break;
+            case "high":
+                str += "; Priority=High";
+                break;
+            default:
+                throw new TypeError(`option priority is invalid: ${cookie.priority}`);
+        }
+    }
+    if (cookie.sameSite) {
+        const sameSite = typeof cookie.sameSite === "string"
+            ? cookie.sameSite.toLowerCase()
+            : cookie.sameSite;
+        switch (sameSite) {
+            case true:
+            case "strict":
+                str += "; SameSite=Strict";
+                break;
+            case "lax":
+                str += "; SameSite=Lax";
+                break;
+            case "none":
+                str += "; SameSite=None";
+                break;
+            default:
+                throw new TypeError(`option sameSite is invalid: ${cookie.sameSite}`);
+        }
+    }
+    return str;
+}
+/**
+ * Deserialize a `Set-Cookie` header into an object.
+ *
+ * deserialize('foo=bar; httpOnly')
+ *   => { name: 'foo', value: 'bar', httpOnly: true }
+ */
+function parseSetCookie(str, options) {
+    const dec = options?.decode || decode;
+    const len = str.length;
+    const endIdx = endIndex(str, 0, len);
+    const eqIdx = eqIndex(str, 0, endIdx);
+    const setCookie = eqIdx === -1
+        ? { name: "", value: dec(valueSlice(str, 0, endIdx)) }
+        : {
+            name: valueSlice(str, 0, eqIdx),
+            value: dec(valueSlice(str, eqIdx + 1, endIdx)),
+        };
+    let index = endIdx + 1;
+    while (index < len) {
+        const endIdx = endIndex(str, index, len);
+        const eqIdx = eqIndex(str, index, endIdx);
+        const attr = eqIdx === -1
+            ? valueSlice(str, index, endIdx)
+            : valueSlice(str, index, eqIdx);
+        const val = eqIdx === -1 ? undefined : valueSlice(str, eqIdx + 1, endIdx);
+        switch (attr.toLowerCase()) {
+            case "httponly":
+                setCookie.httpOnly = true;
+                break;
+            case "secure":
+                setCookie.secure = true;
+                break;
+            case "partitioned":
+                setCookie.partitioned = true;
+                break;
+            case "domain":
+                setCookie.domain = val;
+                break;
+            case "path":
+                setCookie.path = val;
+                break;
+            case "max-age":
+                if (val && maxAgeRegExp.test(val))
+                    setCookie.maxAge = Number(val);
+                break;
+            case "expires":
+                if (!val)
+                    break;
+                const date = new Date(val);
+                if (Number.isFinite(date.valueOf()))
+                    setCookie.expires = date;
+                break;
+            case "priority":
+                if (!val)
+                    break;
+                const priority = val.toLowerCase();
+                if (priority === "low" ||
+                    priority === "medium" ||
+                    priority === "high") {
+                    setCookie.priority = priority;
+                }
+                break;
+            case "samesite":
+                if (!val)
+                    break;
+                const sameSite = val.toLowerCase();
+                if (sameSite === "lax" ||
+                    sameSite === "strict" ||
+                    sameSite === "none") {
+                    setCookie.sameSite = sameSite;
+                }
+                break;
+        }
+        index = endIdx + 1;
+    }
+    return setCookie;
+}
+/**
+ * Find the `;` character between `min` and `len` in str.
+ */
+function endIndex(str, min, len) {
+    const index = str.indexOf(";", min);
+    return index === -1 ? len : index;
+}
+/**
+ * Find the `=` character between `min` and `max` in str.
+ */
+function eqIndex(str, min, max) {
+    const index = str.indexOf("=", min);
+    return index < max ? index : -1;
+}
+/**
+ * Slice out a value between startPod to max.
+ */
+function valueSlice(str, min, max) {
+    let start = min;
+    let end = max;
+    do {
+        const code = str.charCodeAt(start);
+        if (code !== 0x20 /*   */ && code !== 0x09 /* \t */)
+            break;
+    } while (++start < end);
+    while (end > start) {
+        const code = str.charCodeAt(end - 1);
+        if (code !== 0x20 /*   */ && code !== 0x09 /* \t */)
+            break;
+        end--;
+    }
+    return str.slice(start, end);
+}
+/**
+ * URL-decode string value. Optimized to skip native call when no %.
+ */
+function decode(str) {
+    if (str.indexOf("%") === -1)
+        return str;
+    try {
+        return decodeURIComponent(str);
+    }
+    catch (e) {
+        return str;
+    }
+}
+/**
+ * Determine if value is a Date.
+ */
+function isDate(val) {
+    return __toString.call(val) === "[object Date]";
+}
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -44072,3022 +45777,13 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("tls");
 
 module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("util");
 
-/***/ })
+/***/ }),
 
-/******/ });
-/************************************************************************/
-/******/ // The module cache
-/******/ var __webpack_module_cache__ = {};
-/******/ 
-/******/ // The require function
-/******/ function __nccwpck_require__(moduleId) {
-/******/ 	// Check if module is in cache
-/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 	if (cachedModule !== undefined) {
-/******/ 		return cachedModule.exports;
-/******/ 	}
-/******/ 	// Create a new module (and put it into the cache)
-/******/ 	var module = __webpack_module_cache__[moduleId] = {
-/******/ 		// no module.id needed
-/******/ 		// no module.loaded needed
-/******/ 		exports: {}
-/******/ 	};
-/******/ 
-/******/ 	// Execute the module function
-/******/ 	var threw = true;
-/******/ 	try {
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nccwpck_require__);
-/******/ 		threw = false;
-/******/ 	} finally {
-/******/ 		if(threw) delete __webpack_module_cache__[moduleId];
-/******/ 	}
-/******/ 
-/******/ 	// Return the exports of the module
-/******/ 	return module.exports;
-/******/ }
-/******/ 
-/************************************************************************/
-/******/ /* webpack/runtime/asset-relocator-loader */
-/******/ if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = decodeURIComponent(new URL('.', import.meta.url).pathname).slice(import.meta.url.match(/^file:\/\/\/\w:/) ? 1 : 0, -1) + "/";
-/******/ 
-/************************************************************************/
-var __webpack_exports__ = {};
+/***/ 7572:
+/***/ ((__unused_webpack_module, exports) => {
 
-;// CONCATENATED MODULE: external "node:fs"
-const external_node_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs");
-;// CONCATENATED MODULE: external "node:os"
-const external_node_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:os");
-;// CONCATENATED MODULE: external "node:path"
-const external_node_path_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:path");
-;// CONCATENATED MODULE: external "os"
-const external_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("os");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/utils.js
-// We use any as a valid input type
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/**
- * Sanitizes an input into a string so it can be passed into issueCommand safely
- * @param input input to sanitize into a string
- */
-function utils_toCommandValue(input) {
-    if (input === null || input === undefined) {
-        return '';
-    }
-    else if (typeof input === 'string' || input instanceof String) {
-        return input;
-    }
-    return JSON.stringify(input);
-}
-/**
- *
- * @param annotationProperties
- * @returns The command properties to send with the actual annotation command
- * See IssueCommandProperties: https://github.com/actions/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
- */
-function utils_toCommandProperties(annotationProperties) {
-    if (!Object.keys(annotationProperties).length) {
-        return {};
-    }
-    return {
-        title: annotationProperties.title,
-        file: annotationProperties.file,
-        line: annotationProperties.startLine,
-        endLine: annotationProperties.endLine,
-        col: annotationProperties.startColumn,
-        endColumn: annotationProperties.endColumn
-    };
-}
-//# sourceMappingURL=utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/command.js
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 
-
-/**
- * Issues a command to the GitHub Actions runner
- *
- * @param command - The command name to issue
- * @param properties - Additional properties for the command (key-value pairs)
- * @param message - The message to include with the command
- * @remarks
- * This function outputs a specially formatted string to stdout that the Actions
- * runner interprets as a command. These commands can control workflow behavior,
- * set outputs, create annotations, mask values, and more.
- *
- * Command Format:
- *   ::name key=value,key=value::message
- *
- * @example
- * ```typescript
- * // Issue a warning annotation
- * issueCommand('warning', {}, 'This is a warning message');
- * // Output: ::warning::This is a warning message
- *
- * // Set an environment variable
- * issueCommand('set-env', { name: 'MY_VAR' }, 'some value');
- * // Output: ::set-env name=MY_VAR::some value
- *
- * // Add a secret mask
- * issueCommand('add-mask', {}, 'secretValue123');
- * // Output: ::add-mask::secretValue123
- * ```
- *
- * @internal
- * This is an internal utility function that powers the public API functions
- * such as setSecret, warning, error, and exportVariable.
- */
-function command_issueCommand(command, properties, message) {
-    const cmd = new Command(command, properties, message);
-    process.stdout.write(cmd.toString() + external_os_namespaceObject.EOL);
-}
-function command_issue(name, message = '') {
-    command_issueCommand(name, {}, message);
-}
-const CMD_STRING = '::';
-class Command {
-    constructor(command, properties, message) {
-        if (!command) {
-            command = 'missing.command';
-        }
-        this.command = command;
-        this.properties = properties;
-        this.message = message;
-    }
-    toString() {
-        let cmdStr = CMD_STRING + this.command;
-        if (this.properties && Object.keys(this.properties).length > 0) {
-            cmdStr += ' ';
-            let first = true;
-            for (const key in this.properties) {
-                if (this.properties.hasOwnProperty(key)) {
-                    const val = this.properties[key];
-                    if (val) {
-                        if (first) {
-                            first = false;
-                        }
-                        else {
-                            cmdStr += ',';
-                        }
-                        cmdStr += `${key}=${escapeProperty(val)}`;
-                    }
-                }
-            }
-        }
-        cmdStr += `${CMD_STRING}${escapeData(this.message)}`;
-        return cmdStr;
-    }
-}
-function escapeData(s) {
-    return utils_toCommandValue(s)
-        .replace(/%/g, '%25')
-        .replace(/\r/g, '%0D')
-        .replace(/\n/g, '%0A');
-}
-function escapeProperty(s) {
-    return utils_toCommandValue(s)
-        .replace(/%/g, '%25')
-        .replace(/\r/g, '%0D')
-        .replace(/\n/g, '%0A')
-        .replace(/:/g, '%3A')
-        .replace(/,/g, '%2C');
-}
-//# sourceMappingURL=command.js.map
-;// CONCATENATED MODULE: external "crypto"
-const external_crypto_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("crypto");
-;// CONCATENATED MODULE: external "fs"
-const external_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("fs");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/file-command.js
-// For internal use, subject to change.
-// We use any as a valid input type
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
-
-
-
-function file_command_issueFileCommand(command, message) {
-    const filePath = process.env[`GITHUB_${command}`];
-    if (!filePath) {
-        throw new Error(`Unable to find environment variable for file command ${command}`);
-    }
-    if (!fs.existsSync(filePath)) {
-        throw new Error(`Missing file at path: ${filePath}`);
-    }
-    fs.appendFileSync(filePath, `${toCommandValue(message)}${os.EOL}`, {
-        encoding: 'utf8'
-    });
-}
-function file_command_prepareKeyValueMessage(key, value) {
-    const delimiter = `ghadelimiter_${crypto.randomUUID()}`;
-    const convertedValue = toCommandValue(value);
-    // These should realistically never happen, but just in case someone finds a
-    // way to exploit uuid generation let's not allow keys or values that contain
-    // the delimiter.
-    if (key.includes(delimiter)) {
-        throw new Error(`Unexpected input: name should not contain the delimiter "${delimiter}"`);
-    }
-    if (convertedValue.includes(delimiter)) {
-        throw new Error(`Unexpected input: value should not contain the delimiter "${delimiter}"`);
-    }
-    return `${key}<<${delimiter}${os.EOL}${convertedValue}${os.EOL}${delimiter}`;
-}
-//# sourceMappingURL=file-command.js.map
-;// CONCATENATED MODULE: external "path"
-const external_path_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("path");
-// EXTERNAL MODULE: external "http"
-var external_http_ = __nccwpck_require__(8611);
-// EXTERNAL MODULE: external "https"
-var external_https_ = __nccwpck_require__(5692);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/proxy.js
-function getProxyUrl(reqUrl) {
-    const usingSsl = reqUrl.protocol === 'https:';
-    if (checkBypass(reqUrl)) {
-        return undefined;
-    }
-    const proxyVar = (() => {
-        if (usingSsl) {
-            return process.env['https_proxy'] || process.env['HTTPS_PROXY'];
-        }
-        else {
-            return process.env['http_proxy'] || process.env['HTTP_PROXY'];
-        }
-    })();
-    if (proxyVar) {
-        try {
-            return new DecodedURL(proxyVar);
-        }
-        catch (_a) {
-            if (!proxyVar.startsWith('http://') && !proxyVar.startsWith('https://'))
-                return new DecodedURL(`http://${proxyVar}`);
-        }
-    }
-    else {
-        return undefined;
-    }
-}
-function checkBypass(reqUrl) {
-    if (!reqUrl.hostname) {
-        return false;
-    }
-    const reqHost = reqUrl.hostname;
-    if (isLoopbackAddress(reqHost)) {
-        return true;
-    }
-    const noProxy = process.env['no_proxy'] || process.env['NO_PROXY'] || '';
-    if (!noProxy) {
-        return false;
-    }
-    // Determine the request port
-    let reqPort;
-    if (reqUrl.port) {
-        reqPort = Number(reqUrl.port);
-    }
-    else if (reqUrl.protocol === 'http:') {
-        reqPort = 80;
-    }
-    else if (reqUrl.protocol === 'https:') {
-        reqPort = 443;
-    }
-    // Format the request hostname and hostname with port
-    const upperReqHosts = [reqUrl.hostname.toUpperCase()];
-    if (typeof reqPort === 'number') {
-        upperReqHosts.push(`${upperReqHosts[0]}:${reqPort}`);
-    }
-    // Compare request host against noproxy
-    for (const upperNoProxyItem of noProxy
-        .split(',')
-        .map(x => x.trim().toUpperCase())
-        .filter(x => x)) {
-        if (upperNoProxyItem === '*' ||
-            upperReqHosts.some(x => x === upperNoProxyItem ||
-                x.endsWith(`.${upperNoProxyItem}`) ||
-                (upperNoProxyItem.startsWith('.') &&
-                    x.endsWith(`${upperNoProxyItem}`)))) {
-            return true;
-        }
-    }
-    return false;
-}
-function isLoopbackAddress(host) {
-    const hostLower = host.toLowerCase();
-    return (hostLower === 'localhost' ||
-        hostLower.startsWith('127.') ||
-        hostLower.startsWith('[::1]') ||
-        hostLower.startsWith('[0:0:0:0:0:0:0:1]'));
-}
-class DecodedURL extends URL {
-    constructor(url, base) {
-        super(url, base);
-        this._decodedUsername = decodeURIComponent(super.username);
-        this._decodedPassword = decodeURIComponent(super.password);
-    }
-    get username() {
-        return this._decodedUsername;
-    }
-    get password() {
-        return this._decodedPassword;
-    }
-}
-//# sourceMappingURL=proxy.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/tunnel@0.0.6/node_modules/tunnel/index.js
-var node_modules_tunnel = __nccwpck_require__(7013);
-// EXTERNAL MODULE: ./node_modules/.pnpm/undici@6.29.0/node_modules/undici/index.js
-var undici = __nccwpck_require__(9162);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/index.js
-/* eslint-disable @typescript-eslint/no-explicit-any */
-var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-
-
-
-var HttpCodes;
-(function (HttpCodes) {
-    HttpCodes[HttpCodes["OK"] = 200] = "OK";
-    HttpCodes[HttpCodes["MultipleChoices"] = 300] = "MultipleChoices";
-    HttpCodes[HttpCodes["MovedPermanently"] = 301] = "MovedPermanently";
-    HttpCodes[HttpCodes["ResourceMoved"] = 302] = "ResourceMoved";
-    HttpCodes[HttpCodes["SeeOther"] = 303] = "SeeOther";
-    HttpCodes[HttpCodes["NotModified"] = 304] = "NotModified";
-    HttpCodes[HttpCodes["UseProxy"] = 305] = "UseProxy";
-    HttpCodes[HttpCodes["SwitchProxy"] = 306] = "SwitchProxy";
-    HttpCodes[HttpCodes["TemporaryRedirect"] = 307] = "TemporaryRedirect";
-    HttpCodes[HttpCodes["PermanentRedirect"] = 308] = "PermanentRedirect";
-    HttpCodes[HttpCodes["BadRequest"] = 400] = "BadRequest";
-    HttpCodes[HttpCodes["Unauthorized"] = 401] = "Unauthorized";
-    HttpCodes[HttpCodes["PaymentRequired"] = 402] = "PaymentRequired";
-    HttpCodes[HttpCodes["Forbidden"] = 403] = "Forbidden";
-    HttpCodes[HttpCodes["NotFound"] = 404] = "NotFound";
-    HttpCodes[HttpCodes["MethodNotAllowed"] = 405] = "MethodNotAllowed";
-    HttpCodes[HttpCodes["NotAcceptable"] = 406] = "NotAcceptable";
-    HttpCodes[HttpCodes["ProxyAuthenticationRequired"] = 407] = "ProxyAuthenticationRequired";
-    HttpCodes[HttpCodes["RequestTimeout"] = 408] = "RequestTimeout";
-    HttpCodes[HttpCodes["Conflict"] = 409] = "Conflict";
-    HttpCodes[HttpCodes["Gone"] = 410] = "Gone";
-    HttpCodes[HttpCodes["TooManyRequests"] = 429] = "TooManyRequests";
-    HttpCodes[HttpCodes["InternalServerError"] = 500] = "InternalServerError";
-    HttpCodes[HttpCodes["NotImplemented"] = 501] = "NotImplemented";
-    HttpCodes[HttpCodes["BadGateway"] = 502] = "BadGateway";
-    HttpCodes[HttpCodes["ServiceUnavailable"] = 503] = "ServiceUnavailable";
-    HttpCodes[HttpCodes["GatewayTimeout"] = 504] = "GatewayTimeout";
-})(HttpCodes || (HttpCodes = {}));
-var lib_Headers;
-(function (Headers) {
-    Headers["Accept"] = "accept";
-    Headers["ContentType"] = "content-type";
-})(lib_Headers || (lib_Headers = {}));
-var MediaTypes;
-(function (MediaTypes) {
-    MediaTypes["ApplicationJson"] = "application/json";
-})(MediaTypes || (MediaTypes = {}));
-/**
- * Returns the proxy URL, depending upon the supplied url and proxy environment variables.
- * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
- */
-function lib_getProxyUrl(serverUrl) {
-    const proxyUrl = pm.getProxyUrl(new URL(serverUrl));
-    return proxyUrl ? proxyUrl.href : '';
-}
-const HttpRedirectCodes = [
-    HttpCodes.MovedPermanently,
-    HttpCodes.ResourceMoved,
-    HttpCodes.SeeOther,
-    HttpCodes.TemporaryRedirect,
-    HttpCodes.PermanentRedirect
-];
-const HttpResponseRetryCodes = [
-    HttpCodes.BadGateway,
-    HttpCodes.ServiceUnavailable,
-    HttpCodes.GatewayTimeout
-];
-const RetryableHttpVerbs = (/* unused pure expression or super */ null && (['OPTIONS', 'GET', 'DELETE', 'HEAD']));
-const ExponentialBackoffCeiling = 10;
-const ExponentialBackoffTimeSlice = 5;
-class HttpClientError extends Error {
-    constructor(message, statusCode) {
-        super(message);
-        this.name = 'HttpClientError';
-        this.statusCode = statusCode;
-        Object.setPrototypeOf(this, HttpClientError.prototype);
-    }
-}
-class HttpClientResponse {
-    constructor(message) {
-        this.message = message;
-    }
-    readBody() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
-                let output = Buffer.alloc(0);
-                this.message.on('data', (chunk) => {
-                    output = Buffer.concat([output, chunk]);
-                });
-                this.message.on('end', () => {
-                    resolve(output.toString());
-                });
-            }));
-        });
-    }
-    readBodyBuffer() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
-                const chunks = [];
-                this.message.on('data', (chunk) => {
-                    chunks.push(chunk);
-                });
-                this.message.on('end', () => {
-                    resolve(Buffer.concat(chunks));
-                });
-            }));
-        });
-    }
-}
-function isHttps(requestUrl) {
-    const parsedUrl = new URL(requestUrl);
-    return parsedUrl.protocol === 'https:';
-}
-class lib_HttpClient {
-    constructor(userAgent, handlers, requestOptions) {
-        this._ignoreSslError = false;
-        this._allowRedirects = true;
-        this._allowRedirectDowngrade = false;
-        this._maxRedirects = 50;
-        this._allowRetries = false;
-        this._maxRetries = 1;
-        this._keepAlive = false;
-        this._disposed = false;
-        this.userAgent = this._getUserAgentWithOrchestrationId(userAgent);
-        this.handlers = handlers || [];
-        this.requestOptions = requestOptions;
-        if (requestOptions) {
-            if (requestOptions.ignoreSslError != null) {
-                this._ignoreSslError = requestOptions.ignoreSslError;
-            }
-            this._socketTimeout = requestOptions.socketTimeout;
-            if (requestOptions.allowRedirects != null) {
-                this._allowRedirects = requestOptions.allowRedirects;
-            }
-            if (requestOptions.allowRedirectDowngrade != null) {
-                this._allowRedirectDowngrade = requestOptions.allowRedirectDowngrade;
-            }
-            if (requestOptions.maxRedirects != null) {
-                this._maxRedirects = Math.max(requestOptions.maxRedirects, 0);
-            }
-            if (requestOptions.keepAlive != null) {
-                this._keepAlive = requestOptions.keepAlive;
-            }
-            if (requestOptions.allowRetries != null) {
-                this._allowRetries = requestOptions.allowRetries;
-            }
-            if (requestOptions.maxRetries != null) {
-                this._maxRetries = requestOptions.maxRetries;
-            }
-        }
-    }
-    options(requestUrl, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('OPTIONS', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    get(requestUrl, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('GET', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    del(requestUrl, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('DELETE', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    post(requestUrl, data, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('POST', requestUrl, data, additionalHeaders || {});
-        });
-    }
-    patch(requestUrl, data, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('PATCH', requestUrl, data, additionalHeaders || {});
-        });
-    }
-    put(requestUrl, data, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('PUT', requestUrl, data, additionalHeaders || {});
-        });
-    }
-    head(requestUrl, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request('HEAD', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    sendStream(verb, requestUrl, stream, additionalHeaders) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.request(verb, requestUrl, stream, additionalHeaders);
-        });
-    }
-    /**
-     * Gets a typed object from an endpoint
-     * Be aware that not found returns a null.  Other errors (4xx, 5xx) reject the promise
-     */
-    getJson(requestUrl_1) {
-        return __awaiter(this, arguments, void 0, function* (requestUrl, additionalHeaders = {}) {
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
-            const res = yield this.get(requestUrl, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    postJson(requestUrl_1, obj_1) {
-        return __awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
-            const data = JSON.stringify(obj, null, 2);
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
-            additionalHeaders[lib_Headers.ContentType] =
-                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, MediaTypes.ApplicationJson);
-            const res = yield this.post(requestUrl, data, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    putJson(requestUrl_1, obj_1) {
-        return __awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
-            const data = JSON.stringify(obj, null, 2);
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
-            additionalHeaders[lib_Headers.ContentType] =
-                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, MediaTypes.ApplicationJson);
-            const res = yield this.put(requestUrl, data, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    patchJson(requestUrl_1, obj_1) {
-        return __awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
-            const data = JSON.stringify(obj, null, 2);
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
-            additionalHeaders[lib_Headers.ContentType] =
-                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, MediaTypes.ApplicationJson);
-            const res = yield this.patch(requestUrl, data, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    /**
-     * Makes a raw http request.
-     * All other methods such as get, post, patch, and request ultimately call this.
-     * Prefer get, del, post and patch
-     */
-    request(verb, requestUrl, data, headers) {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (this._disposed) {
-                throw new Error('Client has already been disposed.');
-            }
-            const parsedUrl = new URL(requestUrl);
-            let info = this._prepareRequest(verb, parsedUrl, headers);
-            // Only perform retries on reads since writes may not be idempotent.
-            const maxTries = this._allowRetries && RetryableHttpVerbs.includes(verb)
-                ? this._maxRetries + 1
-                : 1;
-            let numTries = 0;
-            let response;
-            do {
-                response = yield this.requestRaw(info, data);
-                // Check if it's an authentication challenge
-                if (response &&
-                    response.message &&
-                    response.message.statusCode === HttpCodes.Unauthorized) {
-                    let authenticationHandler;
-                    for (const handler of this.handlers) {
-                        if (handler.canHandleAuthentication(response)) {
-                            authenticationHandler = handler;
-                            break;
-                        }
-                    }
-                    if (authenticationHandler) {
-                        return authenticationHandler.handleAuthentication(this, info, data);
-                    }
-                    else {
-                        // We have received an unauthorized response but have no handlers to handle it.
-                        // Let the response return to the caller.
-                        return response;
-                    }
-                }
-                let redirectsRemaining = this._maxRedirects;
-                while (response.message.statusCode &&
-                    HttpRedirectCodes.includes(response.message.statusCode) &&
-                    this._allowRedirects &&
-                    redirectsRemaining > 0) {
-                    const redirectUrl = response.message.headers['location'];
-                    if (!redirectUrl) {
-                        // if there's no location to redirect to, we won't
-                        break;
-                    }
-                    const parsedRedirectUrl = new URL(redirectUrl);
-                    if (parsedUrl.protocol === 'https:' &&
-                        parsedUrl.protocol !== parsedRedirectUrl.protocol &&
-                        !this._allowRedirectDowngrade) {
-                        throw new Error('Redirect from HTTPS to HTTP protocol. This downgrade is not allowed for security reasons. If you want to allow this behavior, set the allowRedirectDowngrade option to true.');
-                    }
-                    // we need to finish reading the response before reassigning response
-                    // which will leak the open socket.
-                    yield response.readBody();
-                    // strip authorization header if redirected to a different hostname
-                    if (parsedRedirectUrl.hostname !== parsedUrl.hostname) {
-                        for (const header in headers) {
-                            // header names are case insensitive
-                            if (header.toLowerCase() === 'authorization') {
-                                delete headers[header];
-                            }
-                        }
-                    }
-                    // let's make the request with the new redirectUrl
-                    info = this._prepareRequest(verb, parsedRedirectUrl, headers);
-                    response = yield this.requestRaw(info, data);
-                    redirectsRemaining--;
-                }
-                if (!response.message.statusCode ||
-                    !HttpResponseRetryCodes.includes(response.message.statusCode)) {
-                    // If not a retry code, return immediately instead of retrying
-                    return response;
-                }
-                numTries += 1;
-                if (numTries < maxTries) {
-                    yield response.readBody();
-                    yield this._performExponentialBackoff(numTries);
-                }
-            } while (numTries < maxTries);
-            return response;
-        });
-    }
-    /**
-     * Needs to be called if keepAlive is set to true in request options.
-     */
-    dispose() {
-        if (this._agent) {
-            this._agent.destroy();
-        }
-        this._disposed = true;
-    }
-    /**
-     * Raw request.
-     * @param info
-     * @param data
-     */
-    requestRaw(info, data) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve, reject) => {
-                function callbackForResult(err, res) {
-                    if (err) {
-                        reject(err);
-                    }
-                    else if (!res) {
-                        // If `err` is not passed, then `res` must be passed.
-                        reject(new Error('Unknown error'));
-                    }
-                    else {
-                        resolve(res);
-                    }
-                }
-                this.requestRawWithCallback(info, data, callbackForResult);
-            });
-        });
-    }
-    /**
-     * Raw request with callback.
-     * @param info
-     * @param data
-     * @param onResult
-     */
-    requestRawWithCallback(info, data, onResult) {
-        if (typeof data === 'string') {
-            if (!info.options.headers) {
-                info.options.headers = {};
-            }
-            info.options.headers['Content-Length'] = Buffer.byteLength(data, 'utf8');
-        }
-        let callbackCalled = false;
-        function handleResult(err, res) {
-            if (!callbackCalled) {
-                callbackCalled = true;
-                onResult(err, res);
-            }
-        }
-        const req = info.httpModule.request(info.options, (msg) => {
-            const res = new HttpClientResponse(msg);
-            handleResult(undefined, res);
-        });
-        let socket;
-        req.on('socket', sock => {
-            socket = sock;
-        });
-        // If we ever get disconnected, we want the socket to timeout eventually
-        req.setTimeout(this._socketTimeout || 3 * 60000, () => {
-            if (socket) {
-                socket.end();
-            }
-            handleResult(new Error(`Request timeout: ${info.options.path}`));
-        });
-        req.on('error', function (err) {
-            // err has statusCode property
-            // res should have headers
-            handleResult(err);
-        });
-        if (data && typeof data === 'string') {
-            req.write(data, 'utf8');
-        }
-        if (data && typeof data !== 'string') {
-            data.on('close', function () {
-                req.end();
-            });
-            data.pipe(req);
-        }
-        else {
-            req.end();
-        }
-    }
-    /**
-     * Gets an http agent. This function is useful when you need an http agent that handles
-     * routing through a proxy server - depending upon the url and proxy environment variables.
-     * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
-     */
-    getAgent(serverUrl) {
-        const parsedUrl = new URL(serverUrl);
-        return this._getAgent(parsedUrl);
-    }
-    getAgentDispatcher(serverUrl) {
-        const parsedUrl = new URL(serverUrl);
-        const proxyUrl = pm.getProxyUrl(parsedUrl);
-        const useProxy = proxyUrl && proxyUrl.hostname;
-        if (!useProxy) {
-            return;
-        }
-        return this._getProxyAgentDispatcher(parsedUrl, proxyUrl);
-    }
-    _prepareRequest(method, requestUrl, headers) {
-        const info = {};
-        info.parsedUrl = requestUrl;
-        const usingSsl = info.parsedUrl.protocol === 'https:';
-        info.httpModule = usingSsl ? https : http;
-        const defaultPort = usingSsl ? 443 : 80;
-        info.options = {};
-        info.options.host = info.parsedUrl.hostname;
-        info.options.port = info.parsedUrl.port
-            ? parseInt(info.parsedUrl.port)
-            : defaultPort;
-        info.options.path =
-            (info.parsedUrl.pathname || '') + (info.parsedUrl.search || '');
-        info.options.method = method;
-        info.options.headers = this._mergeHeaders(headers);
-        if (this.userAgent != null) {
-            info.options.headers['user-agent'] = this.userAgent;
-        }
-        info.options.agent = this._getAgent(info.parsedUrl);
-        // gives handlers an opportunity to participate
-        if (this.handlers) {
-            for (const handler of this.handlers) {
-                handler.prepareRequest(info.options);
-            }
-        }
-        return info;
-    }
-    _mergeHeaders(headers) {
-        if (this.requestOptions && this.requestOptions.headers) {
-            return Object.assign({}, lowercaseKeys(this.requestOptions.headers), lowercaseKeys(headers || {}));
-        }
-        return lowercaseKeys(headers || {});
-    }
-    /**
-     * Gets an existing header value or returns a default.
-     * Handles converting number header values to strings since HTTP headers must be strings.
-     * Note: This returns string | string[] since some headers can have multiple values.
-     * For headers that must always be a single string (like Content-Type), use the
-     * specialized _getExistingOrDefaultContentTypeHeader method instead.
-     */
-    _getExistingOrDefaultHeader(additionalHeaders, header, _default) {
-        let clientHeader;
-        if (this.requestOptions && this.requestOptions.headers) {
-            const headerValue = lowercaseKeys(this.requestOptions.headers)[header];
-            if (headerValue) {
-                clientHeader =
-                    typeof headerValue === 'number' ? headerValue.toString() : headerValue;
-            }
-        }
-        const additionalValue = additionalHeaders[header];
-        if (additionalValue !== undefined) {
-            return typeof additionalValue === 'number'
-                ? additionalValue.toString()
-                : additionalValue;
-        }
-        if (clientHeader !== undefined) {
-            return clientHeader;
-        }
-        return _default;
-    }
-    /**
-     * Specialized version of _getExistingOrDefaultHeader for Content-Type header.
-     * Always returns a single string (not an array) since Content-Type should be a single value.
-     * Converts arrays to comma-separated strings and numbers to strings to ensure type safety.
-     * This was split from _getExistingOrDefaultHeader to provide stricter typing for callers
-     * that assign the result to places expecting a string (e.g., additionalHeaders[Headers.ContentType]).
-     */
-    _getExistingOrDefaultContentTypeHeader(additionalHeaders, _default) {
-        let clientHeader;
-        if (this.requestOptions && this.requestOptions.headers) {
-            const headerValue = lowercaseKeys(this.requestOptions.headers)[lib_Headers.ContentType];
-            if (headerValue) {
-                if (typeof headerValue === 'number') {
-                    clientHeader = String(headerValue);
-                }
-                else if (Array.isArray(headerValue)) {
-                    clientHeader = headerValue.join(', ');
-                }
-                else {
-                    clientHeader = headerValue;
-                }
-            }
-        }
-        const additionalValue = additionalHeaders[lib_Headers.ContentType];
-        // Return the first non-undefined value, converting numbers or arrays to strings if necessary
-        if (additionalValue !== undefined) {
-            if (typeof additionalValue === 'number') {
-                return String(additionalValue);
-            }
-            else if (Array.isArray(additionalValue)) {
-                return additionalValue.join(', ');
-            }
-            else {
-                return additionalValue;
-            }
-        }
-        if (clientHeader !== undefined) {
-            return clientHeader;
-        }
-        return _default;
-    }
-    _getAgent(parsedUrl) {
-        let agent;
-        const proxyUrl = pm.getProxyUrl(parsedUrl);
-        const useProxy = proxyUrl && proxyUrl.hostname;
-        if (this._keepAlive && useProxy) {
-            agent = this._proxyAgent;
-        }
-        if (!useProxy) {
-            agent = this._agent;
-        }
-        // if agent is already assigned use that agent.
-        if (agent) {
-            return agent;
-        }
-        const usingSsl = parsedUrl.protocol === 'https:';
-        let maxSockets = 100;
-        if (this.requestOptions) {
-            maxSockets = this.requestOptions.maxSockets || http.globalAgent.maxSockets;
-        }
-        // This is `useProxy` again, but we need to check `proxyURl` directly for TypeScripts's flow analysis.
-        if (proxyUrl && proxyUrl.hostname) {
-            const agentOptions = {
-                maxSockets,
-                keepAlive: this._keepAlive,
-                proxy: Object.assign(Object.assign({}, ((proxyUrl.username || proxyUrl.password) && {
-                    proxyAuth: `${proxyUrl.username}:${proxyUrl.password}`
-                })), { host: proxyUrl.hostname, port: proxyUrl.port })
-            };
-            let tunnelAgent;
-            const overHttps = proxyUrl.protocol === 'https:';
-            if (usingSsl) {
-                tunnelAgent = overHttps ? tunnel.httpsOverHttps : tunnel.httpsOverHttp;
-            }
-            else {
-                tunnelAgent = overHttps ? tunnel.httpOverHttps : tunnel.httpOverHttp;
-            }
-            agent = tunnelAgent(agentOptions);
-            this._proxyAgent = agent;
-        }
-        // if tunneling agent isn't assigned create a new agent
-        if (!agent) {
-            const options = { keepAlive: this._keepAlive, maxSockets };
-            agent = usingSsl ? new https.Agent(options) : new http.Agent(options);
-            this._agent = agent;
-        }
-        if (usingSsl && this._ignoreSslError) {
-            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
-            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
-            // we have to cast it to any and change it directly
-            agent.options = Object.assign(agent.options || {}, {
-                rejectUnauthorized: false
-            });
-        }
-        return agent;
-    }
-    _getProxyAgentDispatcher(parsedUrl, proxyUrl) {
-        let proxyAgent;
-        if (this._keepAlive) {
-            proxyAgent = this._proxyAgentDispatcher;
-        }
-        // if agent is already assigned use that agent.
-        if (proxyAgent) {
-            return proxyAgent;
-        }
-        const usingSsl = parsedUrl.protocol === 'https:';
-        proxyAgent = new ProxyAgent(Object.assign({ uri: proxyUrl.href, pipelining: !this._keepAlive ? 0 : 1 }, ((proxyUrl.username || proxyUrl.password) && {
-            token: `Basic ${Buffer.from(`${proxyUrl.username}:${proxyUrl.password}`).toString('base64')}`
-        })));
-        this._proxyAgentDispatcher = proxyAgent;
-        if (usingSsl && this._ignoreSslError) {
-            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
-            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
-            // we have to cast it to any and change it directly
-            proxyAgent.options = Object.assign(proxyAgent.options.requestTls || {}, {
-                rejectUnauthorized: false
-            });
-        }
-        return proxyAgent;
-    }
-    _getUserAgentWithOrchestrationId(userAgent) {
-        const baseUserAgent = userAgent || 'actions/http-client';
-        const orchId = process.env['ACTIONS_ORCHESTRATION_ID'];
-        if (orchId) {
-            // Sanitize the orchestration ID to ensure it contains only valid characters
-            // Valid characters: 0-9, a-z, _, -, .
-            const sanitizedId = orchId.replace(/[^a-z0-9_.-]/gi, '_');
-            return `${baseUserAgent} actions_orchestration_id/${sanitizedId}`;
-        }
-        return baseUserAgent;
-    }
-    _performExponentialBackoff(retryNumber) {
-        return __awaiter(this, void 0, void 0, function* () {
-            retryNumber = Math.min(ExponentialBackoffCeiling, retryNumber);
-            const ms = ExponentialBackoffTimeSlice * Math.pow(2, retryNumber);
-            return new Promise(resolve => setTimeout(() => resolve(), ms));
-        });
-    }
-    _processResponse(res, options) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve, reject) => __awaiter(this, void 0, void 0, function* () {
-                const statusCode = res.message.statusCode || 0;
-                const response = {
-                    statusCode,
-                    result: null,
-                    headers: {}
-                };
-                // not found leads to null obj returned
-                if (statusCode === HttpCodes.NotFound) {
-                    resolve(response);
-                }
-                // get the result from the body
-                function dateTimeDeserializer(key, value) {
-                    if (typeof value === 'string') {
-                        const a = new Date(value);
-                        if (!isNaN(a.valueOf())) {
-                            return a;
-                        }
-                    }
-                    return value;
-                }
-                let obj;
-                let contents;
-                try {
-                    contents = yield res.readBody();
-                    if (contents && contents.length > 0) {
-                        if (options && options.deserializeDates) {
-                            obj = JSON.parse(contents, dateTimeDeserializer);
-                        }
-                        else {
-                            obj = JSON.parse(contents);
-                        }
-                        response.result = obj;
-                    }
-                    response.headers = res.message.headers;
-                }
-                catch (err) {
-                    // Invalid resource (contents not json);  leaving result obj null
-                }
-                // note that 3xx redirects are handled by the http layer.
-                if (statusCode > 299) {
-                    let msg;
-                    // if exception/error in body, attempt to get better error
-                    if (obj && obj.message) {
-                        msg = obj.message;
-                    }
-                    else if (contents && contents.length > 0) {
-                        // it may be the case that the exception is in the body message as string
-                        msg = contents;
-                    }
-                    else {
-                        msg = `Failed request: (${statusCode})`;
-                    }
-                    const err = new HttpClientError(msg, statusCode);
-                    err.result = response.result;
-                    reject(err);
-                }
-                else {
-                    resolve(response);
-                }
-            }));
-        });
-    }
-}
-const lowercaseKeys = (obj) => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
-//# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/auth.js
-var auth_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-class BasicCredentialHandler {
-    constructor(username, password) {
-        this.username = username;
-        this.password = password;
-    }
-    prepareRequest(options) {
-        if (!options.headers) {
-            throw Error('The request has no headers');
-        }
-        options.headers['Authorization'] = `Basic ${Buffer.from(`${this.username}:${this.password}`).toString('base64')}`;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication() {
-        return false;
-    }
-    handleAuthentication() {
-        return auth_awaiter(this, void 0, void 0, function* () {
-            throw new Error('not implemented');
-        });
-    }
-}
-class auth_BearerCredentialHandler {
-    constructor(token) {
-        this.token = token;
-    }
-    // currently implements pre-authorization
-    // TODO: support preAuth = false where it hooks on 401
-    prepareRequest(options) {
-        if (!options.headers) {
-            throw Error('The request has no headers');
-        }
-        options.headers['Authorization'] = `Bearer ${this.token}`;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication() {
-        return false;
-    }
-    handleAuthentication() {
-        return auth_awaiter(this, void 0, void 0, function* () {
-            throw new Error('not implemented');
-        });
-    }
-}
-class PersonalAccessTokenCredentialHandler {
-    constructor(token) {
-        this.token = token;
-    }
-    // currently implements pre-authorization
-    // TODO: support preAuth = false where it hooks on 401
-    prepareRequest(options) {
-        if (!options.headers) {
-            throw Error('The request has no headers');
-        }
-        options.headers['Authorization'] = `Basic ${Buffer.from(`PAT:${this.token}`).toString('base64')}`;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication() {
-        return false;
-    }
-    handleAuthentication() {
-        return auth_awaiter(this, void 0, void 0, function* () {
-            throw new Error('not implemented');
-        });
-    }
-}
-//# sourceMappingURL=auth.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/oidc-utils.js
-var oidc_utils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-
-class oidc_utils_OidcClient {
-    static createHttpClient(allowRetry = true, maxRetry = 10) {
-        const requestOptions = {
-            allowRetries: allowRetry,
-            maxRetries: maxRetry
-        };
-        return new HttpClient('actions/oidc-client', [new BearerCredentialHandler(oidc_utils_OidcClient.getRequestToken())], requestOptions);
-    }
-    static getRequestToken() {
-        const token = process.env['ACTIONS_ID_TOKEN_REQUEST_TOKEN'];
-        if (!token) {
-            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_TOKEN env variable');
-        }
-        return token;
-    }
-    static getIDTokenUrl() {
-        const runtimeUrl = process.env['ACTIONS_ID_TOKEN_REQUEST_URL'];
-        if (!runtimeUrl) {
-            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable');
-        }
-        return runtimeUrl;
-    }
-    static getCall(id_token_url) {
-        return oidc_utils_awaiter(this, void 0, void 0, function* () {
-            var _a;
-            const httpclient = oidc_utils_OidcClient.createHttpClient();
-            const res = yield httpclient
-                .getJson(id_token_url)
-                .catch(error => {
-                throw new Error(`Failed to get ID Token. \n 
-        Error Code : ${error.statusCode}\n 
-        Error Message: ${error.message}`);
-            });
-            const id_token = (_a = res.result) === null || _a === void 0 ? void 0 : _a.value;
-            if (!id_token) {
-                throw new Error('Response json body do not have ID Token field');
-            }
-            return id_token;
-        });
-    }
-    static getIDToken(audience) {
-        return oidc_utils_awaiter(this, void 0, void 0, function* () {
-            try {
-                // New ID Token is requested from action service
-                let id_token_url = oidc_utils_OidcClient.getIDTokenUrl();
-                if (audience) {
-                    const encodedAudience = encodeURIComponent(audience);
-                    id_token_url = `${id_token_url}&audience=${encodedAudience}`;
-                }
-                debug(`ID token url is ${id_token_url}`);
-                const id_token = yield oidc_utils_OidcClient.getCall(id_token_url);
-                setSecret(id_token);
-                return id_token;
-            }
-            catch (error) {
-                throw new Error(`Error message: ${error.message}`);
-            }
-        });
-    }
-}
-//# sourceMappingURL=oidc-utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/summary.js
-var summary_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-const { access, appendFile, writeFile } = external_fs_namespaceObject.promises;
-const SUMMARY_ENV_VAR = 'GITHUB_STEP_SUMMARY';
-const SUMMARY_DOCS_URL = 'https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary';
-class Summary {
-    constructor() {
-        this._buffer = '';
-    }
-    /**
-     * Finds the summary file path from the environment, rejects if env var is not found or file does not exist
-     * Also checks r/w permissions.
-     *
-     * @returns step summary file path
-     */
-    filePath() {
-        return summary_awaiter(this, void 0, void 0, function* () {
-            if (this._filePath) {
-                return this._filePath;
-            }
-            const pathFromEnv = process.env[SUMMARY_ENV_VAR];
-            if (!pathFromEnv) {
-                throw new Error(`Unable to find environment variable for $${SUMMARY_ENV_VAR}. Check if your runtime environment supports job summaries.`);
-            }
-            try {
-                yield access(pathFromEnv, external_fs_namespaceObject.constants.R_OK | external_fs_namespaceObject.constants.W_OK);
-            }
-            catch (_a) {
-                throw new Error(`Unable to access summary file: '${pathFromEnv}'. Check if the file has correct read/write permissions.`);
-            }
-            this._filePath = pathFromEnv;
-            return this._filePath;
-        });
-    }
-    /**
-     * Wraps content in an HTML tag, adding any HTML attributes
-     *
-     * @param {string} tag HTML tag to wrap
-     * @param {string | null} content content within the tag
-     * @param {[attribute: string]: string} attrs key-value list of HTML attributes to add
-     *
-     * @returns {string} content wrapped in HTML element
-     */
-    wrap(tag, content, attrs = {}) {
-        const htmlAttrs = Object.entries(attrs)
-            .map(([key, value]) => ` ${key}="${value}"`)
-            .join('');
-        if (!content) {
-            return `<${tag}${htmlAttrs}>`;
-        }
-        return `<${tag}${htmlAttrs}>${content}</${tag}>`;
-    }
-    /**
-     * Writes text in the buffer to the summary buffer file and empties buffer. Will append by default.
-     *
-     * @param {SummaryWriteOptions} [options] (optional) options for write operation
-     *
-     * @returns {Promise<Summary>} summary instance
-     */
-    write(options) {
-        return summary_awaiter(this, void 0, void 0, function* () {
-            const overwrite = !!(options === null || options === void 0 ? void 0 : options.overwrite);
-            const filePath = yield this.filePath();
-            const writeFunc = overwrite ? writeFile : appendFile;
-            yield writeFunc(filePath, this._buffer, { encoding: 'utf8' });
-            return this.emptyBuffer();
-        });
-    }
-    /**
-     * Clears the summary buffer and wipes the summary file
-     *
-     * @returns {Summary} summary instance
-     */
-    clear() {
-        return summary_awaiter(this, void 0, void 0, function* () {
-            return this.emptyBuffer().write({ overwrite: true });
-        });
-    }
-    /**
-     * Returns the current summary buffer as a string
-     *
-     * @returns {string} string of summary buffer
-     */
-    stringify() {
-        return this._buffer;
-    }
-    /**
-     * If the summary buffer is empty
-     *
-     * @returns {boolen} true if the buffer is empty
-     */
-    isEmptyBuffer() {
-        return this._buffer.length === 0;
-    }
-    /**
-     * Resets the summary buffer without writing to summary file
-     *
-     * @returns {Summary} summary instance
-     */
-    emptyBuffer() {
-        this._buffer = '';
-        return this;
-    }
-    /**
-     * Adds raw text to the summary buffer
-     *
-     * @param {string} text content to add
-     * @param {boolean} [addEOL=false] (optional) append an EOL to the raw text (default: false)
-     *
-     * @returns {Summary} summary instance
-     */
-    addRaw(text, addEOL = false) {
-        this._buffer += text;
-        return addEOL ? this.addEOL() : this;
-    }
-    /**
-     * Adds the operating system-specific end-of-line marker to the buffer
-     *
-     * @returns {Summary} summary instance
-     */
-    addEOL() {
-        return this.addRaw(external_os_namespaceObject.EOL);
-    }
-    /**
-     * Adds an HTML codeblock to the summary buffer
-     *
-     * @param {string} code content to render within fenced code block
-     * @param {string} lang (optional) language to syntax highlight code
-     *
-     * @returns {Summary} summary instance
-     */
-    addCodeBlock(code, lang) {
-        const attrs = Object.assign({}, (lang && { lang }));
-        const element = this.wrap('pre', this.wrap('code', code), attrs);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML list to the summary buffer
-     *
-     * @param {string[]} items list of items to render
-     * @param {boolean} [ordered=false] (optional) if the rendered list should be ordered or not (default: false)
-     *
-     * @returns {Summary} summary instance
-     */
-    addList(items, ordered = false) {
-        const tag = ordered ? 'ol' : 'ul';
-        const listItems = items.map(item => this.wrap('li', item)).join('');
-        const element = this.wrap(tag, listItems);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML table to the summary buffer
-     *
-     * @param {SummaryTableCell[]} rows table rows
-     *
-     * @returns {Summary} summary instance
-     */
-    addTable(rows) {
-        const tableBody = rows
-            .map(row => {
-            const cells = row
-                .map(cell => {
-                if (typeof cell === 'string') {
-                    return this.wrap('td', cell);
-                }
-                const { header, data, colspan, rowspan } = cell;
-                const tag = header ? 'th' : 'td';
-                const attrs = Object.assign(Object.assign({}, (colspan && { colspan })), (rowspan && { rowspan }));
-                return this.wrap(tag, data, attrs);
-            })
-                .join('');
-            return this.wrap('tr', cells);
-        })
-            .join('');
-        const element = this.wrap('table', tableBody);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds a collapsable HTML details element to the summary buffer
-     *
-     * @param {string} label text for the closed state
-     * @param {string} content collapsable content
-     *
-     * @returns {Summary} summary instance
-     */
-    addDetails(label, content) {
-        const element = this.wrap('details', this.wrap('summary', label) + content);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML image tag to the summary buffer
-     *
-     * @param {string} src path to the image you to embed
-     * @param {string} alt text description of the image
-     * @param {SummaryImageOptions} options (optional) addition image attributes
-     *
-     * @returns {Summary} summary instance
-     */
-    addImage(src, alt, options) {
-        const { width, height } = options || {};
-        const attrs = Object.assign(Object.assign({}, (width && { width })), (height && { height }));
-        const element = this.wrap('img', null, Object.assign({ src, alt }, attrs));
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML section heading element
-     *
-     * @param {string} text heading text
-     * @param {number | string} [level=1] (optional) the heading level, default: 1
-     *
-     * @returns {Summary} summary instance
-     */
-    addHeading(text, level) {
-        const tag = `h${level}`;
-        const allowedTag = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tag)
-            ? tag
-            : 'h1';
-        const element = this.wrap(allowedTag, text);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML thematic break (<hr>) to the summary buffer
-     *
-     * @returns {Summary} summary instance
-     */
-    addSeparator() {
-        const element = this.wrap('hr', null);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML line break (<br>) to the summary buffer
-     *
-     * @returns {Summary} summary instance
-     */
-    addBreak() {
-        const element = this.wrap('br', null);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML blockquote to the summary buffer
-     *
-     * @param {string} text quote text
-     * @param {string} cite (optional) citation url
-     *
-     * @returns {Summary} summary instance
-     */
-    addQuote(text, cite) {
-        const attrs = Object.assign({}, (cite && { cite }));
-        const element = this.wrap('blockquote', text, attrs);
-        return this.addRaw(element).addEOL();
-    }
-    /**
-     * Adds an HTML anchor tag to the summary buffer
-     *
-     * @param {string} text link text/content
-     * @param {string} href hyperlink
-     *
-     * @returns {Summary} summary instance
-     */
-    addLink(text, href) {
-        const element = this.wrap('a', text, { href });
-        return this.addRaw(element).addEOL();
-    }
-}
-const _summary = new Summary();
-/**
- * @deprecated use `core.summary`
- */
-const markdownSummary = (/* unused pure expression or super */ null && (_summary));
-const summary = _summary;
-//# sourceMappingURL=summary.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/path-utils.js
-
-/**
- * toPosixPath converts the given path to the posix form. On Windows, \\ will be
- * replaced with /.
- *
- * @param pth. Path to transform.
- * @return string Posix path.
- */
-function toPosixPath(pth) {
-    return pth.replace(/[\\]/g, '/');
-}
-/**
- * toWin32Path converts the given path to the win32 form. On Linux, / will be
- * replaced with \\.
- *
- * @param pth. Path to transform.
- * @return string Win32 path.
- */
-function toWin32Path(pth) {
-    return pth.replace(/[/]/g, '\\');
-}
-/**
- * toPlatformPath converts the given path to a platform-specific path. It does
- * this by replacing instances of / and \ with the platform-specific path
- * separator.
- *
- * @param pth The path to platformize.
- * @return string The platform-specific path.
- */
-function toPlatformPath(pth) {
-    return pth.replace(/[/\\]/g, path.sep);
-}
-//# sourceMappingURL=path-utils.js.map
-// EXTERNAL MODULE: external "string_decoder"
-var external_string_decoder_ = __nccwpck_require__(3193);
-// EXTERNAL MODULE: external "events"
-var external_events_ = __nccwpck_require__(4434);
-;// CONCATENATED MODULE: external "child_process"
-const external_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("child_process");
-// EXTERNAL MODULE: external "assert"
-var external_assert_ = __nccwpck_require__(2613);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+io@3.0.2/node_modules/@actions/io/lib/io-util.js
-var io_util_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-const { chmod, copyFile, lstat, mkdir, open: io_util_open, readdir, rename, rm, rmdir, stat, symlink, unlink } = external_fs_namespaceObject.promises;
-// export const {open} = 'fs'
-const IS_WINDOWS = process.platform === 'win32';
-/**
- * Custom implementation of readlink to ensure Windows junctions
- * maintain trailing backslash for backward compatibility with Node.js < 24
- *
- * In Node.js 20, Windows junctions (directory symlinks) always returned paths
- * with trailing backslashes. Node.js 24 removed this behavior, which breaks
- * code that relied on this format for path operations.
- *
- * This implementation restores the Node 20 behavior by adding a trailing
- * backslash to all junction results on Windows.
- */
-function readlink(fsPath) {
-    return io_util_awaiter(this, void 0, void 0, function* () {
-        const result = yield fs.promises.readlink(fsPath);
-        // On Windows, restore Node 20 behavior: add trailing backslash to all results
-        // since junctions on Windows are always directory links
-        if (IS_WINDOWS && !result.endsWith('\\')) {
-            return `${result}\\`;
-        }
-        return result;
-    });
-}
-// See https://github.com/nodejs/node/blob/d0153aee367422d0858105abec186da4dff0a0c5/deps/uv/include/uv/win.h#L691
-const UV_FS_O_EXLOCK = 0x10000000;
-const READONLY = external_fs_namespaceObject.constants.O_RDONLY;
-function exists(fsPath) {
-    return io_util_awaiter(this, void 0, void 0, function* () {
-        try {
-            yield stat(fsPath);
-        }
-        catch (err) {
-            if (err.code === 'ENOENT') {
-                return false;
-            }
-            throw err;
-        }
-        return true;
-    });
-}
-function isDirectory(fsPath_1) {
-    return io_util_awaiter(this, arguments, void 0, function* (fsPath, useStat = false) {
-        const stats = useStat ? yield stat(fsPath) : yield lstat(fsPath);
-        return stats.isDirectory();
-    });
-}
-/**
- * On OSX/Linux, true if path starts with '/'. On Windows, true for paths like:
- * \, \hello, \\hello\share, C:, and C:\hello (and corresponding alternate separator cases).
- */
-function isRooted(p) {
-    p = normalizeSeparators(p);
-    if (!p) {
-        throw new Error('isRooted() parameter "p" cannot be empty');
-    }
-    if (IS_WINDOWS) {
-        return (p.startsWith('\\') || /^[A-Z]:/i.test(p) // e.g. \ or \hello or \\hello
-        ); // e.g. C: or C:\hello
-    }
-    return p.startsWith('/');
-}
-/**
- * Best effort attempt to determine whether a file exists and is executable.
- * @param filePath    file path to check
- * @param extensions  additional file extensions to try
- * @return if file exists and is executable, returns the file path. otherwise empty string.
- */
-function tryGetExecutablePath(filePath, extensions) {
-    return io_util_awaiter(this, void 0, void 0, function* () {
-        let stats = undefined;
-        try {
-            // test file exists
-            stats = yield stat(filePath);
-        }
-        catch (err) {
-            if (err.code !== 'ENOENT') {
-                // eslint-disable-next-line no-console
-                console.log(`Unexpected error attempting to determine if executable file exists '${filePath}': ${err}`);
-            }
-        }
-        if (stats && stats.isFile()) {
-            if (IS_WINDOWS) {
-                // on Windows, test for valid extension
-                const upperExt = external_path_namespaceObject.extname(filePath).toUpperCase();
-                if (extensions.some(validExt => validExt.toUpperCase() === upperExt)) {
-                    return filePath;
-                }
-            }
-            else {
-                if (isUnixExecutable(stats)) {
-                    return filePath;
-                }
-            }
-        }
-        // try each extension
-        const originalFilePath = filePath;
-        for (const extension of extensions) {
-            filePath = originalFilePath + extension;
-            stats = undefined;
-            try {
-                stats = yield stat(filePath);
-            }
-            catch (err) {
-                if (err.code !== 'ENOENT') {
-                    // eslint-disable-next-line no-console
-                    console.log(`Unexpected error attempting to determine if executable file exists '${filePath}': ${err}`);
-                }
-            }
-            if (stats && stats.isFile()) {
-                if (IS_WINDOWS) {
-                    // preserve the case of the actual file (since an extension was appended)
-                    try {
-                        const directory = external_path_namespaceObject.dirname(filePath);
-                        const upperName = external_path_namespaceObject.basename(filePath).toUpperCase();
-                        for (const actualName of yield readdir(directory)) {
-                            if (upperName === actualName.toUpperCase()) {
-                                filePath = external_path_namespaceObject.join(directory, actualName);
-                                break;
-                            }
-                        }
-                    }
-                    catch (err) {
-                        // eslint-disable-next-line no-console
-                        console.log(`Unexpected error attempting to determine the actual case of the file '${filePath}': ${err}`);
-                    }
-                    return filePath;
-                }
-                else {
-                    if (isUnixExecutable(stats)) {
-                        return filePath;
-                    }
-                }
-            }
-        }
-        return '';
-    });
-}
-function normalizeSeparators(p) {
-    p = p || '';
-    if (IS_WINDOWS) {
-        // convert slashes on Windows
-        p = p.replace(/\//g, '\\');
-        // remove redundant slashes
-        return p.replace(/\\\\+/g, '\\');
-    }
-    // remove redundant slashes
-    return p.replace(/\/\/+/g, '/');
-}
-// on Mac/Linux, test the execute bit
-//     R   W  X  R  W X R W X
-//   256 128 64 32 16 8 4 2 1
-function isUnixExecutable(stats) {
-    return ((stats.mode & 1) > 0 ||
-        ((stats.mode & 8) > 0 &&
-            process.getgid !== undefined &&
-            stats.gid === process.getgid()) ||
-        ((stats.mode & 64) > 0 &&
-            process.getuid !== undefined &&
-            stats.uid === process.getuid()));
-}
-// Get the path of cmd.exe in windows
-function getCmdPath() {
-    var _a;
-    return (_a = process.env['COMSPEC']) !== null && _a !== void 0 ? _a : `cmd.exe`;
-}
-//# sourceMappingURL=io-util.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+io@3.0.2/node_modules/@actions/io/lib/io.js
-var io_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-
-/**
- * Copies a file or folder.
- * Based off of shelljs - https://github.com/shelljs/shelljs/blob/9237f66c52e5daa40458f94f9565e18e8132f5a6/src/cp.js
- *
- * @param     source    source path
- * @param     dest      destination path
- * @param     options   optional. See CopyOptions.
- */
-function cp(source_1, dest_1) {
-    return io_awaiter(this, arguments, void 0, function* (source, dest, options = {}) {
-        const { force, recursive, copySourceDirectory } = readCopyOptions(options);
-        const destStat = (yield ioUtil.exists(dest)) ? yield ioUtil.stat(dest) : null;
-        // Dest is an existing file, but not forcing
-        if (destStat && destStat.isFile() && !force) {
-            return;
-        }
-        // If dest is an existing directory, should copy inside.
-        const newDest = destStat && destStat.isDirectory() && copySourceDirectory
-            ? path.join(dest, path.basename(source))
-            : dest;
-        if (!(yield ioUtil.exists(source))) {
-            throw new Error(`no such file or directory: ${source}`);
-        }
-        const sourceStat = yield ioUtil.stat(source);
-        if (sourceStat.isDirectory()) {
-            if (!recursive) {
-                throw new Error(`Failed to copy. ${source} is a directory, but tried to copy without recursive flag.`);
-            }
-            else {
-                yield cpDirRecursive(source, newDest, 0, force);
-            }
-        }
-        else {
-            if (path.relative(source, newDest) === '') {
-                // a file cannot be copied to itself
-                throw new Error(`'${newDest}' and '${source}' are the same file`);
-            }
-            yield io_copyFile(source, newDest, force);
-        }
-    });
-}
-/**
- * Moves a path.
- *
- * @param     source    source path
- * @param     dest      destination path
- * @param     options   optional. See MoveOptions.
- */
-function mv(source_1, dest_1) {
-    return io_awaiter(this, arguments, void 0, function* (source, dest, options = {}) {
-        if (yield ioUtil.exists(dest)) {
-            let destExists = true;
-            if (yield ioUtil.isDirectory(dest)) {
-                // If dest is directory copy src into dest
-                dest = path.join(dest, path.basename(source));
-                destExists = yield ioUtil.exists(dest);
-            }
-            if (destExists) {
-                if (options.force == null || options.force) {
-                    yield rmRF(dest);
-                }
-                else {
-                    throw new Error('Destination already exists');
-                }
-            }
-        }
-        yield mkdirP(path.dirname(dest));
-        yield ioUtil.rename(source, dest);
-    });
-}
-/**
- * Remove a path recursively with force
- *
- * @param inputPath path to remove
- */
-function rmRF(inputPath) {
-    return io_awaiter(this, void 0, void 0, function* () {
-        if (ioUtil.IS_WINDOWS) {
-            // Check for invalid characters
-            // https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file
-            if (/[*"<>|]/.test(inputPath)) {
-                throw new Error('File path must not contain `*`, `"`, `<`, `>` or `|` on Windows');
-            }
-        }
-        try {
-            // note if path does not exist, error is silent
-            yield ioUtil.rm(inputPath, {
-                force: true,
-                maxRetries: 3,
-                recursive: true,
-                retryDelay: 300
-            });
-        }
-        catch (err) {
-            throw new Error(`File was unable to be removed ${err}`);
-        }
-    });
-}
-/**
- * Make a directory.  Creates the full path with folders in between
- * Will throw if it fails
- *
- * @param   fsPath        path to create
- * @returns Promise<void>
- */
-function mkdirP(fsPath) {
-    return io_awaiter(this, void 0, void 0, function* () {
-        ok(fsPath, 'a path argument must be provided');
-        yield ioUtil.mkdir(fsPath, { recursive: true });
-    });
-}
-/**
- * Returns path of a tool had the tool actually been invoked.  Resolves via paths.
- * If you check and the tool does not exist, it will throw.
- *
- * @param     tool              name of the tool
- * @param     check             whether to check if tool exists
- * @returns   Promise<string>   path to tool
- */
-function which(tool, check) {
-    return io_awaiter(this, void 0, void 0, function* () {
-        if (!tool) {
-            throw new Error("parameter 'tool' is required");
-        }
-        // recursive when check=true
-        if (check) {
-            const result = yield which(tool, false);
-            if (!result) {
-                if (IS_WINDOWS) {
-                    throw new Error(`Unable to locate executable file: ${tool}. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also verify the file has a valid extension for an executable file.`);
-                }
-                else {
-                    throw new Error(`Unable to locate executable file: ${tool}. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also check the file mode to verify the file is executable.`);
-                }
-            }
-            return result;
-        }
-        const matches = yield findInPath(tool);
-        if (matches && matches.length > 0) {
-            return matches[0];
-        }
-        return '';
-    });
-}
-/**
- * Returns a list of all occurrences of the given tool on the system path.
- *
- * @returns   Promise<string[]>  the paths of the tool
- */
-function findInPath(tool) {
-    return io_awaiter(this, void 0, void 0, function* () {
-        if (!tool) {
-            throw new Error("parameter 'tool' is required");
-        }
-        // build the list of extensions to try
-        const extensions = [];
-        if (IS_WINDOWS && process.env['PATHEXT']) {
-            for (const extension of process.env['PATHEXT'].split(external_path_namespaceObject.delimiter)) {
-                if (extension) {
-                    extensions.push(extension);
-                }
-            }
-        }
-        // if it's rooted, return it if exists. otherwise return empty.
-        if (isRooted(tool)) {
-            const filePath = yield tryGetExecutablePath(tool, extensions);
-            if (filePath) {
-                return [filePath];
-            }
-            return [];
-        }
-        // if any path separators, return empty
-        if (tool.includes(external_path_namespaceObject.sep)) {
-            return [];
-        }
-        // build the list of directories
-        //
-        // Note, technically "where" checks the current directory on Windows. From a toolkit perspective,
-        // it feels like we should not do this. Checking the current directory seems like more of a use
-        // case of a shell, and the which() function exposed by the toolkit should strive for consistency
-        // across platforms.
-        const directories = [];
-        if (process.env.PATH) {
-            for (const p of process.env.PATH.split(external_path_namespaceObject.delimiter)) {
-                if (p) {
-                    directories.push(p);
-                }
-            }
-        }
-        // find all matches
-        const matches = [];
-        for (const directory of directories) {
-            const filePath = yield tryGetExecutablePath(external_path_namespaceObject.join(directory, tool), extensions);
-            if (filePath) {
-                matches.push(filePath);
-            }
-        }
-        return matches;
-    });
-}
-function readCopyOptions(options) {
-    const force = options.force == null ? true : options.force;
-    const recursive = Boolean(options.recursive);
-    const copySourceDirectory = options.copySourceDirectory == null
-        ? true
-        : Boolean(options.copySourceDirectory);
-    return { force, recursive, copySourceDirectory };
-}
-function cpDirRecursive(sourceDir, destDir, currentDepth, force) {
-    return io_awaiter(this, void 0, void 0, function* () {
-        // Ensure there is not a run away recursive copy
-        if (currentDepth >= 255)
-            return;
-        currentDepth++;
-        yield mkdirP(destDir);
-        const files = yield ioUtil.readdir(sourceDir);
-        for (const fileName of files) {
-            const srcFile = `${sourceDir}/${fileName}`;
-            const destFile = `${destDir}/${fileName}`;
-            const srcFileStat = yield ioUtil.lstat(srcFile);
-            if (srcFileStat.isDirectory()) {
-                // Recurse
-                yield cpDirRecursive(srcFile, destFile, currentDepth, force);
-            }
-            else {
-                yield io_copyFile(srcFile, destFile, force);
-            }
-        }
-        // Change the mode for the newly created directory
-        yield ioUtil.chmod(destDir, (yield ioUtil.stat(sourceDir)).mode);
-    });
-}
-// Buffered file copy
-function io_copyFile(srcFile, destFile, force) {
-    return io_awaiter(this, void 0, void 0, function* () {
-        if ((yield ioUtil.lstat(srcFile)).isSymbolicLink()) {
-            // unlink/re-link it
-            try {
-                yield ioUtil.lstat(destFile);
-                yield ioUtil.unlink(destFile);
-            }
-            catch (e) {
-                // Try to override file permission
-                if (e.code === 'EPERM') {
-                    yield ioUtil.chmod(destFile, '0666');
-                    yield ioUtil.unlink(destFile);
-                }
-                // other errors = it doesn't exist, no work to do
-            }
-            // Copy over symlink
-            const symlinkFull = yield ioUtil.readlink(srcFile);
-            yield ioUtil.symlink(symlinkFull, destFile, ioUtil.IS_WINDOWS ? 'junction' : null);
-        }
-        else if (!(yield ioUtil.exists(destFile)) || force) {
-            yield ioUtil.copyFile(srcFile, destFile);
-        }
-    });
-}
-//# sourceMappingURL=io.js.map
-;// CONCATENATED MODULE: external "timers"
-const external_timers_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("timers");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+exec@3.0.0/node_modules/@actions/exec/lib/toolrunner.js
-var toolrunner_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-
-
-
-
-
-/* eslint-disable @typescript-eslint/unbound-method */
-const toolrunner_IS_WINDOWS = process.platform === 'win32';
-/*
- * Class for running command line tools. Handles quoting and arg parsing in a platform agnostic way.
- */
-class ToolRunner extends external_events_.EventEmitter {
-    constructor(toolPath, args, options) {
-        super();
-        if (!toolPath) {
-            throw new Error("Parameter 'toolPath' cannot be null or empty.");
-        }
-        this.toolPath = toolPath;
-        this.args = args || [];
-        this.options = options || {};
-    }
-    _debug(message) {
-        if (this.options.listeners && this.options.listeners.debug) {
-            this.options.listeners.debug(message);
-        }
-    }
-    _getCommandString(options, noPrefix) {
-        const toolPath = this._getSpawnFileName();
-        const args = this._getSpawnArgs(options);
-        let cmd = noPrefix ? '' : '[command]'; // omit prefix when piped to a second tool
-        if (toolrunner_IS_WINDOWS) {
-            // Windows + cmd file
-            if (this._isCmdFile()) {
-                cmd += toolPath;
-                for (const a of args) {
-                    cmd += ` ${a}`;
-                }
-            }
-            // Windows + verbatim
-            else if (options.windowsVerbatimArguments) {
-                cmd += `"${toolPath}"`;
-                for (const a of args) {
-                    cmd += ` ${a}`;
-                }
-            }
-            // Windows (regular)
-            else {
-                cmd += this._windowsQuoteCmdArg(toolPath);
-                for (const a of args) {
-                    cmd += ` ${this._windowsQuoteCmdArg(a)}`;
-                }
-            }
-        }
-        else {
-            // OSX/Linux - this can likely be improved with some form of quoting.
-            // creating processes on Unix is fundamentally different than Windows.
-            // on Unix, execvp() takes an arg array.
-            cmd += toolPath;
-            for (const a of args) {
-                cmd += ` ${a}`;
-            }
-        }
-        return cmd;
-    }
-    _processLineBuffer(data, strBuffer, onLine) {
-        try {
-            let s = strBuffer + data.toString();
-            let n = s.indexOf(external_os_namespaceObject.EOL);
-            while (n > -1) {
-                const line = s.substring(0, n);
-                onLine(line);
-                // the rest of the string ...
-                s = s.substring(n + external_os_namespaceObject.EOL.length);
-                n = s.indexOf(external_os_namespaceObject.EOL);
-            }
-            return s;
-        }
-        catch (err) {
-            // streaming lines to console is best effort.  Don't fail a build.
-            this._debug(`error processing line. Failed with error ${err}`);
-            return '';
-        }
-    }
-    _getSpawnFileName() {
-        if (toolrunner_IS_WINDOWS) {
-            if (this._isCmdFile()) {
-                return process.env['COMSPEC'] || 'cmd.exe';
-            }
-        }
-        return this.toolPath;
-    }
-    _getSpawnArgs(options) {
-        if (toolrunner_IS_WINDOWS) {
-            if (this._isCmdFile()) {
-                let argline = `/D /S /C "${this._windowsQuoteCmdArg(this.toolPath)}`;
-                for (const a of this.args) {
-                    argline += ' ';
-                    argline += options.windowsVerbatimArguments
-                        ? a
-                        : this._windowsQuoteCmdArg(a);
-                }
-                argline += '"';
-                return [argline];
-            }
-        }
-        return this.args;
-    }
-    _endsWith(str, end) {
-        return str.endsWith(end);
-    }
-    _isCmdFile() {
-        const upperToolPath = this.toolPath.toUpperCase();
-        return (this._endsWith(upperToolPath, '.CMD') ||
-            this._endsWith(upperToolPath, '.BAT'));
-    }
-    _windowsQuoteCmdArg(arg) {
-        // for .exe, apply the normal quoting rules that libuv applies
-        if (!this._isCmdFile()) {
-            return this._uvQuoteCmdArg(arg);
-        }
-        // otherwise apply quoting rules specific to the cmd.exe command line parser.
-        // the libuv rules are generic and are not designed specifically for cmd.exe
-        // command line parser.
-        //
-        // for a detailed description of the cmd.exe command line parser, refer to
-        // http://stackoverflow.com/questions/4094699/how-does-the-windows-command-interpreter-cmd-exe-parse-scripts/7970912#7970912
-        // need quotes for empty arg
-        if (!arg) {
-            return '""';
-        }
-        // determine whether the arg needs to be quoted
-        const cmdSpecialChars = [
-            ' ',
-            '\t',
-            '&',
-            '(',
-            ')',
-            '[',
-            ']',
-            '{',
-            '}',
-            '^',
-            '=',
-            ';',
-            '!',
-            "'",
-            '+',
-            ',',
-            '`',
-            '~',
-            '|',
-            '<',
-            '>',
-            '"'
-        ];
-        let needsQuotes = false;
-        for (const char of arg) {
-            if (cmdSpecialChars.some(x => x === char)) {
-                needsQuotes = true;
-                break;
-            }
-        }
-        // short-circuit if quotes not needed
-        if (!needsQuotes) {
-            return arg;
-        }
-        // the following quoting rules are very similar to the rules that by libuv applies.
-        //
-        // 1) wrap the string in quotes
-        //
-        // 2) double-up quotes - i.e. " => ""
-        //
-        //    this is different from the libuv quoting rules. libuv replaces " with \", which unfortunately
-        //    doesn't work well with a cmd.exe command line.
-        //
-        //    note, replacing " with "" also works well if the arg is passed to a downstream .NET console app.
-        //    for example, the command line:
-        //          foo.exe "myarg:""my val"""
-        //    is parsed by a .NET console app into an arg array:
-        //          [ "myarg:\"my val\"" ]
-        //    which is the same end result when applying libuv quoting rules. although the actual
-        //    command line from libuv quoting rules would look like:
-        //          foo.exe "myarg:\"my val\""
-        //
-        // 3) double-up slashes that precede a quote,
-        //    e.g.  hello \world    => "hello \world"
-        //          hello\"world    => "hello\\""world"
-        //          hello\\"world   => "hello\\\\""world"
-        //          hello world\    => "hello world\\"
-        //
-        //    technically this is not required for a cmd.exe command line, or the batch argument parser.
-        //    the reasons for including this as a .cmd quoting rule are:
-        //
-        //    a) this is optimized for the scenario where the argument is passed from the .cmd file to an
-        //       external program. many programs (e.g. .NET console apps) rely on the slash-doubling rule.
-        //
-        //    b) it's what we've been doing previously (by deferring to node default behavior) and we
-        //       haven't heard any complaints about that aspect.
-        //
-        // note, a weakness of the quoting rules chosen here, is that % is not escaped. in fact, % cannot be
-        // escaped when used on the command line directly - even though within a .cmd file % can be escaped
-        // by using %%.
-        //
-        // the saving grace is, on the command line, %var% is left as-is if var is not defined. this contrasts
-        // the line parsing rules within a .cmd file, where if var is not defined it is replaced with nothing.
-        //
-        // one option that was explored was replacing % with ^% - i.e. %var% => ^%var^%. this hack would
-        // often work, since it is unlikely that var^ would exist, and the ^ character is removed when the
-        // variable is used. the problem, however, is that ^ is not removed when %* is used to pass the args
-        // to an external program.
-        //
-        // an unexplored potential solution for the % escaping problem, is to create a wrapper .cmd file.
-        // % can be escaped within a .cmd file.
-        let reverse = '"';
-        let quoteHit = true;
-        for (let i = arg.length; i > 0; i--) {
-            // walk the string in reverse
-            reverse += arg[i - 1];
-            if (quoteHit && arg[i - 1] === '\\') {
-                reverse += '\\'; // double the slash
-            }
-            else if (arg[i - 1] === '"') {
-                quoteHit = true;
-                reverse += '"'; // double the quote
-            }
-            else {
-                quoteHit = false;
-            }
-        }
-        reverse += '"';
-        return reverse.split('').reverse().join('');
-    }
-    _uvQuoteCmdArg(arg) {
-        // Tool runner wraps child_process.spawn() and needs to apply the same quoting as
-        // Node in certain cases where the undocumented spawn option windowsVerbatimArguments
-        // is used.
-        //
-        // Since this function is a port of quote_cmd_arg from Node 4.x (technically, lib UV,
-        // see https://github.com/nodejs/node/blob/v4.x/deps/uv/src/win/process.c for details),
-        // pasting copyright notice from Node within this function:
-        //
-        //      Copyright Joyent, Inc. and other Node contributors. All rights reserved.
-        //
-        //      Permission is hereby granted, free of charge, to any person obtaining a copy
-        //      of this software and associated documentation files (the "Software"), to
-        //      deal in the Software without restriction, including without limitation the
-        //      rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-        //      sell copies of the Software, and to permit persons to whom the Software is
-        //      furnished to do so, subject to the following conditions:
-        //
-        //      The above copyright notice and this permission notice shall be included in
-        //      all copies or substantial portions of the Software.
-        //
-        //      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        //      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-        //      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-        //      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-        //      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-        //      FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-        //      IN THE SOFTWARE.
-        if (!arg) {
-            // Need double quotation for empty argument
-            return '""';
-        }
-        if (!arg.includes(' ') && !arg.includes('\t') && !arg.includes('"')) {
-            // No quotation needed
-            return arg;
-        }
-        if (!arg.includes('"') && !arg.includes('\\')) {
-            // No embedded double quotes or backslashes, so I can just wrap
-            // quote marks around the whole thing.
-            return `"${arg}"`;
-        }
-        // Expected input/output:
-        //   input : hello"world
-        //   output: "hello\"world"
-        //   input : hello""world
-        //   output: "hello\"\"world"
-        //   input : hello\world
-        //   output: hello\world
-        //   input : hello\\world
-        //   output: hello\\world
-        //   input : hello\"world
-        //   output: "hello\\\"world"
-        //   input : hello\\"world
-        //   output: "hello\\\\\"world"
-        //   input : hello world\
-        //   output: "hello world\\" - note the comment in libuv actually reads "hello world\"
-        //                             but it appears the comment is wrong, it should be "hello world\\"
-        let reverse = '"';
-        let quoteHit = true;
-        for (let i = arg.length; i > 0; i--) {
-            // walk the string in reverse
-            reverse += arg[i - 1];
-            if (quoteHit && arg[i - 1] === '\\') {
-                reverse += '\\';
-            }
-            else if (arg[i - 1] === '"') {
-                quoteHit = true;
-                reverse += '\\';
-            }
-            else {
-                quoteHit = false;
-            }
-        }
-        reverse += '"';
-        return reverse.split('').reverse().join('');
-    }
-    _cloneExecOptions(options) {
-        options = options || {};
-        const result = {
-            cwd: options.cwd || process.cwd(),
-            env: options.env || process.env,
-            silent: options.silent || false,
-            windowsVerbatimArguments: options.windowsVerbatimArguments || false,
-            failOnStdErr: options.failOnStdErr || false,
-            ignoreReturnCode: options.ignoreReturnCode || false,
-            delay: options.delay || 10000
-        };
-        result.outStream = options.outStream || process.stdout;
-        result.errStream = options.errStream || process.stderr;
-        return result;
-    }
-    _getSpawnOptions(options, toolPath) {
-        options = options || {};
-        const result = {};
-        result.cwd = options.cwd;
-        result.env = options.env;
-        result['windowsVerbatimArguments'] =
-            options.windowsVerbatimArguments || this._isCmdFile();
-        if (options.windowsVerbatimArguments) {
-            result.argv0 = `"${toolPath}"`;
-        }
-        return result;
-    }
-    /**
-     * Exec a tool.
-     * Output will be streamed to the live console.
-     * Returns promise with return code
-     *
-     * @param     tool     path to tool to exec
-     * @param     options  optional exec options.  See ExecOptions
-     * @returns   number
-     */
-    exec() {
-        return toolrunner_awaiter(this, void 0, void 0, function* () {
-            // root the tool path if it is unrooted and contains relative pathing
-            if (!isRooted(this.toolPath) &&
-                (this.toolPath.includes('/') ||
-                    (toolrunner_IS_WINDOWS && this.toolPath.includes('\\')))) {
-                // prefer options.cwd if it is specified, however options.cwd may also need to be rooted
-                this.toolPath = external_path_namespaceObject.resolve(process.cwd(), this.options.cwd || process.cwd(), this.toolPath);
-            }
-            // if the tool is only a file name, then resolve it from the PATH
-            // otherwise verify it exists (add extension on Windows if necessary)
-            this.toolPath = yield which(this.toolPath, true);
-            return new Promise((resolve, reject) => toolrunner_awaiter(this, void 0, void 0, function* () {
-                this._debug(`exec tool: ${this.toolPath}`);
-                this._debug('arguments:');
-                for (const arg of this.args) {
-                    this._debug(`   ${arg}`);
-                }
-                const optionsNonNull = this._cloneExecOptions(this.options);
-                if (!optionsNonNull.silent && optionsNonNull.outStream) {
-                    optionsNonNull.outStream.write(this._getCommandString(optionsNonNull) + external_os_namespaceObject.EOL);
-                }
-                const state = new ExecState(optionsNonNull, this.toolPath);
-                state.on('debug', (message) => {
-                    this._debug(message);
-                });
-                if (this.options.cwd && !(yield exists(this.options.cwd))) {
-                    return reject(new Error(`The cwd: ${this.options.cwd} does not exist!`));
-                }
-                const fileName = this._getSpawnFileName();
-                const cp = external_child_process_namespaceObject.spawn(fileName, this._getSpawnArgs(optionsNonNull), this._getSpawnOptions(this.options, fileName));
-                let stdbuffer = '';
-                if (cp.stdout) {
-                    cp.stdout.on('data', (data) => {
-                        if (this.options.listeners && this.options.listeners.stdout) {
-                            this.options.listeners.stdout(data);
-                        }
-                        if (!optionsNonNull.silent && optionsNonNull.outStream) {
-                            optionsNonNull.outStream.write(data);
-                        }
-                        stdbuffer = this._processLineBuffer(data, stdbuffer, (line) => {
-                            if (this.options.listeners && this.options.listeners.stdline) {
-                                this.options.listeners.stdline(line);
-                            }
-                        });
-                    });
-                }
-                let errbuffer = '';
-                if (cp.stderr) {
-                    cp.stderr.on('data', (data) => {
-                        state.processStderr = true;
-                        if (this.options.listeners && this.options.listeners.stderr) {
-                            this.options.listeners.stderr(data);
-                        }
-                        if (!optionsNonNull.silent &&
-                            optionsNonNull.errStream &&
-                            optionsNonNull.outStream) {
-                            const s = optionsNonNull.failOnStdErr
-                                ? optionsNonNull.errStream
-                                : optionsNonNull.outStream;
-                            s.write(data);
-                        }
-                        errbuffer = this._processLineBuffer(data, errbuffer, (line) => {
-                            if (this.options.listeners && this.options.listeners.errline) {
-                                this.options.listeners.errline(line);
-                            }
-                        });
-                    });
-                }
-                cp.on('error', (err) => {
-                    state.processError = err.message;
-                    state.processExited = true;
-                    state.processClosed = true;
-                    state.CheckComplete();
-                });
-                cp.on('exit', (code) => {
-                    state.processExitCode = code;
-                    state.processExited = true;
-                    this._debug(`Exit code ${code} received from tool '${this.toolPath}'`);
-                    state.CheckComplete();
-                });
-                cp.on('close', (code) => {
-                    state.processExitCode = code;
-                    state.processExited = true;
-                    state.processClosed = true;
-                    this._debug(`STDIO streams have closed for tool '${this.toolPath}'`);
-                    state.CheckComplete();
-                });
-                state.on('done', (error, exitCode) => {
-                    if (stdbuffer.length > 0) {
-                        this.emit('stdline', stdbuffer);
-                    }
-                    if (errbuffer.length > 0) {
-                        this.emit('errline', errbuffer);
-                    }
-                    cp.removeAllListeners();
-                    if (error) {
-                        reject(error);
-                    }
-                    else {
-                        resolve(exitCode);
-                    }
-                });
-                if (this.options.input) {
-                    if (!cp.stdin) {
-                        throw new Error('child process missing stdin');
-                    }
-                    cp.stdin.end(this.options.input);
-                }
-            }));
-        });
-    }
-}
-/**
- * Convert an arg string to an array of args. Handles escaping
- *
- * @param    argString   string of arguments
- * @returns  string[]    array of arguments
- */
-function argStringToArray(argString) {
-    const args = [];
-    let inQuotes = false;
-    let escaped = false;
-    let arg = '';
-    function append(c) {
-        // we only escape double quotes.
-        if (escaped && c !== '"') {
-            arg += '\\';
-        }
-        arg += c;
-        escaped = false;
-    }
-    for (let i = 0; i < argString.length; i++) {
-        const c = argString.charAt(i);
-        if (c === '"') {
-            if (!escaped) {
-                inQuotes = !inQuotes;
-            }
-            else {
-                append(c);
-            }
-            continue;
-        }
-        if (c === '\\' && escaped) {
-            append(c);
-            continue;
-        }
-        if (c === '\\' && inQuotes) {
-            escaped = true;
-            continue;
-        }
-        if (c === ' ' && !inQuotes) {
-            if (arg.length > 0) {
-                args.push(arg);
-                arg = '';
-            }
-            continue;
-        }
-        append(c);
-    }
-    if (arg.length > 0) {
-        args.push(arg.trim());
-    }
-    return args;
-}
-class ExecState extends external_events_.EventEmitter {
-    constructor(options, toolPath) {
-        super();
-        this.processClosed = false; // tracks whether the process has exited and stdio is closed
-        this.processError = '';
-        this.processExitCode = 0;
-        this.processExited = false; // tracks whether the process has exited
-        this.processStderr = false; // tracks whether stderr was written to
-        this.delay = 10000; // 10 seconds
-        this.done = false;
-        this.timeout = null;
-        if (!toolPath) {
-            throw new Error('toolPath must not be empty');
-        }
-        this.options = options;
-        this.toolPath = toolPath;
-        if (options.delay) {
-            this.delay = options.delay;
-        }
-    }
-    CheckComplete() {
-        if (this.done) {
-            return;
-        }
-        if (this.processClosed) {
-            this._setResult();
-        }
-        else if (this.processExited) {
-            this.timeout = (0,external_timers_namespaceObject.setTimeout)(ExecState.HandleTimeout, this.delay, this);
-        }
-    }
-    _debug(message) {
-        this.emit('debug', message);
-    }
-    _setResult() {
-        // determine whether there is an error
-        let error;
-        if (this.processExited) {
-            if (this.processError) {
-                error = new Error(`There was an error when attempting to execute the process '${this.toolPath}'. This may indicate the process failed to start. Error: ${this.processError}`);
-            }
-            else if (this.processExitCode !== 0 && !this.options.ignoreReturnCode) {
-                error = new Error(`The process '${this.toolPath}' failed with exit code ${this.processExitCode}`);
-            }
-            else if (this.processStderr && this.options.failOnStdErr) {
-                error = new Error(`The process '${this.toolPath}' failed because one or more lines were written to the STDERR stream`);
-            }
-        }
-        // clear the timeout
-        if (this.timeout) {
-            clearTimeout(this.timeout);
-            this.timeout = null;
-        }
-        this.done = true;
-        this.emit('done', error, this.processExitCode);
-    }
-    static HandleTimeout(state) {
-        if (state.done) {
-            return;
-        }
-        if (!state.processClosed && state.processExited) {
-            const message = `The STDIO streams did not close within ${state.delay / 1000} seconds of the exit event from process '${state.toolPath}'. This may indicate a child process inherited the STDIO streams and has not yet exited.`;
-            state._debug(message);
-        }
-        state._setResult();
-    }
-}
-//# sourceMappingURL=toolrunner.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+exec@3.0.0/node_modules/@actions/exec/lib/exec.js
-var exec_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-/**
- * Exec a command.
- * Output will be streamed to the live console.
- * Returns promise with return code
- *
- * @param     commandLine        command to execute (can include additional args). Must be correctly escaped.
- * @param     args               optional arguments for tool. Escaping is handled by the lib.
- * @param     options            optional exec options.  See ExecOptions
- * @returns   Promise<number>    exit code
- */
-function exec_exec(commandLine, args, options) {
-    return exec_awaiter(this, void 0, void 0, function* () {
-        const commandArgs = tr.argStringToArray(commandLine);
-        if (commandArgs.length === 0) {
-            throw new Error(`Parameter 'commandLine' cannot be null or empty.`);
-        }
-        // Path to tool to execute should be first arg
-        const toolPath = commandArgs[0];
-        args = commandArgs.slice(1).concat(args || []);
-        const runner = new tr.ToolRunner(toolPath, args, options);
-        return runner.exec();
-    });
-}
-/**
- * Exec a command and get the output.
- * Output will be streamed to the live console.
- * Returns promise with the exit code and collected stdout and stderr
- *
- * @param     commandLine           command to execute (can include additional args). Must be correctly escaped.
- * @param     args                  optional arguments for tool. Escaping is handled by the lib.
- * @param     options               optional exec options.  See ExecOptions
- * @returns   Promise<ExecOutput>   exit code, stdout, and stderr
- */
-function getExecOutput(commandLine, args, options) {
-    return exec_awaiter(this, void 0, void 0, function* () {
-        var _a, _b;
-        let stdout = '';
-        let stderr = '';
-        //Using string decoder covers the case where a mult-byte character is split
-        const stdoutDecoder = new StringDecoder('utf8');
-        const stderrDecoder = new StringDecoder('utf8');
-        const originalStdoutListener = (_a = options === null || options === void 0 ? void 0 : options.listeners) === null || _a === void 0 ? void 0 : _a.stdout;
-        const originalStdErrListener = (_b = options === null || options === void 0 ? void 0 : options.listeners) === null || _b === void 0 ? void 0 : _b.stderr;
-        const stdErrListener = (data) => {
-            stderr += stderrDecoder.write(data);
-            if (originalStdErrListener) {
-                originalStdErrListener(data);
-            }
-        };
-        const stdOutListener = (data) => {
-            stdout += stdoutDecoder.write(data);
-            if (originalStdoutListener) {
-                originalStdoutListener(data);
-            }
-        };
-        const listeners = Object.assign(Object.assign({}, options === null || options === void 0 ? void 0 : options.listeners), { stdout: stdOutListener, stderr: stdErrListener });
-        const exitCode = yield exec_exec(commandLine, args, Object.assign(Object.assign({}, options), { listeners }));
-        //flush any remaining characters
-        stdout += stdoutDecoder.end();
-        stderr += stderrDecoder.end();
-        return {
-            exitCode,
-            stdout,
-            stderr
-        };
-    });
-}
-//# sourceMappingURL=exec.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/platform.js
-var platform_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-const getWindowsInfo = () => platform_awaiter(void 0, void 0, void 0, function* () {
-    const { stdout: version } = yield exec.getExecOutput('powershell -command "(Get-CimInstance -ClassName Win32_OperatingSystem).Version"', undefined, {
-        silent: true
-    });
-    const { stdout: name } = yield exec.getExecOutput('powershell -command "(Get-CimInstance -ClassName Win32_OperatingSystem).Caption"', undefined, {
-        silent: true
-    });
-    return {
-        name: name.trim(),
-        version: version.trim()
-    };
-});
-const getMacOsInfo = () => platform_awaiter(void 0, void 0, void 0, function* () {
-    var _a, _b, _c, _d;
-    const { stdout } = yield exec.getExecOutput('sw_vers', undefined, {
-        silent: true
-    });
-    const version = (_b = (_a = stdout.match(/ProductVersion:\s*(.+)/)) === null || _a === void 0 ? void 0 : _a[1]) !== null && _b !== void 0 ? _b : '';
-    const name = (_d = (_c = stdout.match(/ProductName:\s*(.+)/)) === null || _c === void 0 ? void 0 : _c[1]) !== null && _d !== void 0 ? _d : '';
-    return {
-        name,
-        version
-    };
-});
-const getLinuxInfo = () => platform_awaiter(void 0, void 0, void 0, function* () {
-    const { stdout } = yield exec.getExecOutput('lsb_release', ['-i', '-r', '-s'], {
-        silent: true
-    });
-    const [name, version] = stdout.trim().split('\n');
-    return {
-        name,
-        version
-    };
-});
-const platform = external_os_namespaceObject.platform();
-const arch = external_os_namespaceObject.arch();
-const isWindows = platform === 'win32';
-const isMacOS = platform === 'darwin';
-const isLinux = platform === 'linux';
-function getDetails() {
-    return platform_awaiter(this, void 0, void 0, function* () {
-        return Object.assign(Object.assign({}, (yield (isWindows
-            ? getWindowsInfo()
-            : isMacOS
-                ? getMacOsInfo()
-                : getLinuxInfo()))), { platform,
-            arch,
-            isWindows,
-            isMacOS,
-            isLinux });
-    });
-}
-//# sourceMappingURL=platform.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/core.js
-var core_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-
-
-
-
-/**
- * The code to exit an action
- */
-var ExitCode;
-(function (ExitCode) {
-    /**
-     * A code indicating that the action was successful
-     */
-    ExitCode[ExitCode["Success"] = 0] = "Success";
-    /**
-     * A code indicating that the action was a failure
-     */
-    ExitCode[ExitCode["Failure"] = 1] = "Failure";
-})(ExitCode || (ExitCode = {}));
-//-----------------------------------------------------------------------
-// Variables
-//-----------------------------------------------------------------------
-/**
- * Sets env variable for this action and future actions in the job
- * @param name the name of the variable to set
- * @param val the value of the variable. Non-string values will be converted to a string via JSON.stringify
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function exportVariable(name, val) {
-    const convertedVal = toCommandValue(val);
-    process.env[name] = convertedVal;
-    const filePath = process.env['GITHUB_ENV'] || '';
-    if (filePath) {
-        return issueFileCommand('ENV', prepareKeyValueMessage(name, val));
-    }
-    issueCommand('set-env', { name }, convertedVal);
-}
-/**
- * Registers a secret which will get masked from logs
- *
- * @param secret - Value of the secret to be masked
- * @remarks
- * This function instructs the Actions runner to mask the specified value in any
- * logs produced during the workflow run. Once registered, the secret value will
- * be replaced with asterisks (***) whenever it appears in console output, logs,
- * or error messages.
- *
- * This is useful for protecting sensitive information such as:
- * - API keys
- * - Access tokens
- * - Authentication credentials
- * - URL parameters containing signatures (SAS tokens)
- *
- * Note that masking only affects future logs; any previous appearances of the
- * secret in logs before calling this function will remain unmasked.
- *
- * @example
- * ```typescript
- * // Register an API token as a secret
- * const apiToken = "abc123xyz456";
- * setSecret(apiToken);
- *
- * // Now any logs containing this value will show *** instead
- * console.log(`Using token: ${apiToken}`); // Outputs: "Using token: ***"
- * ```
- */
-function core_setSecret(secret) {
-    issueCommand('add-mask', {}, secret);
-}
-/**
- * Prepends inputPath to the PATH (for this action and future actions)
- * @param inputPath
- */
-function addPath(inputPath) {
-    const filePath = process.env['GITHUB_PATH'] || '';
-    if (filePath) {
-        issueFileCommand('PATH', inputPath);
-    }
-    else {
-        issueCommand('add-path', {}, inputPath);
-    }
-    process.env['PATH'] = `${inputPath}${path.delimiter}${process.env['PATH']}`;
-}
-/**
- * Gets the value of an input.
- * Unless trimWhitespace is set to false in InputOptions, the value is also trimmed.
- * Returns an empty string if the value is not defined.
- *
- * @param     name     name of the input to get
- * @param     options  optional. See InputOptions.
- * @returns   string
- */
-function getInput(name, options) {
-    const val = process.env[`INPUT_${name.replace(/ /g, '_').toUpperCase()}`] || '';
-    if (options && options.required && !val) {
-        throw new Error(`Input required and not supplied: ${name}`);
-    }
-    if (options && options.trimWhitespace === false) {
-        return val;
-    }
-    return val.trim();
-}
-/**
- * Gets the values of an multiline input.  Each value is also trimmed.
- *
- * @param     name     name of the input to get
- * @param     options  optional. See InputOptions.
- * @returns   string[]
- *
- */
-function getMultilineInput(name, options) {
-    const inputs = getInput(name, options)
-        .split('\n')
-        .filter(x => x !== '');
-    if (options && options.trimWhitespace === false) {
-        return inputs;
-    }
-    return inputs.map(input => input.trim());
-}
-/**
- * Gets the input value of the boolean type in the YAML 1.2 "core schema" specification.
- * Support boolean input list: `true | True | TRUE | false | False | FALSE` .
- * The return value is also in boolean type.
- * ref: https://yaml.org/spec/1.2/spec.html#id2804923
- *
- * @param     name     name of the input to get
- * @param     options  optional. See InputOptions.
- * @returns   boolean
- */
-function getBooleanInput(name, options) {
-    const trueValue = ['true', 'True', 'TRUE'];
-    const falseValue = ['false', 'False', 'FALSE'];
-    const val = getInput(name, options);
-    if (trueValue.includes(val))
-        return true;
-    if (falseValue.includes(val))
-        return false;
-    throw new TypeError(`Input does not meet YAML 1.2 "Core Schema" specification: ${name}\n` +
-        `Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
-}
-/**
- * Sets the value of an output.
- *
- * @param     name     name of the output to set
- * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function setOutput(name, value) {
-    const filePath = process.env['GITHUB_OUTPUT'] || '';
-    if (filePath) {
-        return issueFileCommand('OUTPUT', prepareKeyValueMessage(name, value));
-    }
-    process.stdout.write(os.EOL);
-    issueCommand('set-output', { name }, toCommandValue(value));
-}
-/**
- * Enables or disables the echoing of commands into stdout for the rest of the step.
- * Echoing is disabled by default if ACTIONS_STEP_DEBUG is not set.
- *
- */
-function setCommandEcho(enabled) {
-    issue('echo', enabled ? 'on' : 'off');
-}
-//-----------------------------------------------------------------------
-// Results
-//-----------------------------------------------------------------------
-/**
- * Sets the action status to failed.
- * When the action exits it will be with an exit code of 1
- * @param message add error issue message
- */
-function setFailed(message) {
-    process.exitCode = ExitCode.Failure;
-    error(message);
-}
-//-----------------------------------------------------------------------
-// Logging Commands
-//-----------------------------------------------------------------------
-/**
- * Gets whether Actions Step Debug is on or not
- */
-function isDebug() {
-    return process.env['RUNNER_DEBUG'] === '1';
-}
-/**
- * Writes debug message to user log
- * @param message debug message
- */
-function core_debug(message) {
-    issueCommand('debug', {}, message);
-}
-/**
- * Adds an error issue
- * @param message error issue message. Errors will be converted to string via toString()
- * @param properties optional properties to add to the annotation.
- */
-function error(message, properties = {}) {
-    command_issueCommand('error', utils_toCommandProperties(properties), message instanceof Error ? message.toString() : message);
-}
-/**
- * Adds a warning issue
- * @param message warning issue message. Errors will be converted to string via toString()
- * @param properties optional properties to add to the annotation.
- */
-function warning(message, properties = {}) {
-    command_issueCommand('warning', utils_toCommandProperties(properties), message instanceof Error ? message.toString() : message);
-}
-/**
- * Adds a notice issue
- * @param message notice issue message. Errors will be converted to string via toString()
- * @param properties optional properties to add to the annotation.
- */
-function notice(message, properties = {}) {
-    issueCommand('notice', toCommandProperties(properties), message instanceof Error ? message.toString() : message);
-}
-/**
- * Writes info to log with console.log.
- * @param message info message
- */
-function info(message) {
-    process.stdout.write(message + external_os_namespaceObject.EOL);
-}
-/**
- * Begin an output group.
- *
- * Output until the next `groupEnd` will be foldable in this group
- *
- * @param name The name of the output group
- */
-function startGroup(name) {
-    command_issue('group', name);
-}
-/**
- * End an output group.
- */
-function endGroup() {
-    command_issue('endgroup');
-}
-/**
- * Wrap an asynchronous function call in a group.
- *
- * Returns the same type as the function itself.
- *
- * @param name The name of the group
- * @param fn The function to wrap in the group
- */
-function group(name, fn) {
-    return core_awaiter(this, void 0, void 0, function* () {
-        startGroup(name);
-        let result;
-        try {
-            result = yield fn();
-        }
-        finally {
-            endGroup();
-        }
-        return result;
-    });
-}
-//-----------------------------------------------------------------------
-// Wrapper action state
-//-----------------------------------------------------------------------
-/**
- * Saves state for current action, the state can only be retrieved by this action's post job execution.
- *
- * @param     name     name of the state to store
- * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function saveState(name, value) {
-    const filePath = process.env['GITHUB_STATE'] || '';
-    if (filePath) {
-        return issueFileCommand('STATE', prepareKeyValueMessage(name, value));
-    }
-    issueCommand('save-state', { name }, toCommandValue(value));
-}
-/**
- * Gets the value of an state set by this action's main execution.
- *
- * @param     name     name of the state to get
- * @returns   string
- */
-function getState(name) {
-    return process.env[`STATE_${name}`] || '';
-}
-function getIDToken(aud) {
-    return core_awaiter(this, void 0, void 0, function* () {
-        return yield OidcClient.getIDToken(aud);
-    });
-}
-/**
- * Summary exports
- */
-
-/**
- * @deprecated use core.summary
- */
-
-/**
- * Path exports
- */
-
-/**
- * Platform utilities exports
- */
-
-//# sourceMappingURL=core.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@supabase+supabase-js@2.117.2/node_modules/@supabase/supabase-js/dist/tracingRegistry.mjs
-//#region src/lib/tracingRegistry.ts
-const EXTRACTOR_KEY = Symbol.for("@supabase/supabase-js.traceContextExtractor");
-/**
-* Register the trace context extractor used by all Supabase clients in this
-* process. Called by the `@supabase/supabase-js/tracing` subpath as an import
-* side effect; the last registration wins.
-*/
-function registerTraceContextExtractor(extractor) {
-	globalThis[EXTRACTOR_KEY] = extractor;
-}
-/**
-* The currently registered trace context extractor, if any.
-*/
-function getTraceContextExtractor() {
-	return globalThis[EXTRACTOR_KEY];
-}
-
-//#endregion
-
-//# sourceMappingURL=tracingRegistry.mjs.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@supabase+functions-js@2.117.2/node_modules/@supabase/functions-js/dist/main/index.js
-var main = __nccwpck_require__(7559);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@supabase+postgrest-js@2.117.2/node_modules/@supabase/postgrest-js/dist/index.mjs
 //#region src/PostgrestError.ts
 /**
 * Error format
@@ -51109,11 +49805,4354 @@ var src_default = {
 };
 
 //#endregion
+exports.PostgrestBuilder = PostgrestBuilder;
+exports.PostgrestClient = PostgrestClient;
+exports.PostgrestError = PostgrestError;
+exports.PostgrestFilterBuilder = PostgrestFilterBuilder;
+exports.PostgrestQueryBuilder = PostgrestQueryBuilder;
+exports.PostgrestTransformBuilder = PostgrestTransformBuilder;
+exports["default"] = src_default;
+//# sourceMappingURL=index.cjs.map
 
-//# sourceMappingURL=index.mjs.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@supabase+realtime-js@2.117.2/node_modules/@supabase/realtime-js/dist/main/index.js
-var dist_main = __nccwpck_require__(209);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/iceberg-js@0.8.1/node_modules/iceberg-js/dist/index.mjs
+/***/ }),
+
+/***/ 464:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+let iceberg_js = __nccwpck_require__(612);
+
+//#region \0@oxc-project+runtime@0.103.0/helpers/typeof.js
+function _typeof(o) {
+	"@babel/helpers - typeof";
+	return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o$1) {
+		return typeof o$1;
+	} : function(o$1) {
+		return o$1 && "function" == typeof Symbol && o$1.constructor === Symbol && o$1 !== Symbol.prototype ? "symbol" : typeof o$1;
+	}, _typeof(o);
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/toPrimitive.js
+function toPrimitive(t, r) {
+	if ("object" != _typeof(t) || !t) return t;
+	var e = t[Symbol.toPrimitive];
+	if (void 0 !== e) {
+		var i = e.call(t, r || "default");
+		if ("object" != _typeof(i)) return i;
+		throw new TypeError("@@toPrimitive must return a primitive value.");
+	}
+	return ("string" === r ? String : Number)(t);
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/toPropertyKey.js
+function toPropertyKey(t) {
+	var i = toPrimitive(t, "string");
+	return "symbol" == _typeof(i) ? i : i + "";
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/defineProperty.js
+function _defineProperty(e, r, t) {
+	return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+		value: t,
+		enumerable: !0,
+		configurable: !0,
+		writable: !0
+	}) : e[r] = t, e;
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/objectSpread2.js
+function ownKeys(e, r) {
+	var t = Object.keys(e);
+	if (Object.getOwnPropertySymbols) {
+		var o = Object.getOwnPropertySymbols(e);
+		r && (o = o.filter(function(r$1) {
+			return Object.getOwnPropertyDescriptor(e, r$1).enumerable;
+		})), t.push.apply(t, o);
+	}
+	return t;
+}
+function _objectSpread2(e) {
+	for (var r = 1; r < arguments.length; r++) {
+		var t = null != arguments[r] ? arguments[r] : {};
+		r % 2 ? ownKeys(Object(t), !0).forEach(function(r$1) {
+			_defineProperty(e, r$1, t[r$1]);
+		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r$1) {
+			Object.defineProperty(e, r$1, Object.getOwnPropertyDescriptor(t, r$1));
+		});
+	}
+	return e;
+}
+
+//#endregion
+//#region src/lib/common/errors.ts
+/**
+* Base error class for all Storage errors
+* Supports both 'storage' and 'vectors' namespaces
+*/
+var StorageError = class extends Error {
+	constructor(message, namespace = "storage", status, statusCode) {
+		super(message);
+		this.__isStorageError = true;
+		this.namespace = namespace;
+		this.name = namespace === "vectors" ? "StorageVectorsError" : "StorageError";
+		this.status = status;
+		this.statusCode = statusCode;
+	}
+	toJSON() {
+		return {
+			name: this.name,
+			message: this.message,
+			status: this.status,
+			statusCode: this.statusCode
+		};
+	}
+};
+/**
+* Type guard to check if an error is a StorageError
+* @param error - The error to check
+* @returns True if the error is a StorageError
+*/
+function isStorageError(error) {
+	return typeof error === "object" && error !== null && "__isStorageError" in error;
+}
+/**
+* API error returned from Storage service
+* Includes HTTP status code and service-specific error code
+*/
+var StorageApiError = class extends StorageError {
+	constructor(message, status, statusCode, namespace = "storage", code) {
+		super(message, namespace, status, statusCode);
+		this.name = namespace === "vectors" ? "StorageVectorsApiError" : "StorageApiError";
+		this.status = status;
+		this.statusCode = statusCode;
+		this.code = code;
+	}
+	toJSON() {
+		return _objectSpread2(_objectSpread2({}, super.toJSON()), {}, { code: this.code });
+	}
+};
+/**
+* Unknown error that doesn't match expected error patterns
+* Wraps the original error for debugging
+*/
+var StorageUnknownError = class extends StorageError {
+	constructor(message, originalError, namespace = "storage") {
+		super(message, namespace);
+		this.name = namespace === "vectors" ? "StorageVectorsUnknownError" : "StorageUnknownError";
+		this.originalError = originalError;
+	}
+};
+/**
+* @deprecated Use StorageError with namespace='vectors' instead
+* Alias for backward compatibility with existing vector storage code
+*/
+var StorageVectorsError = class extends StorageError {
+	constructor(message) {
+		super(message, "vectors");
+	}
+};
+/**
+* Type guard to check if an error is a StorageVectorsError
+* @param error - The error to check
+* @returns True if the error is a StorageVectorsError
+*/
+function isStorageVectorsError(error) {
+	return isStorageError(error) && error["namespace"] === "vectors";
+}
+/**
+* @deprecated Use StorageApiError with namespace='vectors' instead
+* Alias for backward compatibility with existing vector storage code
+*/
+var StorageVectorsApiError = class extends StorageApiError {
+	constructor(message, status, statusCode) {
+		super(message, status, statusCode, "vectors");
+	}
+};
+/**
+* @deprecated Use StorageUnknownError with namespace='vectors' instead
+* Alias for backward compatibility with existing vector storage code
+*/
+var StorageVectorsUnknownError = class extends StorageUnknownError {
+	constructor(message, originalError) {
+		super(message, originalError, "vectors");
+	}
+};
+/**
+* Error codes specific to S3 Vectors API
+* Maps AWS service errors to application-friendly error codes
+*/
+let StorageVectorsErrorCode = /* @__PURE__ */ function(StorageVectorsErrorCode$1) {
+	/** Internal server fault (HTTP 500) */
+	StorageVectorsErrorCode$1["InternalError"] = "InternalError";
+	/** Resource already exists / conflict (HTTP 409) */
+	StorageVectorsErrorCode$1["S3VectorConflictException"] = "S3VectorConflictException";
+	/** Resource not found (HTTP 404) */
+	StorageVectorsErrorCode$1["S3VectorNotFoundException"] = "S3VectorNotFoundException";
+	/** Delete bucket while not empty (HTTP 400) */
+	StorageVectorsErrorCode$1["S3VectorBucketNotEmpty"] = "S3VectorBucketNotEmpty";
+	/** Exceeds bucket quota/limit (HTTP 400) */
+	StorageVectorsErrorCode$1["S3VectorMaxBucketsExceeded"] = "S3VectorMaxBucketsExceeded";
+	/** Exceeds index quota/limit (HTTP 400) */
+	StorageVectorsErrorCode$1["S3VectorMaxIndexesExceeded"] = "S3VectorMaxIndexesExceeded";
+	return StorageVectorsErrorCode$1;
+}({});
+
+//#endregion
+//#region src/lib/common/headers.ts
+/**
+* Sets a header with case-insensitive deduplication.
+* Removes any existing headers whose name matches (case-insensitive),
+* then sets the value under the lowercase key. Does not mutate the input object.
+*
+* @param headers - Existing headers object
+* @param name - Header name to set (stored as lowercase)
+* @param value - Header value
+* @returns New headers object with the header set
+*/
+function setHeader(headers, name, value) {
+	const result = _objectSpread2({}, headers);
+	const nameLower = name.toLowerCase();
+	for (const key of Object.keys(result)) if (key.toLowerCase() === nameLower) delete result[key];
+	result[nameLower] = value;
+	return result;
+}
+/**
+* Normalizes all header keys to lowercase with case-insensitive deduplication.
+* When duplicate keys exist (differing only in case), the last value wins.
+* Does not mutate the input object.
+*
+* @param headers - Headers object to normalize
+* @returns New headers object with all keys lowercased
+*/
+function normalizeHeaders(headers) {
+	const result = {};
+	for (const [key, value] of Object.entries(headers)) result[key.toLowerCase()] = value;
+	return result;
+}
+
+//#endregion
+//#region src/lib/common/helpers.ts
+/**
+* Resolves the fetch implementation to use
+* Uses custom fetch if provided, otherwise uses native fetch
+*
+* @param customFetch - Optional custom fetch implementation
+* @returns Resolved fetch function
+*/
+const resolveFetch = (customFetch) => {
+	if (customFetch) return (...args) => customFetch(...args);
+	return (...args) => fetch(...args);
+};
+/**
+* Determine if input is a plain object
+* An object is plain if it's created by either {}, new Object(), or Object.create(null)
+*
+* @param value - Value to check
+* @returns True if value is a plain object
+* @source https://github.com/sindresorhus/is-plain-obj
+*/
+const isPlainObject = (value) => {
+	if (typeof value !== "object" || value === null) return false;
+	const prototype = Object.getPrototypeOf(value);
+	return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in value) && !(Symbol.iterator in value);
+};
+/**
+* Recursively converts object keys from snake_case to camelCase
+* Used for normalizing API responses
+*
+* @param item - Object to convert
+* @returns Converted object with camelCase keys
+*/
+const recursiveToCamel = (item) => {
+	if (Array.isArray(item)) return item.map((el) => recursiveToCamel(el));
+	else if (typeof item === "function" || item !== Object(item)) return item;
+	const result = {};
+	Object.entries(item).forEach(([key, value]) => {
+		const newKey = key.replace(/([-_][a-z])/gi, (c) => c.toUpperCase().replace(/[-_]/g, ""));
+		result[newKey] = recursiveToCamel(value);
+	});
+	return result;
+};
+/**
+* Validates if a given bucket name is valid according to Supabase Storage API rules
+* Mirrors backend validation from: storage/src/storage/limits.ts:isValidBucketName()
+*
+* Rules:
+* - Length: 1-100 characters
+* - Allowed characters: alphanumeric (a-z, A-Z, 0-9), underscore (_), and safe special characters
+* - Safe special characters: ! - . * ' ( ) space & $ @ = ; : + , ?
+* - Forbidden: path separators (/, \), path traversal (..), leading/trailing whitespace
+*
+* AWS S3 Reference: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html
+*
+* @param bucketName - The bucket name to validate
+* @returns true if valid, false otherwise
+*/
+const isValidBucketName = (bucketName) => {
+	if (!bucketName || typeof bucketName !== "string") return false;
+	if (bucketName.length === 0 || bucketName.length > 100) return false;
+	if (bucketName.trim() !== bucketName) return false;
+	if (bucketName.includes("/") || bucketName.includes("\\")) return false;
+	return /^[\w!.\*'() &$@=;:+,?-]+$/.test(bucketName);
+};
+/**
+* Percent-encodes each segment of a storage path so URL delimiters within a
+* key (e.g. `?`, `#`) can't be interpreted as a querystring/fragment start.
+*
+* Splits on `/` so real path separators stay literal — the storage server
+* routes on them and decodes each segment back to the original key.
+*
+* @param path - A bucket id or `bucketId/objectKey` path
+* @returns The path with each `/`-delimited segment percent-encoded
+*/
+const encodeStoragePath = (path) => path.split("/").map(encodeURIComponent).join("/");
+
+//#endregion
+//#region src/lib/common/fetch.ts
+/**
+* Extracts error message from various error response formats
+* @param err - Error object from API
+* @returns Human-readable error message
+*/
+const _getErrorMessage = (err) => {
+	if (typeof err === "object" && err !== null) {
+		const e = err;
+		if (typeof e.msg === "string") return e.msg;
+		if (typeof e.message === "string") return e.message;
+		if (typeof e.error_description === "string") return e.error_description;
+		if (typeof e.error === "string") return e.error;
+		if (typeof e.error === "object" && e.error !== null) {
+			const nested = e.error;
+			if (typeof nested.message === "string") return nested.message;
+		}
+	}
+	return JSON.stringify(err);
+};
+/**
+* Handles fetch errors and converts them to Storage error types
+* @param error - The error caught from fetch
+* @param reject - Promise rejection function
+* @param options - Fetch options that may affect error handling
+* @param namespace - Error namespace ('storage' or 'vectors')
+*/
+const handleError = async (error, reject, options, namespace) => {
+	if (error !== null && typeof error === "object" && "json" in error && typeof error.json === "function") {
+		const responseError = error;
+		let status = parseInt(String(responseError.status), 10);
+		if (!Number.isFinite(status)) status = 500;
+		responseError.json().then((err) => {
+			const statusCode = (err === null || err === void 0 ? void 0 : err.statusCode) || (err === null || err === void 0 ? void 0 : err.code) || status + "";
+			reject(new StorageApiError(_getErrorMessage(err), status, statusCode, namespace, err === null || err === void 0 ? void 0 : err.code));
+		}).catch(() => {
+			const statusCode = status + "";
+			reject(new StorageApiError(responseError.statusText || `HTTP ${status} error`, status, statusCode, namespace));
+		});
+	} else reject(new StorageUnknownError(_getErrorMessage(error), error, namespace));
+};
+/**
+* Builds request parameters for fetch calls
+* @param method - HTTP method
+* @param options - Custom fetch options
+* @param parameters - Additional fetch parameters like AbortSignal
+* @param body - Request body (will be JSON stringified if plain object)
+* @returns Complete fetch request parameters
+*/
+const _getRequestParams = (method, options, parameters, body) => {
+	const params = {
+		method,
+		headers: (options === null || options === void 0 ? void 0 : options.headers) || {}
+	};
+	if (method === "GET" || method === "HEAD" || !body) return _objectSpread2(_objectSpread2({}, params), parameters);
+	if (isPlainObject(body)) {
+		var _contentType;
+		const headers = (options === null || options === void 0 ? void 0 : options.headers) || {};
+		let contentType;
+		for (const [key, value] of Object.entries(headers)) if (key.toLowerCase() === "content-type") contentType = value;
+		params.headers = setHeader(headers, "Content-Type", (_contentType = contentType) !== null && _contentType !== void 0 ? _contentType : "application/json");
+		params.body = JSON.stringify(body);
+	} else params.body = body;
+	if (options === null || options === void 0 ? void 0 : options.duplex) params.duplex = options.duplex;
+	return _objectSpread2(_objectSpread2({}, params), parameters);
+};
+/**
+* Internal request handler that wraps fetch with error handling
+* @param fetcher - Fetch function to use
+* @param method - HTTP method
+* @param url - Request URL
+* @param options - Custom fetch options
+* @param parameters - Additional fetch parameters
+* @param body - Request body
+* @param namespace - Error namespace ('storage' or 'vectors')
+* @returns Promise with parsed response or error
+*/
+async function _handleRequest(fetcher, method, url, options, parameters, body, namespace) {
+	return new Promise((resolve, reject) => {
+		fetcher(url, _getRequestParams(method, options, parameters, body)).then((result) => {
+			if (!result.ok) throw result;
+			if (options === null || options === void 0 ? void 0 : options.noResolveJson) return result;
+			if (namespace === "vectors") {
+				const contentType = result.headers.get("content-type");
+				if (result.headers.get("content-length") === "0" || result.status === 204) return {};
+				if (!contentType || !contentType.includes("application/json")) return {};
+			}
+			return result.json();
+		}).then((data) => resolve(data)).catch((error) => handleError(error, reject, options, namespace));
+	});
+}
+/**
+* Creates a fetch API with the specified namespace
+* @param namespace - Error namespace ('storage' or 'vectors')
+* @returns Object with HTTP method functions
+*/
+function createFetchApi(namespace = "storage") {
+	return {
+		get: async (fetcher, url, options, parameters) => {
+			return _handleRequest(fetcher, "GET", url, options, parameters, void 0, namespace);
+		},
+		post: async (fetcher, url, body, options, parameters) => {
+			return _handleRequest(fetcher, "POST", url, options, parameters, body, namespace);
+		},
+		put: async (fetcher, url, body, options, parameters) => {
+			return _handleRequest(fetcher, "PUT", url, options, parameters, body, namespace);
+		},
+		head: async (fetcher, url, options, parameters) => {
+			return _handleRequest(fetcher, "HEAD", url, _objectSpread2(_objectSpread2({}, options), {}, { noResolveJson: true }), parameters, void 0, namespace);
+		},
+		remove: async (fetcher, url, body, options, parameters) => {
+			return _handleRequest(fetcher, "DELETE", url, options, parameters, body, namespace);
+		}
+	};
+}
+const defaultApi = createFetchApi("storage");
+const { get, post, put, head, remove } = defaultApi;
+const vectorsApi = createFetchApi("vectors");
+
+//#endregion
+//#region src/lib/common/BaseApiClient.ts
+/**
+* @ignore
+* Base API client class for all Storage API classes
+* Provides common infrastructure for error handling and configuration
+*
+* @typeParam TError - The error type (StorageError or subclass)
+*/
+var BaseApiClient = class {
+	/**
+	* Creates a new BaseApiClient instance
+	* @param url - Base URL for API requests
+	* @param headers - Default headers for API requests
+	* @param fetch - Optional custom fetch implementation
+	* @param namespace - Error namespace ('storage' or 'vectors')
+	*/
+	constructor(url, headers = {}, fetch$1, namespace = "storage") {
+		this.shouldThrowOnError = false;
+		this.url = url;
+		this.headers = normalizeHeaders(headers);
+		this.fetch = resolveFetch(fetch$1);
+		this.namespace = namespace;
+	}
+	/**
+	* Enable throwing errors instead of returning them.
+	* When enabled, errors are thrown instead of returned in { data, error } format.
+	*
+	* @returns this - For method chaining
+	*/
+	throwOnError() {
+		this.shouldThrowOnError = true;
+		return this;
+	}
+	/**
+	* Set an HTTP header for the request.
+	* Creates a shallow copy of headers to avoid mutating shared state.
+	*
+	* @param name - Header name
+	* @param value - Header value
+	* @returns this - For method chaining
+	*/
+	setHeader(name, value) {
+		this.headers = setHeader(this.headers, name, value);
+		return this;
+	}
+	/**
+	* Handles API operation with standardized error handling
+	* Eliminates repetitive try-catch blocks across all API methods
+	*
+	* This wrapper:
+	* 1. Executes the operation
+	* 2. Returns { data, error: null } on success
+	* 3. Returns { data: null, error } on failure (if shouldThrowOnError is false)
+	* 4. Throws error on failure (if shouldThrowOnError is true)
+	*
+	* @typeParam T - The expected data type from the operation
+	* @param operation - Async function that performs the API call
+	* @returns Promise with { data, error } tuple
+	*
+	* @example Handling an operation
+	* ```typescript
+	* async listBuckets() {
+	*   return this.handleOperation(async () => {
+	*     return await get(this.fetch, `${this.url}/bucket`, {
+	*       headers: this.headers,
+	*     })
+	*   })
+	* }
+	* ```
+	*/
+	async handleOperation(operation) {
+		var _this = this;
+		try {
+			return {
+				data: await operation(),
+				error: null
+			};
+		} catch (error) {
+			if (_this.shouldThrowOnError) throw error;
+			if (isStorageError(error)) return {
+				data: null,
+				error
+			};
+			throw error;
+		}
+	}
+};
+
+//#endregion
+//#region src/packages/StreamDownloadBuilder.ts
+let _Symbol$toStringTag$1;
+_Symbol$toStringTag$1 = Symbol.toStringTag;
+var StreamDownloadBuilder = class {
+	constructor(downloadFn, shouldThrowOnError) {
+		this.downloadFn = downloadFn;
+		this.shouldThrowOnError = shouldThrowOnError;
+		this[_Symbol$toStringTag$1] = "StreamDownloadBuilder";
+		this.promise = null;
+	}
+	then(onfulfilled, onrejected) {
+		return this.getPromise().then(onfulfilled, onrejected);
+	}
+	catch(onrejected) {
+		return this.getPromise().catch(onrejected);
+	}
+	finally(onfinally) {
+		return this.getPromise().finally(onfinally);
+	}
+	getPromise() {
+		if (!this.promise) this.promise = this.execute();
+		return this.promise;
+	}
+	async execute() {
+		var _this = this;
+		try {
+			return {
+				data: (await _this.downloadFn()).body,
+				error: null
+			};
+		} catch (error) {
+			if (_this.shouldThrowOnError) throw error;
+			if (isStorageError(error)) return {
+				data: null,
+				error
+			};
+			throw error;
+		}
+	}
+};
+
+//#endregion
+//#region src/packages/BlobDownloadBuilder.ts
+let _Symbol$toStringTag;
+_Symbol$toStringTag = Symbol.toStringTag;
+var BlobDownloadBuilder = class {
+	constructor(downloadFn, shouldThrowOnError) {
+		this.downloadFn = downloadFn;
+		this.shouldThrowOnError = shouldThrowOnError;
+		this[_Symbol$toStringTag] = "BlobDownloadBuilder";
+		this.promise = null;
+	}
+	asStream() {
+		return new StreamDownloadBuilder(this.downloadFn, this.shouldThrowOnError);
+	}
+	then(onfulfilled, onrejected) {
+		return this.getPromise().then(onfulfilled, onrejected);
+	}
+	catch(onrejected) {
+		return this.getPromise().catch(onrejected);
+	}
+	finally(onfinally) {
+		return this.getPromise().finally(onfinally);
+	}
+	getPromise() {
+		if (!this.promise) this.promise = this.execute();
+		return this.promise;
+	}
+	async execute() {
+		var _this = this;
+		try {
+			return {
+				data: await (await _this.downloadFn()).blob(),
+				error: null
+			};
+		} catch (error) {
+			if (_this.shouldThrowOnError) throw error;
+			if (isStorageError(error)) return {
+				data: null,
+				error
+			};
+			throw error;
+		}
+	}
+};
+
+//#endregion
+//#region src/packages/StorageFileApi.ts
+const DEFAULT_SEARCH_OPTIONS = {
+	limit: 100,
+	offset: 0,
+	sortBy: {
+		column: "name",
+		order: "asc"
+	}
+};
+const DEFAULT_FILE_OPTIONS = {
+	cacheControl: "3600",
+	contentType: "text/plain;charset=UTF-8",
+	upsert: false
+};
+var StorageFileApi = class extends BaseApiClient {
+	constructor(url, headers = {}, bucketId, fetch$1) {
+		super(url, headers, fetch$1, "storage");
+		this.bucketId = bucketId;
+	}
+	/**
+	* Uploads a file to an existing bucket or replaces an existing file at the specified path with a new one.
+	*
+	* @param method HTTP method.
+	* @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
+	* @param fileBody The body of the file to be stored in the bucket.
+	*/
+	async uploadOrUpdate(method, path, fileBody, fileOptions) {
+		var _this = this;
+		return _this.handleOperation(async () => {
+			let body;
+			const options = _objectSpread2(_objectSpread2({}, DEFAULT_FILE_OPTIONS), fileOptions);
+			let headers = _objectSpread2(_objectSpread2({}, _this.headers), method === "POST" && { "x-upsert": String(options.upsert) });
+			const metadata = options.metadata;
+			if (typeof Blob !== "undefined" && fileBody instanceof Blob) {
+				body = new FormData();
+				body.append("cacheControl", options.cacheControl);
+				if (metadata) body.append("metadata", _this.encodeMetadata(metadata));
+				body.append("", fileBody);
+			} else if (typeof FormData !== "undefined" && fileBody instanceof FormData) {
+				body = fileBody;
+				if (!body.has("cacheControl")) body.append("cacheControl", options.cacheControl);
+				if (metadata && !body.has("metadata")) body.append("metadata", _this.encodeMetadata(metadata));
+			} else {
+				body = fileBody;
+				headers["cache-control"] = `max-age=${options.cacheControl}`;
+				headers["content-type"] = options.contentType;
+				if (metadata) headers["x-metadata"] = _this.toBase64(_this.encodeMetadata(metadata));
+				if ((typeof ReadableStream !== "undefined" && body instanceof ReadableStream || body && typeof body === "object" && "pipe" in body && typeof body.pipe === "function") && !options.duplex) options.duplex = "half";
+			}
+			if (fileOptions === null || fileOptions === void 0 ? void 0 : fileOptions.headers) for (const [key, value] of Object.entries(fileOptions.headers)) headers = setHeader(headers, key, value);
+			const cleanPath = _this._removeEmptyFolders(path);
+			const _path = _this._getFinalPath(cleanPath);
+			const data = await (method == "PUT" ? put : post)(_this.fetch, `${_this.url}/object/${_path}`, body, _objectSpread2({ headers }, (options === null || options === void 0 ? void 0 : options.duplex) ? { duplex: options.duplex } : {}));
+			return {
+				path: cleanPath,
+				id: data.Id,
+				fullPath: data.Key
+			};
+		});
+	}
+	/**
+	* Uploads a file to an existing bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The file path, including the file name. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
+	* @param fileBody The body of the file to be stored in the bucket.
+	* @param fileOptions Optional file upload options including cacheControl, contentType, upsert, and metadata.
+	* @returns Promise with response containing file path, id, and fullPath or error
+	*
+	* @example Upload file
+	* ```js
+	* const avatarFile = event.target.files[0]
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .upload('public/avatar1.png', avatarFile, {
+	*     cacheControl: '3600',
+	*     upsert: false
+	*   })
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "path": "public/avatar1.png",
+	*     "fullPath": "avatars/public/avatar1.png"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @example Upload file using `ArrayBuffer` from base64 file data
+	* ```js
+	* import { decode } from 'base64-arraybuffer'
+	*
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .upload('public/avatar1.png', decode('base64FileData'), {
+	*     contentType: 'image/png'
+	*   })
+	* ```
+	*
+	* @example Handling errors
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .upload('public/avatar1.png', avatarFile)
+	*
+	* if (error) {
+	*   // Log the full error so fields like `statusCode` and `error` (the
+	*   // Storage error name, e.g. "Duplicate") aren't hidden behind `error.message`.
+	*   console.error(error)
+	*   return
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: only `insert` when you are uploading new files and `select`, `insert` and `update` when you are upserting files
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	* - For React Native, using either `Blob`, `File` or `FormData` does not work as intended. Upload file using `ArrayBuffer` from base64 file data instead, see example below.
+	*/
+	async upload(path, fileBody, fileOptions) {
+		return this.uploadOrUpdate("POST", path, fileBody, fileOptions);
+	}
+	/**
+	* Upload a file with a token generated from `createSignedUploadUrl`.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The file path, including the file name. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
+	* @param token The token generated from `createSignedUploadUrl`
+	* @param fileBody The body of the file to be stored in the bucket.
+	* @param fileOptions HTTP headers (cacheControl, contentType, etc.).
+	* **Note:** The `upsert` option has no effect here. To enable upsert behavior,
+	* pass `{ upsert: true }` when calling `createSignedUploadUrl()` instead.
+	* @returns Promise with response containing file path and fullPath or error
+	*
+	* @example Upload to a signed URL
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .uploadToSignedUrl('folder/cat.jpg', 'token-from-createSignedUploadUrl', file)
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "path": "folder/cat.jpg",
+	*     "fullPath": "avatars/folder/cat.jpg"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async uploadToSignedUrl(path, token, fileBody, fileOptions) {
+		var _this3 = this;
+		const cleanPath = _this3._removeEmptyFolders(path);
+		const _path = _this3._getFinalPath(cleanPath);
+		const url = new URL(_this3.url + `/object/upload/sign/${_path}`);
+		url.searchParams.set("token", token);
+		return _this3.handleOperation(async () => {
+			let body;
+			const options = _objectSpread2(_objectSpread2({}, DEFAULT_FILE_OPTIONS), fileOptions);
+			let headers = _objectSpread2(_objectSpread2({}, _this3.headers), { "x-upsert": String(options.upsert) });
+			const metadata = options.metadata;
+			if (typeof Blob !== "undefined" && fileBody instanceof Blob) {
+				body = new FormData();
+				body.append("cacheControl", options.cacheControl);
+				if (metadata) body.append("metadata", _this3.encodeMetadata(metadata));
+				body.append("", fileBody);
+			} else if (typeof FormData !== "undefined" && fileBody instanceof FormData) {
+				body = fileBody;
+				if (!body.has("cacheControl")) body.append("cacheControl", options.cacheControl);
+				if (metadata && !body.has("metadata")) body.append("metadata", _this3.encodeMetadata(metadata));
+			} else {
+				body = fileBody;
+				headers["cache-control"] = `max-age=${options.cacheControl}`;
+				headers["content-type"] = options.contentType;
+				if (metadata) headers["x-metadata"] = _this3.toBase64(_this3.encodeMetadata(metadata));
+				if ((typeof ReadableStream !== "undefined" && body instanceof ReadableStream || body && typeof body === "object" && "pipe" in body && typeof body.pipe === "function") && !options.duplex) options.duplex = "half";
+			}
+			if (fileOptions === null || fileOptions === void 0 ? void 0 : fileOptions.headers) for (const [key, value] of Object.entries(fileOptions.headers)) headers = setHeader(headers, key, value);
+			return {
+				path: cleanPath,
+				fullPath: (await put(_this3.fetch, url.toString(), body, _objectSpread2({ headers }, (options === null || options === void 0 ? void 0 : options.duplex) ? { duplex: options.duplex } : {}))).Key
+			};
+		});
+	}
+	/**
+	* Creates a signed upload URL.
+	* Signed upload URLs can be used to upload files to the bucket without further authentication.
+	* They are valid for 2 hours.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The file path, including the current file name. For example `folder/image.png`.
+	* @param options.upsert If set to true, allows the file to be overwritten if it already exists.
+	* @returns Promise with response containing signed upload URL, token, and path or error
+	*
+	* @example Create Signed Upload URL
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .createSignedUploadUrl('folder/cat.jpg')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "signedUrl": "https://example.supabase.co/storage/v1/object/upload/sign/avatars/folder/cat.jpg?token=<TOKEN>",
+	*     "path": "folder/cat.jpg",
+	*     "token": "<TOKEN>"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `insert`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async createSignedUploadUrl(path, options) {
+		var _this4 = this;
+		return _this4.handleOperation(async () => {
+			let _path = _this4._getFinalPath(path);
+			const headers = _objectSpread2({}, _this4.headers);
+			if (options === null || options === void 0 ? void 0 : options.upsert) headers["x-upsert"] = "true";
+			const data = await post(_this4.fetch, `${_this4.url}/object/upload/sign/${_path}`, {}, { headers });
+			const url = new URL(_this4.url + data.url);
+			const token = url.searchParams.get("token");
+			if (!token) throw new StorageError("No token returned by API");
+			return {
+				signedUrl: url.toString(),
+				path,
+				token
+			};
+		});
+	}
+	/**
+	* Replaces an existing file at the specified path with a new one.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to update.
+	* @param fileBody The body of the file to be stored in the bucket.
+	* @param fileOptions Optional file upload options including cacheControl, contentType, and metadata.
+	* **Note:** The `upsert` option has no effect here. `update()` always replaces the
+	* file at the given path, so the `x-upsert` header is not sent. To control upsert
+	* behavior, use `upload()` instead.
+	* @returns Promise with response containing file path, id, and fullPath or error
+	*
+	* @example Update file
+	* ```js
+	* const avatarFile = event.target.files[0]
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .update('public/avatar1.png', avatarFile, {
+	*     cacheControl: '3600'
+	*   })
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "path": "public/avatar1.png",
+	*     "fullPath": "avatars/public/avatar1.png"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @example Update file using `ArrayBuffer` from base64 file data
+	* ```js
+	* import {decode} from 'base64-arraybuffer'
+	*
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .update('public/avatar1.png', decode('base64FileData'), {
+	*     contentType: 'image/png'
+	*   })
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `update` and `select`
+	* - `update()` always replaces the file at the given path regardless of the `upsert` option.
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	* - For React Native, using either `Blob`, `File` or `FormData` does not work as intended. Update file using `ArrayBuffer` from base64 file data instead, see example below.
+	*/
+	async update(path, fileBody, fileOptions) {
+		return this.uploadOrUpdate("PUT", path, fileBody, fileOptions);
+	}
+	/**
+	* Moves an existing file to a new path in the same bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param fromPath The original file path, including the current file name. For example `folder/image.png`.
+	* @param toPath The new file path, including the new file name. For example `folder/image-new.png`.
+	* @param options The destination options.
+	* @param options.sourceVersionId The version id of the source object to move.
+	* @returns Promise with response containing success message or error
+	*
+	* @example Move file
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .move('public/avatar1.png', 'private/avatar2.png')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "message": "Successfully moved"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `update` and `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async move(fromPath, toPath, options) {
+		var _this6 = this;
+		return _this6.handleOperation(async () => {
+			return await post(_this6.fetch, `${_this6.url}/object/move`, {
+				bucketId: _this6.bucketId,
+				sourceKey: fromPath,
+				destinationKey: toPath,
+				destinationBucket: options === null || options === void 0 ? void 0 : options.destinationBucket,
+				sourceVersionId: options === null || options === void 0 ? void 0 : options.sourceVersionId
+			}, { headers: _this6.headers });
+		});
+	}
+	/**
+	* Copies an existing file to a new path in the same bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param fromPath The original file path, including the current file name. For example `folder/image.png`.
+	* @param toPath The new file path, including the new file name. For example `folder/image-copy.png`.
+	* @param options The destination options.
+	* @param options.sourceVersionId The version id of the source object to copy.
+	* @returns Promise with response containing copied file path or error
+	*
+	* @example Copy file
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .copy('public/avatar1.png', 'private/avatar2.png')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "path": "avatars/private/avatar2.png"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `insert` and `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async copy(fromPath, toPath, options) {
+		var _this7 = this;
+		return _this7.handleOperation(async () => {
+			return { path: (await post(_this7.fetch, `${_this7.url}/object/copy`, {
+				bucketId: _this7.bucketId,
+				sourceKey: fromPath,
+				destinationKey: toPath,
+				destinationBucket: options === null || options === void 0 ? void 0 : options.destinationBucket,
+				sourceVersionId: options === null || options === void 0 ? void 0 : options.sourceVersionId
+			}, { headers: _this7.headers })).Key };
+		});
+	}
+	/**
+	* Creates a signed URL. Use a signed URL to share a file for a fixed amount of time.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The file path, including the current file name. For example `folder/image.png`.
+	* @param expiresIn The number of seconds until the signed URL expires. For example, `60` for a URL which is valid for one minute.
+	* @param options.download triggers the file as a download if set to true. Set this parameter as the name of the file if you want to trigger the download with a different filename.
+	* @param options.transform Transform the asset before serving it to the client.
+	* @param options.cacheNonce Append a cache nonce parameter to the URL to invalidate the cache.
+	* @param options.versionId Create a signed URL for a specific object version rather than the current one.
+	* @returns Promise with response containing signed URL or error
+	*
+	* @example Create Signed URL
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .createSignedUrl('folder/avatar1.png', 60)
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "signedUrl": "https://example.supabase.co/storage/v1/object/sign/avatars/folder/avatar1.png?token=<TOKEN>"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @example Create a signed URL for an asset with transformations
+	* ```js
+	* const { data } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .createSignedUrl('folder/avatar1.png', 60, {
+	*     transform: {
+	*       width: 100,
+	*       height: 100,
+	*     }
+	*   })
+	* ```
+	*
+	* @example Create a signed URL which triggers the download of the asset
+	* ```js
+	* const { data } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .createSignedUrl('folder/avatar1.png', 60, {
+	*     download: true,
+	*   })
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async createSignedUrl(path, expiresIn, options) {
+		var _this8 = this;
+		return _this8.handleOperation(async () => {
+			let _path = _this8._getFinalPath(path);
+			const hasTransform = typeof (options === null || options === void 0 ? void 0 : options.transform) === "object" && options.transform !== null && Object.keys(options.transform).length > 0;
+			let data = await post(_this8.fetch, `${_this8.url}/object/sign/${_path}`, _objectSpread2(_objectSpread2({ expiresIn }, hasTransform ? { transform: options.transform } : {}), (options === null || options === void 0 ? void 0 : options.versionId) != null ? { versionId: options.versionId } : {}), { headers: _this8.headers });
+			const query = new URLSearchParams();
+			if (options === null || options === void 0 ? void 0 : options.download) query.set("download", options.download === true ? "" : options.download);
+			if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
+			const queryString = query.toString();
+			return { signedUrl: encodeURI(`${_this8.url}${data.signedURL}${queryString ? `&${queryString}` : ""}`) };
+		});
+	}
+	/**
+	* Creates multiple signed URLs. Use a signed URL to share a file for a fixed amount of time.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param paths The file paths to be downloaded, including the current file names. For example `['folder/image.png', 'folder2/image2.png']`.
+	* @param expiresIn The number of seconds until the signed URLs expire. For example, `60` for URLs which are valid for one minute.
+	* @param options.download triggers the file as a download if set to true. Set this parameter as the name of the file if you want to trigger the download with a different filename.
+	* @param options.cacheNonce Append a cache nonce parameter to the URL to invalidate the cache.
+	* @returns Promise with response containing array of objects with signedUrl, path, and error or error
+	*
+	* @example Create Signed URLs
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .createSignedUrls(['folder/avatar1.png', 'folder/avatar2.png'], 60)
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": [
+	*     {
+	*       "error": null,
+	*       "path": "folder/avatar1.png",
+	*       "signedURL": "/object/sign/avatars/folder/avatar1.png?token=<TOKEN>",
+	*       "signedUrl": "https://example.supabase.co/storage/v1/object/sign/avatars/folder/avatar1.png?token=<TOKEN>"
+	*     },
+	*     {
+	*       "error": null,
+	*       "path": "folder/avatar2.png",
+	*       "signedURL": "/object/sign/avatars/folder/avatar2.png?token=<TOKEN>",
+	*       "signedUrl": "https://example.supabase.co/storage/v1/object/sign/avatars/folder/avatar2.png?token=<TOKEN>"
+	*     }
+	*   ],
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async createSignedUrls(paths, expiresIn, options) {
+		var _this9 = this;
+		return _this9.handleOperation(async () => {
+			const data = await post(_this9.fetch, `${_this9.url}/object/sign/${_this9.bucketId}`, {
+				expiresIn,
+				paths
+			}, { headers: _this9.headers });
+			const query = new URLSearchParams();
+			if (options === null || options === void 0 ? void 0 : options.download) query.set("download", options.download === true ? "" : options.download);
+			if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
+			const queryString = query.toString();
+			return data.map((datum) => _objectSpread2(_objectSpread2({}, datum), {}, { signedUrl: datum.signedURL ? encodeURI(`${_this9.url}${datum.signedURL}${queryString ? `&${queryString}` : ""}`) : null }));
+		});
+	}
+	/**
+	* Downloads a file from a private bucket. For public buckets, make a request to the URL returned from `getPublicUrl` instead.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The full path and file name of the file to be downloaded. For example `folder/image.png`.
+	* @param options Optional settings: `transform` to transform the asset before serving it to the client, `cacheNonce` to append a cache nonce parameter to the URL to invalidate the cache, and `versionId` to download a specific object version.
+	* @param parameters Additional fetch parameters like signal for cancellation. Supports standard fetch options including cache control.
+	* @returns BlobDownloadBuilder instance for downloading the file
+	*
+	* @example Download file
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .download('folder/avatar1.png')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": <BLOB>,
+	*   "error": null
+	* }
+	* ```
+	*
+	* @example Download file with transformations
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .download('folder/avatar1.png', {
+	*     transform: {
+	*       width: 100,
+	*       height: 100,
+	*       quality: 80
+	*     }
+	*   })
+	* ```
+	*
+	* @example Download with cache control (useful in Edge Functions)
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .download('folder/avatar1.png', {}, { cache: 'no-store' })
+	* ```
+	*
+	* @example Download with abort signal
+	* ```js
+	* const controller = new AbortController()
+	* setTimeout(() => controller.abort(), 5000)
+	*
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .download('folder/avatar1.png', {}, { signal: controller.signal })
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	download(path, options, parameters) {
+		const renderPath = typeof (options === null || options === void 0 ? void 0 : options.transform) === "object" && options.transform !== null && Object.keys(options.transform).length > 0 ? "render/image/authenticated" : "object";
+		const query = new URLSearchParams();
+		if (options === null || options === void 0 ? void 0 : options.transform) this.applyTransformOptsToQuery(query, options.transform);
+		if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
+		if ((options === null || options === void 0 ? void 0 : options.versionId) != null) query.set("versionId", String(options.versionId));
+		const queryString = query.toString();
+		const _path = this._getFinalPath(path);
+		const downloadFn = () => get(this.fetch, `${this.url}/${renderPath}/${_path}${queryString ? `?${queryString}` : ""}`, {
+			headers: this.headers,
+			noResolveJson: true
+		}, parameters);
+		return new BlobDownloadBuilder(downloadFn, this.shouldThrowOnError);
+	}
+	/**
+	* Retrieves the details of an existing file.
+	*
+	* Returns detailed file metadata including size, content type, and timestamps.
+	* Note: The API returns `last_modified` field, not `updated_at`.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The file path, including the file name. For example `folder/image.png`.
+	* @param options Optional settings, including `versionId` to retrieve a specific object version.
+	* @returns Promise with response containing file metadata or error
+	*
+	* @example Get file info
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .info('folder/avatar1.png')
+	*
+	* if (data) {
+	*   console.log('Last modified:', data.lastModified)
+	*   console.log('Size:', data.size)
+	* }
+	* ```
+	*/
+	async info(path, options) {
+		var _this10 = this;
+		const _path = _this10._getFinalPath(path);
+		const query = new URLSearchParams();
+		if ((options === null || options === void 0 ? void 0 : options.versionId) != null) query.set("versionId", String(options.versionId));
+		const queryString = query.toString();
+		return _this10.handleOperation(async () => {
+			return recursiveToCamel(await get(_this10.fetch, `${_this10.url}/object/info/${_path}${queryString ? `?${queryString}` : ""}`, { headers: _this10.headers }));
+		});
+	}
+	/**
+	* Checks the existence of a file.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The file path, including the file name. For example `folder/image.png`.
+	* @returns Promise with response containing boolean indicating file existence or error
+	*
+	* @example Check file existence
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .exists('folder/avatar1.png')
+	* ```
+	*/
+	async exists(path) {
+		var _this11 = this;
+		const _path = _this11._getFinalPath(path);
+		try {
+			await head(_this11.fetch, `${_this11.url}/object/${_path}`, { headers: _this11.headers });
+			return {
+				data: true,
+				error: null
+			};
+		} catch (error) {
+			if (_this11.shouldThrowOnError) throw error;
+			if (isStorageError(error)) {
+				var _error$originalError;
+				const status = error instanceof StorageApiError ? error.status : error instanceof StorageUnknownError ? (_error$originalError = error.originalError) === null || _error$originalError === void 0 ? void 0 : _error$originalError.status : void 0;
+				if (status !== void 0 && [400, 404].includes(status)) return {
+					data: false,
+					error
+				};
+			}
+			throw error;
+		}
+	}
+	/**
+	* A simple convenience function to get the URL for an asset in a public bucket. If you do not want to use this function, you can construct the public URL by concatenating the bucket URL with the path to the asset.
+	* This function does not verify if the bucket is public. If a public URL is created for a bucket which is not public, you will not be able to download the asset.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The path and name of the file to generate the public URL for. For example `folder/image.png`.
+	* @param options.download Triggers the file as a download if set to true. Set this parameter as the name of the file if you want to trigger the download with a different filename.
+	* @param options.transform Transform the asset before serving it to the client.
+	* @param options.cacheNonce Append a cache nonce parameter to the URL to invalidate the cache.
+	* @param options.versionId Return the URL for a specific object version rather than the current one.
+	* @returns Object with public URL
+	*
+	* @example Returns the URL for an asset in a public bucket
+	* ```js
+	* const { data } = supabase
+	*   .storage
+	*   .from('public-bucket')
+	*   .getPublicUrl('folder/avatar1.png')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "publicUrl": "https://example.supabase.co/storage/v1/object/public/public-bucket/folder/avatar1.png"
+	*   }
+	* }
+	* ```
+	*
+	* @example Returns the URL for an asset in a public bucket with transformations
+	* ```js
+	* const { data } = supabase
+	*   .storage
+	*   .from('public-bucket')
+	*   .getPublicUrl('folder/avatar1.png', {
+	*     transform: {
+	*       width: 100,
+	*       height: 100,
+	*     }
+	*   })
+	* ```
+	*
+	* @example Returns the URL which triggers the download of an asset in a public bucket
+	* ```js
+	* const { data } = supabase
+	*   .storage
+	*   .from('public-bucket')
+	*   .getPublicUrl('folder/avatar1.png', {
+	*     download: true,
+	*   })
+	* ```
+	*
+	* @remarks
+	* - The bucket needs to be set to public, either via [updateBucket()](/docs/reference/javascript/storage-updatebucket) or by going to Storage on [supabase.com/dashboard](https://supabase.com/dashboard), clicking the overflow menu on a bucket and choosing "Make public"
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	getPublicUrl(path, options) {
+		const _path = this._getFinalPath(path);
+		const query = new URLSearchParams();
+		if (options === null || options === void 0 ? void 0 : options.download) query.set("download", options.download === true ? "" : options.download);
+		if (options === null || options === void 0 ? void 0 : options.transform) this.applyTransformOptsToQuery(query, options.transform);
+		if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
+		if ((options === null || options === void 0 ? void 0 : options.versionId) != null) query.set("versionId", String(options.versionId));
+		const queryString = query.toString();
+		const renderPath = typeof (options === null || options === void 0 ? void 0 : options.transform) === "object" && options.transform !== null && Object.keys(options.transform).length > 0 ? "render/image" : "object";
+		return { data: { publicUrl: encodeURI(`${this.url}/${renderPath}/public/${_path}`) + (queryString ? `?${queryString}` : "") } };
+	}
+	/**
+	* Deletes files within the same bucket
+	*
+	* Returns an array of FileObject entries for the deleted files. Note that deprecated
+	* fields like `bucket_id` may or may not be present in the response - do not rely on them.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param paths An array of files to delete. Each entry is either a path (deletes whichever
+	* version is currently at that path, e.g. `'folder/image.png'`), or `{ path, versionId }` to
+	* delete an exact version current or archived (e.g. `{ path: 'folder/image.png', versionId: '...' }`).
+	* @returns Promise with response containing array of deleted file objects or error
+	*
+	* @example Delete file
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .remove(['folder/avatar1.png'])
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": [],
+	*   "error": null
+	* }
+	* ```
+	*
+	* @example Delete a specific object version
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .remove([{ path: 'folder/avatar1.png', versionId: 'noncurrent-version-id' }])
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `delete` and `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async remove(paths) {
+		var _this12 = this;
+		return _this12.handleOperation(async () => {
+			return await remove(_this12.fetch, `${_this12.url}/object/${_this12.bucketId}`, { prefixes: paths }, { headers: _this12.headers });
+		});
+	}
+	/**
+	* Purges the CDN cache for a single object in this bucket.
+	*
+	* Maps to `DELETE /cdn/{bucket}/{path}` on the Storage API. The server
+	* issues a CDN invalidation for the object and returns `{ message: 'success' }`.
+	*
+	* **Requires the `service_role` key.** The underlying endpoint enforces
+	* `service_role` JWT — calls made with the anon key or a user JWT will be
+	* rejected by the server.
+	*
+	* **Hosted CDN feature.** On self-hosted Supabase, the Storage service must
+	* have `CDN_PURGE_ENDPOINT_URL` configured and the `purgeCache` tenant
+	* feature enabled, otherwise the server returns an error.
+	*
+	* Operates on a single object path. There is no wildcard or recursion: pass
+	* the exact path of the object you want invalidated.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The path (relative to the bucket) of the object to purge, e.g. `folder/avatar.png`.
+	* @param options Optional purge cache options.
+	* @param options.transformations If true, purges only transformations (resized/formatted variants), leaving the original cached file intact.
+	* @param parameters Optional fetch parameters such as an `AbortController` signal.
+	* @returns Promise with `{ data: { message }, error: null }` on success or `{ data: null, error }` on failure.
+	*
+	* @example Purge a single cached object
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .purgeCache('folder/avatar1.png')
+	* ```
+	*
+	* @example Purge only transformations for a single object
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .purgeCache('folder/avatar1.png', { transformations: true })
+	* ```
+	*/
+	async purgeCache(path, options, parameters) {
+		var _this13 = this;
+		return _this13.handleOperation(async () => {
+			const _path = encodeStoragePath(_this13._getFinalPath(path));
+			const query = new URLSearchParams();
+			if (options === null || options === void 0 ? void 0 : options.transformations) query.set("transformations", "true");
+			const queryString = query.toString();
+			return await remove(_this13.fetch, `${_this13.url}/cdn/${_path}${queryString ? `?${queryString}` : ""}`, {}, { headers: _this13.headers }, parameters);
+		});
+	}
+	/**
+	* Get file metadata
+	* @param id the file id to retrieve metadata
+	*/
+	/**
+	* Update file metadata
+	* @param id the file id to update metadata
+	* @param meta the new file metadata
+	*/
+	/**
+	* Lists all the files and folders within a path of the bucket.
+	*
+	* **Important:** For folder entries, fields like `id`, `updated_at`, `created_at`,
+	* `last_accessed_at`, and `metadata` will be `null`. Only files have these fields populated.
+	* Additionally, deprecated fields like `bucket_id`, `owner`, and `buckets` are NOT returned
+	* by this method.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param path The folder path.
+	* @param options Search options including limit (defaults to 100), offset, sortBy, and search
+	* @param parameters Optional fetch parameters including signal for cancellation
+	* @returns Promise with response containing array of files/folders or error
+	*
+	* @example List files in a bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .list('folder', {
+	*     limit: 100,
+	*     offset: 0,
+	*     sortBy: { column: 'name', order: 'asc' },
+	*   })
+	*
+	* // Handle files vs folders
+	* data?.forEach(item => {
+	*   if (item.id !== null) {
+	*     // It's a file
+	*     console.log('File:', item.name, 'Size:', item.metadata?.size)
+	*   } else {
+	*     // It's a folder
+	*     console.log('Folder:', item.name)
+	*   }
+	* })
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": [
+	*     {
+	*       "name": "avatar1.png",
+	*       "id": "e668cf7f-821b-4a2f-9dce-7dfa5dd1cfd2",
+	*       "updated_at": "2024-05-22T23:06:05.580Z",
+	*       "created_at": "2024-05-22T23:04:34.443Z",
+	*       "last_accessed_at": "2024-05-22T23:04:34.443Z",
+	*       "metadata": {
+	*         "eTag": "\"c5e8c553235d9af30ef4f6e280790b92\"",
+	*         "size": 32175,
+	*         "mimetype": "image/png",
+	*         "cacheControl": "max-age=3600",
+	*         "lastModified": "2024-05-22T23:06:05.574Z",
+	*         "contentLength": 32175,
+	*         "httpStatusCode": 200
+	*       }
+	*     }
+	*   ],
+	*   "error": null
+	* }
+	* ```
+	*
+	* @example Search files in a bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .list('folder', {
+	*     limit: 100,
+	*     offset: 0,
+	*     sortBy: { column: 'name', order: 'asc' },
+	*     search: 'jon'
+	*   })
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: none
+	*   - `objects` table permissions: `select`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async list(path, options, parameters) {
+		var _this14 = this;
+		return _this14.handleOperation(async () => {
+			const sortBy = (options === null || options === void 0 ? void 0 : options.sortBy) ? _objectSpread2(_objectSpread2({}, DEFAULT_SEARCH_OPTIONS.sortBy), options.sortBy) : DEFAULT_SEARCH_OPTIONS.sortBy;
+			const body = _objectSpread2(_objectSpread2(_objectSpread2({}, DEFAULT_SEARCH_OPTIONS), options), {}, {
+				sortBy,
+				prefix: path || ""
+			});
+			return await post(_this14.fetch, `${_this14.url}/object/list/${_this14.bucketId}`, body, { headers: _this14.headers }, parameters);
+		});
+	}
+	/**
+	* Lists all the files and folders within a bucket using the V2 API with pagination support.
+	*
+	* **Important:** Folder entries in the `folders` array only contain `name` and optionally `key` —
+	* they have no `id`, timestamps, or `metadata` fields. Full file metadata is only available
+	* on entries in the `objects` array.
+	*
+	* @experimental this method signature might change in the future
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param options Search options including prefix, cursor for pagination, limit, with_delimiter
+	* @param parameters Optional fetch parameters including signal for cancellation
+	* @returns Promise with response containing folders/objects arrays with pagination info or error
+	*
+	* @example List files with pagination
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .from('avatars')
+	*   .listV2({
+	*     prefix: 'folder/',
+	*     limit: 100,
+	*   })
+	*
+	* // Handle pagination
+	* if (data?.hasNext) {
+	*   const nextPage = await supabase
+	*     .storage
+	*     .from('avatars')
+	*     .listV2({
+	*       prefix: 'folder/',
+	*       cursor: data.nextCursor,
+	*     })
+	* }
+	*
+	* // Handle files vs folders
+	* data?.objects.forEach(file => {
+	*   if (file.id !== null) {
+	*     console.log('File:', file.name, 'Size:', file.metadata?.size)
+	*   }
+	* })
+	* data?.folders.forEach(folder => {
+	*   console.log('Folder:', folder.name)
+	* })
+	* ```
+	*/
+	async listV2(options, parameters) {
+		var _this15 = this;
+		return _this15.handleOperation(async () => {
+			const body = _objectSpread2({}, options);
+			return await post(_this15.fetch, `${_this15.url}/object/list-v2/${_this15.bucketId}`, body, { headers: _this15.headers }, parameters);
+		});
+	}
+	encodeMetadata(metadata) {
+		return JSON.stringify(metadata);
+	}
+	toBase64(data) {
+		if (typeof Buffer !== "undefined") return Buffer.from(data).toString("base64");
+		return btoa(data);
+	}
+	_getFinalPath(path) {
+		return `${this.bucketId}/${path.replace(/^\/+/, "")}`;
+	}
+	_removeEmptyFolders(path) {
+		return path.replace(/^\/|\/$/g, "").replace(/\/+/g, "/");
+	}
+	/** Modifies the `query`, appending values the from `transform` */
+	applyTransformOptsToQuery(query, transform) {
+		if (transform.width) query.set("width", transform.width.toString());
+		if (transform.height) query.set("height", transform.height.toString());
+		if (transform.resize) query.set("resize", transform.resize);
+		if (transform.format) query.set("format", transform.format);
+		if (transform.quality) query.set("quality", transform.quality.toString());
+		return query;
+	}
+};
+
+//#endregion
+//#region src/lib/version.ts
+const version = "2.117.2";
+
+//#endregion
+//#region src/lib/constants.ts
+const DEFAULT_HEADERS = { "X-Client-Info": `storage-js/${version}` };
+
+//#endregion
+//#region src/packages/StorageBucketApi.ts
+var StorageBucketApi = class extends BaseApiClient {
+	constructor(url, headers = {}, fetch$1, opts) {
+		const baseUrl = new URL(url);
+		if (opts === null || opts === void 0 ? void 0 : opts.useNewHostname) {
+			if (/supabase\.(co|in|red)$/.test(baseUrl.hostname) && !baseUrl.hostname.includes("storage.supabase.")) baseUrl.hostname = baseUrl.hostname.replace("supabase.", "storage.supabase.");
+		}
+		const finalUrl = baseUrl.href.replace(/\/$/, "");
+		const finalHeaders = _objectSpread2(_objectSpread2({}, DEFAULT_HEADERS), headers);
+		super(finalUrl, finalHeaders, fetch$1, "storage");
+	}
+	/**
+	* Retrieves the details of all Storage buckets within an existing project.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param options Query parameters for listing buckets
+	* @param options.limit Maximum number of buckets to return
+	* @param options.offset Number of buckets to skip
+	* @param options.sortColumn Column to sort by ('id', 'name', 'created_at', 'updated_at')
+	* @param options.sortOrder Sort order ('asc' or 'desc')
+	* @param options.search Search term to filter bucket names
+	* @returns Promise with response containing array of buckets or error
+	*
+	* @example List buckets
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .listBuckets()
+	* ```
+	*
+	* @example List buckets with options
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .listBuckets({
+	*     limit: 10,
+	*     offset: 0,
+	*     sortColumn: 'created_at',
+	*     sortOrder: 'desc',
+	*     search: 'prod'
+	*   })
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async listBuckets(options) {
+		var _this = this;
+		return _this.handleOperation(async () => {
+			const queryString = _this.listBucketOptionsToQueryString(options);
+			return await get(_this.fetch, `${_this.url}/bucket${queryString}`, { headers: _this.headers });
+		});
+	}
+	/**
+	* Retrieves the details of an existing Storage bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket you would like to retrieve.
+	* @returns Promise with response containing bucket details or error
+	*
+	* @example Get bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .getBucket('avatars')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "id": "avatars",
+	*     "name": "avatars",
+	*     "owner": "",
+	*     "public": false,
+	*     "file_size_limit": 1024,
+	*     "allowed_mime_types": [
+	*       "image/png"
+	*     ],
+	*     "created_at": "2024-05-22T22:26:05.100Z",
+	*     "updated_at": "2024-05-22T22:26:05.100Z"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async getBucket(id) {
+		var _this2 = this;
+		return _this2.handleOperation(async () => {
+			return await get(_this2.fetch, `${_this2.url}/bucket/${id}`, { headers: _this2.headers });
+		});
+	}
+	/**
+	* Creates a new Storage bucket
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id A unique identifier for the bucket you are creating.
+	* @param options.public The visibility of the bucket. Public buckets don't require an authorization token to download objects, but still require a valid token for all other operations. By default, buckets are private.
+	* @param options.fileSizeLimit specifies the max file size in bytes that can be uploaded to this bucket.
+	* The global file size limit takes precedence over this value.
+	* The default value is null, which doesn't set a per bucket file size limit.
+	* @param options.allowedMimeTypes specifies the allowed mime types that this bucket can accept during upload.
+	* The default value is null, which allows files with all mime types to be uploaded.
+	* Each mime type specified can be a wildcard, e.g. image/*, or a specific mime type, e.g. image/png.
+	* @param options.type (private-beta) specifies the bucket type. see `BucketType` for more details.
+	*   - default bucket type is `STANDARD`
+	* @param options.versioningStatus the bucket's initial object versioning status.
+	* The default value is `DISABLED`
+	* @returns Promise with response containing newly created bucket name or error
+	*
+	* @example Create bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .createBucket('avatars', {
+	*     public: false,
+	*     allowedMimeTypes: ['image/png'],
+	*     fileSizeLimit: 1024
+	*   })
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "name": "avatars"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `insert`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async createBucket(id, options = { public: false }) {
+		var _this3 = this;
+		return _this3.handleOperation(async () => {
+			return await post(_this3.fetch, `${_this3.url}/bucket`, {
+				id,
+				name: id,
+				type: options.type,
+				public: options.public,
+				file_size_limit: options.fileSizeLimit,
+				allowed_mime_types: options.allowedMimeTypes,
+				versioning_status: options.versioningStatus
+			}, { headers: _this3.headers });
+		});
+	}
+	/**
+	* Updates a Storage bucket
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id A unique identifier for the bucket you are updating.
+	* @param options.public The visibility of the bucket. Public buckets don't require an authorization token to download objects, but still require a valid token for all other operations.
+	* @param options.fileSizeLimit specifies the max file size in bytes that can be uploaded to this bucket.
+	* The global file size limit takes precedence over this value.
+	* The default value is null, which doesn't set a per bucket file size limit.
+	* @param options.allowedMimeTypes specifies the allowed mime types that this bucket can accept during upload.
+	* The default value is null, which allows files with all mime types to be uploaded.
+	* Each mime type specified can be a wildcard, e.g. image/*, or a specific mime type, e.g. image/png.
+	* @param options.versioningStatus the bucket's new object versioning status. `DISABLED` is not
+	* valid here, there's no transition back to it once versioning has been touched.
+	* @returns Promise with response containing success message or error
+	*
+	* @example Update bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .updateBucket('avatars', {
+	*     public: false,
+	*     allowedMimeTypes: ['image/png'],
+	*     fileSizeLimit: 1024
+	*   })
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "message": "Successfully updated"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select` and `update`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async updateBucket(id, options) {
+		var _this4 = this;
+		return _this4.handleOperation(async () => {
+			return await put(_this4.fetch, `${_this4.url}/bucket/${id}`, {
+				id,
+				name: id,
+				public: options.public,
+				file_size_limit: options.fileSizeLimit,
+				allowed_mime_types: options.allowedMimeTypes,
+				versioning_status: options.versioningStatus
+			}, { headers: _this4.headers });
+		});
+	}
+	/**
+	* Removes all objects inside a single bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket you would like to empty.
+	* @returns Promise with success message or error
+	*
+	* @example Empty bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .emptyBucket('avatars')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "message": "Successfully emptied"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select`
+	*   - `objects` table permissions: `select` and `delete`
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async emptyBucket(id) {
+		var _this5 = this;
+		return _this5.handleOperation(async () => {
+			return await post(_this5.fetch, `${_this5.url}/bucket/${id}/empty`, {}, { headers: _this5.headers });
+		});
+	}
+	/**
+	* Deletes an existing bucket. A bucket can't be deleted with existing objects inside it.
+	* You must first `empty()` the bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket you would like to delete.
+	* @returns Promise with success message or error
+	*
+	* @example Delete bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .deleteBucket('avatars')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "message": "Successfully deleted"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select` and `delete`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async deleteBucket(id) {
+		var _this6 = this;
+		return _this6.handleOperation(async () => {
+			return await remove(_this6.fetch, `${_this6.url}/bucket/${id}`, {}, { headers: _this6.headers });
+		});
+	}
+	/**
+	* Returns the lifecycle policy stored on a bucket.
+	*
+	* Fails with `NoSuchLifecycleConfiguration` when the bucket has no policy.
+	*
+	* These rules expire previous versions of objects, not the current one.
+	* Turn versioning on or there is nothing for the policy to act on.
+	* Standard buckets only. Returns `FeatureNotEnabled` if lifecycle is off
+	* for the project.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket.
+	* @returns Promise with the lifecycle configuration or error
+	*
+	* @example Get lifecycle configuration
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .getBucketLifecycle('avatars')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "rules": [
+	*       {
+	*         "id": "expire-history",
+	*         "status": "Enabled",
+	*         "filter": {},
+	*         "noncurrentVersionExpiration": {
+	*           "noncurrentDays": 30,
+	*           "newerNoncurrentVersions": 2
+	*         }
+	*       }
+	*     ]
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async getBucketLifecycle(id) {
+		var _this7 = this;
+		return _this7.handleOperation(async () => {
+			return await get(_this7.fetch, _this7.bucketLifecycleUrl(id), { headers: _this7.headers });
+		});
+	}
+	/**
+	* Replaces the lifecycle policy on a bucket.
+	*
+	* The `rules` array you send is the whole policy. Anything previously stored
+	* is overwritten. Send at least one rule. Call {@link deleteBucketLifecycle}
+	* to remove the policy.
+	*
+	* Each rule currently supports only `noncurrentVersionExpiration`. `filter`
+	* is required and must be `{}`. Prefix filters, tag filters, and current-object
+	* expiration are rejected. Rule IDs must be unique. Omit `id` and the
+	* server generates one.
+	*
+	* Standard buckets only. Returns `FeatureNotEnabled` if lifecycle is off
+	* for the project.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket.
+	* @param configuration The full lifecycle configuration to store.
+	* @returns Promise with the stored configuration or error
+	*
+	* @example Replace lifecycle configuration
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .updateBucketLifecycle('avatars', {
+	*     rules: [
+	*       {
+	*         id: 'expire-history',
+	*         status: 'Enabled',
+	*         filter: {},
+	*         noncurrentVersionExpiration: {
+	*           noncurrentDays: 30,
+	*           newerNoncurrentVersions: 2,
+	*         },
+	*       },
+	*     ],
+	*   })
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select` and `update`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async updateBucketLifecycle(id, configuration) {
+		var _this8 = this;
+		return _this8.handleOperation(async () => {
+			return await put(_this8.fetch, _this8.bucketLifecycleUrl(id), configuration, { headers: _this8.headers });
+		});
+	}
+	/**
+	* Removes the lifecycle policy from a bucket.
+	*
+	* Safe to call when no policy is stored. The response is still success.
+	* Standard buckets only. Returns `FeatureNotEnabled` if lifecycle is off
+	* for the project.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket.
+	* @returns Promise with success message or error
+	*
+	* @example Delete lifecycle configuration
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .deleteBucketLifecycle('avatars')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "message": "Successfully deleted"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - RLS policy permissions required:
+	*   - `buckets` table permissions: `select` and `update`
+	*   - `objects` table permissions: none
+	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
+	*/
+	async deleteBucketLifecycle(id) {
+		var _this9 = this;
+		return _this9.handleOperation(async () => {
+			return await remove(_this9.fetch, _this9.bucketLifecycleUrl(id), {}, { headers: _this9.headers });
+		});
+	}
+	/**
+	* Purges the CDN cache for an entire bucket.
+	*
+	* Maps to `DELETE /cdn/{bucket}` on the Storage API. The server
+	* issues a CDN invalidation for the bucket and returns `{ message: 'success' }`.
+	*
+	* **Requires the `service_role` key.** The underlying endpoint enforces
+	* `service_role` JWT — calls made with the anon key or a user JWT will be
+	* rejected by the server.
+	*
+	* **Hosted CDN feature.** On self-hosted Supabase, the Storage service must
+	* have `CDN_PURGE_ENDPOINT_URL` configured and the `purgeCache` tenant
+	* feature enabled, otherwise the server returns an error.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	* @param id The unique identifier of the bucket you would like to purge from cache.
+	* @param options Optional purge cache options.
+	* @param options.transformations If true, purges only transformations (resized/formatted variants), leaving original cached files intact.
+	* @param parameters Optional fetch parameters such as an `AbortController` signal.
+	* @returns Promise with `{ data: { message }, error: null }` on success or `{ data: null, error }` on failure.
+	*
+	* @example Purge cache for an entire bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .purgeBucketCache('avatars')
+	* ```
+	*
+	* @example Purge only transformations for an entire bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .purgeBucketCache('avatars', { transformations: true })
+	* ```
+	*/
+	async purgeBucketCache(id, options, parameters) {
+		var _this10 = this;
+		return _this10.handleOperation(async () => {
+			const query = new URLSearchParams();
+			if (options === null || options === void 0 ? void 0 : options.transformations) query.set("transformations", "true");
+			const queryString = query.toString();
+			return await remove(_this10.fetch, `${_this10.url}/cdn/${encodeStoragePath(id)}${queryString ? `?${queryString}` : ""}`, {}, { headers: _this10.headers }, parameters);
+		});
+	}
+	bucketLifecycleUrl(id) {
+		return `${this.url}/bucket/${encodeStoragePath(id)}/lifecycle`;
+	}
+	listBucketOptionsToQueryString(options) {
+		const params = {};
+		if (options) {
+			if ("limit" in options) params.limit = String(options.limit);
+			if ("offset" in options) params.offset = String(options.offset);
+			if (options.search) params.search = options.search;
+			if (options.sortColumn) params.sortColumn = options.sortColumn;
+			if (options.sortOrder) params.sortOrder = options.sortOrder;
+		}
+		return Object.keys(params).length > 0 ? "?" + new URLSearchParams(params).toString() : "";
+	}
+};
+
+//#endregion
+//#region src/packages/StorageAnalyticsClient.ts
+/**
+* Client class for managing Analytics Buckets using Iceberg tables
+* Provides methods for creating, listing, and deleting analytics buckets
+*/
+var StorageAnalyticsClient = class extends BaseApiClient {
+	/**
+	* @alpha
+	*
+	* Creates a new StorageAnalyticsClient instance
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Analytics Buckets
+	* @param url - The base URL for the storage API
+	* @param headers - HTTP headers to include in requests
+	* @param fetch - Optional custom fetch implementation
+	*
+	* @example Using supabase-js (recommended)
+	* ```typescript
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
+	* const { data, error } = await supabase.storage.analytics.listBuckets()
+	* ```
+	*
+	* @example Standalone import for bundle-sensitive environments
+	* ```typescript
+	* import { StorageAnalyticsClient } from '@supabase/storage-js'
+	*
+	* const client = new StorageAnalyticsClient(url, headers)
+	* ```
+	*/
+	constructor(url, headers = {}, fetch$1) {
+		const finalUrl = url.replace(/\/$/, "");
+		const finalHeaders = _objectSpread2(_objectSpread2({}, DEFAULT_HEADERS), headers);
+		super(finalUrl, finalHeaders, fetch$1, "storage");
+	}
+	/**
+	* @alpha
+	*
+	* Creates a new analytics bucket using Iceberg tables
+	* Analytics buckets are optimized for analytical queries and data processing
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Analytics Buckets
+	* @param name A unique name for the bucket you are creating
+	* @returns Promise with response containing newly created analytics bucket or error
+	*
+	* @example Create analytics bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .analytics
+	*   .createBucket('analytics-data')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "name": "analytics-data",
+	*     "type": "ANALYTICS",
+	*     "format": "iceberg",
+	*     "created_at": "2024-05-22T22:26:05.100Z",
+	*     "updated_at": "2024-05-22T22:26:05.100Z"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - Creates a new analytics bucket using Iceberg tables
+	* - Analytics buckets are optimized for analytical queries and data processing
+	*/
+	async createBucket(name) {
+		var _this = this;
+		return _this.handleOperation(async () => {
+			return await post(_this.fetch, `${_this.url}/bucket`, { name }, { headers: _this.headers });
+		});
+	}
+	/**
+	* @alpha
+	*
+	* Retrieves the details of all Analytics Storage buckets within an existing project
+	* Only returns buckets of type 'ANALYTICS'
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Analytics Buckets
+	* @param options Query parameters for listing buckets
+	* @param options.limit Maximum number of buckets to return
+	* @param options.offset Number of buckets to skip
+	* @param options.sortColumn Column to sort by ('name', 'created_at', 'updated_at')
+	* @param options.sortOrder Sort order ('asc' or 'desc')
+	* @param options.search Search term to filter bucket names
+	* @returns Promise with response containing array of analytics buckets or error
+	*
+	* @example List analytics buckets
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .analytics
+	*   .listBuckets({
+	*     limit: 10,
+	*     offset: 0,
+	*     sortColumn: 'created_at',
+	*     sortOrder: 'desc'
+	*   })
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": [
+	*     {
+	*       "name": "analytics-data",
+	*       "type": "ANALYTICS",
+	*       "format": "iceberg",
+	*       "created_at": "2024-05-22T22:26:05.100Z",
+	*       "updated_at": "2024-05-22T22:26:05.100Z"
+	*     }
+	*   ],
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - Retrieves the details of all Analytics Storage buckets within an existing project
+	* - Only returns buckets of type 'ANALYTICS'
+	*/
+	async listBuckets(options) {
+		var _this2 = this;
+		return _this2.handleOperation(async () => {
+			const queryParams = new URLSearchParams();
+			if ((options === null || options === void 0 ? void 0 : options.limit) !== void 0) queryParams.set("limit", options.limit.toString());
+			if ((options === null || options === void 0 ? void 0 : options.offset) !== void 0) queryParams.set("offset", options.offset.toString());
+			if (options === null || options === void 0 ? void 0 : options.sortColumn) queryParams.set("sortColumn", options.sortColumn);
+			if (options === null || options === void 0 ? void 0 : options.sortOrder) queryParams.set("sortOrder", options.sortOrder);
+			if (options === null || options === void 0 ? void 0 : options.search) queryParams.set("search", options.search);
+			const queryString = queryParams.toString();
+			const url = queryString ? `${_this2.url}/bucket?${queryString}` : `${_this2.url}/bucket`;
+			return await get(_this2.fetch, url, { headers: _this2.headers });
+		});
+	}
+	/**
+	* @alpha
+	*
+	* Deletes an existing analytics bucket
+	* A bucket can't be deleted with existing objects inside it
+	* You must first empty the bucket before deletion
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Analytics Buckets
+	* @param bucketName The unique identifier of the bucket you would like to delete
+	* @returns Promise with response containing success message or error
+	*
+	* @example Delete analytics bucket
+	* ```js
+	* const { data, error } = await supabase
+	*   .storage
+	*   .analytics
+	*   .deleteBucket('analytics-data')
+	* ```
+	*
+	* Response:
+	* ```json
+	* {
+	*   "data": {
+	*     "message": "Successfully deleted"
+	*   },
+	*   "error": null
+	* }
+	* ```
+	*
+	* @remarks
+	* - Deletes an analytics bucket
+	*/
+	async deleteBucket(bucketName) {
+		var _this3 = this;
+		return _this3.handleOperation(async () => {
+			return await remove(_this3.fetch, `${_this3.url}/bucket/${bucketName}`, {}, { headers: _this3.headers });
+		});
+	}
+	/**
+	* @alpha
+	*
+	* Get an Iceberg REST Catalog client configured for a specific analytics bucket
+	* Use this to perform advanced table and namespace operations within the bucket
+	* The returned client provides full access to the Apache Iceberg REST Catalog API
+	* with the Supabase `{ data, error }` pattern for consistent error handling on all operations.
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Analytics Buckets
+	* @param bucketName - The name of the analytics bucket (warehouse) to connect to
+	* @returns The wrapped Iceberg catalog client
+	* @throws {StorageError} If the bucket name is invalid
+	*
+	* @example Get catalog and create table
+	* ```js
+	* // First, create an analytics bucket
+	* const { data: bucket, error: bucketError } = await supabase
+	*   .storage
+	*   .analytics
+	*   .createBucket('analytics-data')
+	*
+	* // Get the Iceberg catalog for that bucket
+	* const catalog = supabase.storage.analytics.from('analytics-data')
+	*
+	* // Create a namespace
+	* const { error: nsError } = await catalog.createNamespace({ namespace: ['default'] })
+	*
+	* // Create a table with schema
+	* const { data: tableMetadata, error: tableError } = await catalog.createTable(
+	*   { namespace: ['default'] },
+	*   {
+	*     name: 'events',
+	*     schema: {
+	*       type: 'struct',
+	*       fields: [
+	*         { id: 1, name: 'id', type: 'long', required: true },
+	*         { id: 2, name: 'timestamp', type: 'timestamp', required: true },
+	*         { id: 3, name: 'user_id', type: 'string', required: false }
+	*       ],
+	*       'schema-id': 0,
+	*       'identifier-field-ids': [1]
+	*     },
+	*     'partition-spec': {
+	*       'spec-id': 0,
+	*       fields: []
+	*     },
+	*     'write-order': {
+	*       'order-id': 0,
+	*       fields: []
+	*     },
+	*     properties: {
+	*       'write.format.default': 'parquet'
+	*     }
+	*   }
+	* )
+	* ```
+	*
+	* @example List tables in namespace
+	* ```js
+	* const catalog = supabase.storage.analytics.from('analytics-data')
+	*
+	* // List all tables in the default namespace
+	* const { data: tables, error: listError } = await catalog.listTables({ namespace: ['default'] })
+	* if (listError) {
+	*   if (listError.isNotFound()) {
+	*     console.log('Namespace not found')
+	*   }
+	*   return
+	* }
+	* console.log(tables) // [{ namespace: ['default'], name: 'events' }]
+	* ```
+	*
+	* @example Working with namespaces
+	* ```js
+	* const catalog = supabase.storage.analytics.from('analytics-data')
+	*
+	* // List all namespaces
+	* const { data: namespaces } = await catalog.listNamespaces()
+	*
+	* // Create namespace with properties
+	* await catalog.createNamespace(
+	*   { namespace: ['production'] },
+	*   { properties: { owner: 'data-team', env: 'prod' } }
+	* )
+	* ```
+	*
+	* @example Cleanup operations
+	* ```js
+	* const catalog = supabase.storage.analytics.from('analytics-data')
+	*
+	* // Drop table with purge option (removes all data)
+	* const { error: dropError } = await catalog.dropTable(
+	*   { namespace: ['default'], name: 'events' },
+	*   { purge: true }
+	* )
+	*
+	* if (dropError?.isNotFound()) {
+	*   console.log('Table does not exist')
+	* }
+	*
+	* // Drop namespace (must be empty)
+	* await catalog.dropNamespace({ namespace: ['default'] })
+	* ```
+	*
+	* @remarks
+	* This method provides a bridge between Supabase's bucket management and the standard
+	* Apache Iceberg REST Catalog API. The bucket name maps to the Iceberg warehouse parameter.
+	* All authentication and configuration is handled automatically using your Supabase credentials.
+	*
+	* **Error Handling**: Invalid bucket names throw immediately. All catalog
+	* operations return `{ data, error }` where errors are `IcebergError` instances from iceberg-js.
+	* Use helper methods like `error.isNotFound()` or check `error.status` for specific error handling.
+	* Use `.throwOnError()` on the analytics client if you prefer exceptions for catalog operations.
+	*
+	* **Cleanup Operations**: When using `dropTable`, the `purge: true` option permanently
+	* deletes all table data. Without it, the table is marked as deleted but data remains.
+	*
+	* **Library Dependency**: The returned catalog wraps `IcebergRestCatalog` from iceberg-js.
+	* For complete API documentation and advanced usage, refer to the
+	* [iceberg-js documentation](https://supabase.github.io/iceberg-js/).
+	*/
+	from(bucketName) {
+		var _this4 = this;
+		if (!isValidBucketName(bucketName)) throw new StorageError("Invalid bucket name: File, folder, and bucket names must follow AWS object key naming guidelines and should avoid the use of any other characters.");
+		const catalog = new iceberg_js.IcebergRestCatalog({
+			baseUrl: this.url,
+			catalogName: bucketName,
+			auth: {
+				type: "custom",
+				getHeaders: async () => _this4.headers
+			},
+			fetch: this.fetch
+		});
+		const shouldThrowOnError = this.shouldThrowOnError;
+		return new Proxy(catalog, { get(target, prop) {
+			const value = target[prop];
+			if (typeof value !== "function") return value;
+			return async (...args) => {
+				try {
+					return {
+						data: await value.apply(target, args),
+						error: null
+					};
+				} catch (error) {
+					if (shouldThrowOnError) throw error;
+					return {
+						data: null,
+						error
+					};
+				}
+			};
+		} });
+	}
+};
+
+//#endregion
+//#region src/packages/VectorIndexApi.ts
+/**
+* @hidden
+* Base implementation for vector index operations.
+* Use {@link VectorBucketScope} via `supabase.storage.vectors.from('bucket')` instead.
+*/
+var VectorIndexApi = class extends BaseApiClient {
+	/** Creates a new VectorIndexApi instance */
+	constructor(url, headers = {}, fetch$1) {
+		const finalUrl = url.replace(/\/$/, "");
+		const finalHeaders = _objectSpread2(_objectSpread2({}, DEFAULT_HEADERS), {}, { "Content-Type": "application/json" }, headers);
+		super(finalUrl, finalHeaders, fetch$1, "vectors");
+	}
+	/** Creates a new vector index within a bucket */
+	async createIndex(options) {
+		var _this = this;
+		return _this.handleOperation(async () => {
+			return await vectorsApi.post(_this.fetch, `${_this.url}/CreateIndex`, options, { headers: _this.headers }) || {};
+		});
+	}
+	/** Retrieves metadata for a specific vector index */
+	async getIndex(vectorBucketName, indexName) {
+		var _this2 = this;
+		return _this2.handleOperation(async () => {
+			return await vectorsApi.post(_this2.fetch, `${_this2.url}/GetIndex`, {
+				vectorBucketName,
+				indexName
+			}, { headers: _this2.headers });
+		});
+	}
+	/** Lists vector indexes within a bucket with optional filtering and pagination */
+	async listIndexes(options) {
+		var _this3 = this;
+		return _this3.handleOperation(async () => {
+			return await vectorsApi.post(_this3.fetch, `${_this3.url}/ListIndexes`, options, { headers: _this3.headers });
+		});
+	}
+	/** Deletes a vector index and all its data */
+	async deleteIndex(vectorBucketName, indexName) {
+		var _this4 = this;
+		return _this4.handleOperation(async () => {
+			return await vectorsApi.post(_this4.fetch, `${_this4.url}/DeleteIndex`, {
+				vectorBucketName,
+				indexName
+			}, { headers: _this4.headers }) || {};
+		});
+	}
+};
+
+//#endregion
+//#region src/packages/VectorDataApi.ts
+/**
+* @hidden
+* Base implementation for vector data operations.
+* Use {@link VectorIndexScope} via `supabase.storage.vectors.from('bucket').index('idx')` instead.
+*/
+var VectorDataApi = class extends BaseApiClient {
+	/** Creates a new VectorDataApi instance */
+	constructor(url, headers = {}, fetch$1) {
+		const finalUrl = url.replace(/\/$/, "");
+		const finalHeaders = _objectSpread2(_objectSpread2({}, DEFAULT_HEADERS), {}, { "Content-Type": "application/json" }, headers);
+		super(finalUrl, finalHeaders, fetch$1, "vectors");
+	}
+	/** Inserts or updates vectors in batch (1-500 per request) */
+	async putVectors(options) {
+		var _this = this;
+		if (options.vectors.length < 1 || options.vectors.length > 500) throw new Error("Vector batch size must be between 1 and 500 items");
+		return _this.handleOperation(async () => {
+			return await vectorsApi.post(_this.fetch, `${_this.url}/PutVectors`, options, { headers: _this.headers }) || {};
+		});
+	}
+	/** Retrieves vectors by their keys in batch */
+	async getVectors(options) {
+		var _this2 = this;
+		return _this2.handleOperation(async () => {
+			return await vectorsApi.post(_this2.fetch, `${_this2.url}/GetVectors`, options, { headers: _this2.headers });
+		});
+	}
+	/** Lists vectors in an index with pagination */
+	async listVectors(options) {
+		var _this3 = this;
+		if (options.segmentCount !== void 0) {
+			if (options.segmentCount < 1 || options.segmentCount > 16) throw new Error("segmentCount must be between 1 and 16");
+			if (options.segmentIndex !== void 0) {
+				if (options.segmentIndex < 0 || options.segmentIndex >= options.segmentCount) throw new Error(`segmentIndex must be between 0 and ${options.segmentCount - 1}`);
+			}
+		}
+		return _this3.handleOperation(async () => {
+			return await vectorsApi.post(_this3.fetch, `${_this3.url}/ListVectors`, options, { headers: _this3.headers });
+		});
+	}
+	/** Queries for similar vectors using approximate nearest neighbor search */
+	async queryVectors(options) {
+		var _this4 = this;
+		return _this4.handleOperation(async () => {
+			return await vectorsApi.post(_this4.fetch, `${_this4.url}/QueryVectors`, options, { headers: _this4.headers });
+		});
+	}
+	/** Deletes vectors by their keys in batch (1-500 per request) */
+	async deleteVectors(options) {
+		var _this5 = this;
+		if (options.keys.length < 1 || options.keys.length > 500) throw new Error("Keys batch size must be between 1 and 500 items");
+		return _this5.handleOperation(async () => {
+			return await vectorsApi.post(_this5.fetch, `${_this5.url}/DeleteVectors`, options, { headers: _this5.headers }) || {};
+		});
+	}
+};
+
+//#endregion
+//#region src/packages/VectorBucketApi.ts
+/**
+* @hidden
+* Base implementation for vector bucket operations.
+* Use {@link StorageVectorsClient} via `supabase.storage.vectors` instead.
+*/
+var VectorBucketApi = class extends BaseApiClient {
+	/** Creates a new VectorBucketApi instance */
+	constructor(url, headers = {}, fetch$1) {
+		const finalUrl = url.replace(/\/$/, "");
+		const finalHeaders = _objectSpread2(_objectSpread2({}, DEFAULT_HEADERS), {}, { "Content-Type": "application/json" }, headers);
+		super(finalUrl, finalHeaders, fetch$1, "vectors");
+	}
+	/** Creates a new vector bucket */
+	async createBucket(vectorBucketName) {
+		var _this = this;
+		return _this.handleOperation(async () => {
+			return await vectorsApi.post(_this.fetch, `${_this.url}/CreateVectorBucket`, { vectorBucketName }, { headers: _this.headers }) || {};
+		});
+	}
+	/** Retrieves metadata for a specific vector bucket */
+	async getBucket(vectorBucketName) {
+		var _this2 = this;
+		return _this2.handleOperation(async () => {
+			return await vectorsApi.post(_this2.fetch, `${_this2.url}/GetVectorBucket`, { vectorBucketName }, { headers: _this2.headers });
+		});
+	}
+	/** Lists vector buckets with optional filtering and pagination */
+	async listBuckets(options = {}) {
+		var _this3 = this;
+		return _this3.handleOperation(async () => {
+			return await vectorsApi.post(_this3.fetch, `${_this3.url}/ListVectorBuckets`, options, { headers: _this3.headers });
+		});
+	}
+	/** Deletes a vector bucket (must be empty first) */
+	async deleteBucket(vectorBucketName) {
+		var _this4 = this;
+		return _this4.handleOperation(async () => {
+			return await vectorsApi.post(_this4.fetch, `${_this4.url}/DeleteVectorBucket`, { vectorBucketName }, { headers: _this4.headers }) || {};
+		});
+	}
+};
+
+//#endregion
+//#region src/packages/StorageVectorsClient.ts
+/**
+*
+* @alpha
+*
+* Main client for interacting with S3 Vectors API
+* Provides access to bucket, index, and vector data operations
+*
+* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+*
+* **Usage Patterns:**
+*
+* ```typescript
+* const { data, error } = await supabase
+*  .storage
+*  .vectors
+*  .createBucket('embeddings-prod')
+*
+* // Access index operations via buckets
+* const bucket = supabase.storage.vectors.from('embeddings-prod')
+* await bucket.createIndex({
+*   indexName: 'documents',
+*   dataType: 'float32',
+*   dimension: 1536,
+*   distanceMetric: 'cosine'
+* })
+*
+* // Access vector operations via index
+* const index = bucket.index('documents')
+* await index.putVectors({
+*   vectors: [
+*     { key: 'doc-1', data: { float32: [...] }, metadata: { title: 'Intro' } }
+*   ]
+* })
+*
+* // Query similar vectors
+* const { data } = await index.queryVectors({
+*   queryVector: { float32: [...] },
+*   topK: 5,
+*   returnDistance: true
+* })
+* ```
+*/
+var StorageVectorsClient = class extends VectorBucketApi {
+	/**
+	* @alpha
+	*
+	* Creates a StorageVectorsClient that can manage buckets, indexes, and vectors.
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param url - Base URL of the Storage Vectors REST API.
+	* @param options.headers - Optional headers (for example `Authorization`) applied to every request.
+	* @param options.fetch - Optional custom `fetch` implementation for non-browser runtimes.
+	*
+	* @example Using supabase-js (recommended)
+	* ```typescript
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* ```
+	*
+	* @example Standalone import for bundle-sensitive environments
+	* ```typescript
+	* import { StorageVectorsClient } from '@supabase/storage-js'
+	*
+	* const client = new StorageVectorsClient(url, options)
+	* ```
+	*/
+	constructor(url, options = {}) {
+		super(url, options.headers || {}, options.fetch);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Access operations for a specific vector bucket
+	* Returns a scoped client for index and vector operations within the bucket
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param vectorBucketName - Name of the vector bucket
+	* @returns Bucket-scoped client with index and vector operations
+	*
+	* @example Accessing a vector bucket
+	* ```typescript
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* ```
+	*/
+	from(vectorBucketName) {
+		return new VectorBucketScope(this.url, this.headers, vectorBucketName, this.fetch);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Creates a new vector bucket
+	* Vector buckets are containers for vector indexes and their data
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param vectorBucketName - Unique name for the vector bucket
+	* @returns Promise with empty response on success or error
+	*
+	* @example Creating a vector bucket
+	* ```typescript
+	* const { data, error } = await supabase
+	*   .storage
+	*   .vectors
+	*   .createBucket('embeddings-prod')
+	* ```
+	*/
+	async createBucket(vectorBucketName) {
+		var _superprop_getCreateBucket = () => super.createBucket, _this = this;
+		return _superprop_getCreateBucket().call(_this, vectorBucketName);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Retrieves metadata for a specific vector bucket
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param vectorBucketName - Name of the vector bucket
+	* @returns Promise with bucket metadata or error
+	*
+	* @example Get bucket metadata
+	* ```typescript
+	* const { data, error } = await supabase
+	*   .storage
+	*   .vectors
+	*   .getBucket('embeddings-prod')
+	*
+	* console.log('Bucket created:', data?.vectorBucket.creationTime)
+	* ```
+	*/
+	async getBucket(vectorBucketName) {
+		var _superprop_getGetBucket = () => super.getBucket, _this2 = this;
+		return _superprop_getGetBucket().call(_this2, vectorBucketName);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Lists all vector buckets with optional filtering and pagination
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Optional filters (prefix, maxResults, nextToken)
+	* @returns Promise with list of buckets or error
+	*
+	* @example List vector buckets
+	* ```typescript
+	* const { data, error } = await supabase
+	*   .storage
+	*   .vectors
+	*   .listBuckets({ prefix: 'embeddings-' })
+	*
+	* data?.vectorBuckets.forEach(bucket => {
+	*   console.log(bucket.vectorBucketName)
+	* })
+	* ```
+	*/
+	async listBuckets(options = {}) {
+		var _superprop_getListBuckets = () => super.listBuckets, _this3 = this;
+		return _superprop_getListBuckets().call(_this3, options);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Deletes a vector bucket (bucket must be empty)
+	* All indexes must be deleted before deleting the bucket
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param vectorBucketName - Name of the vector bucket to delete
+	* @returns Promise with empty response on success or error
+	*
+	* @example Delete a vector bucket
+	* ```typescript
+	* const { data, error } = await supabase
+	*   .storage
+	*   .vectors
+	*   .deleteBucket('embeddings-old')
+	* ```
+	*/
+	async deleteBucket(vectorBucketName) {
+		var _superprop_getDeleteBucket = () => super.deleteBucket, _this4 = this;
+		return _superprop_getDeleteBucket().call(_this4, vectorBucketName);
+	}
+};
+/**
+*
+* @alpha
+*
+* Scoped client for operations within a specific vector bucket
+* Provides index management and access to vector operations
+*
+* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+*/
+var VectorBucketScope = class extends VectorIndexApi {
+	/**
+	* @alpha
+	*
+	* Creates a helper that automatically scopes all index operations to the provided bucket.
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @example Creating a vector bucket scope
+	* ```typescript
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* ```
+	*/
+	constructor(url, headers, vectorBucketName, fetch$1) {
+		super(url, headers, fetch$1);
+		this.vectorBucketName = vectorBucketName;
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Creates a new vector index in this bucket
+	* Convenience method that automatically includes the bucket name
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Index configuration (vectorBucketName is automatically set)
+	* @returns Promise with empty response on success or error
+	*
+	* @example Creating a vector index
+	* ```typescript
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* await bucket.createIndex({
+	*   indexName: 'documents-openai',
+	*   dataType: 'float32',
+	*   dimension: 1536,
+	*   distanceMetric: 'cosine',
+	*   metadataConfiguration: {
+	*     nonFilterableMetadataKeys: ['raw_text']
+	*   }
+	* })
+	* ```
+	*/
+	async createIndex(options) {
+		var _superprop_getCreateIndex = () => super.createIndex, _this5 = this;
+		return _superprop_getCreateIndex().call(_this5, _objectSpread2(_objectSpread2({}, options), {}, { vectorBucketName: _this5.vectorBucketName }));
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Lists indexes in this bucket
+	* Convenience method that automatically includes the bucket name
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Listing options (vectorBucketName is automatically set)
+	* @returns Promise with response containing indexes array and pagination token or error
+	*
+	* @example List indexes
+	* ```typescript
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* const { data } = await bucket.listIndexes({ prefix: 'documents-' })
+	* ```
+	*/
+	async listIndexes(options = {}) {
+		var _superprop_getListIndexes = () => super.listIndexes, _this6 = this;
+		return _superprop_getListIndexes().call(_this6, _objectSpread2(_objectSpread2({}, options), {}, { vectorBucketName: _this6.vectorBucketName }));
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Retrieves metadata for a specific index in this bucket
+	* Convenience method that automatically includes the bucket name
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param indexName - Name of the index to retrieve
+	* @returns Promise with index metadata or error
+	*
+	* @example Get index metadata
+	* ```typescript
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* const { data } = await bucket.getIndex('documents-openai')
+	* console.log('Dimension:', data?.index.dimension)
+	* ```
+	*/
+	async getIndex(indexName) {
+		var _superprop_getGetIndex = () => super.getIndex, _this7 = this;
+		return _superprop_getGetIndex().call(_this7, _this7.vectorBucketName, indexName);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Deletes an index from this bucket
+	* Convenience method that automatically includes the bucket name
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param indexName - Name of the index to delete
+	* @returns Promise with empty response on success or error
+	*
+	* @example Delete an index
+	* ```typescript
+	* const bucket = supabase.storage.vectors.from('embeddings-prod')
+	* await bucket.deleteIndex('old-index')
+	* ```
+	*/
+	async deleteIndex(indexName) {
+		var _superprop_getDeleteIndex = () => super.deleteIndex, _this8 = this;
+		return _superprop_getDeleteIndex().call(_this8, _this8.vectorBucketName, indexName);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Access operations for a specific index within this bucket
+	* Returns a scoped client for vector data operations
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param indexName - Name of the index
+	* @returns Index-scoped client with vector data operations
+	*
+	* @example Accessing an index
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	*
+	* // Insert vectors
+	* await index.putVectors({
+	*   vectors: [
+	*     { key: 'doc-1', data: { float32: [...] }, metadata: { title: 'Intro' } }
+	*   ]
+	* })
+	*
+	* // Query similar vectors
+	* const { data } = await index.queryVectors({
+	*   queryVector: { float32: [...] },
+	*   topK: 5
+	* })
+	* ```
+	*/
+	index(indexName) {
+		return new VectorIndexScope(this.url, this.headers, this.vectorBucketName, indexName, this.fetch);
+	}
+};
+/**
+*
+* @alpha
+*
+* Scoped client for operations within a specific vector index
+* Provides vector data operations (put, get, list, query, delete)
+*
+* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+*/
+var VectorIndexScope = class extends VectorDataApi {
+	/**
+	*
+	* @alpha
+	*
+	* Creates a helper that automatically scopes all vector operations to the provided bucket/index names.
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @example Creating a vector index scope
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	* ```
+	*/
+	constructor(url, headers, vectorBucketName, indexName, fetch$1) {
+		super(url, headers, fetch$1);
+		this.vectorBucketName = vectorBucketName;
+		this.indexName = indexName;
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Inserts or updates vectors in this index
+	* Convenience method that automatically includes bucket and index names
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Vector insertion options (bucket and index names automatically set)
+	* @returns Promise with empty response on success or error
+	*
+	* @example Insert vectors into an index
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	* await index.putVectors({
+	*   vectors: [
+	*     {
+	*       key: 'doc-1',
+	*       data: { float32: [0.1, 0.2, ...] },
+	*       metadata: { title: 'Introduction', page: 1 }
+	*     }
+	*   ]
+	* })
+	* ```
+	*/
+	async putVectors(options) {
+		var _superprop_getPutVectors = () => super.putVectors, _this9 = this;
+		return _superprop_getPutVectors().call(_this9, _objectSpread2(_objectSpread2({}, options), {}, {
+			vectorBucketName: _this9.vectorBucketName,
+			indexName: _this9.indexName
+		}));
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Retrieves vectors by keys from this index
+	* Convenience method that automatically includes bucket and index names
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Vector retrieval options (bucket and index names automatically set)
+	* @returns Promise with response containing vectors array or error
+	*
+	* @example Get vectors by keys
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	* const { data } = await index.getVectors({
+	*   keys: ['doc-1', 'doc-2'],
+	*   returnMetadata: true
+	* })
+	* ```
+	*/
+	async getVectors(options) {
+		var _superprop_getGetVectors = () => super.getVectors, _this10 = this;
+		return _superprop_getGetVectors().call(_this10, _objectSpread2(_objectSpread2({}, options), {}, {
+			vectorBucketName: _this10.vectorBucketName,
+			indexName: _this10.indexName
+		}));
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Lists vectors in this index with pagination
+	* Convenience method that automatically includes bucket and index names
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Listing options (bucket and index names automatically set)
+	* @returns Promise with response containing vectors array and pagination token or error
+	*
+	* @example List vectors with pagination
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	* const { data } = await index.listVectors({
+	*   maxResults: 500,
+	*   returnMetadata: true
+	* })
+	* ```
+	*/
+	async listVectors(options = {}) {
+		var _superprop_getListVectors = () => super.listVectors, _this11 = this;
+		return _superprop_getListVectors().call(_this11, _objectSpread2(_objectSpread2({}, options), {}, {
+			vectorBucketName: _this11.vectorBucketName,
+			indexName: _this11.indexName
+		}));
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Queries for similar vectors in this index
+	* Convenience method that automatically includes bucket and index names
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Query options (bucket and index names automatically set)
+	* @returns Promise with response containing vectors ordered by distance, an optional pagination token, or an error
+	*
+	* @example Query similar vectors
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	* const { data } = await index.queryVectors({
+	*   queryVector: { float32: [0.1, 0.2, ...] },
+	*   topK: 5,
+	*   filter: { category: 'technical' },
+	*   returnDistance: true,
+	*   returnMetadata: true
+	* })
+	* ```
+	*/
+	async queryVectors(options) {
+		var _superprop_getQueryVectors = () => super.queryVectors, _this12 = this;
+		return _superprop_getQueryVectors().call(_this12, _objectSpread2(_objectSpread2({}, options), {}, {
+			vectorBucketName: _this12.vectorBucketName,
+			indexName: _this12.indexName
+		}));
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Deletes vectors by keys from this index
+	* Convenience method that automatically includes bucket and index names
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	* @param options - Deletion options (bucket and index names automatically set)
+	* @returns Promise with empty response on success or error
+	*
+	* @example Delete vectors by keys
+	* ```typescript
+	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
+	* await index.deleteVectors({
+	*   keys: ['doc-1', 'doc-2', 'doc-3']
+	* })
+	* ```
+	*/
+	async deleteVectors(options) {
+		var _superprop_getDeleteVectors = () => super.deleteVectors, _this13 = this;
+		return _superprop_getDeleteVectors().call(_this13, _objectSpread2(_objectSpread2({}, options), {}, {
+			vectorBucketName: _this13.vectorBucketName,
+			indexName: _this13.indexName
+		}));
+	}
+};
+
+//#endregion
+//#region src/StorageClient.ts
+var StorageClient = class extends StorageBucketApi {
+	/**
+	* Creates a client for Storage buckets, files, analytics, and vectors.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	*
+	* @example Using supabase-js (recommended)
+	* ```ts
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
+	* const avatars = supabase.storage.from('avatars')
+	* ```
+	*
+	* @example Standalone import for bundle-sensitive environments
+	* ```ts
+	* import { StorageClient } from '@supabase/storage-js'
+	*
+	* const storage = new StorageClient('https://xyzcompany.supabase.co/storage/v1', {
+	*   apikey: 'your-publishable-key',
+	* })
+	* const avatars = storage.from('avatars')
+	* ```
+	*/
+	constructor(url, headers = {}, fetch$1, opts) {
+		super(url, headers, fetch$1, opts);
+	}
+	/**
+	* Perform file operation in a bucket.
+	*
+	* @category Storage
+	* @subcategory File Buckets
+	*
+	* @param id The bucket id to operate on.
+	*
+	* @example Accessing a bucket
+	* ```typescript
+	* const avatars = supabase.storage.from('avatars')
+	* ```
+	*/
+	from(id) {
+		return new StorageFileApi(this.url, this.headers, id, this.fetch);
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Access vector storage operations.
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Vector Buckets
+	*
+	* @returns A StorageVectorsClient instance configured with the current storage settings.
+	*/
+	get vectors() {
+		return new StorageVectorsClient(this.url + "/vector", {
+			headers: this.headers,
+			fetch: this.fetch
+		});
+	}
+	/**
+	*
+	* @alpha
+	*
+	* Access analytics storage operations using Iceberg tables.
+	*
+	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
+	*
+	* @category Storage
+	* @subcategory Analytics Buckets
+	*
+	* @returns A StorageAnalyticsClient instance configured with the current storage settings.
+	*/
+	get analytics() {
+		return new StorageAnalyticsClient(this.url + "/iceberg", this.headers, this.fetch);
+	}
+};
+
+//#endregion
+exports.StorageAnalyticsClient = StorageAnalyticsClient;
+exports.StorageApiError = StorageApiError;
+exports.StorageClient = StorageClient;
+exports.StorageError = StorageError;
+exports.StorageUnknownError = StorageUnknownError;
+exports.StorageVectorsApiError = StorageVectorsApiError;
+exports.StorageVectorsClient = StorageVectorsClient;
+exports.StorageVectorsError = StorageVectorsError;
+exports.StorageVectorsErrorCode = StorageVectorsErrorCode;
+exports.StorageVectorsUnknownError = StorageVectorsUnknownError;
+exports.VectorBucketApi = VectorBucketApi;
+exports.VectorBucketScope = VectorBucketScope;
+exports.VectorDataApi = VectorDataApi;
+exports.VectorIndexApi = VectorIndexApi;
+exports.VectorIndexScope = VectorIndexScope;
+exports.isStorageError = isStorageError;
+exports.isStorageVectorsError = isStorageVectorsError;
+//# sourceMappingURL=index.cjs.map
+
+/***/ }),
+
+/***/ 2060:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+const require_tracingRegistry = __nccwpck_require__(7691);
+let _supabase_functions_js = __nccwpck_require__(7559);
+let _supabase_postgrest_js = __nccwpck_require__(7572);
+let _supabase_realtime_js = __nccwpck_require__(209);
+let _supabase_storage_js = __nccwpck_require__(464);
+let _supabase_auth_js = __nccwpck_require__(3543);
+
+//#region src/lib/version.ts
+const version = "2.117.2";
+
+//#endregion
+//#region src/lib/constants.ts
+let JS_ENV = "";
+let JS_RUNTIME_VERSION;
+if (typeof Deno !== "undefined") {
+	var _Deno$version;
+	JS_ENV = "deno";
+	JS_RUNTIME_VERSION = (_Deno$version = Deno.version) === null || _Deno$version === void 0 ? void 0 : _Deno$version.deno;
+} else if (typeof document !== "undefined") JS_ENV = "web";
+else if (typeof navigator !== "undefined" && navigator.product === "ReactNative") JS_ENV = "react-native";
+else {
+	var _process$version;
+	JS_ENV = "node";
+	const _process = globalThis["process"];
+	JS_RUNTIME_VERSION = _process === null || _process === void 0 || (_process$version = _process["version"]) === null || _process$version === void 0 ? void 0 : _process$version.replace(/^v/, "");
+}
+const _runtimeMeta = [`runtime=${JS_ENV}`];
+if (JS_RUNTIME_VERSION) _runtimeMeta.push(`runtime-version=${JS_RUNTIME_VERSION}`);
+const DEFAULT_HEADERS = { "X-Client-Info": `supabase-js/${version}; ${_runtimeMeta.join("; ")}` };
+const DEFAULT_GLOBAL_OPTIONS = { headers: DEFAULT_HEADERS };
+const DEFAULT_DB_OPTIONS = { schema: "public" };
+const DEFAULT_AUTH_OPTIONS = {
+	autoRefreshToken: true,
+	persistSession: true,
+	detectSessionInUrl: true,
+	flowType: "implicit"
+};
+const DEFAULT_REALTIME_OPTIONS = {};
+const DEFAULT_TRACE_PROPAGATION_OPTIONS = {
+	enabled: false,
+	respectSamplingDecision: true
+};
+
+//#endregion
+//#region ../../shared/tracing/dist/module/parse.js
+/**
+* Parse W3C traceparent header according to the specification.
+*
+* The traceparent header format is: version-traceid-parentid-traceflags
+* - version: 2 hex digits (currently always "00")
+* - traceid: 32 hex digits (128-bit trace identifier)
+* - parentid: 16 hex digits (64-bit span/parent identifier)
+* - traceflags: 2 hex digits (8-bit flags, bit 0 is sampled flag)
+*
+* @param traceparent - The traceparent header value
+* @returns Parsed traceparent object, or null if invalid format
+*
+* @see https://www.w3.org/TR/trace-context/#traceparent-header
+*
+* @example
+* ```typescript
+* const parsed = parseTraceParent('00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01')
+*
+* console.log(parsed)
+* // {
+* //   version: '00',
+* //   traceId: '0af7651916cd43dd8448eb211c80319c',
+* //   parentId: 'b7ad6b7169203331',
+* //   traceFlags: '01',
+* //   isSampled: true
+* // }
+* ```
+*/
+function parseTraceParent(traceparent) {
+	if (!traceparent || typeof traceparent !== "string") return null;
+	const parts = traceparent.split("-");
+	if (parts.length !== 4) return null;
+	const [version$1, traceId, parentId, traceFlags] = parts;
+	if (version$1.length !== 2 || traceId.length !== 32 || parentId.length !== 16 || traceFlags.length !== 2) return null;
+	const hexRegex = /^[0-9a-f]+$/i;
+	if (!hexRegex.test(version$1) || !hexRegex.test(traceId) || !hexRegex.test(parentId) || !hexRegex.test(traceFlags)) return null;
+	if (traceId === "00000000000000000000000000000000" || parentId === "0000000000000000") return null;
+	return {
+		version: version$1,
+		traceId,
+		parentId,
+		traceFlags,
+		isSampled: (parseInt(traceFlags, 16) & 1) === 1
+	};
+}
+
+//#endregion
+//#region ../../shared/tracing/dist/module/validate.js
+/**
+* Check if trace context should be propagated to the target URL.
+*
+* This function checks if the target URL matches any of the configured
+* propagation targets. Targets can be:
+* - String: Exact hostname match or wildcard domain (*.example.com)
+* - RegExp: Pattern matching hostname
+* - Function: Custom logic to determine if URL should receive trace context
+*
+* @param targetUrl - The URL to check
+* @param targets - Array of propagation targets
+* @returns True if trace context should be propagated, false otherwise
+*
+* @example
+* ```typescript
+* const targets = [
+*   'myproject.supabase.co',           // Exact match
+*   '*.supabase.co',                   // Wildcard domain
+*   /.*\.supabase\.co$/,               // Regex pattern
+*   (url) => url.hostname === 'localhost' // Custom function
+* ]
+*
+* shouldPropagateToTarget('https://myproject.supabase.co/rest/v1/table', targets)
+* // true
+*
+* shouldPropagateToTarget('https://evil.com/api', targets)
+* // false
+* ```
+*/
+function shouldPropagateToTarget(targetUrl, targets) {
+	if (!targetUrl || !targets || targets.length === 0) return false;
+	let url;
+	if (targetUrl instanceof URL) url = targetUrl;
+	else try {
+		url = new URL(targetUrl);
+	} catch (error) {
+		return false;
+	}
+	for (const target of targets) try {
+		if (typeof target === "string") {
+			if (matchStringTarget(url.hostname, target)) return true;
+		} else if (target instanceof RegExp) {
+			if (target.test(url.hostname)) return true;
+		} else if (typeof target === "function") {
+			if (target(url)) return true;
+		}
+	} catch (error) {
+		continue;
+	}
+	return false;
+}
+/**
+* Match hostname against string target (exact match or wildcard)
+*
+* @param hostname - The hostname to check
+* @param target - The target pattern (exact or wildcard)
+* @returns True if hostname matches target
+*/
+function matchStringTarget(hostname, target) {
+	if (target === hostname) return true;
+	if (target.startsWith("*.")) {
+		const domain = target.slice(2);
+		if (hostname.endsWith(domain)) {
+			if (hostname === domain || hostname.endsWith("." + domain)) return true;
+		}
+	}
+	return false;
+}
+
+//#endregion
+//#region ../../shared/tracing/dist/module/defaults.js
+/**
+* Generate default propagation targets based on the Supabase project URL.
+*
+* By default, trace context is only propagated to Supabase domains for
+* security. This prevents leaking trace context to potentially malicious
+* third-party services.
+*
+* Wildcard strings (e.g. `*.supabase.co`) are matched with linear string
+* operations rather than regex, avoiding ReDoS risk.
+*
+* @param supabaseUrl - The Supabase project URL
+* @returns Array of default propagation targets
+*/
+function getDefaultPropagationTargets(supabaseUrl) {
+	const targets = [];
+	try {
+		const url = new URL(supabaseUrl);
+		targets.push(url.hostname);
+	} catch (error) {}
+	targets.push("*.supabase.co", "*.supabase.in");
+	targets.push("localhost", "127.0.0.1", "[::1]");
+	return targets;
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/typeof.js
+function _typeof(o) {
+	"@babel/helpers - typeof";
+	return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o$1) {
+		return typeof o$1;
+	} : function(o$1) {
+		return o$1 && "function" == typeof Symbol && o$1.constructor === Symbol && o$1 !== Symbol.prototype ? "symbol" : typeof o$1;
+	}, _typeof(o);
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/toPrimitive.js
+function toPrimitive(t, r) {
+	if ("object" != _typeof(t) || !t) return t;
+	var e = t[Symbol.toPrimitive];
+	if (void 0 !== e) {
+		var i = e.call(t, r || "default");
+		if ("object" != _typeof(i)) return i;
+		throw new TypeError("@@toPrimitive must return a primitive value.");
+	}
+	return ("string" === r ? String : Number)(t);
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/toPropertyKey.js
+function toPropertyKey(t) {
+	var i = toPrimitive(t, "string");
+	return "symbol" == _typeof(i) ? i : i + "";
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/defineProperty.js
+function _defineProperty(e, r, t) {
+	return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+		value: t,
+		enumerable: !0,
+		configurable: !0,
+		writable: !0
+	}) : e[r] = t, e;
+}
+
+//#endregion
+//#region \0@oxc-project+runtime@0.103.0/helpers/objectSpread2.js
+function ownKeys(e, r) {
+	var t = Object.keys(e);
+	if (Object.getOwnPropertySymbols) {
+		var o = Object.getOwnPropertySymbols(e);
+		r && (o = o.filter(function(r$1) {
+			return Object.getOwnPropertyDescriptor(e, r$1).enumerable;
+		})), t.push.apply(t, o);
+	}
+	return t;
+}
+function _objectSpread2(e) {
+	for (var r = 1; r < arguments.length; r++) {
+		var t = null != arguments[r] ? arguments[r] : {};
+		r % 2 ? ownKeys(Object(t), !0).forEach(function(r$1) {
+			_defineProperty(e, r$1, t[r$1]);
+		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r$1) {
+			Object.defineProperty(e, r$1, Object.getOwnPropertyDescriptor(t, r$1));
+		});
+	}
+	return e;
+}
+
+//#endregion
+//#region src/lib/fetch.ts
+const resolveFetch = (customFetch) => {
+	if (customFetch) return (...args) => customFetch(...args);
+	return (...args) => fetch(...args);
+};
+const resolveHeadersConstructor = () => {
+	return Headers;
+};
+/**
+* New-format Supabase API keys (`sb_publishable_…` / `sb_secret_…`) are not JWTs and
+* must never be sent as a Bearer token — they belong only in the `apikey` header.
+* All other keys (legacy JWT keys, `sb_temp_…` temporary keys, unrecognized `sb_`
+* subtypes) keep the Bearer fallback.
+*/
+const isNewApiKey = (key) => key.startsWith("sb_publishable_") || key.startsWith("sb_secret_");
+const TEMP_KEY_PREFIX = "sb_temp_";
+const warnedKeySubtypes = /* @__PURE__ */ new Set();
+/**
+* Warn (once per subtype) when an `sb_` key isn't a subtype this SDK version recognizes.
+* Never throws — the server, not the SDK, decides key validity. The key value is never
+* included in the message.
+*/
+const checkApiKeyFormat = (key) => {
+	var _key$match$, _key$match;
+	if (!key.startsWith("sb_") || isNewApiKey(key) || key.startsWith(TEMP_KEY_PREFIX)) return;
+	const subtype = (_key$match$ = (_key$match = key.match(/^sb_[a-zA-Z0-9]+_/)) === null || _key$match === void 0 ? void 0 : _key$match[0]) !== null && _key$match$ !== void 0 ? _key$match$ : "unknown";
+	if (warnedKeySubtypes.has(subtype)) return;
+	warnedKeySubtypes.add(subtype);
+	console.warn("@supabase/supabase-js: Unrecognized Supabase API key format. The client will proceed and send this key as-is; if you see authentication errors you may need to upgrade @supabase/supabase-js to a version that recognizes this key type.");
+};
+const fetchWithAuth = (supabaseKey, supabaseUrl, getAccessToken, customFetch, tracePropagationOptions, options) => {
+	const fetch$1 = resolveFetch(customFetch);
+	const HeadersConstructor = resolveHeadersConstructor();
+	const traceEnabled = (tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.enabled) === true;
+	const respectSampling = (tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.respectSamplingDecision) !== false;
+	const traceTargets = traceEnabled ? getDefaultPropagationTargets(supabaseUrl) : null;
+	const allowKeyAsBearer = !((options === null || options === void 0 ? void 0 : options.omitApiKeyAsBearer) && isNewApiKey(supabaseKey));
+	return async (input, init) => {
+		const realToken = await getAccessToken();
+		let headers = new HeadersConstructor(init === null || init === void 0 ? void 0 : init.headers);
+		if (!headers.has("apikey")) headers.set("apikey", supabaseKey);
+		if (!headers.has("Authorization")) {
+			const bearer = realToken !== null && realToken !== void 0 ? realToken : allowKeyAsBearer ? supabaseKey : null;
+			if (bearer) headers.set("Authorization", `Bearer ${bearer}`);
+		}
+		if (traceTargets) {
+			const traceHeaders = getTraceHeaders(input, traceTargets, respectSampling);
+			if (traceHeaders) {
+				if (traceHeaders.traceparent && !headers.has("traceparent")) headers.set("traceparent", traceHeaders.traceparent);
+				if (traceHeaders.tracestate && !headers.has("tracestate")) headers.set("tracestate", traceHeaders.tracestate);
+				if (traceHeaders.baggage && !headers.has("baggage")) headers.set("baggage", traceHeaders.baggage);
+			}
+		}
+		return fetch$1(input, _objectSpread2(_objectSpread2({}, init), {}, { headers }));
+	};
+};
+let warnedMissingTracingRuntime = false;
+let warnedNonW3CPropagator = false;
+function getTraceHeaders(input, targets, respectSampling) {
+	const extractTraceContext = require_tracingRegistry.getTraceContextExtractor();
+	if (!extractTraceContext) {
+		if (!warnedMissingTracingRuntime) {
+			warnedMissingTracingRuntime = true;
+			console.warn("@supabase/supabase-js: tracePropagation is enabled but the tracing runtime is not loaded, so trace headers will not be attached. Add `import '@supabase/supabase-js/tracing'` at your application entry point (requires the OpenTelemetry API package to be installed). The CDN/UMD build does not support trace propagation.");
+		}
+		return null;
+	}
+	if (!shouldPropagateToTarget(typeof input === "string" ? input : input instanceof URL ? input : input.url, targets)) return null;
+	const traceContext = extractTraceContext();
+	if (!traceContext || !traceContext.traceparent) {
+		var _traceContext$carrier;
+		if ((traceContext === null || traceContext === void 0 || (_traceContext$carrier = traceContext.carrierKeys) === null || _traceContext$carrier === void 0 ? void 0 : _traceContext$carrier.length) && !warnedNonW3CPropagator) {
+			warnedNonW3CPropagator = true;
+			const sentryHint = traceContext.carrierKeys.includes("sentry-trace") ? " Sentry detected: set `propagateTraceparent: true` in Sentry.init() to emit it." : " Configure your tracing SDK to emit W3C trace context on outgoing requests.";
+			console.warn(`@supabase/supabase-js: tracePropagation is enabled and a tracing SDK is active, but its propagator wrote [${traceContext.carrierKeys.join(", ")}] and no W3C traceparent header, so trace headers will not be attached.` + sentryHint);
+		}
+		return null;
+	}
+	if (respectSampling) {
+		const parsed = parseTraceParent(traceContext.traceparent);
+		if (parsed && !parsed.isSampled) return { traceparent: traceContext.traceparent };
+	}
+	return traceContext;
+}
+
+//#endregion
+//#region src/lib/helpers.ts
+function normalizeTracePropagation(value) {
+	return typeof value === "boolean" ? { enabled: value } : value;
+}
+function ensureTrailingSlash(url) {
+	return url.endsWith("/") ? url : url + "/";
+}
+let warnedTopLevelSchema = false;
+/**
+* Warn (once per process) when `schema` is passed at the top level of the client options
+* instead of under `db`. A top-level `schema` is not part of the options shape and is
+* ignored, so queries silently go to the default schema. Never throws.
+*
+* Only `undefined` counts as unset, matching `db.schema`, where any other value is sent
+* as the profile header.
+*/
+function checkTopLevelSchemaOption(options) {
+	if (warnedTopLevelSchema) return;
+	if (typeof options !== "object" || options === null || !("schema" in options) || options.schema === void 0) return;
+	warnedTopLevelSchema = true;
+	console.warn("@supabase/supabase-js: The \"schema\" option must be nested under \"db\", e.g. createClient(url, key, { db: { schema: 'myschema' } }). A top-level \"schema\" is ignored and queries go to the default schema.");
+}
+function applySettingDefaults(options, defaults) {
+	var _DEFAULT_GLOBAL_OPTIO, _globalOptions$header, _ref, _tracePropagationOpti, _ref2, _tracePropagationOpti2;
+	const { db: dbOptions, auth: authOptions, realtime: realtimeOptions, global: globalOptions } = options;
+	const { db: DEFAULT_DB_OPTIONS$1, auth: DEFAULT_AUTH_OPTIONS$1, realtime: DEFAULT_REALTIME_OPTIONS$1, global: DEFAULT_GLOBAL_OPTIONS$1 } = defaults;
+	const tracePropagationOptions = normalizeTracePropagation(options.tracePropagation);
+	const DEFAULT_TRACE_PROPAGATION_OPTIONS$1 = normalizeTracePropagation(defaults.tracePropagation);
+	const result = {
+		db: _objectSpread2(_objectSpread2({}, DEFAULT_DB_OPTIONS$1), dbOptions),
+		auth: _objectSpread2(_objectSpread2({}, DEFAULT_AUTH_OPTIONS$1), authOptions),
+		realtime: _objectSpread2(_objectSpread2({}, DEFAULT_REALTIME_OPTIONS$1), realtimeOptions),
+		storage: {},
+		global: _objectSpread2(_objectSpread2(_objectSpread2({}, DEFAULT_GLOBAL_OPTIONS$1), globalOptions), {}, { headers: _objectSpread2(_objectSpread2({}, (_DEFAULT_GLOBAL_OPTIO = DEFAULT_GLOBAL_OPTIONS$1 === null || DEFAULT_GLOBAL_OPTIONS$1 === void 0 ? void 0 : DEFAULT_GLOBAL_OPTIONS$1.headers) !== null && _DEFAULT_GLOBAL_OPTIO !== void 0 ? _DEFAULT_GLOBAL_OPTIO : {}), (_globalOptions$header = globalOptions === null || globalOptions === void 0 ? void 0 : globalOptions.headers) !== null && _globalOptions$header !== void 0 ? _globalOptions$header : {}) }),
+		tracePropagation: {
+			enabled: (_ref = (_tracePropagationOpti = tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.enabled) !== null && _tracePropagationOpti !== void 0 ? _tracePropagationOpti : DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === null || DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === void 0 ? void 0 : DEFAULT_TRACE_PROPAGATION_OPTIONS$1.enabled) !== null && _ref !== void 0 ? _ref : false,
+			respectSamplingDecision: (_ref2 = (_tracePropagationOpti2 = tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.respectSamplingDecision) !== null && _tracePropagationOpti2 !== void 0 ? _tracePropagationOpti2 : DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === null || DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === void 0 ? void 0 : DEFAULT_TRACE_PROPAGATION_OPTIONS$1.respectSamplingDecision) !== null && _ref2 !== void 0 ? _ref2 : true
+		},
+		accessToken: async () => ""
+	};
+	if (options.accessToken) result.accessToken = options.accessToken;
+	else delete result.accessToken;
+	return result;
+}
+/**
+* Validates a Supabase client URL
+*
+* @param {string} supabaseUrl - The Supabase client URL string.
+* @returns {URL} - The validated base URL.
+* @throws {Error}
+*/
+function validateSupabaseUrl(supabaseUrl) {
+	const trimmedUrl = supabaseUrl === null || supabaseUrl === void 0 ? void 0 : supabaseUrl.trim();
+	if (!trimmedUrl) throw new Error("supabaseUrl is required.");
+	if (!trimmedUrl.match(/^https?:\/\//i)) throw new Error("Invalid supabaseUrl: Must be a valid HTTP or HTTPS URL.");
+	try {
+		return new URL(ensureTrailingSlash(trimmedUrl));
+	} catch (_unused) {
+		throw Error("Invalid supabaseUrl: Provided URL is malformed.");
+	}
+}
+
+//#endregion
+//#region src/lib/SupabaseAuthClient.ts
+var SupabaseAuthClient = class extends _supabase_auth_js.AuthClient {
+	constructor(options) {
+		super(options);
+	}
+};
+
+//#endregion
+//#region src/SupabaseClient.ts
+/**
+* Supabase Client.
+*
+* An isomorphic Javascript client for interacting with Postgres.
+*/
+var SupabaseClient = class {
+	/**
+	* Create a new client for use in the browser.
+	*
+	* @category Initializing
+	*
+	* @param supabaseUrl The unique Supabase URL which is supplied when you create a new project in your project dashboard.
+	* @param supabaseKey The unique Supabase Key which is supplied when you create a new project in your project dashboard.
+	* @param options Optional configuration for the client:
+	* - `db.schema` — You can switch in between schemas. The schema needs to be on the list of exposed schemas inside Supabase.
+	* - `auth.autoRefreshToken` — Set to `true` if you want to automatically refresh the token before expiring.
+	* - `auth.persistSession` — Set to `true` if you want to automatically save the user session into local storage.
+	* - `auth.detectSessionInUrl` — Set to `true` if you want to automatically detect OAuth grants in the URL and sign in the user.
+	* - `realtime` — Options passed along to the realtime-js constructor.
+	* - `storage` — Options passed along to the storage-js constructor.
+	* - `global.fetch` — A custom fetch implementation.
+	* - `global.headers` — Any additional headers to send with each network request.
+	*
+	* @example Creating a client
+	* ```js
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* // Create a single supabase client for interacting with your database
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
+	* ```
+	*
+	* @example With a custom domain
+	* ```js
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* // Use a custom domain as the supabase URL
+	* const supabase = createClient('https://my-custom-domain.com', 'your-publishable-key')
+	* ```
+	*
+	* @example With additional parameters
+	* ```js
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const options = {
+	*   db: {
+	*     schema: 'public',
+	*   },
+	*   auth: {
+	*     autoRefreshToken: true,
+	*     persistSession: true,
+	*     detectSessionInUrl: true
+	*   },
+	*   global: {
+	*     headers: { 'x-my-custom-header': 'my-app-name' },
+	*   },
+	* }
+	* const supabase = createClient("https://xyzcompany.supabase.co", "your-publishable-key", options)
+	* ```
+	*
+	* @exampleDescription With custom schemas
+	* By default the API server points to the `public` schema. You can enable other database schemas within the Dashboard.
+	* Go to [Settings > API > Exposed schemas](/dashboard/project/_/settings/api) and add the schema which you want to expose to the API.
+	*
+	* Note: each client connection can only access a single schema, so the code above can access the `other_schema` schema but cannot access the `public` schema.
+	*
+	* @example With custom schemas
+	* ```js
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key', {
+	*   // Provide a custom schema. Defaults to "public".
+	*   db: { schema: 'other_schema' }
+	* })
+	* ```
+	*
+	* @exampleDescription Custom fetch implementation
+	* `supabase-js` uses the runtime's global `fetch` to make HTTP requests,
+	* but an alternative `fetch` implementation can be provided as an option.
+	* This is useful in environments where the global `fetch` is unavailable or where you want to customize request behavior.
+	*
+	* @example Custom fetch implementation
+	* ```js
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key', {
+	*   global: { fetch: fetch.bind(globalThis) }
+	* })
+	* ```
+	*
+	* @exampleDescription React Native options with AsyncStorage
+	* For React Native we recommend using `AsyncStorage` as the storage implementation for Supabase Auth.
+	*
+	* @example React Native options with AsyncStorage
+	* ```js
+	* import 'react-native-url-polyfill/auto'
+	* import { createClient } from '@supabase/supabase-js'
+	* import AsyncStorage from "@react-native-async-storage/async-storage";
+	*
+	* const supabase = createClient("https://xyzcompany.supabase.co", "your-publishable-key", {
+	*   auth: {
+	*     storage: AsyncStorage,
+	*     autoRefreshToken: true,
+	*     persistSession: true,
+	*     detectSessionInUrl: false,
+	*   },
+	* });
+	* ```
+	*
+	* @exampleDescription React Native options with Expo SecureStore
+	* If you wish to encrypt the user's session information, you can use `aes-js` and store the encryption key in Expo SecureStore.
+	* The `aes-js` library, a reputable JavaScript-only implementation of the AES encryption algorithm in CTR mode.
+	* A new 256-bit encryption key is generated using the `react-native-get-random-values` library.
+	* This key is stored inside Expo's SecureStore, while the value is encrypted and placed inside AsyncStorage.
+	*
+	* Please make sure that:
+	* - You keep the `expo-secure-store`, `aes-js` and `react-native-get-random-values` libraries up-to-date.
+	* - Choose the correct [`SecureStoreOptions`](https://docs.expo.dev/versions/latest/sdk/securestore/#securestoreoptions) for your app's needs.
+	*   E.g. [`SecureStore.WHEN_UNLOCKED`](https://docs.expo.dev/versions/latest/sdk/securestore/#securestorewhen_unlocked) regulates when the data can be accessed.
+	* - Carefully consider optimizations or other modifications to the above example, as those can lead to introducing subtle security vulnerabilities.
+	*
+	* @example React Native options with Expo SecureStore
+	* ```ts
+	* import 'react-native-url-polyfill/auto'
+	* import { createClient } from '@supabase/supabase-js'
+	* import AsyncStorage from '@react-native-async-storage/async-storage';
+	* import * as SecureStore from 'expo-secure-store';
+	* import * as aesjs from 'aes-js';
+	* import 'react-native-get-random-values';
+	*
+	* // As Expo's SecureStore does not support values larger than 2048
+	* // bytes, an AES-256 key is generated and stored in SecureStore, while
+	* // it is used to encrypt/decrypt values stored in AsyncStorage.
+	* class LargeSecureStore {
+	*   private async _encrypt(key: string, value: string) {
+	*     const encryptionKey = crypto.getRandomValues(new Uint8Array(256 / 8));
+	*
+	*     const cipher = new aesjs.ModeOfOperation.ctr(encryptionKey, new aesjs.Counter(1));
+	*     const encryptedBytes = cipher.encrypt(aesjs.utils.utf8.toBytes(value));
+	*
+	*     await SecureStore.setItemAsync(key, aesjs.utils.hex.fromBytes(encryptionKey));
+	*
+	*     return aesjs.utils.hex.fromBytes(encryptedBytes);
+	*   }
+	*
+	*   private async _decrypt(key: string, value: string) {
+	*     const encryptionKeyHex = await SecureStore.getItemAsync(key);
+	*     if (!encryptionKeyHex) {
+	*       return encryptionKeyHex;
+	*     }
+	*
+	*     const cipher = new aesjs.ModeOfOperation.ctr(aesjs.utils.hex.toBytes(encryptionKeyHex), new aesjs.Counter(1));
+	*     const decryptedBytes = cipher.decrypt(aesjs.utils.hex.toBytes(value));
+	*
+	*     return aesjs.utils.utf8.fromBytes(decryptedBytes);
+	*   }
+	*
+	*   async getItem(key: string) {
+	*     const encrypted = await AsyncStorage.getItem(key);
+	*     if (!encrypted) { return encrypted; }
+	*
+	*     return await this._decrypt(key, encrypted);
+	*   }
+	*
+	*   async removeItem(key: string) {
+	*     await AsyncStorage.removeItem(key);
+	*     await SecureStore.deleteItemAsync(key);
+	*   }
+	*
+	*   async setItem(key: string, value: string) {
+	*     const encrypted = await this._encrypt(key, value);
+	*
+	*     await AsyncStorage.setItem(key, encrypted);
+	*   }
+	* }
+	*
+	* const supabase = createClient("https://xyzcompany.supabase.co", "your-publishable-key", {
+	*   auth: {
+	*     storage: new LargeSecureStore(),
+	*     autoRefreshToken: true,
+	*     persistSession: true,
+	*     detectSessionInUrl: false,
+	*   },
+	* });
+	* ```
+	*
+	* @example With a database query
+	* ```ts
+	* import { createClient } from '@supabase/supabase-js'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
+	*
+	* const { data } = await supabase.from('profiles').select('*')
+	* ```
+	*
+	* @exampleDescription With OpenTelemetry tracing
+	* Opt in to W3C trace context propagation so the `trace_id` from your
+	* client-side spans is attached to Supabase requests and appears in API
+	* Gateway and Edge Function logs. Requires `@opentelemetry/api` to be
+	* installed in your application and the tracing runtime to be loaded via
+	* `import '@supabase/supabase-js/tracing'`. See [Tracing with the JS SDK](https://supabase.com/docs/guides/telemetry/client-side-tracing).
+	*
+	* @example With OpenTelemetry tracing
+	* ```ts
+	* import '@supabase/supabase-js/tracing'
+	* import { createClient } from '@supabase/supabase-js'
+	* import { trace } from '@opentelemetry/api'
+	*
+	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key', {
+	*   tracePropagation: true,
+	* })
+	*
+	* const tracer = trace.getTracer('my-app')
+	*
+	* await tracer.startActiveSpan('fetch-users', async (span) => {
+	*   // Outgoing request carries the active trace context.
+	*   const { data, error } = await supabase.from('users').select('*')
+	*   span.end()
+	* })
+	* ```
+	*/
+	constructor(supabaseUrl, supabaseKey, options) {
+		var _settings$auth$storag, _settings$global$head;
+		this.supabaseUrl = supabaseUrl;
+		this.supabaseKey = supabaseKey;
+		const baseUrl = validateSupabaseUrl(supabaseUrl);
+		if (!supabaseKey) throw new Error("supabaseKey is required.");
+		checkApiKeyFormat(supabaseKey);
+		checkTopLevelSchemaOption(options);
+		this.realtimeUrl = new URL("realtime/v1", baseUrl);
+		this.realtimeUrl.protocol = this.realtimeUrl.protocol.replace("http", "ws");
+		this.authUrl = new URL("auth/v1", baseUrl);
+		this.storageUrl = new URL("storage/v1", baseUrl);
+		this.functionsUrl = new URL("functions/v1", baseUrl);
+		const defaultStorageKey = `sb-${baseUrl.hostname.split(".")[0]}-auth-token`;
+		const DEFAULTS = {
+			db: DEFAULT_DB_OPTIONS,
+			realtime: DEFAULT_REALTIME_OPTIONS,
+			auth: _objectSpread2(_objectSpread2({}, DEFAULT_AUTH_OPTIONS), {}, { storageKey: defaultStorageKey }),
+			global: DEFAULT_GLOBAL_OPTIONS,
+			tracePropagation: DEFAULT_TRACE_PROPAGATION_OPTIONS
+		};
+		const settings = applySettingDefaults(options !== null && options !== void 0 ? options : {}, DEFAULTS);
+		this.settings = settings;
+		this.storageKey = (_settings$auth$storag = settings.auth.storageKey) !== null && _settings$auth$storag !== void 0 ? _settings$auth$storag : "";
+		this.headers = (_settings$global$head = settings.global.headers) !== null && _settings$global$head !== void 0 ? _settings$global$head : {};
+		if (!settings.accessToken) {
+			var _settings$auth;
+			this.auth = this._initSupabaseAuthClient((_settings$auth = settings.auth) !== null && _settings$auth !== void 0 ? _settings$auth : {}, this.headers, settings.global.fetch);
+		} else {
+			this.accessToken = settings.accessToken;
+			this.auth = new Proxy({}, { get: (_, prop) => {
+				throw new Error(`@supabase/supabase-js: Supabase Client is configured with the accessToken option, accessing supabase.auth.${String(prop)} is not possible`);
+			} });
+		}
+		this.fetch = fetchWithAuth(supabaseKey, supabaseUrl, this._getSessionToken.bind(this), settings.global.fetch, settings.tracePropagation);
+		this.functionsFetch = fetchWithAuth(supabaseKey, supabaseUrl, this._getSessionToken.bind(this), settings.global.fetch, settings.tracePropagation, { omitApiKeyAsBearer: true });
+		this.realtime = this._initRealtimeClient(_objectSpread2({
+			headers: this.headers,
+			accessToken: this._getAccessToken.bind(this),
+			fetch: this.fetch
+		}, settings.realtime));
+		if (this.accessToken) Promise.resolve(this.accessToken()).then((token) => this.realtime.setAuth(token)).catch((e) => console.warn("Failed to set initial Realtime auth token:", e));
+		this.rest = new _supabase_postgrest_js.PostgrestClient(new URL("rest/v1", baseUrl).href, {
+			headers: this.headers,
+			schema: settings.db.schema,
+			fetch: this.fetch,
+			timeout: settings.db.timeout,
+			urlLengthLimit: settings.db.urlLengthLimit,
+			retry: settings.db.retry
+		});
+		this.storage = new _supabase_storage_js.StorageClient(this.storageUrl.href, this.headers, this.fetch, options === null || options === void 0 ? void 0 : options.storage);
+		if (!settings.accessToken) this._listenForAuthEvents();
+	}
+	/**
+	* Supabase Functions allows you to deploy and invoke edge functions.
+	*/
+	get functions() {
+		return new _supabase_functions_js.FunctionsClient(this.functionsUrl.href, {
+			headers: this.headers,
+			customFetch: this.functionsFetch
+		});
+	}
+	/**
+	* Perform a query on a table or a view.
+	*
+	* @param relation - The table or view name to query
+	*/
+	from(relation) {
+		return this.rest.from(relation);
+	}
+	/**
+	* Select a schema to query or perform an function (rpc) call.
+	*
+	* The schema needs to be on the list of exposed schemas inside Supabase.
+	*
+	* @param schema - The schema to query
+	*/
+	schema(schema) {
+		return this.rest.schema(schema);
+	}
+	/**
+	* Fetch the OpenAPI description PostgREST publishes for this client's schema.
+	*
+	* The document lists only the tables, views and functions the caller's role
+	* holds privileges on. The request carries the same `apikey` and
+	* `Authorization` headers as every other query, so the description is scoped
+	* to the signed-in user. Call `.schema()` first to describe a schema other
+	* than the client default.
+	*
+	* @example
+	* ```ts
+	* const { data, error } = await supabase.getOpenApiSpec()
+	* ```
+	*/
+	getOpenApiSpec() {
+		return this.rest.getOpenApiSpec();
+	}
+	/**
+	* Perform a function call.
+	*
+	* @param fn - The function name to call
+	* @param args - The arguments to pass to the function call
+	* @param options - Named parameters
+	* @param options.head - When set to `true`, `data` will not be returned.
+	* Useful if you only need the count.
+	* @param options.get - When set to `true`, the function will be called with
+	* read-only access mode.
+	* @param options.count - Count algorithm to use to count rows returned by the
+	* function. Only applicable for [set-returning
+	* functions](https://www.postgresql.org/docs/current/functions-srf.html).
+	*
+	* `"exact"`: Exact but slow count algorithm. Performs a `COUNT(*)` under the
+	* hood.
+	*
+	* `"planned"`: Approximated but fast count algorithm. Uses the Postgres
+	* statistics under the hood.
+	*
+	* `"estimated"`: Uses exact count for low numbers and planned count for high
+	* numbers.
+	*/
+	rpc(fn, args = {}, options = {
+		head: false,
+		get: false,
+		count: void 0
+	}) {
+		return this.rest.rpc(fn, args, options);
+	}
+	/**
+	* Creates a Realtime channel with Broadcast, Presence, and Postgres Changes.
+	*
+	* @param {string} name - The name of the Realtime channel.
+	* @param {Object} opts - The options to pass to the Realtime channel.
+	*
+	* @category Realtime
+	*/
+	channel(name, opts = { config: {} }) {
+		return this.realtime.channel(name, opts);
+	}
+	/**
+	* Returns all Realtime channels.
+	*
+	* @category Realtime
+	*
+	* @example Get all channels
+	* ```js
+	* const channels = supabase.getChannels()
+	* ```
+	*/
+	getChannels() {
+		return this.realtime.getChannels();
+	}
+	/**
+	* Unsubscribes and removes Realtime channel from Realtime client.
+	*
+	* @param {RealtimeChannel} channel - The name of the Realtime channel.
+	*
+	*
+	* @category Realtime
+	*
+	* @remarks
+	* - Removing a channel is a great way to maintain the performance of your project's Realtime service as well as your database if you're listening to Postgres changes. Supabase will automatically handle cleanup 30 seconds after a client is disconnected, but unused channels may cause degradation as more clients are simultaneously subscribed.
+	*
+	* @example Removes a channel
+	* ```js
+	* supabase.removeChannel(myChannel)
+	* ```
+	*/
+	removeChannel(channel) {
+		return this.realtime.removeChannel(channel);
+	}
+	/**
+	* Unsubscribes and removes all Realtime channels from Realtime client.
+	*
+	* @category Realtime
+	*
+	* @remarks
+	* - Removing channels is a great way to maintain the performance of your project's Realtime service as well as your database if you're listening to Postgres changes. Supabase will automatically handle cleanup 30 seconds after a client is disconnected, but unused channels may cause degradation as more clients are simultaneously subscribed.
+	*
+	* @example Remove all channels
+	* ```js
+	* supabase.removeAllChannels()
+	* ```
+	*/
+	removeAllChannels() {
+		return this.realtime.removeAllChannels();
+	}
+	/**
+	* The raw session token — the custom `accessToken` result or the signed-in user's JWT —
+	* or `null` when there is no session. Unlike {@link _getAccessToken} it does not fall back
+	* to `supabaseKey`, so callers can distinguish "no session" from "has session".
+	*/
+	async _getSessionToken() {
+		var _this = this;
+		var _data$session$access_, _data$session;
+		if (_this.accessToken) return await _this.accessToken();
+		const { data } = await _this.auth.getSession();
+		return (_data$session$access_ = (_data$session = data.session) === null || _data$session === void 0 ? void 0 : _data$session.access_token) !== null && _data$session$access_ !== void 0 ? _data$session$access_ : null;
+	}
+	async _getAccessToken() {
+		var _this2 = this;
+		var _await$this$_getSessi;
+		return (_await$this$_getSessi = await _this2._getSessionToken()) !== null && _await$this$_getSessi !== void 0 ? _await$this$_getSessi : _this2.supabaseKey;
+	}
+	_initSupabaseAuthClient({ autoRefreshToken, persistSession, detectSessionInUrl, storage, userStorage, storageKey, flowType, lock, debug, throwOnError, experimental, lockAcquireTimeout, skipAutoInitialize }, headers, fetch$1) {
+		const authHeaders = {
+			Authorization: `Bearer ${this.supabaseKey}`,
+			apikey: `${this.supabaseKey}`
+		};
+		return new SupabaseAuthClient({
+			url: this.authUrl.href,
+			headers: _objectSpread2(_objectSpread2({}, authHeaders), headers),
+			storageKey,
+			autoRefreshToken,
+			persistSession,
+			detectSessionInUrl,
+			storage,
+			userStorage,
+			flowType,
+			lock,
+			debug,
+			throwOnError,
+			experimental,
+			fetch: fetch$1,
+			lockAcquireTimeout,
+			skipAutoInitialize,
+			hasCustomAuthorizationHeader: Object.keys(this.headers).some((key) => key.toLowerCase() === "authorization")
+		});
+	}
+	_initRealtimeClient(options) {
+		return new _supabase_realtime_js.RealtimeClient(this.realtimeUrl.href, _objectSpread2(_objectSpread2({}, options), {}, { params: _objectSpread2(_objectSpread2({}, { apikey: this.supabaseKey }), options === null || options === void 0 ? void 0 : options.params) }));
+	}
+	_listenForAuthEvents() {
+		return this.auth.onAuthStateChange((event, session) => {
+			this._handleTokenChanged(event, "CLIENT", session === null || session === void 0 ? void 0 : session.access_token);
+		});
+	}
+	_handleTokenChanged(event, source, token) {
+		if ((event === "TOKEN_REFRESHED" || event === "SIGNED_IN" || event === "INITIAL_SESSION") && this.changedAccessToken !== token) {
+			this.changedAccessToken = token;
+			this.realtime.setAuth(token);
+		} else if (event === "SIGNED_OUT") {
+			this.realtime.setAuth();
+			if (source == "STORAGE") this.auth.signOut();
+			this.changedAccessToken = void 0;
+		}
+	}
+};
+
+//#endregion
+//#region src/index.ts
+/**
+* Creates a new Supabase Client.
+*
+* @example Creating a Supabase client
+* ```ts
+* import { createClient } from '@supabase/supabase-js'
+*
+* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
+* const { data, error } = await supabase.from('profiles').select('*')
+* ```
+*/
+const createClient = (supabaseUrl, supabaseKey, options) => {
+	return new SupabaseClient(supabaseUrl, supabaseKey, options);
+};
+function shouldShowDeprecationWarning() {
+	if (typeof window !== "undefined" || globalThis["Deno"] !== void 0) return false;
+	const _process = globalThis["process"];
+	if (!_process) return false;
+	const processVersion = _process["version"];
+	if (processVersion === void 0 || processVersion === null) return false;
+	const versionMatch = processVersion.match(/^v(\d+)\./);
+	if (!versionMatch) return false;
+	return parseInt(versionMatch[1], 10) <= 20;
+}
+if (shouldShowDeprecationWarning()) console.warn("⚠️  Node.js 20 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 22 or later. For more information, visit: https://github.com/orgs/supabase/discussions/45715");
+
+//#endregion
+Object.defineProperty(exports, "FunctionRegion", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_functions_js.FunctionRegion;
+  }
+}));
+Object.defineProperty(exports, "FunctionsError", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_functions_js.FunctionsError;
+  }
+}));
+Object.defineProperty(exports, "FunctionsFetchError", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_functions_js.FunctionsFetchError;
+  }
+}));
+Object.defineProperty(exports, "FunctionsHttpError", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_functions_js.FunctionsHttpError;
+  }
+}));
+Object.defineProperty(exports, "FunctionsRelayError", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_functions_js.FunctionsRelayError;
+  }
+}));
+Object.defineProperty(exports, "PostgrestError", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_postgrest_js.PostgrestError;
+  }
+}));
+Object.defineProperty(exports, "StorageApiError", ({
+  enumerable: true,
+  get: function () {
+    return _supabase_storage_js.StorageApiError;
+  }
+}));
+exports.SupabaseClient = SupabaseClient;
+exports.createClient = createClient;
+Object.keys(_supabase_auth_js).forEach(function (k) {
+  if (k !== 'default' && !Object.prototype.hasOwnProperty.call(exports, k)) Object.defineProperty(exports, k, {
+    enumerable: true,
+    get: function () { return _supabase_auth_js[k]; }
+  });
+});
+
+Object.keys(_supabase_realtime_js).forEach(function (k) {
+  if (k !== 'default' && !Object.prototype.hasOwnProperty.call(exports, k)) Object.defineProperty(exports, k, {
+    enumerable: true,
+    get: function () { return _supabase_realtime_js[k]; }
+  });
+});
+
+//# sourceMappingURL=index.cjs.map
+
+/***/ }),
+
+/***/ 7691:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+//#region src/lib/tracingRegistry.ts
+const EXTRACTOR_KEY = Symbol.for("@supabase/supabase-js.traceContextExtractor");
+/**
+* Register the trace context extractor used by all Supabase clients in this
+* process. Called by the `@supabase/supabase-js/tracing` subpath as an import
+* side effect; the last registration wins.
+*/
+function registerTraceContextExtractor(extractor) {
+	globalThis[EXTRACTOR_KEY] = extractor;
+}
+/**
+* The currently registered trace context extractor, if any.
+*/
+function getTraceContextExtractor() {
+	return globalThis[EXTRACTOR_KEY];
+}
+
+//#endregion
+Object.defineProperty(exports, "getTraceContextExtractor", ({
+  enumerable: true,
+  get: function () {
+    return getTraceContextExtractor;
+  }
+}));
+Object.defineProperty(exports, "registerTraceContextExtractor", ({
+  enumerable: true,
+  get: function () {
+    return registerTraceContextExtractor;
+  }
+}));
+//# sourceMappingURL=tracingRegistry.cjs.map
+
+/***/ }),
+
+/***/ 612:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+
 // src/errors/IcebergError.ts
 var IcebergError = class extends Error {
   constructor(message, opts) {
@@ -51698,4226 +54737,3009 @@ function getCurrentSchema(metadata) {
   return metadata.schemas.find((s) => s["schema-id"] === metadata["current-schema-id"]);
 }
 
+exports.IcebergError = IcebergError;
+exports.IcebergRestCatalog = IcebergRestCatalog;
+exports.getCurrentSchema = getCurrentSchema;
+exports.isDecimalType = isDecimalType;
+exports.isFixedType = isFixedType;
+exports.parseDecimalType = parseDecimalType;
+exports.parseFixedType = parseFixedType;
+exports.typesEqual = typesEqual;
+//# sourceMappingURL=index.cjs.map
+//# sourceMappingURL=index.cjs.map
 
-//# sourceMappingURL=index.mjs.map
-//# sourceMappingURL=index.mjs.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@supabase+storage-js@2.117.2/node_modules/@supabase/storage-js/dist/index.mjs
+/***/ })
 
+/******/ });
+/************************************************************************/
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __nccwpck_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
+/******/ 	}
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		// no module.id needed
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	var threw = true;
+/******/ 	try {
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __nccwpck_require__);
+/******/ 		threw = false;
+/******/ 	} finally {
+/******/ 		if(threw) delete __webpack_module_cache__[moduleId];
+/******/ 	}
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
+/************************************************************************/
+/******/ /* webpack/runtime/asset-relocator-loader */
+/******/ if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = decodeURIComponent(new URL('.', import.meta.url).pathname).slice(import.meta.url.match(/^file:\/\/\/\w:/) ? 1 : 0, -1) + "/";
+/******/ 
+/************************************************************************/
+var __webpack_exports__ = {};
 
-//#region \0@oxc-project+runtime@0.103.0/helpers/typeof.js
-function dist_typeof(o) {
-	"@babel/helpers - typeof";
-	return dist_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o$1) {
-		return typeof o$1;
-	} : function(o$1) {
-		return o$1 && "function" == typeof Symbol && o$1.constructor === Symbol && o$1 !== Symbol.prototype ? "symbol" : typeof o$1;
-	}, dist_typeof(o);
-}
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/toPrimitive.js
-function dist_toPrimitive(t, r) {
-	if ("object" != dist_typeof(t) || !t) return t;
-	var e = t[Symbol.toPrimitive];
-	if (void 0 !== e) {
-		var i = e.call(t, r || "default");
-		if ("object" != dist_typeof(i)) return i;
-		throw new TypeError("@@toPrimitive must return a primitive value.");
-	}
-	return ("string" === r ? String : Number)(t);
-}
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/toPropertyKey.js
-function dist_toPropertyKey(t) {
-	var i = dist_toPrimitive(t, "string");
-	return "symbol" == dist_typeof(i) ? i : i + "";
-}
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/defineProperty.js
-function dist_defineProperty(e, r, t) {
-	return (r = dist_toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
-		value: t,
-		enumerable: !0,
-		configurable: !0,
-		writable: !0
-	}) : e[r] = t, e;
-}
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/objectSpread2.js
-function dist_ownKeys(e, r) {
-	var t = Object.keys(e);
-	if (Object.getOwnPropertySymbols) {
-		var o = Object.getOwnPropertySymbols(e);
-		r && (o = o.filter(function(r$1) {
-			return Object.getOwnPropertyDescriptor(e, r$1).enumerable;
-		})), t.push.apply(t, o);
-	}
-	return t;
-}
-function dist_objectSpread2(e) {
-	for (var r = 1; r < arguments.length; r++) {
-		var t = null != arguments[r] ? arguments[r] : {};
-		r % 2 ? dist_ownKeys(Object(t), !0).forEach(function(r$1) {
-			dist_defineProperty(e, r$1, t[r$1]);
-		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : dist_ownKeys(Object(t)).forEach(function(r$1) {
-			Object.defineProperty(e, r$1, Object.getOwnPropertyDescriptor(t, r$1));
-		});
-	}
-	return e;
-}
-
-//#endregion
-//#region src/lib/common/errors.ts
+;// CONCATENATED MODULE: external "node:fs"
+const external_node_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs");
+;// CONCATENATED MODULE: external "node:os"
+const external_node_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:os");
+;// CONCATENATED MODULE: external "node:path"
+const external_node_path_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:path");
+;// CONCATENATED MODULE: external "os"
+const external_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("os");
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/utils.js
+// We use any as a valid input type
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
-* Base error class for all Storage errors
-* Supports both 'storage' and 'vectors' namespaces
-*/
-var StorageError = class extends Error {
-	constructor(message, namespace = "storage", status, statusCode) {
-		super(message);
-		this.__isStorageError = true;
-		this.namespace = namespace;
-		this.name = namespace === "vectors" ? "StorageVectorsError" : "StorageError";
-		this.status = status;
-		this.statusCode = statusCode;
-	}
-	toJSON() {
-		return {
-			name: this.name,
-			message: this.message,
-			status: this.status,
-			statusCode: this.statusCode
-		};
-	}
-};
-/**
-* Type guard to check if an error is a StorageError
-* @param error - The error to check
-* @returns True if the error is a StorageError
-*/
-function isStorageError(error) {
-	return typeof error === "object" && error !== null && "__isStorageError" in error;
+ * Sanitizes an input into a string so it can be passed into issueCommand safely
+ * @param input input to sanitize into a string
+ */
+function utils_toCommandValue(input) {
+    if (input === null || input === undefined) {
+        return '';
+    }
+    else if (typeof input === 'string' || input instanceof String) {
+        return input;
+    }
+    return JSON.stringify(input);
 }
 /**
-* API error returned from Storage service
-* Includes HTTP status code and service-specific error code
-*/
-var StorageApiError = class extends StorageError {
-	constructor(message, status, statusCode, namespace = "storage", code) {
-		super(message, namespace, status, statusCode);
-		this.name = namespace === "vectors" ? "StorageVectorsApiError" : "StorageApiError";
-		this.status = status;
-		this.statusCode = statusCode;
-		this.code = code;
-	}
-	toJSON() {
-		return dist_objectSpread2(dist_objectSpread2({}, super.toJSON()), {}, { code: this.code });
-	}
-};
+ *
+ * @param annotationProperties
+ * @returns The command properties to send with the actual annotation command
+ * See IssueCommandProperties: https://github.com/actions/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
+ */
+function utils_toCommandProperties(annotationProperties) {
+    if (!Object.keys(annotationProperties).length) {
+        return {};
+    }
+    return {
+        title: annotationProperties.title,
+        file: annotationProperties.file,
+        line: annotationProperties.startLine,
+        endLine: annotationProperties.endLine,
+        col: annotationProperties.startColumn,
+        endColumn: annotationProperties.endColumn
+    };
+}
+//# sourceMappingURL=utils.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/command.js
+
+
 /**
-* Unknown error that doesn't match expected error patterns
-* Wraps the original error for debugging
-*/
-var StorageUnknownError = class extends StorageError {
-	constructor(message, originalError, namespace = "storage") {
-		super(message, namespace);
-		this.name = namespace === "vectors" ? "StorageVectorsUnknownError" : "StorageUnknownError";
-		this.originalError = originalError;
-	}
+ * Issues a command to the GitHub Actions runner
+ *
+ * @param command - The command name to issue
+ * @param properties - Additional properties for the command (key-value pairs)
+ * @param message - The message to include with the command
+ * @remarks
+ * This function outputs a specially formatted string to stdout that the Actions
+ * runner interprets as a command. These commands can control workflow behavior,
+ * set outputs, create annotations, mask values, and more.
+ *
+ * Command Format:
+ *   ::name key=value,key=value::message
+ *
+ * @example
+ * ```typescript
+ * // Issue a warning annotation
+ * issueCommand('warning', {}, 'This is a warning message');
+ * // Output: ::warning::This is a warning message
+ *
+ * // Set an environment variable
+ * issueCommand('set-env', { name: 'MY_VAR' }, 'some value');
+ * // Output: ::set-env name=MY_VAR::some value
+ *
+ * // Add a secret mask
+ * issueCommand('add-mask', {}, 'secretValue123');
+ * // Output: ::add-mask::secretValue123
+ * ```
+ *
+ * @internal
+ * This is an internal utility function that powers the public API functions
+ * such as setSecret, warning, error, and exportVariable.
+ */
+function command_issueCommand(command, properties, message) {
+    const cmd = new Command(command, properties, message);
+    process.stdout.write(cmd.toString() + external_os_namespaceObject.EOL);
+}
+function command_issue(name, message = '') {
+    command_issueCommand(name, {}, message);
+}
+const CMD_STRING = '::';
+class Command {
+    constructor(command, properties, message) {
+        if (!command) {
+            command = 'missing.command';
+        }
+        this.command = command;
+        this.properties = properties;
+        this.message = message;
+    }
+    toString() {
+        let cmdStr = CMD_STRING + this.command;
+        if (this.properties && Object.keys(this.properties).length > 0) {
+            cmdStr += ' ';
+            let first = true;
+            for (const key in this.properties) {
+                if (this.properties.hasOwnProperty(key)) {
+                    const val = this.properties[key];
+                    if (val) {
+                        if (first) {
+                            first = false;
+                        }
+                        else {
+                            cmdStr += ',';
+                        }
+                        cmdStr += `${key}=${escapeProperty(val)}`;
+                    }
+                }
+            }
+        }
+        cmdStr += `${CMD_STRING}${escapeData(this.message)}`;
+        return cmdStr;
+    }
+}
+function escapeData(s) {
+    return utils_toCommandValue(s)
+        .replace(/%/g, '%25')
+        .replace(/\r/g, '%0D')
+        .replace(/\n/g, '%0A');
+}
+function escapeProperty(s) {
+    return utils_toCommandValue(s)
+        .replace(/%/g, '%25')
+        .replace(/\r/g, '%0D')
+        .replace(/\n/g, '%0A')
+        .replace(/:/g, '%3A')
+        .replace(/,/g, '%2C');
+}
+//# sourceMappingURL=command.js.map
+;// CONCATENATED MODULE: external "crypto"
+const external_crypto_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("crypto");
+;// CONCATENATED MODULE: external "fs"
+const external_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("fs");
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/file-command.js
+// For internal use, subject to change.
+// We use any as a valid input type
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+
+
+
+function file_command_issueFileCommand(command, message) {
+    const filePath = process.env[`GITHUB_${command}`];
+    if (!filePath) {
+        throw new Error(`Unable to find environment variable for file command ${command}`);
+    }
+    if (!fs.existsSync(filePath)) {
+        throw new Error(`Missing file at path: ${filePath}`);
+    }
+    fs.appendFileSync(filePath, `${toCommandValue(message)}${os.EOL}`, {
+        encoding: 'utf8'
+    });
+}
+function file_command_prepareKeyValueMessage(key, value) {
+    const delimiter = `ghadelimiter_${crypto.randomUUID()}`;
+    const convertedValue = toCommandValue(value);
+    // These should realistically never happen, but just in case someone finds a
+    // way to exploit uuid generation let's not allow keys or values that contain
+    // the delimiter.
+    if (key.includes(delimiter)) {
+        throw new Error(`Unexpected input: name should not contain the delimiter "${delimiter}"`);
+    }
+    if (convertedValue.includes(delimiter)) {
+        throw new Error(`Unexpected input: value should not contain the delimiter "${delimiter}"`);
+    }
+    return `${key}<<${delimiter}${os.EOL}${convertedValue}${os.EOL}${delimiter}`;
+}
+//# sourceMappingURL=file-command.js.map
+;// CONCATENATED MODULE: external "path"
+const external_path_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("path");
+// EXTERNAL MODULE: external "http"
+var external_http_ = __nccwpck_require__(8611);
+// EXTERNAL MODULE: external "https"
+var external_https_ = __nccwpck_require__(5692);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/proxy.js
+function getProxyUrl(reqUrl) {
+    const usingSsl = reqUrl.protocol === 'https:';
+    if (checkBypass(reqUrl)) {
+        return undefined;
+    }
+    const proxyVar = (() => {
+        if (usingSsl) {
+            return process.env['https_proxy'] || process.env['HTTPS_PROXY'];
+        }
+        else {
+            return process.env['http_proxy'] || process.env['HTTP_PROXY'];
+        }
+    })();
+    if (proxyVar) {
+        try {
+            return new DecodedURL(proxyVar);
+        }
+        catch (_a) {
+            if (!proxyVar.startsWith('http://') && !proxyVar.startsWith('https://'))
+                return new DecodedURL(`http://${proxyVar}`);
+        }
+    }
+    else {
+        return undefined;
+    }
+}
+function checkBypass(reqUrl) {
+    if (!reqUrl.hostname) {
+        return false;
+    }
+    const reqHost = reqUrl.hostname;
+    if (isLoopbackAddress(reqHost)) {
+        return true;
+    }
+    const noProxy = process.env['no_proxy'] || process.env['NO_PROXY'] || '';
+    if (!noProxy) {
+        return false;
+    }
+    // Determine the request port
+    let reqPort;
+    if (reqUrl.port) {
+        reqPort = Number(reqUrl.port);
+    }
+    else if (reqUrl.protocol === 'http:') {
+        reqPort = 80;
+    }
+    else if (reqUrl.protocol === 'https:') {
+        reqPort = 443;
+    }
+    // Format the request hostname and hostname with port
+    const upperReqHosts = [reqUrl.hostname.toUpperCase()];
+    if (typeof reqPort === 'number') {
+        upperReqHosts.push(`${upperReqHosts[0]}:${reqPort}`);
+    }
+    // Compare request host against noproxy
+    for (const upperNoProxyItem of noProxy
+        .split(',')
+        .map(x => x.trim().toUpperCase())
+        .filter(x => x)) {
+        if (upperNoProxyItem === '*' ||
+            upperReqHosts.some(x => x === upperNoProxyItem ||
+                x.endsWith(`.${upperNoProxyItem}`) ||
+                (upperNoProxyItem.startsWith('.') &&
+                    x.endsWith(`${upperNoProxyItem}`)))) {
+            return true;
+        }
+    }
+    return false;
+}
+function isLoopbackAddress(host) {
+    const hostLower = host.toLowerCase();
+    return (hostLower === 'localhost' ||
+        hostLower.startsWith('127.') ||
+        hostLower.startsWith('[::1]') ||
+        hostLower.startsWith('[0:0:0:0:0:0:0:1]'));
+}
+class DecodedURL extends URL {
+    constructor(url, base) {
+        super(url, base);
+        this._decodedUsername = decodeURIComponent(super.username);
+        this._decodedPassword = decodeURIComponent(super.password);
+    }
+    get username() {
+        return this._decodedUsername;
+    }
+    get password() {
+        return this._decodedPassword;
+    }
+}
+//# sourceMappingURL=proxy.js.map
+// EXTERNAL MODULE: ./node_modules/.pnpm/tunnel@0.0.6/node_modules/tunnel/index.js
+var node_modules_tunnel = __nccwpck_require__(7013);
+// EXTERNAL MODULE: ./node_modules/.pnpm/undici@6.29.0/node_modules/undici/index.js
+var undici = __nccwpck_require__(9162);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/index.js
+/* eslint-disable @typescript-eslint/no-explicit-any */
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
 };
+
+
+
+
+
+var HttpCodes;
+(function (HttpCodes) {
+    HttpCodes[HttpCodes["OK"] = 200] = "OK";
+    HttpCodes[HttpCodes["MultipleChoices"] = 300] = "MultipleChoices";
+    HttpCodes[HttpCodes["MovedPermanently"] = 301] = "MovedPermanently";
+    HttpCodes[HttpCodes["ResourceMoved"] = 302] = "ResourceMoved";
+    HttpCodes[HttpCodes["SeeOther"] = 303] = "SeeOther";
+    HttpCodes[HttpCodes["NotModified"] = 304] = "NotModified";
+    HttpCodes[HttpCodes["UseProxy"] = 305] = "UseProxy";
+    HttpCodes[HttpCodes["SwitchProxy"] = 306] = "SwitchProxy";
+    HttpCodes[HttpCodes["TemporaryRedirect"] = 307] = "TemporaryRedirect";
+    HttpCodes[HttpCodes["PermanentRedirect"] = 308] = "PermanentRedirect";
+    HttpCodes[HttpCodes["BadRequest"] = 400] = "BadRequest";
+    HttpCodes[HttpCodes["Unauthorized"] = 401] = "Unauthorized";
+    HttpCodes[HttpCodes["PaymentRequired"] = 402] = "PaymentRequired";
+    HttpCodes[HttpCodes["Forbidden"] = 403] = "Forbidden";
+    HttpCodes[HttpCodes["NotFound"] = 404] = "NotFound";
+    HttpCodes[HttpCodes["MethodNotAllowed"] = 405] = "MethodNotAllowed";
+    HttpCodes[HttpCodes["NotAcceptable"] = 406] = "NotAcceptable";
+    HttpCodes[HttpCodes["ProxyAuthenticationRequired"] = 407] = "ProxyAuthenticationRequired";
+    HttpCodes[HttpCodes["RequestTimeout"] = 408] = "RequestTimeout";
+    HttpCodes[HttpCodes["Conflict"] = 409] = "Conflict";
+    HttpCodes[HttpCodes["Gone"] = 410] = "Gone";
+    HttpCodes[HttpCodes["TooManyRequests"] = 429] = "TooManyRequests";
+    HttpCodes[HttpCodes["InternalServerError"] = 500] = "InternalServerError";
+    HttpCodes[HttpCodes["NotImplemented"] = 501] = "NotImplemented";
+    HttpCodes[HttpCodes["BadGateway"] = 502] = "BadGateway";
+    HttpCodes[HttpCodes["ServiceUnavailable"] = 503] = "ServiceUnavailable";
+    HttpCodes[HttpCodes["GatewayTimeout"] = 504] = "GatewayTimeout";
+})(HttpCodes || (HttpCodes = {}));
+var lib_Headers;
+(function (Headers) {
+    Headers["Accept"] = "accept";
+    Headers["ContentType"] = "content-type";
+})(lib_Headers || (lib_Headers = {}));
+var MediaTypes;
+(function (MediaTypes) {
+    MediaTypes["ApplicationJson"] = "application/json";
+})(MediaTypes || (MediaTypes = {}));
 /**
-* @deprecated Use StorageError with namespace='vectors' instead
-* Alias for backward compatibility with existing vector storage code
-*/
-var StorageVectorsError = class extends StorageError {
-	constructor(message) {
-		super(message, "vectors");
-	}
+ * Returns the proxy URL, depending upon the supplied url and proxy environment variables.
+ * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
+ */
+function lib_getProxyUrl(serverUrl) {
+    const proxyUrl = pm.getProxyUrl(new URL(serverUrl));
+    return proxyUrl ? proxyUrl.href : '';
+}
+const HttpRedirectCodes = [
+    HttpCodes.MovedPermanently,
+    HttpCodes.ResourceMoved,
+    HttpCodes.SeeOther,
+    HttpCodes.TemporaryRedirect,
+    HttpCodes.PermanentRedirect
+];
+const HttpResponseRetryCodes = [
+    HttpCodes.BadGateway,
+    HttpCodes.ServiceUnavailable,
+    HttpCodes.GatewayTimeout
+];
+const RetryableHttpVerbs = (/* unused pure expression or super */ null && (['OPTIONS', 'GET', 'DELETE', 'HEAD']));
+const ExponentialBackoffCeiling = 10;
+const ExponentialBackoffTimeSlice = 5;
+class HttpClientError extends Error {
+    constructor(message, statusCode) {
+        super(message);
+        this.name = 'HttpClientError';
+        this.statusCode = statusCode;
+        Object.setPrototypeOf(this, HttpClientError.prototype);
+    }
+}
+class HttpClientResponse {
+    constructor(message) {
+        this.message = message;
+    }
+    readBody() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
+                let output = Buffer.alloc(0);
+                this.message.on('data', (chunk) => {
+                    output = Buffer.concat([output, chunk]);
+                });
+                this.message.on('end', () => {
+                    resolve(output.toString());
+                });
+            }));
+        });
+    }
+    readBodyBuffer() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
+                const chunks = [];
+                this.message.on('data', (chunk) => {
+                    chunks.push(chunk);
+                });
+                this.message.on('end', () => {
+                    resolve(Buffer.concat(chunks));
+                });
+            }));
+        });
+    }
+}
+function isHttps(requestUrl) {
+    const parsedUrl = new URL(requestUrl);
+    return parsedUrl.protocol === 'https:';
+}
+class lib_HttpClient {
+    constructor(userAgent, handlers, requestOptions) {
+        this._ignoreSslError = false;
+        this._allowRedirects = true;
+        this._allowRedirectDowngrade = false;
+        this._maxRedirects = 50;
+        this._allowRetries = false;
+        this._maxRetries = 1;
+        this._keepAlive = false;
+        this._disposed = false;
+        this.userAgent = this._getUserAgentWithOrchestrationId(userAgent);
+        this.handlers = handlers || [];
+        this.requestOptions = requestOptions;
+        if (requestOptions) {
+            if (requestOptions.ignoreSslError != null) {
+                this._ignoreSslError = requestOptions.ignoreSslError;
+            }
+            this._socketTimeout = requestOptions.socketTimeout;
+            if (requestOptions.allowRedirects != null) {
+                this._allowRedirects = requestOptions.allowRedirects;
+            }
+            if (requestOptions.allowRedirectDowngrade != null) {
+                this._allowRedirectDowngrade = requestOptions.allowRedirectDowngrade;
+            }
+            if (requestOptions.maxRedirects != null) {
+                this._maxRedirects = Math.max(requestOptions.maxRedirects, 0);
+            }
+            if (requestOptions.keepAlive != null) {
+                this._keepAlive = requestOptions.keepAlive;
+            }
+            if (requestOptions.allowRetries != null) {
+                this._allowRetries = requestOptions.allowRetries;
+            }
+            if (requestOptions.maxRetries != null) {
+                this._maxRetries = requestOptions.maxRetries;
+            }
+        }
+    }
+    options(requestUrl, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('OPTIONS', requestUrl, null, additionalHeaders || {});
+        });
+    }
+    get(requestUrl, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('GET', requestUrl, null, additionalHeaders || {});
+        });
+    }
+    del(requestUrl, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('DELETE', requestUrl, null, additionalHeaders || {});
+        });
+    }
+    post(requestUrl, data, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('POST', requestUrl, data, additionalHeaders || {});
+        });
+    }
+    patch(requestUrl, data, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('PATCH', requestUrl, data, additionalHeaders || {});
+        });
+    }
+    put(requestUrl, data, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('PUT', requestUrl, data, additionalHeaders || {});
+        });
+    }
+    head(requestUrl, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request('HEAD', requestUrl, null, additionalHeaders || {});
+        });
+    }
+    sendStream(verb, requestUrl, stream, additionalHeaders) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.request(verb, requestUrl, stream, additionalHeaders);
+        });
+    }
+    /**
+     * Gets a typed object from an endpoint
+     * Be aware that not found returns a null.  Other errors (4xx, 5xx) reject the promise
+     */
+    getJson(requestUrl_1) {
+        return __awaiter(this, arguments, void 0, function* (requestUrl, additionalHeaders = {}) {
+            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
+            const res = yield this.get(requestUrl, additionalHeaders);
+            return this._processResponse(res, this.requestOptions);
+        });
+    }
+    postJson(requestUrl_1, obj_1) {
+        return __awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
+            const data = JSON.stringify(obj, null, 2);
+            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
+            additionalHeaders[lib_Headers.ContentType] =
+                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, MediaTypes.ApplicationJson);
+            const res = yield this.post(requestUrl, data, additionalHeaders);
+            return this._processResponse(res, this.requestOptions);
+        });
+    }
+    putJson(requestUrl_1, obj_1) {
+        return __awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
+            const data = JSON.stringify(obj, null, 2);
+            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
+            additionalHeaders[lib_Headers.ContentType] =
+                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, MediaTypes.ApplicationJson);
+            const res = yield this.put(requestUrl, data, additionalHeaders);
+            return this._processResponse(res, this.requestOptions);
+        });
+    }
+    patchJson(requestUrl_1, obj_1) {
+        return __awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
+            const data = JSON.stringify(obj, null, 2);
+            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, MediaTypes.ApplicationJson);
+            additionalHeaders[lib_Headers.ContentType] =
+                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, MediaTypes.ApplicationJson);
+            const res = yield this.patch(requestUrl, data, additionalHeaders);
+            return this._processResponse(res, this.requestOptions);
+        });
+    }
+    /**
+     * Makes a raw http request.
+     * All other methods such as get, post, patch, and request ultimately call this.
+     * Prefer get, del, post and patch
+     */
+    request(verb, requestUrl, data, headers) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (this._disposed) {
+                throw new Error('Client has already been disposed.');
+            }
+            const parsedUrl = new URL(requestUrl);
+            let info = this._prepareRequest(verb, parsedUrl, headers);
+            // Only perform retries on reads since writes may not be idempotent.
+            const maxTries = this._allowRetries && RetryableHttpVerbs.includes(verb)
+                ? this._maxRetries + 1
+                : 1;
+            let numTries = 0;
+            let response;
+            do {
+                response = yield this.requestRaw(info, data);
+                // Check if it's an authentication challenge
+                if (response &&
+                    response.message &&
+                    response.message.statusCode === HttpCodes.Unauthorized) {
+                    let authenticationHandler;
+                    for (const handler of this.handlers) {
+                        if (handler.canHandleAuthentication(response)) {
+                            authenticationHandler = handler;
+                            break;
+                        }
+                    }
+                    if (authenticationHandler) {
+                        return authenticationHandler.handleAuthentication(this, info, data);
+                    }
+                    else {
+                        // We have received an unauthorized response but have no handlers to handle it.
+                        // Let the response return to the caller.
+                        return response;
+                    }
+                }
+                let redirectsRemaining = this._maxRedirects;
+                while (response.message.statusCode &&
+                    HttpRedirectCodes.includes(response.message.statusCode) &&
+                    this._allowRedirects &&
+                    redirectsRemaining > 0) {
+                    const redirectUrl = response.message.headers['location'];
+                    if (!redirectUrl) {
+                        // if there's no location to redirect to, we won't
+                        break;
+                    }
+                    const parsedRedirectUrl = new URL(redirectUrl);
+                    if (parsedUrl.protocol === 'https:' &&
+                        parsedUrl.protocol !== parsedRedirectUrl.protocol &&
+                        !this._allowRedirectDowngrade) {
+                        throw new Error('Redirect from HTTPS to HTTP protocol. This downgrade is not allowed for security reasons. If you want to allow this behavior, set the allowRedirectDowngrade option to true.');
+                    }
+                    // we need to finish reading the response before reassigning response
+                    // which will leak the open socket.
+                    yield response.readBody();
+                    // strip authorization header if redirected to a different hostname
+                    if (parsedRedirectUrl.hostname !== parsedUrl.hostname) {
+                        for (const header in headers) {
+                            // header names are case insensitive
+                            if (header.toLowerCase() === 'authorization') {
+                                delete headers[header];
+                            }
+                        }
+                    }
+                    // let's make the request with the new redirectUrl
+                    info = this._prepareRequest(verb, parsedRedirectUrl, headers);
+                    response = yield this.requestRaw(info, data);
+                    redirectsRemaining--;
+                }
+                if (!response.message.statusCode ||
+                    !HttpResponseRetryCodes.includes(response.message.statusCode)) {
+                    // If not a retry code, return immediately instead of retrying
+                    return response;
+                }
+                numTries += 1;
+                if (numTries < maxTries) {
+                    yield response.readBody();
+                    yield this._performExponentialBackoff(numTries);
+                }
+            } while (numTries < maxTries);
+            return response;
+        });
+    }
+    /**
+     * Needs to be called if keepAlive is set to true in request options.
+     */
+    dispose() {
+        if (this._agent) {
+            this._agent.destroy();
+        }
+        this._disposed = true;
+    }
+    /**
+     * Raw request.
+     * @param info
+     * @param data
+     */
+    requestRaw(info, data) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return new Promise((resolve, reject) => {
+                function callbackForResult(err, res) {
+                    if (err) {
+                        reject(err);
+                    }
+                    else if (!res) {
+                        // If `err` is not passed, then `res` must be passed.
+                        reject(new Error('Unknown error'));
+                    }
+                    else {
+                        resolve(res);
+                    }
+                }
+                this.requestRawWithCallback(info, data, callbackForResult);
+            });
+        });
+    }
+    /**
+     * Raw request with callback.
+     * @param info
+     * @param data
+     * @param onResult
+     */
+    requestRawWithCallback(info, data, onResult) {
+        if (typeof data === 'string') {
+            if (!info.options.headers) {
+                info.options.headers = {};
+            }
+            info.options.headers['Content-Length'] = Buffer.byteLength(data, 'utf8');
+        }
+        let callbackCalled = false;
+        function handleResult(err, res) {
+            if (!callbackCalled) {
+                callbackCalled = true;
+                onResult(err, res);
+            }
+        }
+        const req = info.httpModule.request(info.options, (msg) => {
+            const res = new HttpClientResponse(msg);
+            handleResult(undefined, res);
+        });
+        let socket;
+        req.on('socket', sock => {
+            socket = sock;
+        });
+        // If we ever get disconnected, we want the socket to timeout eventually
+        req.setTimeout(this._socketTimeout || 3 * 60000, () => {
+            if (socket) {
+                socket.end();
+            }
+            handleResult(new Error(`Request timeout: ${info.options.path}`));
+        });
+        req.on('error', function (err) {
+            // err has statusCode property
+            // res should have headers
+            handleResult(err);
+        });
+        if (data && typeof data === 'string') {
+            req.write(data, 'utf8');
+        }
+        if (data && typeof data !== 'string') {
+            data.on('close', function () {
+                req.end();
+            });
+            data.pipe(req);
+        }
+        else {
+            req.end();
+        }
+    }
+    /**
+     * Gets an http agent. This function is useful when you need an http agent that handles
+     * routing through a proxy server - depending upon the url and proxy environment variables.
+     * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
+     */
+    getAgent(serverUrl) {
+        const parsedUrl = new URL(serverUrl);
+        return this._getAgent(parsedUrl);
+    }
+    getAgentDispatcher(serverUrl) {
+        const parsedUrl = new URL(serverUrl);
+        const proxyUrl = pm.getProxyUrl(parsedUrl);
+        const useProxy = proxyUrl && proxyUrl.hostname;
+        if (!useProxy) {
+            return;
+        }
+        return this._getProxyAgentDispatcher(parsedUrl, proxyUrl);
+    }
+    _prepareRequest(method, requestUrl, headers) {
+        const info = {};
+        info.parsedUrl = requestUrl;
+        const usingSsl = info.parsedUrl.protocol === 'https:';
+        info.httpModule = usingSsl ? https : http;
+        const defaultPort = usingSsl ? 443 : 80;
+        info.options = {};
+        info.options.host = info.parsedUrl.hostname;
+        info.options.port = info.parsedUrl.port
+            ? parseInt(info.parsedUrl.port)
+            : defaultPort;
+        info.options.path =
+            (info.parsedUrl.pathname || '') + (info.parsedUrl.search || '');
+        info.options.method = method;
+        info.options.headers = this._mergeHeaders(headers);
+        if (this.userAgent != null) {
+            info.options.headers['user-agent'] = this.userAgent;
+        }
+        info.options.agent = this._getAgent(info.parsedUrl);
+        // gives handlers an opportunity to participate
+        if (this.handlers) {
+            for (const handler of this.handlers) {
+                handler.prepareRequest(info.options);
+            }
+        }
+        return info;
+    }
+    _mergeHeaders(headers) {
+        if (this.requestOptions && this.requestOptions.headers) {
+            return Object.assign({}, lowercaseKeys(this.requestOptions.headers), lowercaseKeys(headers || {}));
+        }
+        return lowercaseKeys(headers || {});
+    }
+    /**
+     * Gets an existing header value or returns a default.
+     * Handles converting number header values to strings since HTTP headers must be strings.
+     * Note: This returns string | string[] since some headers can have multiple values.
+     * For headers that must always be a single string (like Content-Type), use the
+     * specialized _getExistingOrDefaultContentTypeHeader method instead.
+     */
+    _getExistingOrDefaultHeader(additionalHeaders, header, _default) {
+        let clientHeader;
+        if (this.requestOptions && this.requestOptions.headers) {
+            const headerValue = lowercaseKeys(this.requestOptions.headers)[header];
+            if (headerValue) {
+                clientHeader =
+                    typeof headerValue === 'number' ? headerValue.toString() : headerValue;
+            }
+        }
+        const additionalValue = additionalHeaders[header];
+        if (additionalValue !== undefined) {
+            return typeof additionalValue === 'number'
+                ? additionalValue.toString()
+                : additionalValue;
+        }
+        if (clientHeader !== undefined) {
+            return clientHeader;
+        }
+        return _default;
+    }
+    /**
+     * Specialized version of _getExistingOrDefaultHeader for Content-Type header.
+     * Always returns a single string (not an array) since Content-Type should be a single value.
+     * Converts arrays to comma-separated strings and numbers to strings to ensure type safety.
+     * This was split from _getExistingOrDefaultHeader to provide stricter typing for callers
+     * that assign the result to places expecting a string (e.g., additionalHeaders[Headers.ContentType]).
+     */
+    _getExistingOrDefaultContentTypeHeader(additionalHeaders, _default) {
+        let clientHeader;
+        if (this.requestOptions && this.requestOptions.headers) {
+            const headerValue = lowercaseKeys(this.requestOptions.headers)[lib_Headers.ContentType];
+            if (headerValue) {
+                if (typeof headerValue === 'number') {
+                    clientHeader = String(headerValue);
+                }
+                else if (Array.isArray(headerValue)) {
+                    clientHeader = headerValue.join(', ');
+                }
+                else {
+                    clientHeader = headerValue;
+                }
+            }
+        }
+        const additionalValue = additionalHeaders[lib_Headers.ContentType];
+        // Return the first non-undefined value, converting numbers or arrays to strings if necessary
+        if (additionalValue !== undefined) {
+            if (typeof additionalValue === 'number') {
+                return String(additionalValue);
+            }
+            else if (Array.isArray(additionalValue)) {
+                return additionalValue.join(', ');
+            }
+            else {
+                return additionalValue;
+            }
+        }
+        if (clientHeader !== undefined) {
+            return clientHeader;
+        }
+        return _default;
+    }
+    _getAgent(parsedUrl) {
+        let agent;
+        const proxyUrl = pm.getProxyUrl(parsedUrl);
+        const useProxy = proxyUrl && proxyUrl.hostname;
+        if (this._keepAlive && useProxy) {
+            agent = this._proxyAgent;
+        }
+        if (!useProxy) {
+            agent = this._agent;
+        }
+        // if agent is already assigned use that agent.
+        if (agent) {
+            return agent;
+        }
+        const usingSsl = parsedUrl.protocol === 'https:';
+        let maxSockets = 100;
+        if (this.requestOptions) {
+            maxSockets = this.requestOptions.maxSockets || http.globalAgent.maxSockets;
+        }
+        // This is `useProxy` again, but we need to check `proxyURl` directly for TypeScripts's flow analysis.
+        if (proxyUrl && proxyUrl.hostname) {
+            const agentOptions = {
+                maxSockets,
+                keepAlive: this._keepAlive,
+                proxy: Object.assign(Object.assign({}, ((proxyUrl.username || proxyUrl.password) && {
+                    proxyAuth: `${proxyUrl.username}:${proxyUrl.password}`
+                })), { host: proxyUrl.hostname, port: proxyUrl.port })
+            };
+            let tunnelAgent;
+            const overHttps = proxyUrl.protocol === 'https:';
+            if (usingSsl) {
+                tunnelAgent = overHttps ? tunnel.httpsOverHttps : tunnel.httpsOverHttp;
+            }
+            else {
+                tunnelAgent = overHttps ? tunnel.httpOverHttps : tunnel.httpOverHttp;
+            }
+            agent = tunnelAgent(agentOptions);
+            this._proxyAgent = agent;
+        }
+        // if tunneling agent isn't assigned create a new agent
+        if (!agent) {
+            const options = { keepAlive: this._keepAlive, maxSockets };
+            agent = usingSsl ? new https.Agent(options) : new http.Agent(options);
+            this._agent = agent;
+        }
+        if (usingSsl && this._ignoreSslError) {
+            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
+            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
+            // we have to cast it to any and change it directly
+            agent.options = Object.assign(agent.options || {}, {
+                rejectUnauthorized: false
+            });
+        }
+        return agent;
+    }
+    _getProxyAgentDispatcher(parsedUrl, proxyUrl) {
+        let proxyAgent;
+        if (this._keepAlive) {
+            proxyAgent = this._proxyAgentDispatcher;
+        }
+        // if agent is already assigned use that agent.
+        if (proxyAgent) {
+            return proxyAgent;
+        }
+        const usingSsl = parsedUrl.protocol === 'https:';
+        proxyAgent = new ProxyAgent(Object.assign({ uri: proxyUrl.href, pipelining: !this._keepAlive ? 0 : 1 }, ((proxyUrl.username || proxyUrl.password) && {
+            token: `Basic ${Buffer.from(`${proxyUrl.username}:${proxyUrl.password}`).toString('base64')}`
+        })));
+        this._proxyAgentDispatcher = proxyAgent;
+        if (usingSsl && this._ignoreSslError) {
+            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
+            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
+            // we have to cast it to any and change it directly
+            proxyAgent.options = Object.assign(proxyAgent.options.requestTls || {}, {
+                rejectUnauthorized: false
+            });
+        }
+        return proxyAgent;
+    }
+    _getUserAgentWithOrchestrationId(userAgent) {
+        const baseUserAgent = userAgent || 'actions/http-client';
+        const orchId = process.env['ACTIONS_ORCHESTRATION_ID'];
+        if (orchId) {
+            // Sanitize the orchestration ID to ensure it contains only valid characters
+            // Valid characters: 0-9, a-z, _, -, .
+            const sanitizedId = orchId.replace(/[^a-z0-9_.-]/gi, '_');
+            return `${baseUserAgent} actions_orchestration_id/${sanitizedId}`;
+        }
+        return baseUserAgent;
+    }
+    _performExponentialBackoff(retryNumber) {
+        return __awaiter(this, void 0, void 0, function* () {
+            retryNumber = Math.min(ExponentialBackoffCeiling, retryNumber);
+            const ms = ExponentialBackoffTimeSlice * Math.pow(2, retryNumber);
+            return new Promise(resolve => setTimeout(() => resolve(), ms));
+        });
+    }
+    _processResponse(res, options) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return new Promise((resolve, reject) => __awaiter(this, void 0, void 0, function* () {
+                const statusCode = res.message.statusCode || 0;
+                const response = {
+                    statusCode,
+                    result: null,
+                    headers: {}
+                };
+                // not found leads to null obj returned
+                if (statusCode === HttpCodes.NotFound) {
+                    resolve(response);
+                }
+                // get the result from the body
+                function dateTimeDeserializer(key, value) {
+                    if (typeof value === 'string') {
+                        const a = new Date(value);
+                        if (!isNaN(a.valueOf())) {
+                            return a;
+                        }
+                    }
+                    return value;
+                }
+                let obj;
+                let contents;
+                try {
+                    contents = yield res.readBody();
+                    if (contents && contents.length > 0) {
+                        if (options && options.deserializeDates) {
+                            obj = JSON.parse(contents, dateTimeDeserializer);
+                        }
+                        else {
+                            obj = JSON.parse(contents);
+                        }
+                        response.result = obj;
+                    }
+                    response.headers = res.message.headers;
+                }
+                catch (err) {
+                    // Invalid resource (contents not json);  leaving result obj null
+                }
+                // note that 3xx redirects are handled by the http layer.
+                if (statusCode > 299) {
+                    let msg;
+                    // if exception/error in body, attempt to get better error
+                    if (obj && obj.message) {
+                        msg = obj.message;
+                    }
+                    else if (contents && contents.length > 0) {
+                        // it may be the case that the exception is in the body message as string
+                        msg = contents;
+                    }
+                    else {
+                        msg = `Failed request: (${statusCode})`;
+                    }
+                    const err = new HttpClientError(msg, statusCode);
+                    err.result = response.result;
+                    reject(err);
+                }
+                else {
+                    resolve(response);
+                }
+            }));
+        });
+    }
+}
+const lowercaseKeys = (obj) => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
+//# sourceMappingURL=index.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/auth.js
+var auth_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
 };
+class BasicCredentialHandler {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+    prepareRequest(options) {
+        if (!options.headers) {
+            throw Error('The request has no headers');
+        }
+        options.headers['Authorization'] = `Basic ${Buffer.from(`${this.username}:${this.password}`).toString('base64')}`;
+    }
+    // This handler cannot handle 401
+    canHandleAuthentication() {
+        return false;
+    }
+    handleAuthentication() {
+        return auth_awaiter(this, void 0, void 0, function* () {
+            throw new Error('not implemented');
+        });
+    }
+}
+class auth_BearerCredentialHandler {
+    constructor(token) {
+        this.token = token;
+    }
+    // currently implements pre-authorization
+    // TODO: support preAuth = false where it hooks on 401
+    prepareRequest(options) {
+        if (!options.headers) {
+            throw Error('The request has no headers');
+        }
+        options.headers['Authorization'] = `Bearer ${this.token}`;
+    }
+    // This handler cannot handle 401
+    canHandleAuthentication() {
+        return false;
+    }
+    handleAuthentication() {
+        return auth_awaiter(this, void 0, void 0, function* () {
+            throw new Error('not implemented');
+        });
+    }
+}
+class PersonalAccessTokenCredentialHandler {
+    constructor(token) {
+        this.token = token;
+    }
+    // currently implements pre-authorization
+    // TODO: support preAuth = false where it hooks on 401
+    prepareRequest(options) {
+        if (!options.headers) {
+            throw Error('The request has no headers');
+        }
+        options.headers['Authorization'] = `Basic ${Buffer.from(`PAT:${this.token}`).toString('base64')}`;
+    }
+    // This handler cannot handle 401
+    canHandleAuthentication() {
+        return false;
+    }
+    handleAuthentication() {
+        return auth_awaiter(this, void 0, void 0, function* () {
+            throw new Error('not implemented');
+        });
+    }
+}
+//# sourceMappingURL=auth.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/oidc-utils.js
+var oidc_utils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+class oidc_utils_OidcClient {
+    static createHttpClient(allowRetry = true, maxRetry = 10) {
+        const requestOptions = {
+            allowRetries: allowRetry,
+            maxRetries: maxRetry
+        };
+        return new HttpClient('actions/oidc-client', [new BearerCredentialHandler(oidc_utils_OidcClient.getRequestToken())], requestOptions);
+    }
+    static getRequestToken() {
+        const token = process.env['ACTIONS_ID_TOKEN_REQUEST_TOKEN'];
+        if (!token) {
+            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_TOKEN env variable');
+        }
+        return token;
+    }
+    static getIDTokenUrl() {
+        const runtimeUrl = process.env['ACTIONS_ID_TOKEN_REQUEST_URL'];
+        if (!runtimeUrl) {
+            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable');
+        }
+        return runtimeUrl;
+    }
+    static getCall(id_token_url) {
+        return oidc_utils_awaiter(this, void 0, void 0, function* () {
+            var _a;
+            const httpclient = oidc_utils_OidcClient.createHttpClient();
+            const res = yield httpclient
+                .getJson(id_token_url)
+                .catch(error => {
+                throw new Error(`Failed to get ID Token. \n 
+        Error Code : ${error.statusCode}\n 
+        Error Message: ${error.message}`);
+            });
+            const id_token = (_a = res.result) === null || _a === void 0 ? void 0 : _a.value;
+            if (!id_token) {
+                throw new Error('Response json body do not have ID Token field');
+            }
+            return id_token;
+        });
+    }
+    static getIDToken(audience) {
+        return oidc_utils_awaiter(this, void 0, void 0, function* () {
+            try {
+                // New ID Token is requested from action service
+                let id_token_url = oidc_utils_OidcClient.getIDTokenUrl();
+                if (audience) {
+                    const encodedAudience = encodeURIComponent(audience);
+                    id_token_url = `${id_token_url}&audience=${encodedAudience}`;
+                }
+                debug(`ID token url is ${id_token_url}`);
+                const id_token = yield oidc_utils_OidcClient.getCall(id_token_url);
+                setSecret(id_token);
+                return id_token;
+            }
+            catch (error) {
+                throw new Error(`Error message: ${error.message}`);
+            }
+        });
+    }
+}
+//# sourceMappingURL=oidc-utils.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/summary.js
+var summary_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+const { access, appendFile, writeFile } = external_fs_namespaceObject.promises;
+const SUMMARY_ENV_VAR = 'GITHUB_STEP_SUMMARY';
+const SUMMARY_DOCS_URL = 'https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary';
+class Summary {
+    constructor() {
+        this._buffer = '';
+    }
+    /**
+     * Finds the summary file path from the environment, rejects if env var is not found or file does not exist
+     * Also checks r/w permissions.
+     *
+     * @returns step summary file path
+     */
+    filePath() {
+        return summary_awaiter(this, void 0, void 0, function* () {
+            if (this._filePath) {
+                return this._filePath;
+            }
+            const pathFromEnv = process.env[SUMMARY_ENV_VAR];
+            if (!pathFromEnv) {
+                throw new Error(`Unable to find environment variable for $${SUMMARY_ENV_VAR}. Check if your runtime environment supports job summaries.`);
+            }
+            try {
+                yield access(pathFromEnv, external_fs_namespaceObject.constants.R_OK | external_fs_namespaceObject.constants.W_OK);
+            }
+            catch (_a) {
+                throw new Error(`Unable to access summary file: '${pathFromEnv}'. Check if the file has correct read/write permissions.`);
+            }
+            this._filePath = pathFromEnv;
+            return this._filePath;
+        });
+    }
+    /**
+     * Wraps content in an HTML tag, adding any HTML attributes
+     *
+     * @param {string} tag HTML tag to wrap
+     * @param {string | null} content content within the tag
+     * @param {[attribute: string]: string} attrs key-value list of HTML attributes to add
+     *
+     * @returns {string} content wrapped in HTML element
+     */
+    wrap(tag, content, attrs = {}) {
+        const htmlAttrs = Object.entries(attrs)
+            .map(([key, value]) => ` ${key}="${value}"`)
+            .join('');
+        if (!content) {
+            return `<${tag}${htmlAttrs}>`;
+        }
+        return `<${tag}${htmlAttrs}>${content}</${tag}>`;
+    }
+    /**
+     * Writes text in the buffer to the summary buffer file and empties buffer. Will append by default.
+     *
+     * @param {SummaryWriteOptions} [options] (optional) options for write operation
+     *
+     * @returns {Promise<Summary>} summary instance
+     */
+    write(options) {
+        return summary_awaiter(this, void 0, void 0, function* () {
+            const overwrite = !!(options === null || options === void 0 ? void 0 : options.overwrite);
+            const filePath = yield this.filePath();
+            const writeFunc = overwrite ? writeFile : appendFile;
+            yield writeFunc(filePath, this._buffer, { encoding: 'utf8' });
+            return this.emptyBuffer();
+        });
+    }
+    /**
+     * Clears the summary buffer and wipes the summary file
+     *
+     * @returns {Summary} summary instance
+     */
+    clear() {
+        return summary_awaiter(this, void 0, void 0, function* () {
+            return this.emptyBuffer().write({ overwrite: true });
+        });
+    }
+    /**
+     * Returns the current summary buffer as a string
+     *
+     * @returns {string} string of summary buffer
+     */
+    stringify() {
+        return this._buffer;
+    }
+    /**
+     * If the summary buffer is empty
+     *
+     * @returns {boolen} true if the buffer is empty
+     */
+    isEmptyBuffer() {
+        return this._buffer.length === 0;
+    }
+    /**
+     * Resets the summary buffer without writing to summary file
+     *
+     * @returns {Summary} summary instance
+     */
+    emptyBuffer() {
+        this._buffer = '';
+        return this;
+    }
+    /**
+     * Adds raw text to the summary buffer
+     *
+     * @param {string} text content to add
+     * @param {boolean} [addEOL=false] (optional) append an EOL to the raw text (default: false)
+     *
+     * @returns {Summary} summary instance
+     */
+    addRaw(text, addEOL = false) {
+        this._buffer += text;
+        return addEOL ? this.addEOL() : this;
+    }
+    /**
+     * Adds the operating system-specific end-of-line marker to the buffer
+     *
+     * @returns {Summary} summary instance
+     */
+    addEOL() {
+        return this.addRaw(external_os_namespaceObject.EOL);
+    }
+    /**
+     * Adds an HTML codeblock to the summary buffer
+     *
+     * @param {string} code content to render within fenced code block
+     * @param {string} lang (optional) language to syntax highlight code
+     *
+     * @returns {Summary} summary instance
+     */
+    addCodeBlock(code, lang) {
+        const attrs = Object.assign({}, (lang && { lang }));
+        const element = this.wrap('pre', this.wrap('code', code), attrs);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML list to the summary buffer
+     *
+     * @param {string[]} items list of items to render
+     * @param {boolean} [ordered=false] (optional) if the rendered list should be ordered or not (default: false)
+     *
+     * @returns {Summary} summary instance
+     */
+    addList(items, ordered = false) {
+        const tag = ordered ? 'ol' : 'ul';
+        const listItems = items.map(item => this.wrap('li', item)).join('');
+        const element = this.wrap(tag, listItems);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML table to the summary buffer
+     *
+     * @param {SummaryTableCell[]} rows table rows
+     *
+     * @returns {Summary} summary instance
+     */
+    addTable(rows) {
+        const tableBody = rows
+            .map(row => {
+            const cells = row
+                .map(cell => {
+                if (typeof cell === 'string') {
+                    return this.wrap('td', cell);
+                }
+                const { header, data, colspan, rowspan } = cell;
+                const tag = header ? 'th' : 'td';
+                const attrs = Object.assign(Object.assign({}, (colspan && { colspan })), (rowspan && { rowspan }));
+                return this.wrap(tag, data, attrs);
+            })
+                .join('');
+            return this.wrap('tr', cells);
+        })
+            .join('');
+        const element = this.wrap('table', tableBody);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds a collapsable HTML details element to the summary buffer
+     *
+     * @param {string} label text for the closed state
+     * @param {string} content collapsable content
+     *
+     * @returns {Summary} summary instance
+     */
+    addDetails(label, content) {
+        const element = this.wrap('details', this.wrap('summary', label) + content);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML image tag to the summary buffer
+     *
+     * @param {string} src path to the image you to embed
+     * @param {string} alt text description of the image
+     * @param {SummaryImageOptions} options (optional) addition image attributes
+     *
+     * @returns {Summary} summary instance
+     */
+    addImage(src, alt, options) {
+        const { width, height } = options || {};
+        const attrs = Object.assign(Object.assign({}, (width && { width })), (height && { height }));
+        const element = this.wrap('img', null, Object.assign({ src, alt }, attrs));
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML section heading element
+     *
+     * @param {string} text heading text
+     * @param {number | string} [level=1] (optional) the heading level, default: 1
+     *
+     * @returns {Summary} summary instance
+     */
+    addHeading(text, level) {
+        const tag = `h${level}`;
+        const allowedTag = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tag)
+            ? tag
+            : 'h1';
+        const element = this.wrap(allowedTag, text);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML thematic break (<hr>) to the summary buffer
+     *
+     * @returns {Summary} summary instance
+     */
+    addSeparator() {
+        const element = this.wrap('hr', null);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML line break (<br>) to the summary buffer
+     *
+     * @returns {Summary} summary instance
+     */
+    addBreak() {
+        const element = this.wrap('br', null);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML blockquote to the summary buffer
+     *
+     * @param {string} text quote text
+     * @param {string} cite (optional) citation url
+     *
+     * @returns {Summary} summary instance
+     */
+    addQuote(text, cite) {
+        const attrs = Object.assign({}, (cite && { cite }));
+        const element = this.wrap('blockquote', text, attrs);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML anchor tag to the summary buffer
+     *
+     * @param {string} text link text/content
+     * @param {string} href hyperlink
+     *
+     * @returns {Summary} summary instance
+     */
+    addLink(text, href) {
+        const element = this.wrap('a', text, { href });
+        return this.addRaw(element).addEOL();
+    }
+}
+const _summary = new Summary();
 /**
-* Type guard to check if an error is a StorageVectorsError
-* @param error - The error to check
-* @returns True if the error is a StorageVectorsError
-*/
-function isStorageVectorsError(error) {
-	return isStorageError(error) && error["namespace"] === "vectors";
+ * @deprecated use `core.summary`
+ */
+const markdownSummary = (/* unused pure expression or super */ null && (_summary));
+const summary = _summary;
+//# sourceMappingURL=summary.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/path-utils.js
+
+/**
+ * toPosixPath converts the given path to the posix form. On Windows, \\ will be
+ * replaced with /.
+ *
+ * @param pth. Path to transform.
+ * @return string Posix path.
+ */
+function toPosixPath(pth) {
+    return pth.replace(/[\\]/g, '/');
 }
 /**
-* @deprecated Use StorageApiError with namespace='vectors' instead
-* Alias for backward compatibility with existing vector storage code
-*/
-var StorageVectorsApiError = class extends StorageApiError {
-	constructor(message, status, statusCode) {
-		super(message, status, statusCode, "vectors");
-	}
-};
-/**
-* @deprecated Use StorageUnknownError with namespace='vectors' instead
-* Alias for backward compatibility with existing vector storage code
-*/
-var StorageVectorsUnknownError = class extends StorageUnknownError {
-	constructor(message, originalError) {
-		super(message, originalError, "vectors");
-	}
-};
-/**
-* Error codes specific to S3 Vectors API
-* Maps AWS service errors to application-friendly error codes
-*/
-let StorageVectorsErrorCode = /* @__PURE__ */ function(StorageVectorsErrorCode$1) {
-	/** Internal server fault (HTTP 500) */
-	StorageVectorsErrorCode$1["InternalError"] = "InternalError";
-	/** Resource already exists / conflict (HTTP 409) */
-	StorageVectorsErrorCode$1["S3VectorConflictException"] = "S3VectorConflictException";
-	/** Resource not found (HTTP 404) */
-	StorageVectorsErrorCode$1["S3VectorNotFoundException"] = "S3VectorNotFoundException";
-	/** Delete bucket while not empty (HTTP 400) */
-	StorageVectorsErrorCode$1["S3VectorBucketNotEmpty"] = "S3VectorBucketNotEmpty";
-	/** Exceeds bucket quota/limit (HTTP 400) */
-	StorageVectorsErrorCode$1["S3VectorMaxBucketsExceeded"] = "S3VectorMaxBucketsExceeded";
-	/** Exceeds index quota/limit (HTTP 400) */
-	StorageVectorsErrorCode$1["S3VectorMaxIndexesExceeded"] = "S3VectorMaxIndexesExceeded";
-	return StorageVectorsErrorCode$1;
-}({});
-
-//#endregion
-//#region src/lib/common/headers.ts
-/**
-* Sets a header with case-insensitive deduplication.
-* Removes any existing headers whose name matches (case-insensitive),
-* then sets the value under the lowercase key. Does not mutate the input object.
-*
-* @param headers - Existing headers object
-* @param name - Header name to set (stored as lowercase)
-* @param value - Header value
-* @returns New headers object with the header set
-*/
-function setHeader(headers, name, value) {
-	const result = dist_objectSpread2({}, headers);
-	const nameLower = name.toLowerCase();
-	for (const key of Object.keys(result)) if (key.toLowerCase() === nameLower) delete result[key];
-	result[nameLower] = value;
-	return result;
+ * toWin32Path converts the given path to the win32 form. On Linux, / will be
+ * replaced with \\.
+ *
+ * @param pth. Path to transform.
+ * @return string Win32 path.
+ */
+function toWin32Path(pth) {
+    return pth.replace(/[/]/g, '\\');
 }
 /**
-* Normalizes all header keys to lowercase with case-insensitive deduplication.
-* When duplicate keys exist (differing only in case), the last value wins.
-* Does not mutate the input object.
-*
-* @param headers - Headers object to normalize
-* @returns New headers object with all keys lowercased
-*/
-function normalizeHeaders(headers) {
-	const result = {};
-	for (const [key, value] of Object.entries(headers)) result[key.toLowerCase()] = value;
-	return result;
+ * toPlatformPath converts the given path to a platform-specific path. It does
+ * this by replacing instances of / and \ with the platform-specific path
+ * separator.
+ *
+ * @param pth The path to platformize.
+ * @return string The platform-specific path.
+ */
+function toPlatformPath(pth) {
+    return pth.replace(/[/\\]/g, path.sep);
 }
+//# sourceMappingURL=path-utils.js.map
+// EXTERNAL MODULE: external "string_decoder"
+var external_string_decoder_ = __nccwpck_require__(3193);
+// EXTERNAL MODULE: external "events"
+var external_events_ = __nccwpck_require__(4434);
+;// CONCATENATED MODULE: external "child_process"
+const external_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("child_process");
+// EXTERNAL MODULE: external "assert"
+var external_assert_ = __nccwpck_require__(2613);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+io@3.0.2/node_modules/@actions/io/lib/io-util.js
+var io_util_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
-//#endregion
-//#region src/lib/common/helpers.ts
-/**
-* Resolves the fetch implementation to use
-* Uses custom fetch if provided, otherwise uses native fetch
-*
-* @param customFetch - Optional custom fetch implementation
-* @returns Resolved fetch function
-*/
-const resolveFetch = (customFetch) => {
-	if (customFetch) return (...args) => customFetch(...args);
-	return (...args) => fetch(...args);
-};
-/**
-* Determine if input is a plain object
-* An object is plain if it's created by either {}, new Object(), or Object.create(null)
-*
-* @param value - Value to check
-* @returns True if value is a plain object
-* @source https://github.com/sindresorhus/is-plain-obj
-*/
-const isPlainObject = (value) => {
-	if (typeof value !== "object" || value === null) return false;
-	const prototype = Object.getPrototypeOf(value);
-	return (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) && !(Symbol.toStringTag in value) && !(Symbol.iterator in value);
-};
-/**
-* Recursively converts object keys from snake_case to camelCase
-* Used for normalizing API responses
-*
-* @param item - Object to convert
-* @returns Converted object with camelCase keys
-*/
-const recursiveToCamel = (item) => {
-	if (Array.isArray(item)) return item.map((el) => recursiveToCamel(el));
-	else if (typeof item === "function" || item !== Object(item)) return item;
-	const result = {};
-	Object.entries(item).forEach(([key, value]) => {
-		const newKey = key.replace(/([-_][a-z])/gi, (c) => c.toUpperCase().replace(/[-_]/g, ""));
-		result[newKey] = recursiveToCamel(value);
-	});
-	return result;
-};
-/**
-* Validates if a given bucket name is valid according to Supabase Storage API rules
-* Mirrors backend validation from: storage/src/storage/limits.ts:isValidBucketName()
-*
-* Rules:
-* - Length: 1-100 characters
-* - Allowed characters: alphanumeric (a-z, A-Z, 0-9), underscore (_), and safe special characters
-* - Safe special characters: ! - . * ' ( ) space & $ @ = ; : + , ?
-* - Forbidden: path separators (/, \), path traversal (..), leading/trailing whitespace
-*
-* AWS S3 Reference: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html
-*
-* @param bucketName - The bucket name to validate
-* @returns true if valid, false otherwise
-*/
-const isValidBucketName = (bucketName) => {
-	if (!bucketName || typeof bucketName !== "string") return false;
-	if (bucketName.length === 0 || bucketName.length > 100) return false;
-	if (bucketName.trim() !== bucketName) return false;
-	if (bucketName.includes("/") || bucketName.includes("\\")) return false;
-	return /^[\w!.\*'() &$@=;:+,?-]+$/.test(bucketName);
-};
-/**
-* Percent-encodes each segment of a storage path so URL delimiters within a
-* key (e.g. `?`, `#`) can't be interpreted as a querystring/fragment start.
-*
-* Splits on `/` so real path separators stay literal — the storage server
-* routes on them and decodes each segment back to the original key.
-*
-* @param path - A bucket id or `bucketId/objectKey` path
-* @returns The path with each `/`-delimited segment percent-encoded
-*/
-const encodeStoragePath = (path) => path.split("/").map(encodeURIComponent).join("/");
 
-//#endregion
-//#region src/lib/common/fetch.ts
+const { chmod, copyFile, lstat, mkdir, open: io_util_open, readdir, rename, rm, rmdir, stat, symlink, unlink } = external_fs_namespaceObject.promises;
+// export const {open} = 'fs'
+const IS_WINDOWS = process.platform === 'win32';
 /**
-* Extracts error message from various error response formats
-* @param err - Error object from API
-* @returns Human-readable error message
-*/
-const _getErrorMessage = (err) => {
-	if (typeof err === "object" && err !== null) {
-		const e = err;
-		if (typeof e.msg === "string") return e.msg;
-		if (typeof e.message === "string") return e.message;
-		if (typeof e.error_description === "string") return e.error_description;
-		if (typeof e.error === "string") return e.error;
-		if (typeof e.error === "object" && e.error !== null) {
-			const nested = e.error;
-			if (typeof nested.message === "string") return nested.message;
-		}
-	}
-	return JSON.stringify(err);
-};
-/**
-* Handles fetch errors and converts them to Storage error types
-* @param error - The error caught from fetch
-* @param reject - Promise rejection function
-* @param options - Fetch options that may affect error handling
-* @param namespace - Error namespace ('storage' or 'vectors')
-*/
-const handleError = async (error, reject, options, namespace) => {
-	if (error !== null && typeof error === "object" && "json" in error && typeof error.json === "function") {
-		const responseError = error;
-		let status = parseInt(String(responseError.status), 10);
-		if (!Number.isFinite(status)) status = 500;
-		responseError.json().then((err) => {
-			const statusCode = (err === null || err === void 0 ? void 0 : err.statusCode) || (err === null || err === void 0 ? void 0 : err.code) || status + "";
-			reject(new StorageApiError(_getErrorMessage(err), status, statusCode, namespace, err === null || err === void 0 ? void 0 : err.code));
-		}).catch(() => {
-			const statusCode = status + "";
-			reject(new StorageApiError(responseError.statusText || `HTTP ${status} error`, status, statusCode, namespace));
-		});
-	} else reject(new StorageUnknownError(_getErrorMessage(error), error, namespace));
-};
-/**
-* Builds request parameters for fetch calls
-* @param method - HTTP method
-* @param options - Custom fetch options
-* @param parameters - Additional fetch parameters like AbortSignal
-* @param body - Request body (will be JSON stringified if plain object)
-* @returns Complete fetch request parameters
-*/
-const _getRequestParams = (method, options, parameters, body) => {
-	const params = {
-		method,
-		headers: (options === null || options === void 0 ? void 0 : options.headers) || {}
-	};
-	if (method === "GET" || method === "HEAD" || !body) return dist_objectSpread2(dist_objectSpread2({}, params), parameters);
-	if (isPlainObject(body)) {
-		var _contentType;
-		const headers = (options === null || options === void 0 ? void 0 : options.headers) || {};
-		let contentType;
-		for (const [key, value] of Object.entries(headers)) if (key.toLowerCase() === "content-type") contentType = value;
-		params.headers = setHeader(headers, "Content-Type", (_contentType = contentType) !== null && _contentType !== void 0 ? _contentType : "application/json");
-		params.body = JSON.stringify(body);
-	} else params.body = body;
-	if (options === null || options === void 0 ? void 0 : options.duplex) params.duplex = options.duplex;
-	return dist_objectSpread2(dist_objectSpread2({}, params), parameters);
-};
-/**
-* Internal request handler that wraps fetch with error handling
-* @param fetcher - Fetch function to use
-* @param method - HTTP method
-* @param url - Request URL
-* @param options - Custom fetch options
-* @param parameters - Additional fetch parameters
-* @param body - Request body
-* @param namespace - Error namespace ('storage' or 'vectors')
-* @returns Promise with parsed response or error
-*/
-async function _handleRequest(fetcher, method, url, options, parameters, body, namespace) {
-	return new Promise((resolve, reject) => {
-		fetcher(url, _getRequestParams(method, options, parameters, body)).then((result) => {
-			if (!result.ok) throw result;
-			if (options === null || options === void 0 ? void 0 : options.noResolveJson) return result;
-			if (namespace === "vectors") {
-				const contentType = result.headers.get("content-type");
-				if (result.headers.get("content-length") === "0" || result.status === 204) return {};
-				if (!contentType || !contentType.includes("application/json")) return {};
-			}
-			return result.json();
-		}).then((data) => resolve(data)).catch((error) => handleError(error, reject, options, namespace));
-	});
+ * Custom implementation of readlink to ensure Windows junctions
+ * maintain trailing backslash for backward compatibility with Node.js < 24
+ *
+ * In Node.js 20, Windows junctions (directory symlinks) always returned paths
+ * with trailing backslashes. Node.js 24 removed this behavior, which breaks
+ * code that relied on this format for path operations.
+ *
+ * This implementation restores the Node 20 behavior by adding a trailing
+ * backslash to all junction results on Windows.
+ */
+function readlink(fsPath) {
+    return io_util_awaiter(this, void 0, void 0, function* () {
+        const result = yield fs.promises.readlink(fsPath);
+        // On Windows, restore Node 20 behavior: add trailing backslash to all results
+        // since junctions on Windows are always directory links
+        if (IS_WINDOWS && !result.endsWith('\\')) {
+            return `${result}\\`;
+        }
+        return result;
+    });
+}
+// See https://github.com/nodejs/node/blob/d0153aee367422d0858105abec186da4dff0a0c5/deps/uv/include/uv/win.h#L691
+const UV_FS_O_EXLOCK = 0x10000000;
+const READONLY = external_fs_namespaceObject.constants.O_RDONLY;
+function exists(fsPath) {
+    return io_util_awaiter(this, void 0, void 0, function* () {
+        try {
+            yield stat(fsPath);
+        }
+        catch (err) {
+            if (err.code === 'ENOENT') {
+                return false;
+            }
+            throw err;
+        }
+        return true;
+    });
+}
+function isDirectory(fsPath_1) {
+    return io_util_awaiter(this, arguments, void 0, function* (fsPath, useStat = false) {
+        const stats = useStat ? yield stat(fsPath) : yield lstat(fsPath);
+        return stats.isDirectory();
+    });
 }
 /**
-* Creates a fetch API with the specified namespace
-* @param namespace - Error namespace ('storage' or 'vectors')
-* @returns Object with HTTP method functions
-*/
-function createFetchApi(namespace = "storage") {
-	return {
-		get: async (fetcher, url, options, parameters) => {
-			return _handleRequest(fetcher, "GET", url, options, parameters, void 0, namespace);
-		},
-		post: async (fetcher, url, body, options, parameters) => {
-			return _handleRequest(fetcher, "POST", url, options, parameters, body, namespace);
-		},
-		put: async (fetcher, url, body, options, parameters) => {
-			return _handleRequest(fetcher, "PUT", url, options, parameters, body, namespace);
-		},
-		head: async (fetcher, url, options, parameters) => {
-			return _handleRequest(fetcher, "HEAD", url, dist_objectSpread2(dist_objectSpread2({}, options), {}, { noResolveJson: true }), parameters, void 0, namespace);
-		},
-		remove: async (fetcher, url, body, options, parameters) => {
-			return _handleRequest(fetcher, "DELETE", url, options, parameters, body, namespace);
-		}
-	};
-}
-const defaultApi = createFetchApi("storage");
-const { get, post, put, head, remove } = defaultApi;
-const vectorsApi = createFetchApi("vectors");
-
-//#endregion
-//#region src/lib/common/BaseApiClient.ts
-/**
-* @ignore
-* Base API client class for all Storage API classes
-* Provides common infrastructure for error handling and configuration
-*
-* @typeParam TError - The error type (StorageError or subclass)
-*/
-var BaseApiClient = class {
-	/**
-	* Creates a new BaseApiClient instance
-	* @param url - Base URL for API requests
-	* @param headers - Default headers for API requests
-	* @param fetch - Optional custom fetch implementation
-	* @param namespace - Error namespace ('storage' or 'vectors')
-	*/
-	constructor(url, headers = {}, fetch$1, namespace = "storage") {
-		this.shouldThrowOnError = false;
-		this.url = url;
-		this.headers = normalizeHeaders(headers);
-		this.fetch = resolveFetch(fetch$1);
-		this.namespace = namespace;
-	}
-	/**
-	* Enable throwing errors instead of returning them.
-	* When enabled, errors are thrown instead of returned in { data, error } format.
-	*
-	* @returns this - For method chaining
-	*/
-	throwOnError() {
-		this.shouldThrowOnError = true;
-		return this;
-	}
-	/**
-	* Set an HTTP header for the request.
-	* Creates a shallow copy of headers to avoid mutating shared state.
-	*
-	* @param name - Header name
-	* @param value - Header value
-	* @returns this - For method chaining
-	*/
-	setHeader(name, value) {
-		this.headers = setHeader(this.headers, name, value);
-		return this;
-	}
-	/**
-	* Handles API operation with standardized error handling
-	* Eliminates repetitive try-catch blocks across all API methods
-	*
-	* This wrapper:
-	* 1. Executes the operation
-	* 2. Returns { data, error: null } on success
-	* 3. Returns { data: null, error } on failure (if shouldThrowOnError is false)
-	* 4. Throws error on failure (if shouldThrowOnError is true)
-	*
-	* @typeParam T - The expected data type from the operation
-	* @param operation - Async function that performs the API call
-	* @returns Promise with { data, error } tuple
-	*
-	* @example Handling an operation
-	* ```typescript
-	* async listBuckets() {
-	*   return this.handleOperation(async () => {
-	*     return await get(this.fetch, `${this.url}/bucket`, {
-	*       headers: this.headers,
-	*     })
-	*   })
-	* }
-	* ```
-	*/
-	async handleOperation(operation) {
-		var _this = this;
-		try {
-			return {
-				data: await operation(),
-				error: null
-			};
-		} catch (error) {
-			if (_this.shouldThrowOnError) throw error;
-			if (isStorageError(error)) return {
-				data: null,
-				error
-			};
-			throw error;
-		}
-	}
-};
-
-//#endregion
-//#region src/packages/StreamDownloadBuilder.ts
-let _Symbol$toStringTag$1;
-_Symbol$toStringTag$1 = Symbol.toStringTag;
-var StreamDownloadBuilder = class {
-	constructor(downloadFn, shouldThrowOnError) {
-		this.downloadFn = downloadFn;
-		this.shouldThrowOnError = shouldThrowOnError;
-		this[_Symbol$toStringTag$1] = "StreamDownloadBuilder";
-		this.promise = null;
-	}
-	then(onfulfilled, onrejected) {
-		return this.getPromise().then(onfulfilled, onrejected);
-	}
-	catch(onrejected) {
-		return this.getPromise().catch(onrejected);
-	}
-	finally(onfinally) {
-		return this.getPromise().finally(onfinally);
-	}
-	getPromise() {
-		if (!this.promise) this.promise = this.execute();
-		return this.promise;
-	}
-	async execute() {
-		var _this = this;
-		try {
-			return {
-				data: (await _this.downloadFn()).body,
-				error: null
-			};
-		} catch (error) {
-			if (_this.shouldThrowOnError) throw error;
-			if (isStorageError(error)) return {
-				data: null,
-				error
-			};
-			throw error;
-		}
-	}
-};
-
-//#endregion
-//#region src/packages/BlobDownloadBuilder.ts
-let _Symbol$toStringTag;
-_Symbol$toStringTag = Symbol.toStringTag;
-var BlobDownloadBuilder = class {
-	constructor(downloadFn, shouldThrowOnError) {
-		this.downloadFn = downloadFn;
-		this.shouldThrowOnError = shouldThrowOnError;
-		this[_Symbol$toStringTag] = "BlobDownloadBuilder";
-		this.promise = null;
-	}
-	asStream() {
-		return new StreamDownloadBuilder(this.downloadFn, this.shouldThrowOnError);
-	}
-	then(onfulfilled, onrejected) {
-		return this.getPromise().then(onfulfilled, onrejected);
-	}
-	catch(onrejected) {
-		return this.getPromise().catch(onrejected);
-	}
-	finally(onfinally) {
-		return this.getPromise().finally(onfinally);
-	}
-	getPromise() {
-		if (!this.promise) this.promise = this.execute();
-		return this.promise;
-	}
-	async execute() {
-		var _this = this;
-		try {
-			return {
-				data: await (await _this.downloadFn()).blob(),
-				error: null
-			};
-		} catch (error) {
-			if (_this.shouldThrowOnError) throw error;
-			if (isStorageError(error)) return {
-				data: null,
-				error
-			};
-			throw error;
-		}
-	}
-};
-
-//#endregion
-//#region src/packages/StorageFileApi.ts
-const DEFAULT_SEARCH_OPTIONS = {
-	limit: 100,
-	offset: 0,
-	sortBy: {
-		column: "name",
-		order: "asc"
-	}
-};
-const DEFAULT_FILE_OPTIONS = {
-	cacheControl: "3600",
-	contentType: "text/plain;charset=UTF-8",
-	upsert: false
-};
-var StorageFileApi = class extends BaseApiClient {
-	constructor(url, headers = {}, bucketId, fetch$1) {
-		super(url, headers, fetch$1, "storage");
-		this.bucketId = bucketId;
-	}
-	/**
-	* Uploads a file to an existing bucket or replaces an existing file at the specified path with a new one.
-	*
-	* @param method HTTP method.
-	* @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
-	* @param fileBody The body of the file to be stored in the bucket.
-	*/
-	async uploadOrUpdate(method, path, fileBody, fileOptions) {
-		var _this = this;
-		return _this.handleOperation(async () => {
-			let body;
-			const options = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_FILE_OPTIONS), fileOptions);
-			let headers = dist_objectSpread2(dist_objectSpread2({}, _this.headers), method === "POST" && { "x-upsert": String(options.upsert) });
-			const metadata = options.metadata;
-			if (typeof Blob !== "undefined" && fileBody instanceof Blob) {
-				body = new FormData();
-				body.append("cacheControl", options.cacheControl);
-				if (metadata) body.append("metadata", _this.encodeMetadata(metadata));
-				body.append("", fileBody);
-			} else if (typeof FormData !== "undefined" && fileBody instanceof FormData) {
-				body = fileBody;
-				if (!body.has("cacheControl")) body.append("cacheControl", options.cacheControl);
-				if (metadata && !body.has("metadata")) body.append("metadata", _this.encodeMetadata(metadata));
-			} else {
-				body = fileBody;
-				headers["cache-control"] = `max-age=${options.cacheControl}`;
-				headers["content-type"] = options.contentType;
-				if (metadata) headers["x-metadata"] = _this.toBase64(_this.encodeMetadata(metadata));
-				if ((typeof ReadableStream !== "undefined" && body instanceof ReadableStream || body && typeof body === "object" && "pipe" in body && typeof body.pipe === "function") && !options.duplex) options.duplex = "half";
-			}
-			if (fileOptions === null || fileOptions === void 0 ? void 0 : fileOptions.headers) for (const [key, value] of Object.entries(fileOptions.headers)) headers = setHeader(headers, key, value);
-			const cleanPath = _this._removeEmptyFolders(path);
-			const _path = _this._getFinalPath(cleanPath);
-			const data = await (method == "PUT" ? put : post)(_this.fetch, `${_this.url}/object/${_path}`, body, dist_objectSpread2({ headers }, (options === null || options === void 0 ? void 0 : options.duplex) ? { duplex: options.duplex } : {}));
-			return {
-				path: cleanPath,
-				id: data.Id,
-				fullPath: data.Key
-			};
-		});
-	}
-	/**
-	* Uploads a file to an existing bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The file path, including the file name. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
-	* @param fileBody The body of the file to be stored in the bucket.
-	* @param fileOptions Optional file upload options including cacheControl, contentType, upsert, and metadata.
-	* @returns Promise with response containing file path, id, and fullPath or error
-	*
-	* @example Upload file
-	* ```js
-	* const avatarFile = event.target.files[0]
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .upload('public/avatar1.png', avatarFile, {
-	*     cacheControl: '3600',
-	*     upsert: false
-	*   })
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "path": "public/avatar1.png",
-	*     "fullPath": "avatars/public/avatar1.png"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @example Upload file using `ArrayBuffer` from base64 file data
-	* ```js
-	* import { decode } from 'base64-arraybuffer'
-	*
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .upload('public/avatar1.png', decode('base64FileData'), {
-	*     contentType: 'image/png'
-	*   })
-	* ```
-	*
-	* @example Handling errors
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .upload('public/avatar1.png', avatarFile)
-	*
-	* if (error) {
-	*   // Log the full error so fields like `statusCode` and `error` (the
-	*   // Storage error name, e.g. "Duplicate") aren't hidden behind `error.message`.
-	*   console.error(error)
-	*   return
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: only `insert` when you are uploading new files and `select`, `insert` and `update` when you are upserting files
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	* - For React Native, using either `Blob`, `File` or `FormData` does not work as intended. Upload file using `ArrayBuffer` from base64 file data instead, see example below.
-	*/
-	async upload(path, fileBody, fileOptions) {
-		return this.uploadOrUpdate("POST", path, fileBody, fileOptions);
-	}
-	/**
-	* Upload a file with a token generated from `createSignedUploadUrl`.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The file path, including the file name. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
-	* @param token The token generated from `createSignedUploadUrl`
-	* @param fileBody The body of the file to be stored in the bucket.
-	* @param fileOptions HTTP headers (cacheControl, contentType, etc.).
-	* **Note:** The `upsert` option has no effect here. To enable upsert behavior,
-	* pass `{ upsert: true }` when calling `createSignedUploadUrl()` instead.
-	* @returns Promise with response containing file path and fullPath or error
-	*
-	* @example Upload to a signed URL
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .uploadToSignedUrl('folder/cat.jpg', 'token-from-createSignedUploadUrl', file)
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "path": "folder/cat.jpg",
-	*     "fullPath": "avatars/folder/cat.jpg"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async uploadToSignedUrl(path, token, fileBody, fileOptions) {
-		var _this3 = this;
-		const cleanPath = _this3._removeEmptyFolders(path);
-		const _path = _this3._getFinalPath(cleanPath);
-		const url = new URL(_this3.url + `/object/upload/sign/${_path}`);
-		url.searchParams.set("token", token);
-		return _this3.handleOperation(async () => {
-			let body;
-			const options = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_FILE_OPTIONS), fileOptions);
-			let headers = dist_objectSpread2(dist_objectSpread2({}, _this3.headers), { "x-upsert": String(options.upsert) });
-			const metadata = options.metadata;
-			if (typeof Blob !== "undefined" && fileBody instanceof Blob) {
-				body = new FormData();
-				body.append("cacheControl", options.cacheControl);
-				if (metadata) body.append("metadata", _this3.encodeMetadata(metadata));
-				body.append("", fileBody);
-			} else if (typeof FormData !== "undefined" && fileBody instanceof FormData) {
-				body = fileBody;
-				if (!body.has("cacheControl")) body.append("cacheControl", options.cacheControl);
-				if (metadata && !body.has("metadata")) body.append("metadata", _this3.encodeMetadata(metadata));
-			} else {
-				body = fileBody;
-				headers["cache-control"] = `max-age=${options.cacheControl}`;
-				headers["content-type"] = options.contentType;
-				if (metadata) headers["x-metadata"] = _this3.toBase64(_this3.encodeMetadata(metadata));
-				if ((typeof ReadableStream !== "undefined" && body instanceof ReadableStream || body && typeof body === "object" && "pipe" in body && typeof body.pipe === "function") && !options.duplex) options.duplex = "half";
-			}
-			if (fileOptions === null || fileOptions === void 0 ? void 0 : fileOptions.headers) for (const [key, value] of Object.entries(fileOptions.headers)) headers = setHeader(headers, key, value);
-			return {
-				path: cleanPath,
-				fullPath: (await put(_this3.fetch, url.toString(), body, dist_objectSpread2({ headers }, (options === null || options === void 0 ? void 0 : options.duplex) ? { duplex: options.duplex } : {}))).Key
-			};
-		});
-	}
-	/**
-	* Creates a signed upload URL.
-	* Signed upload URLs can be used to upload files to the bucket without further authentication.
-	* They are valid for 2 hours.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The file path, including the current file name. For example `folder/image.png`.
-	* @param options.upsert If set to true, allows the file to be overwritten if it already exists.
-	* @returns Promise with response containing signed upload URL, token, and path or error
-	*
-	* @example Create Signed Upload URL
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .createSignedUploadUrl('folder/cat.jpg')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "signedUrl": "https://example.supabase.co/storage/v1/object/upload/sign/avatars/folder/cat.jpg?token=<TOKEN>",
-	*     "path": "folder/cat.jpg",
-	*     "token": "<TOKEN>"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `insert`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async createSignedUploadUrl(path, options) {
-		var _this4 = this;
-		return _this4.handleOperation(async () => {
-			let _path = _this4._getFinalPath(path);
-			const headers = dist_objectSpread2({}, _this4.headers);
-			if (options === null || options === void 0 ? void 0 : options.upsert) headers["x-upsert"] = "true";
-			const data = await post(_this4.fetch, `${_this4.url}/object/upload/sign/${_path}`, {}, { headers });
-			const url = new URL(_this4.url + data.url);
-			const token = url.searchParams.get("token");
-			if (!token) throw new StorageError("No token returned by API");
-			return {
-				signedUrl: url.toString(),
-				path,
-				token
-			};
-		});
-	}
-	/**
-	* Replaces an existing file at the specified path with a new one.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to update.
-	* @param fileBody The body of the file to be stored in the bucket.
-	* @param fileOptions Optional file upload options including cacheControl, contentType, and metadata.
-	* **Note:** The `upsert` option has no effect here. `update()` always replaces the
-	* file at the given path, so the `x-upsert` header is not sent. To control upsert
-	* behavior, use `upload()` instead.
-	* @returns Promise with response containing file path, id, and fullPath or error
-	*
-	* @example Update file
-	* ```js
-	* const avatarFile = event.target.files[0]
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .update('public/avatar1.png', avatarFile, {
-	*     cacheControl: '3600'
-	*   })
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "path": "public/avatar1.png",
-	*     "fullPath": "avatars/public/avatar1.png"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @example Update file using `ArrayBuffer` from base64 file data
-	* ```js
-	* import {decode} from 'base64-arraybuffer'
-	*
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .update('public/avatar1.png', decode('base64FileData'), {
-	*     contentType: 'image/png'
-	*   })
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `update` and `select`
-	* - `update()` always replaces the file at the given path regardless of the `upsert` option.
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	* - For React Native, using either `Blob`, `File` or `FormData` does not work as intended. Update file using `ArrayBuffer` from base64 file data instead, see example below.
-	*/
-	async update(path, fileBody, fileOptions) {
-		return this.uploadOrUpdate("PUT", path, fileBody, fileOptions);
-	}
-	/**
-	* Moves an existing file to a new path in the same bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param fromPath The original file path, including the current file name. For example `folder/image.png`.
-	* @param toPath The new file path, including the new file name. For example `folder/image-new.png`.
-	* @param options The destination options.
-	* @param options.sourceVersionId The version id of the source object to move.
-	* @returns Promise with response containing success message or error
-	*
-	* @example Move file
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .move('public/avatar1.png', 'private/avatar2.png')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "message": "Successfully moved"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `update` and `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async move(fromPath, toPath, options) {
-		var _this6 = this;
-		return _this6.handleOperation(async () => {
-			return await post(_this6.fetch, `${_this6.url}/object/move`, {
-				bucketId: _this6.bucketId,
-				sourceKey: fromPath,
-				destinationKey: toPath,
-				destinationBucket: options === null || options === void 0 ? void 0 : options.destinationBucket,
-				sourceVersionId: options === null || options === void 0 ? void 0 : options.sourceVersionId
-			}, { headers: _this6.headers });
-		});
-	}
-	/**
-	* Copies an existing file to a new path in the same bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param fromPath The original file path, including the current file name. For example `folder/image.png`.
-	* @param toPath The new file path, including the new file name. For example `folder/image-copy.png`.
-	* @param options The destination options.
-	* @param options.sourceVersionId The version id of the source object to copy.
-	* @returns Promise with response containing copied file path or error
-	*
-	* @example Copy file
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .copy('public/avatar1.png', 'private/avatar2.png')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "path": "avatars/private/avatar2.png"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `insert` and `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async copy(fromPath, toPath, options) {
-		var _this7 = this;
-		return _this7.handleOperation(async () => {
-			return { path: (await post(_this7.fetch, `${_this7.url}/object/copy`, {
-				bucketId: _this7.bucketId,
-				sourceKey: fromPath,
-				destinationKey: toPath,
-				destinationBucket: options === null || options === void 0 ? void 0 : options.destinationBucket,
-				sourceVersionId: options === null || options === void 0 ? void 0 : options.sourceVersionId
-			}, { headers: _this7.headers })).Key };
-		});
-	}
-	/**
-	* Creates a signed URL. Use a signed URL to share a file for a fixed amount of time.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The file path, including the current file name. For example `folder/image.png`.
-	* @param expiresIn The number of seconds until the signed URL expires. For example, `60` for a URL which is valid for one minute.
-	* @param options.download triggers the file as a download if set to true. Set this parameter as the name of the file if you want to trigger the download with a different filename.
-	* @param options.transform Transform the asset before serving it to the client.
-	* @param options.cacheNonce Append a cache nonce parameter to the URL to invalidate the cache.
-	* @param options.versionId Create a signed URL for a specific object version rather than the current one.
-	* @returns Promise with response containing signed URL or error
-	*
-	* @example Create Signed URL
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .createSignedUrl('folder/avatar1.png', 60)
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "signedUrl": "https://example.supabase.co/storage/v1/object/sign/avatars/folder/avatar1.png?token=<TOKEN>"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @example Create a signed URL for an asset with transformations
-	* ```js
-	* const { data } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .createSignedUrl('folder/avatar1.png', 60, {
-	*     transform: {
-	*       width: 100,
-	*       height: 100,
-	*     }
-	*   })
-	* ```
-	*
-	* @example Create a signed URL which triggers the download of the asset
-	* ```js
-	* const { data } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .createSignedUrl('folder/avatar1.png', 60, {
-	*     download: true,
-	*   })
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async createSignedUrl(path, expiresIn, options) {
-		var _this8 = this;
-		return _this8.handleOperation(async () => {
-			let _path = _this8._getFinalPath(path);
-			const hasTransform = typeof (options === null || options === void 0 ? void 0 : options.transform) === "object" && options.transform !== null && Object.keys(options.transform).length > 0;
-			let data = await post(_this8.fetch, `${_this8.url}/object/sign/${_path}`, dist_objectSpread2(dist_objectSpread2({ expiresIn }, hasTransform ? { transform: options.transform } : {}), (options === null || options === void 0 ? void 0 : options.versionId) != null ? { versionId: options.versionId } : {}), { headers: _this8.headers });
-			const query = new URLSearchParams();
-			if (options === null || options === void 0 ? void 0 : options.download) query.set("download", options.download === true ? "" : options.download);
-			if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
-			const queryString = query.toString();
-			return { signedUrl: encodeURI(`${_this8.url}${data.signedURL}${queryString ? `&${queryString}` : ""}`) };
-		});
-	}
-	/**
-	* Creates multiple signed URLs. Use a signed URL to share a file for a fixed amount of time.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param paths The file paths to be downloaded, including the current file names. For example `['folder/image.png', 'folder2/image2.png']`.
-	* @param expiresIn The number of seconds until the signed URLs expire. For example, `60` for URLs which are valid for one minute.
-	* @param options.download triggers the file as a download if set to true. Set this parameter as the name of the file if you want to trigger the download with a different filename.
-	* @param options.cacheNonce Append a cache nonce parameter to the URL to invalidate the cache.
-	* @returns Promise with response containing array of objects with signedUrl, path, and error or error
-	*
-	* @example Create Signed URLs
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .createSignedUrls(['folder/avatar1.png', 'folder/avatar2.png'], 60)
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": [
-	*     {
-	*       "error": null,
-	*       "path": "folder/avatar1.png",
-	*       "signedURL": "/object/sign/avatars/folder/avatar1.png?token=<TOKEN>",
-	*       "signedUrl": "https://example.supabase.co/storage/v1/object/sign/avatars/folder/avatar1.png?token=<TOKEN>"
-	*     },
-	*     {
-	*       "error": null,
-	*       "path": "folder/avatar2.png",
-	*       "signedURL": "/object/sign/avatars/folder/avatar2.png?token=<TOKEN>",
-	*       "signedUrl": "https://example.supabase.co/storage/v1/object/sign/avatars/folder/avatar2.png?token=<TOKEN>"
-	*     }
-	*   ],
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async createSignedUrls(paths, expiresIn, options) {
-		var _this9 = this;
-		return _this9.handleOperation(async () => {
-			const data = await post(_this9.fetch, `${_this9.url}/object/sign/${_this9.bucketId}`, {
-				expiresIn,
-				paths
-			}, { headers: _this9.headers });
-			const query = new URLSearchParams();
-			if (options === null || options === void 0 ? void 0 : options.download) query.set("download", options.download === true ? "" : options.download);
-			if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
-			const queryString = query.toString();
-			return data.map((datum) => dist_objectSpread2(dist_objectSpread2({}, datum), {}, { signedUrl: datum.signedURL ? encodeURI(`${_this9.url}${datum.signedURL}${queryString ? `&${queryString}` : ""}`) : null }));
-		});
-	}
-	/**
-	* Downloads a file from a private bucket. For public buckets, make a request to the URL returned from `getPublicUrl` instead.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The full path and file name of the file to be downloaded. For example `folder/image.png`.
-	* @param options Optional settings: `transform` to transform the asset before serving it to the client, `cacheNonce` to append a cache nonce parameter to the URL to invalidate the cache, and `versionId` to download a specific object version.
-	* @param parameters Additional fetch parameters like signal for cancellation. Supports standard fetch options including cache control.
-	* @returns BlobDownloadBuilder instance for downloading the file
-	*
-	* @example Download file
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .download('folder/avatar1.png')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": <BLOB>,
-	*   "error": null
-	* }
-	* ```
-	*
-	* @example Download file with transformations
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .download('folder/avatar1.png', {
-	*     transform: {
-	*       width: 100,
-	*       height: 100,
-	*       quality: 80
-	*     }
-	*   })
-	* ```
-	*
-	* @example Download with cache control (useful in Edge Functions)
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .download('folder/avatar1.png', {}, { cache: 'no-store' })
-	* ```
-	*
-	* @example Download with abort signal
-	* ```js
-	* const controller = new AbortController()
-	* setTimeout(() => controller.abort(), 5000)
-	*
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .download('folder/avatar1.png', {}, { signal: controller.signal })
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	download(path, options, parameters) {
-		const renderPath = typeof (options === null || options === void 0 ? void 0 : options.transform) === "object" && options.transform !== null && Object.keys(options.transform).length > 0 ? "render/image/authenticated" : "object";
-		const query = new URLSearchParams();
-		if (options === null || options === void 0 ? void 0 : options.transform) this.applyTransformOptsToQuery(query, options.transform);
-		if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
-		if ((options === null || options === void 0 ? void 0 : options.versionId) != null) query.set("versionId", String(options.versionId));
-		const queryString = query.toString();
-		const _path = this._getFinalPath(path);
-		const downloadFn = () => get(this.fetch, `${this.url}/${renderPath}/${_path}${queryString ? `?${queryString}` : ""}`, {
-			headers: this.headers,
-			noResolveJson: true
-		}, parameters);
-		return new BlobDownloadBuilder(downloadFn, this.shouldThrowOnError);
-	}
-	/**
-	* Retrieves the details of an existing file.
-	*
-	* Returns detailed file metadata including size, content type, and timestamps.
-	* Note: The API returns `last_modified` field, not `updated_at`.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The file path, including the file name. For example `folder/image.png`.
-	* @param options Optional settings, including `versionId` to retrieve a specific object version.
-	* @returns Promise with response containing file metadata or error
-	*
-	* @example Get file info
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .info('folder/avatar1.png')
-	*
-	* if (data) {
-	*   console.log('Last modified:', data.lastModified)
-	*   console.log('Size:', data.size)
-	* }
-	* ```
-	*/
-	async info(path, options) {
-		var _this10 = this;
-		const _path = _this10._getFinalPath(path);
-		const query = new URLSearchParams();
-		if ((options === null || options === void 0 ? void 0 : options.versionId) != null) query.set("versionId", String(options.versionId));
-		const queryString = query.toString();
-		return _this10.handleOperation(async () => {
-			return recursiveToCamel(await get(_this10.fetch, `${_this10.url}/object/info/${_path}${queryString ? `?${queryString}` : ""}`, { headers: _this10.headers }));
-		});
-	}
-	/**
-	* Checks the existence of a file.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The file path, including the file name. For example `folder/image.png`.
-	* @returns Promise with response containing boolean indicating file existence or error
-	*
-	* @example Check file existence
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .exists('folder/avatar1.png')
-	* ```
-	*/
-	async exists(path) {
-		var _this11 = this;
-		const _path = _this11._getFinalPath(path);
-		try {
-			await head(_this11.fetch, `${_this11.url}/object/${_path}`, { headers: _this11.headers });
-			return {
-				data: true,
-				error: null
-			};
-		} catch (error) {
-			if (_this11.shouldThrowOnError) throw error;
-			if (isStorageError(error)) {
-				var _error$originalError;
-				const status = error instanceof StorageApiError ? error.status : error instanceof StorageUnknownError ? (_error$originalError = error.originalError) === null || _error$originalError === void 0 ? void 0 : _error$originalError.status : void 0;
-				if (status !== void 0 && [400, 404].includes(status)) return {
-					data: false,
-					error
-				};
-			}
-			throw error;
-		}
-	}
-	/**
-	* A simple convenience function to get the URL for an asset in a public bucket. If you do not want to use this function, you can construct the public URL by concatenating the bucket URL with the path to the asset.
-	* This function does not verify if the bucket is public. If a public URL is created for a bucket which is not public, you will not be able to download the asset.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The path and name of the file to generate the public URL for. For example `folder/image.png`.
-	* @param options.download Triggers the file as a download if set to true. Set this parameter as the name of the file if you want to trigger the download with a different filename.
-	* @param options.transform Transform the asset before serving it to the client.
-	* @param options.cacheNonce Append a cache nonce parameter to the URL to invalidate the cache.
-	* @param options.versionId Return the URL for a specific object version rather than the current one.
-	* @returns Object with public URL
-	*
-	* @example Returns the URL for an asset in a public bucket
-	* ```js
-	* const { data } = supabase
-	*   .storage
-	*   .from('public-bucket')
-	*   .getPublicUrl('folder/avatar1.png')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "publicUrl": "https://example.supabase.co/storage/v1/object/public/public-bucket/folder/avatar1.png"
-	*   }
-	* }
-	* ```
-	*
-	* @example Returns the URL for an asset in a public bucket with transformations
-	* ```js
-	* const { data } = supabase
-	*   .storage
-	*   .from('public-bucket')
-	*   .getPublicUrl('folder/avatar1.png', {
-	*     transform: {
-	*       width: 100,
-	*       height: 100,
-	*     }
-	*   })
-	* ```
-	*
-	* @example Returns the URL which triggers the download of an asset in a public bucket
-	* ```js
-	* const { data } = supabase
-	*   .storage
-	*   .from('public-bucket')
-	*   .getPublicUrl('folder/avatar1.png', {
-	*     download: true,
-	*   })
-	* ```
-	*
-	* @remarks
-	* - The bucket needs to be set to public, either via [updateBucket()](/docs/reference/javascript/storage-updatebucket) or by going to Storage on [supabase.com/dashboard](https://supabase.com/dashboard), clicking the overflow menu on a bucket and choosing "Make public"
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	getPublicUrl(path, options) {
-		const _path = this._getFinalPath(path);
-		const query = new URLSearchParams();
-		if (options === null || options === void 0 ? void 0 : options.download) query.set("download", options.download === true ? "" : options.download);
-		if (options === null || options === void 0 ? void 0 : options.transform) this.applyTransformOptsToQuery(query, options.transform);
-		if ((options === null || options === void 0 ? void 0 : options.cacheNonce) != null) query.set("cacheNonce", String(options.cacheNonce));
-		if ((options === null || options === void 0 ? void 0 : options.versionId) != null) query.set("versionId", String(options.versionId));
-		const queryString = query.toString();
-		const renderPath = typeof (options === null || options === void 0 ? void 0 : options.transform) === "object" && options.transform !== null && Object.keys(options.transform).length > 0 ? "render/image" : "object";
-		return { data: { publicUrl: encodeURI(`${this.url}/${renderPath}/public/${_path}`) + (queryString ? `?${queryString}` : "") } };
-	}
-	/**
-	* Deletes files within the same bucket
-	*
-	* Returns an array of FileObject entries for the deleted files. Note that deprecated
-	* fields like `bucket_id` may or may not be present in the response - do not rely on them.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param paths An array of files to delete. Each entry is either a path (deletes whichever
-	* version is currently at that path, e.g. `'folder/image.png'`), or `{ path, versionId }` to
-	* delete an exact version current or archived (e.g. `{ path: 'folder/image.png', versionId: '...' }`).
-	* @returns Promise with response containing array of deleted file objects or error
-	*
-	* @example Delete file
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .remove(['folder/avatar1.png'])
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": [],
-	*   "error": null
-	* }
-	* ```
-	*
-	* @example Delete a specific object version
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .remove([{ path: 'folder/avatar1.png', versionId: 'noncurrent-version-id' }])
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `delete` and `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async remove(paths) {
-		var _this12 = this;
-		return _this12.handleOperation(async () => {
-			return await remove(_this12.fetch, `${_this12.url}/object/${_this12.bucketId}`, { prefixes: paths }, { headers: _this12.headers });
-		});
-	}
-	/**
-	* Purges the CDN cache for a single object in this bucket.
-	*
-	* Maps to `DELETE /cdn/{bucket}/{path}` on the Storage API. The server
-	* issues a CDN invalidation for the object and returns `{ message: 'success' }`.
-	*
-	* **Requires the `service_role` key.** The underlying endpoint enforces
-	* `service_role` JWT — calls made with the anon key or a user JWT will be
-	* rejected by the server.
-	*
-	* **Hosted CDN feature.** On self-hosted Supabase, the Storage service must
-	* have `CDN_PURGE_ENDPOINT_URL` configured and the `purgeCache` tenant
-	* feature enabled, otherwise the server returns an error.
-	*
-	* Operates on a single object path. There is no wildcard or recursion: pass
-	* the exact path of the object you want invalidated.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The path (relative to the bucket) of the object to purge, e.g. `folder/avatar.png`.
-	* @param options Optional purge cache options.
-	* @param options.transformations If true, purges only transformations (resized/formatted variants), leaving the original cached file intact.
-	* @param parameters Optional fetch parameters such as an `AbortController` signal.
-	* @returns Promise with `{ data: { message }, error: null }` on success or `{ data: null, error }` on failure.
-	*
-	* @example Purge a single cached object
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .purgeCache('folder/avatar1.png')
-	* ```
-	*
-	* @example Purge only transformations for a single object
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .purgeCache('folder/avatar1.png', { transformations: true })
-	* ```
-	*/
-	async purgeCache(path, options, parameters) {
-		var _this13 = this;
-		return _this13.handleOperation(async () => {
-			const _path = encodeStoragePath(_this13._getFinalPath(path));
-			const query = new URLSearchParams();
-			if (options === null || options === void 0 ? void 0 : options.transformations) query.set("transformations", "true");
-			const queryString = query.toString();
-			return await remove(_this13.fetch, `${_this13.url}/cdn/${_path}${queryString ? `?${queryString}` : ""}`, {}, { headers: _this13.headers }, parameters);
-		});
-	}
-	/**
-	* Get file metadata
-	* @param id the file id to retrieve metadata
-	*/
-	/**
-	* Update file metadata
-	* @param id the file id to update metadata
-	* @param meta the new file metadata
-	*/
-	/**
-	* Lists all the files and folders within a path of the bucket.
-	*
-	* **Important:** For folder entries, fields like `id`, `updated_at`, `created_at`,
-	* `last_accessed_at`, and `metadata` will be `null`. Only files have these fields populated.
-	* Additionally, deprecated fields like `bucket_id`, `owner`, and `buckets` are NOT returned
-	* by this method.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param path The folder path.
-	* @param options Search options including limit (defaults to 100), offset, sortBy, and search
-	* @param parameters Optional fetch parameters including signal for cancellation
-	* @returns Promise with response containing array of files/folders or error
-	*
-	* @example List files in a bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .list('folder', {
-	*     limit: 100,
-	*     offset: 0,
-	*     sortBy: { column: 'name', order: 'asc' },
-	*   })
-	*
-	* // Handle files vs folders
-	* data?.forEach(item => {
-	*   if (item.id !== null) {
-	*     // It's a file
-	*     console.log('File:', item.name, 'Size:', item.metadata?.size)
-	*   } else {
-	*     // It's a folder
-	*     console.log('Folder:', item.name)
-	*   }
-	* })
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": [
-	*     {
-	*       "name": "avatar1.png",
-	*       "id": "e668cf7f-821b-4a2f-9dce-7dfa5dd1cfd2",
-	*       "updated_at": "2024-05-22T23:06:05.580Z",
-	*       "created_at": "2024-05-22T23:04:34.443Z",
-	*       "last_accessed_at": "2024-05-22T23:04:34.443Z",
-	*       "metadata": {
-	*         "eTag": "\"c5e8c553235d9af30ef4f6e280790b92\"",
-	*         "size": 32175,
-	*         "mimetype": "image/png",
-	*         "cacheControl": "max-age=3600",
-	*         "lastModified": "2024-05-22T23:06:05.574Z",
-	*         "contentLength": 32175,
-	*         "httpStatusCode": 200
-	*       }
-	*     }
-	*   ],
-	*   "error": null
-	* }
-	* ```
-	*
-	* @example Search files in a bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .list('folder', {
-	*     limit: 100,
-	*     offset: 0,
-	*     sortBy: { column: 'name', order: 'asc' },
-	*     search: 'jon'
-	*   })
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: none
-	*   - `objects` table permissions: `select`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async list(path, options, parameters) {
-		var _this14 = this;
-		return _this14.handleOperation(async () => {
-			const sortBy = (options === null || options === void 0 ? void 0 : options.sortBy) ? dist_objectSpread2(dist_objectSpread2({}, DEFAULT_SEARCH_OPTIONS.sortBy), options.sortBy) : DEFAULT_SEARCH_OPTIONS.sortBy;
-			const body = dist_objectSpread2(dist_objectSpread2(dist_objectSpread2({}, DEFAULT_SEARCH_OPTIONS), options), {}, {
-				sortBy,
-				prefix: path || ""
-			});
-			return await post(_this14.fetch, `${_this14.url}/object/list/${_this14.bucketId}`, body, { headers: _this14.headers }, parameters);
-		});
-	}
-	/**
-	* Lists all the files and folders within a bucket using the V2 API with pagination support.
-	*
-	* **Important:** Folder entries in the `folders` array only contain `name` and optionally `key` —
-	* they have no `id`, timestamps, or `metadata` fields. Full file metadata is only available
-	* on entries in the `objects` array.
-	*
-	* @experimental this method signature might change in the future
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param options Search options including prefix, cursor for pagination, limit, with_delimiter
-	* @param parameters Optional fetch parameters including signal for cancellation
-	* @returns Promise with response containing folders/objects arrays with pagination info or error
-	*
-	* @example List files with pagination
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .from('avatars')
-	*   .listV2({
-	*     prefix: 'folder/',
-	*     limit: 100,
-	*   })
-	*
-	* // Handle pagination
-	* if (data?.hasNext) {
-	*   const nextPage = await supabase
-	*     .storage
-	*     .from('avatars')
-	*     .listV2({
-	*       prefix: 'folder/',
-	*       cursor: data.nextCursor,
-	*     })
-	* }
-	*
-	* // Handle files vs folders
-	* data?.objects.forEach(file => {
-	*   if (file.id !== null) {
-	*     console.log('File:', file.name, 'Size:', file.metadata?.size)
-	*   }
-	* })
-	* data?.folders.forEach(folder => {
-	*   console.log('Folder:', folder.name)
-	* })
-	* ```
-	*/
-	async listV2(options, parameters) {
-		var _this15 = this;
-		return _this15.handleOperation(async () => {
-			const body = dist_objectSpread2({}, options);
-			return await post(_this15.fetch, `${_this15.url}/object/list-v2/${_this15.bucketId}`, body, { headers: _this15.headers }, parameters);
-		});
-	}
-	encodeMetadata(metadata) {
-		return JSON.stringify(metadata);
-	}
-	toBase64(data) {
-		if (typeof Buffer !== "undefined") return Buffer.from(data).toString("base64");
-		return btoa(data);
-	}
-	_getFinalPath(path) {
-		return `${this.bucketId}/${path.replace(/^\/+/, "")}`;
-	}
-	_removeEmptyFolders(path) {
-		return path.replace(/^\/|\/$/g, "").replace(/\/+/g, "/");
-	}
-	/** Modifies the `query`, appending values the from `transform` */
-	applyTransformOptsToQuery(query, transform) {
-		if (transform.width) query.set("width", transform.width.toString());
-		if (transform.height) query.set("height", transform.height.toString());
-		if (transform.resize) query.set("resize", transform.resize);
-		if (transform.format) query.set("format", transform.format);
-		if (transform.quality) query.set("quality", transform.quality.toString());
-		return query;
-	}
-};
-
-//#endregion
-//#region src/lib/version.ts
-const version = "2.117.2";
-
-//#endregion
-//#region src/lib/constants.ts
-const DEFAULT_HEADERS = { "X-Client-Info": `storage-js/${version}` };
-
-//#endregion
-//#region src/packages/StorageBucketApi.ts
-var StorageBucketApi = class extends BaseApiClient {
-	constructor(url, headers = {}, fetch$1, opts) {
-		const baseUrl = new URL(url);
-		if (opts === null || opts === void 0 ? void 0 : opts.useNewHostname) {
-			if (/supabase\.(co|in|red)$/.test(baseUrl.hostname) && !baseUrl.hostname.includes("storage.supabase.")) baseUrl.hostname = baseUrl.hostname.replace("supabase.", "storage.supabase.");
-		}
-		const finalUrl = baseUrl.href.replace(/\/$/, "");
-		const finalHeaders = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_HEADERS), headers);
-		super(finalUrl, finalHeaders, fetch$1, "storage");
-	}
-	/**
-	* Retrieves the details of all Storage buckets within an existing project.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param options Query parameters for listing buckets
-	* @param options.limit Maximum number of buckets to return
-	* @param options.offset Number of buckets to skip
-	* @param options.sortColumn Column to sort by ('id', 'name', 'created_at', 'updated_at')
-	* @param options.sortOrder Sort order ('asc' or 'desc')
-	* @param options.search Search term to filter bucket names
-	* @returns Promise with response containing array of buckets or error
-	*
-	* @example List buckets
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .listBuckets()
-	* ```
-	*
-	* @example List buckets with options
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .listBuckets({
-	*     limit: 10,
-	*     offset: 0,
-	*     sortColumn: 'created_at',
-	*     sortOrder: 'desc',
-	*     search: 'prod'
-	*   })
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async listBuckets(options) {
-		var _this = this;
-		return _this.handleOperation(async () => {
-			const queryString = _this.listBucketOptionsToQueryString(options);
-			return await get(_this.fetch, `${_this.url}/bucket${queryString}`, { headers: _this.headers });
-		});
-	}
-	/**
-	* Retrieves the details of an existing Storage bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket you would like to retrieve.
-	* @returns Promise with response containing bucket details or error
-	*
-	* @example Get bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .getBucket('avatars')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "id": "avatars",
-	*     "name": "avatars",
-	*     "owner": "",
-	*     "public": false,
-	*     "file_size_limit": 1024,
-	*     "allowed_mime_types": [
-	*       "image/png"
-	*     ],
-	*     "created_at": "2024-05-22T22:26:05.100Z",
-	*     "updated_at": "2024-05-22T22:26:05.100Z"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async getBucket(id) {
-		var _this2 = this;
-		return _this2.handleOperation(async () => {
-			return await get(_this2.fetch, `${_this2.url}/bucket/${id}`, { headers: _this2.headers });
-		});
-	}
-	/**
-	* Creates a new Storage bucket
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id A unique identifier for the bucket you are creating.
-	* @param options.public The visibility of the bucket. Public buckets don't require an authorization token to download objects, but still require a valid token for all other operations. By default, buckets are private.
-	* @param options.fileSizeLimit specifies the max file size in bytes that can be uploaded to this bucket.
-	* The global file size limit takes precedence over this value.
-	* The default value is null, which doesn't set a per bucket file size limit.
-	* @param options.allowedMimeTypes specifies the allowed mime types that this bucket can accept during upload.
-	* The default value is null, which allows files with all mime types to be uploaded.
-	* Each mime type specified can be a wildcard, e.g. image/*, or a specific mime type, e.g. image/png.
-	* @param options.type (private-beta) specifies the bucket type. see `BucketType` for more details.
-	*   - default bucket type is `STANDARD`
-	* @param options.versioningStatus the bucket's initial object versioning status.
-	* The default value is `DISABLED`
-	* @returns Promise with response containing newly created bucket name or error
-	*
-	* @example Create bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .createBucket('avatars', {
-	*     public: false,
-	*     allowedMimeTypes: ['image/png'],
-	*     fileSizeLimit: 1024
-	*   })
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "name": "avatars"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `insert`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async createBucket(id, options = { public: false }) {
-		var _this3 = this;
-		return _this3.handleOperation(async () => {
-			return await post(_this3.fetch, `${_this3.url}/bucket`, {
-				id,
-				name: id,
-				type: options.type,
-				public: options.public,
-				file_size_limit: options.fileSizeLimit,
-				allowed_mime_types: options.allowedMimeTypes,
-				versioning_status: options.versioningStatus
-			}, { headers: _this3.headers });
-		});
-	}
-	/**
-	* Updates a Storage bucket
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id A unique identifier for the bucket you are updating.
-	* @param options.public The visibility of the bucket. Public buckets don't require an authorization token to download objects, but still require a valid token for all other operations.
-	* @param options.fileSizeLimit specifies the max file size in bytes that can be uploaded to this bucket.
-	* The global file size limit takes precedence over this value.
-	* The default value is null, which doesn't set a per bucket file size limit.
-	* @param options.allowedMimeTypes specifies the allowed mime types that this bucket can accept during upload.
-	* The default value is null, which allows files with all mime types to be uploaded.
-	* Each mime type specified can be a wildcard, e.g. image/*, or a specific mime type, e.g. image/png.
-	* @param options.versioningStatus the bucket's new object versioning status. `DISABLED` is not
-	* valid here, there's no transition back to it once versioning has been touched.
-	* @returns Promise with response containing success message or error
-	*
-	* @example Update bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .updateBucket('avatars', {
-	*     public: false,
-	*     allowedMimeTypes: ['image/png'],
-	*     fileSizeLimit: 1024
-	*   })
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "message": "Successfully updated"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select` and `update`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async updateBucket(id, options) {
-		var _this4 = this;
-		return _this4.handleOperation(async () => {
-			return await put(_this4.fetch, `${_this4.url}/bucket/${id}`, {
-				id,
-				name: id,
-				public: options.public,
-				file_size_limit: options.fileSizeLimit,
-				allowed_mime_types: options.allowedMimeTypes,
-				versioning_status: options.versioningStatus
-			}, { headers: _this4.headers });
-		});
-	}
-	/**
-	* Removes all objects inside a single bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket you would like to empty.
-	* @returns Promise with success message or error
-	*
-	* @example Empty bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .emptyBucket('avatars')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "message": "Successfully emptied"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select`
-	*   - `objects` table permissions: `select` and `delete`
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async emptyBucket(id) {
-		var _this5 = this;
-		return _this5.handleOperation(async () => {
-			return await post(_this5.fetch, `${_this5.url}/bucket/${id}/empty`, {}, { headers: _this5.headers });
-		});
-	}
-	/**
-	* Deletes an existing bucket. A bucket can't be deleted with existing objects inside it.
-	* You must first `empty()` the bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket you would like to delete.
-	* @returns Promise with success message or error
-	*
-	* @example Delete bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .deleteBucket('avatars')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "message": "Successfully deleted"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select` and `delete`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async deleteBucket(id) {
-		var _this6 = this;
-		return _this6.handleOperation(async () => {
-			return await remove(_this6.fetch, `${_this6.url}/bucket/${id}`, {}, { headers: _this6.headers });
-		});
-	}
-	/**
-	* Returns the lifecycle policy stored on a bucket.
-	*
-	* Fails with `NoSuchLifecycleConfiguration` when the bucket has no policy.
-	*
-	* These rules expire previous versions of objects, not the current one.
-	* Turn versioning on or there is nothing for the policy to act on.
-	* Standard buckets only. Returns `FeatureNotEnabled` if lifecycle is off
-	* for the project.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket.
-	* @returns Promise with the lifecycle configuration or error
-	*
-	* @example Get lifecycle configuration
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .getBucketLifecycle('avatars')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "rules": [
-	*       {
-	*         "id": "expire-history",
-	*         "status": "Enabled",
-	*         "filter": {},
-	*         "noncurrentVersionExpiration": {
-	*           "noncurrentDays": 30,
-	*           "newerNoncurrentVersions": 2
-	*         }
-	*       }
-	*     ]
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async getBucketLifecycle(id) {
-		var _this7 = this;
-		return _this7.handleOperation(async () => {
-			return await get(_this7.fetch, _this7.bucketLifecycleUrl(id), { headers: _this7.headers });
-		});
-	}
-	/**
-	* Replaces the lifecycle policy on a bucket.
-	*
-	* The `rules` array you send is the whole policy. Anything previously stored
-	* is overwritten. Send at least one rule. Call {@link deleteBucketLifecycle}
-	* to remove the policy.
-	*
-	* Each rule currently supports only `noncurrentVersionExpiration`. `filter`
-	* is required and must be `{}`. Prefix filters, tag filters, and current-object
-	* expiration are rejected. Rule IDs must be unique. Omit `id` and the
-	* server generates one.
-	*
-	* Standard buckets only. Returns `FeatureNotEnabled` if lifecycle is off
-	* for the project.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket.
-	* @param configuration The full lifecycle configuration to store.
-	* @returns Promise with the stored configuration or error
-	*
-	* @example Replace lifecycle configuration
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .updateBucketLifecycle('avatars', {
-	*     rules: [
-	*       {
-	*         id: 'expire-history',
-	*         status: 'Enabled',
-	*         filter: {},
-	*         noncurrentVersionExpiration: {
-	*           noncurrentDays: 30,
-	*           newerNoncurrentVersions: 2,
-	*         },
-	*       },
-	*     ],
-	*   })
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select` and `update`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async updateBucketLifecycle(id, configuration) {
-		var _this8 = this;
-		return _this8.handleOperation(async () => {
-			return await put(_this8.fetch, _this8.bucketLifecycleUrl(id), configuration, { headers: _this8.headers });
-		});
-	}
-	/**
-	* Removes the lifecycle policy from a bucket.
-	*
-	* Safe to call when no policy is stored. The response is still success.
-	* Standard buckets only. Returns `FeatureNotEnabled` if lifecycle is off
-	* for the project.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket.
-	* @returns Promise with success message or error
-	*
-	* @example Delete lifecycle configuration
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .deleteBucketLifecycle('avatars')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "message": "Successfully deleted"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - RLS policy permissions required:
-	*   - `buckets` table permissions: `select` and `update`
-	*   - `objects` table permissions: none
-	* - Refer to the [Storage guide](/docs/guides/storage/security/access-control) on how access control works
-	*/
-	async deleteBucketLifecycle(id) {
-		var _this9 = this;
-		return _this9.handleOperation(async () => {
-			return await remove(_this9.fetch, _this9.bucketLifecycleUrl(id), {}, { headers: _this9.headers });
-		});
-	}
-	/**
-	* Purges the CDN cache for an entire bucket.
-	*
-	* Maps to `DELETE /cdn/{bucket}` on the Storage API. The server
-	* issues a CDN invalidation for the bucket and returns `{ message: 'success' }`.
-	*
-	* **Requires the `service_role` key.** The underlying endpoint enforces
-	* `service_role` JWT — calls made with the anon key or a user JWT will be
-	* rejected by the server.
-	*
-	* **Hosted CDN feature.** On self-hosted Supabase, the Storage service must
-	* have `CDN_PURGE_ENDPOINT_URL` configured and the `purgeCache` tenant
-	* feature enabled, otherwise the server returns an error.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	* @param id The unique identifier of the bucket you would like to purge from cache.
-	* @param options Optional purge cache options.
-	* @param options.transformations If true, purges only transformations (resized/formatted variants), leaving original cached files intact.
-	* @param parameters Optional fetch parameters such as an `AbortController` signal.
-	* @returns Promise with `{ data: { message }, error: null }` on success or `{ data: null, error }` on failure.
-	*
-	* @example Purge cache for an entire bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .purgeBucketCache('avatars')
-	* ```
-	*
-	* @example Purge only transformations for an entire bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .purgeBucketCache('avatars', { transformations: true })
-	* ```
-	*/
-	async purgeBucketCache(id, options, parameters) {
-		var _this10 = this;
-		return _this10.handleOperation(async () => {
-			const query = new URLSearchParams();
-			if (options === null || options === void 0 ? void 0 : options.transformations) query.set("transformations", "true");
-			const queryString = query.toString();
-			return await remove(_this10.fetch, `${_this10.url}/cdn/${encodeStoragePath(id)}${queryString ? `?${queryString}` : ""}`, {}, { headers: _this10.headers }, parameters);
-		});
-	}
-	bucketLifecycleUrl(id) {
-		return `${this.url}/bucket/${encodeStoragePath(id)}/lifecycle`;
-	}
-	listBucketOptionsToQueryString(options) {
-		const params = {};
-		if (options) {
-			if ("limit" in options) params.limit = String(options.limit);
-			if ("offset" in options) params.offset = String(options.offset);
-			if (options.search) params.search = options.search;
-			if (options.sortColumn) params.sortColumn = options.sortColumn;
-			if (options.sortOrder) params.sortOrder = options.sortOrder;
-		}
-		return Object.keys(params).length > 0 ? "?" + new URLSearchParams(params).toString() : "";
-	}
-};
-
-//#endregion
-//#region src/packages/StorageAnalyticsClient.ts
-/**
-* Client class for managing Analytics Buckets using Iceberg tables
-* Provides methods for creating, listing, and deleting analytics buckets
-*/
-var StorageAnalyticsClient = class extends BaseApiClient {
-	/**
-	* @alpha
-	*
-	* Creates a new StorageAnalyticsClient instance
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Analytics Buckets
-	* @param url - The base URL for the storage API
-	* @param headers - HTTP headers to include in requests
-	* @param fetch - Optional custom fetch implementation
-	*
-	* @example Using supabase-js (recommended)
-	* ```typescript
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
-	* const { data, error } = await supabase.storage.analytics.listBuckets()
-	* ```
-	*
-	* @example Standalone import for bundle-sensitive environments
-	* ```typescript
-	* import { StorageAnalyticsClient } from '@supabase/storage-js'
-	*
-	* const client = new StorageAnalyticsClient(url, headers)
-	* ```
-	*/
-	constructor(url, headers = {}, fetch$1) {
-		const finalUrl = url.replace(/\/$/, "");
-		const finalHeaders = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_HEADERS), headers);
-		super(finalUrl, finalHeaders, fetch$1, "storage");
-	}
-	/**
-	* @alpha
-	*
-	* Creates a new analytics bucket using Iceberg tables
-	* Analytics buckets are optimized for analytical queries and data processing
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Analytics Buckets
-	* @param name A unique name for the bucket you are creating
-	* @returns Promise with response containing newly created analytics bucket or error
-	*
-	* @example Create analytics bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .analytics
-	*   .createBucket('analytics-data')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "name": "analytics-data",
-	*     "type": "ANALYTICS",
-	*     "format": "iceberg",
-	*     "created_at": "2024-05-22T22:26:05.100Z",
-	*     "updated_at": "2024-05-22T22:26:05.100Z"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - Creates a new analytics bucket using Iceberg tables
-	* - Analytics buckets are optimized for analytical queries and data processing
-	*/
-	async createBucket(name) {
-		var _this = this;
-		return _this.handleOperation(async () => {
-			return await post(_this.fetch, `${_this.url}/bucket`, { name }, { headers: _this.headers });
-		});
-	}
-	/**
-	* @alpha
-	*
-	* Retrieves the details of all Analytics Storage buckets within an existing project
-	* Only returns buckets of type 'ANALYTICS'
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Analytics Buckets
-	* @param options Query parameters for listing buckets
-	* @param options.limit Maximum number of buckets to return
-	* @param options.offset Number of buckets to skip
-	* @param options.sortColumn Column to sort by ('name', 'created_at', 'updated_at')
-	* @param options.sortOrder Sort order ('asc' or 'desc')
-	* @param options.search Search term to filter bucket names
-	* @returns Promise with response containing array of analytics buckets or error
-	*
-	* @example List analytics buckets
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .analytics
-	*   .listBuckets({
-	*     limit: 10,
-	*     offset: 0,
-	*     sortColumn: 'created_at',
-	*     sortOrder: 'desc'
-	*   })
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": [
-	*     {
-	*       "name": "analytics-data",
-	*       "type": "ANALYTICS",
-	*       "format": "iceberg",
-	*       "created_at": "2024-05-22T22:26:05.100Z",
-	*       "updated_at": "2024-05-22T22:26:05.100Z"
-	*     }
-	*   ],
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - Retrieves the details of all Analytics Storage buckets within an existing project
-	* - Only returns buckets of type 'ANALYTICS'
-	*/
-	async listBuckets(options) {
-		var _this2 = this;
-		return _this2.handleOperation(async () => {
-			const queryParams = new URLSearchParams();
-			if ((options === null || options === void 0 ? void 0 : options.limit) !== void 0) queryParams.set("limit", options.limit.toString());
-			if ((options === null || options === void 0 ? void 0 : options.offset) !== void 0) queryParams.set("offset", options.offset.toString());
-			if (options === null || options === void 0 ? void 0 : options.sortColumn) queryParams.set("sortColumn", options.sortColumn);
-			if (options === null || options === void 0 ? void 0 : options.sortOrder) queryParams.set("sortOrder", options.sortOrder);
-			if (options === null || options === void 0 ? void 0 : options.search) queryParams.set("search", options.search);
-			const queryString = queryParams.toString();
-			const url = queryString ? `${_this2.url}/bucket?${queryString}` : `${_this2.url}/bucket`;
-			return await get(_this2.fetch, url, { headers: _this2.headers });
-		});
-	}
-	/**
-	* @alpha
-	*
-	* Deletes an existing analytics bucket
-	* A bucket can't be deleted with existing objects inside it
-	* You must first empty the bucket before deletion
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Analytics Buckets
-	* @param bucketName The unique identifier of the bucket you would like to delete
-	* @returns Promise with response containing success message or error
-	*
-	* @example Delete analytics bucket
-	* ```js
-	* const { data, error } = await supabase
-	*   .storage
-	*   .analytics
-	*   .deleteBucket('analytics-data')
-	* ```
-	*
-	* Response:
-	* ```json
-	* {
-	*   "data": {
-	*     "message": "Successfully deleted"
-	*   },
-	*   "error": null
-	* }
-	* ```
-	*
-	* @remarks
-	* - Deletes an analytics bucket
-	*/
-	async deleteBucket(bucketName) {
-		var _this3 = this;
-		return _this3.handleOperation(async () => {
-			return await remove(_this3.fetch, `${_this3.url}/bucket/${bucketName}`, {}, { headers: _this3.headers });
-		});
-	}
-	/**
-	* @alpha
-	*
-	* Get an Iceberg REST Catalog client configured for a specific analytics bucket
-	* Use this to perform advanced table and namespace operations within the bucket
-	* The returned client provides full access to the Apache Iceberg REST Catalog API
-	* with the Supabase `{ data, error }` pattern for consistent error handling on all operations.
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Analytics Buckets
-	* @param bucketName - The name of the analytics bucket (warehouse) to connect to
-	* @returns The wrapped Iceberg catalog client
-	* @throws {StorageError} If the bucket name is invalid
-	*
-	* @example Get catalog and create table
-	* ```js
-	* // First, create an analytics bucket
-	* const { data: bucket, error: bucketError } = await supabase
-	*   .storage
-	*   .analytics
-	*   .createBucket('analytics-data')
-	*
-	* // Get the Iceberg catalog for that bucket
-	* const catalog = supabase.storage.analytics.from('analytics-data')
-	*
-	* // Create a namespace
-	* const { error: nsError } = await catalog.createNamespace({ namespace: ['default'] })
-	*
-	* // Create a table with schema
-	* const { data: tableMetadata, error: tableError } = await catalog.createTable(
-	*   { namespace: ['default'] },
-	*   {
-	*     name: 'events',
-	*     schema: {
-	*       type: 'struct',
-	*       fields: [
-	*         { id: 1, name: 'id', type: 'long', required: true },
-	*         { id: 2, name: 'timestamp', type: 'timestamp', required: true },
-	*         { id: 3, name: 'user_id', type: 'string', required: false }
-	*       ],
-	*       'schema-id': 0,
-	*       'identifier-field-ids': [1]
-	*     },
-	*     'partition-spec': {
-	*       'spec-id': 0,
-	*       fields: []
-	*     },
-	*     'write-order': {
-	*       'order-id': 0,
-	*       fields: []
-	*     },
-	*     properties: {
-	*       'write.format.default': 'parquet'
-	*     }
-	*   }
-	* )
-	* ```
-	*
-	* @example List tables in namespace
-	* ```js
-	* const catalog = supabase.storage.analytics.from('analytics-data')
-	*
-	* // List all tables in the default namespace
-	* const { data: tables, error: listError } = await catalog.listTables({ namespace: ['default'] })
-	* if (listError) {
-	*   if (listError.isNotFound()) {
-	*     console.log('Namespace not found')
-	*   }
-	*   return
-	* }
-	* console.log(tables) // [{ namespace: ['default'], name: 'events' }]
-	* ```
-	*
-	* @example Working with namespaces
-	* ```js
-	* const catalog = supabase.storage.analytics.from('analytics-data')
-	*
-	* // List all namespaces
-	* const { data: namespaces } = await catalog.listNamespaces()
-	*
-	* // Create namespace with properties
-	* await catalog.createNamespace(
-	*   { namespace: ['production'] },
-	*   { properties: { owner: 'data-team', env: 'prod' } }
-	* )
-	* ```
-	*
-	* @example Cleanup operations
-	* ```js
-	* const catalog = supabase.storage.analytics.from('analytics-data')
-	*
-	* // Drop table with purge option (removes all data)
-	* const { error: dropError } = await catalog.dropTable(
-	*   { namespace: ['default'], name: 'events' },
-	*   { purge: true }
-	* )
-	*
-	* if (dropError?.isNotFound()) {
-	*   console.log('Table does not exist')
-	* }
-	*
-	* // Drop namespace (must be empty)
-	* await catalog.dropNamespace({ namespace: ['default'] })
-	* ```
-	*
-	* @remarks
-	* This method provides a bridge between Supabase's bucket management and the standard
-	* Apache Iceberg REST Catalog API. The bucket name maps to the Iceberg warehouse parameter.
-	* All authentication and configuration is handled automatically using your Supabase credentials.
-	*
-	* **Error Handling**: Invalid bucket names throw immediately. All catalog
-	* operations return `{ data, error }` where errors are `IcebergError` instances from iceberg-js.
-	* Use helper methods like `error.isNotFound()` or check `error.status` for specific error handling.
-	* Use `.throwOnError()` on the analytics client if you prefer exceptions for catalog operations.
-	*
-	* **Cleanup Operations**: When using `dropTable`, the `purge: true` option permanently
-	* deletes all table data. Without it, the table is marked as deleted but data remains.
-	*
-	* **Library Dependency**: The returned catalog wraps `IcebergRestCatalog` from iceberg-js.
-	* For complete API documentation and advanced usage, refer to the
-	* [iceberg-js documentation](https://supabase.github.io/iceberg-js/).
-	*/
-	from(bucketName) {
-		var _this4 = this;
-		if (!isValidBucketName(bucketName)) throw new StorageError("Invalid bucket name: File, folder, and bucket names must follow AWS object key naming guidelines and should avoid the use of any other characters.");
-		const catalog = new IcebergRestCatalog({
-			baseUrl: this.url,
-			catalogName: bucketName,
-			auth: {
-				type: "custom",
-				getHeaders: async () => _this4.headers
-			},
-			fetch: this.fetch
-		});
-		const shouldThrowOnError = this.shouldThrowOnError;
-		return new Proxy(catalog, { get(target, prop) {
-			const value = target[prop];
-			if (typeof value !== "function") return value;
-			return async (...args) => {
-				try {
-					return {
-						data: await value.apply(target, args),
-						error: null
-					};
-				} catch (error) {
-					if (shouldThrowOnError) throw error;
-					return {
-						data: null,
-						error
-					};
-				}
-			};
-		} });
-	}
-};
-
-//#endregion
-//#region src/packages/VectorIndexApi.ts
-/**
-* @hidden
-* Base implementation for vector index operations.
-* Use {@link VectorBucketScope} via `supabase.storage.vectors.from('bucket')` instead.
-*/
-var VectorIndexApi = class extends BaseApiClient {
-	/** Creates a new VectorIndexApi instance */
-	constructor(url, headers = {}, fetch$1) {
-		const finalUrl = url.replace(/\/$/, "");
-		const finalHeaders = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_HEADERS), {}, { "Content-Type": "application/json" }, headers);
-		super(finalUrl, finalHeaders, fetch$1, "vectors");
-	}
-	/** Creates a new vector index within a bucket */
-	async createIndex(options) {
-		var _this = this;
-		return _this.handleOperation(async () => {
-			return await vectorsApi.post(_this.fetch, `${_this.url}/CreateIndex`, options, { headers: _this.headers }) || {};
-		});
-	}
-	/** Retrieves metadata for a specific vector index */
-	async getIndex(vectorBucketName, indexName) {
-		var _this2 = this;
-		return _this2.handleOperation(async () => {
-			return await vectorsApi.post(_this2.fetch, `${_this2.url}/GetIndex`, {
-				vectorBucketName,
-				indexName
-			}, { headers: _this2.headers });
-		});
-	}
-	/** Lists vector indexes within a bucket with optional filtering and pagination */
-	async listIndexes(options) {
-		var _this3 = this;
-		return _this3.handleOperation(async () => {
-			return await vectorsApi.post(_this3.fetch, `${_this3.url}/ListIndexes`, options, { headers: _this3.headers });
-		});
-	}
-	/** Deletes a vector index and all its data */
-	async deleteIndex(vectorBucketName, indexName) {
-		var _this4 = this;
-		return _this4.handleOperation(async () => {
-			return await vectorsApi.post(_this4.fetch, `${_this4.url}/DeleteIndex`, {
-				vectorBucketName,
-				indexName
-			}, { headers: _this4.headers }) || {};
-		});
-	}
-};
-
-//#endregion
-//#region src/packages/VectorDataApi.ts
-/**
-* @hidden
-* Base implementation for vector data operations.
-* Use {@link VectorIndexScope} via `supabase.storage.vectors.from('bucket').index('idx')` instead.
-*/
-var VectorDataApi = class extends BaseApiClient {
-	/** Creates a new VectorDataApi instance */
-	constructor(url, headers = {}, fetch$1) {
-		const finalUrl = url.replace(/\/$/, "");
-		const finalHeaders = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_HEADERS), {}, { "Content-Type": "application/json" }, headers);
-		super(finalUrl, finalHeaders, fetch$1, "vectors");
-	}
-	/** Inserts or updates vectors in batch (1-500 per request) */
-	async putVectors(options) {
-		var _this = this;
-		if (options.vectors.length < 1 || options.vectors.length > 500) throw new Error("Vector batch size must be between 1 and 500 items");
-		return _this.handleOperation(async () => {
-			return await vectorsApi.post(_this.fetch, `${_this.url}/PutVectors`, options, { headers: _this.headers }) || {};
-		});
-	}
-	/** Retrieves vectors by their keys in batch */
-	async getVectors(options) {
-		var _this2 = this;
-		return _this2.handleOperation(async () => {
-			return await vectorsApi.post(_this2.fetch, `${_this2.url}/GetVectors`, options, { headers: _this2.headers });
-		});
-	}
-	/** Lists vectors in an index with pagination */
-	async listVectors(options) {
-		var _this3 = this;
-		if (options.segmentCount !== void 0) {
-			if (options.segmentCount < 1 || options.segmentCount > 16) throw new Error("segmentCount must be between 1 and 16");
-			if (options.segmentIndex !== void 0) {
-				if (options.segmentIndex < 0 || options.segmentIndex >= options.segmentCount) throw new Error(`segmentIndex must be between 0 and ${options.segmentCount - 1}`);
-			}
-		}
-		return _this3.handleOperation(async () => {
-			return await vectorsApi.post(_this3.fetch, `${_this3.url}/ListVectors`, options, { headers: _this3.headers });
-		});
-	}
-	/** Queries for similar vectors using approximate nearest neighbor search */
-	async queryVectors(options) {
-		var _this4 = this;
-		return _this4.handleOperation(async () => {
-			return await vectorsApi.post(_this4.fetch, `${_this4.url}/QueryVectors`, options, { headers: _this4.headers });
-		});
-	}
-	/** Deletes vectors by their keys in batch (1-500 per request) */
-	async deleteVectors(options) {
-		var _this5 = this;
-		if (options.keys.length < 1 || options.keys.length > 500) throw new Error("Keys batch size must be between 1 and 500 items");
-		return _this5.handleOperation(async () => {
-			return await vectorsApi.post(_this5.fetch, `${_this5.url}/DeleteVectors`, options, { headers: _this5.headers }) || {};
-		});
-	}
-};
-
-//#endregion
-//#region src/packages/VectorBucketApi.ts
-/**
-* @hidden
-* Base implementation for vector bucket operations.
-* Use {@link StorageVectorsClient} via `supabase.storage.vectors` instead.
-*/
-var VectorBucketApi = class extends BaseApiClient {
-	/** Creates a new VectorBucketApi instance */
-	constructor(url, headers = {}, fetch$1) {
-		const finalUrl = url.replace(/\/$/, "");
-		const finalHeaders = dist_objectSpread2(dist_objectSpread2({}, DEFAULT_HEADERS), {}, { "Content-Type": "application/json" }, headers);
-		super(finalUrl, finalHeaders, fetch$1, "vectors");
-	}
-	/** Creates a new vector bucket */
-	async createBucket(vectorBucketName) {
-		var _this = this;
-		return _this.handleOperation(async () => {
-			return await vectorsApi.post(_this.fetch, `${_this.url}/CreateVectorBucket`, { vectorBucketName }, { headers: _this.headers }) || {};
-		});
-	}
-	/** Retrieves metadata for a specific vector bucket */
-	async getBucket(vectorBucketName) {
-		var _this2 = this;
-		return _this2.handleOperation(async () => {
-			return await vectorsApi.post(_this2.fetch, `${_this2.url}/GetVectorBucket`, { vectorBucketName }, { headers: _this2.headers });
-		});
-	}
-	/** Lists vector buckets with optional filtering and pagination */
-	async listBuckets(options = {}) {
-		var _this3 = this;
-		return _this3.handleOperation(async () => {
-			return await vectorsApi.post(_this3.fetch, `${_this3.url}/ListVectorBuckets`, options, { headers: _this3.headers });
-		});
-	}
-	/** Deletes a vector bucket (must be empty first) */
-	async deleteBucket(vectorBucketName) {
-		var _this4 = this;
-		return _this4.handleOperation(async () => {
-			return await vectorsApi.post(_this4.fetch, `${_this4.url}/DeleteVectorBucket`, { vectorBucketName }, { headers: _this4.headers }) || {};
-		});
-	}
-};
-
-//#endregion
-//#region src/packages/StorageVectorsClient.ts
-/**
-*
-* @alpha
-*
-* Main client for interacting with S3 Vectors API
-* Provides access to bucket, index, and vector data operations
-*
-* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-*
-* **Usage Patterns:**
-*
-* ```typescript
-* const { data, error } = await supabase
-*  .storage
-*  .vectors
-*  .createBucket('embeddings-prod')
-*
-* // Access index operations via buckets
-* const bucket = supabase.storage.vectors.from('embeddings-prod')
-* await bucket.createIndex({
-*   indexName: 'documents',
-*   dataType: 'float32',
-*   dimension: 1536,
-*   distanceMetric: 'cosine'
-* })
-*
-* // Access vector operations via index
-* const index = bucket.index('documents')
-* await index.putVectors({
-*   vectors: [
-*     { key: 'doc-1', data: { float32: [...] }, metadata: { title: 'Intro' } }
-*   ]
-* })
-*
-* // Query similar vectors
-* const { data } = await index.queryVectors({
-*   queryVector: { float32: [...] },
-*   topK: 5,
-*   returnDistance: true
-* })
-* ```
-*/
-var StorageVectorsClient = class extends VectorBucketApi {
-	/**
-	* @alpha
-	*
-	* Creates a StorageVectorsClient that can manage buckets, indexes, and vectors.
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param url - Base URL of the Storage Vectors REST API.
-	* @param options.headers - Optional headers (for example `Authorization`) applied to every request.
-	* @param options.fetch - Optional custom `fetch` implementation for non-browser runtimes.
-	*
-	* @example Using supabase-js (recommended)
-	* ```typescript
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* ```
-	*
-	* @example Standalone import for bundle-sensitive environments
-	* ```typescript
-	* import { StorageVectorsClient } from '@supabase/storage-js'
-	*
-	* const client = new StorageVectorsClient(url, options)
-	* ```
-	*/
-	constructor(url, options = {}) {
-		super(url, options.headers || {}, options.fetch);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Access operations for a specific vector bucket
-	* Returns a scoped client for index and vector operations within the bucket
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param vectorBucketName - Name of the vector bucket
-	* @returns Bucket-scoped client with index and vector operations
-	*
-	* @example Accessing a vector bucket
-	* ```typescript
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* ```
-	*/
-	from(vectorBucketName) {
-		return new VectorBucketScope(this.url, this.headers, vectorBucketName, this.fetch);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Creates a new vector bucket
-	* Vector buckets are containers for vector indexes and their data
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param vectorBucketName - Unique name for the vector bucket
-	* @returns Promise with empty response on success or error
-	*
-	* @example Creating a vector bucket
-	* ```typescript
-	* const { data, error } = await supabase
-	*   .storage
-	*   .vectors
-	*   .createBucket('embeddings-prod')
-	* ```
-	*/
-	async createBucket(vectorBucketName) {
-		var _superprop_getCreateBucket = () => super.createBucket, _this = this;
-		return _superprop_getCreateBucket().call(_this, vectorBucketName);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Retrieves metadata for a specific vector bucket
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param vectorBucketName - Name of the vector bucket
-	* @returns Promise with bucket metadata or error
-	*
-	* @example Get bucket metadata
-	* ```typescript
-	* const { data, error } = await supabase
-	*   .storage
-	*   .vectors
-	*   .getBucket('embeddings-prod')
-	*
-	* console.log('Bucket created:', data?.vectorBucket.creationTime)
-	* ```
-	*/
-	async getBucket(vectorBucketName) {
-		var _superprop_getGetBucket = () => super.getBucket, _this2 = this;
-		return _superprop_getGetBucket().call(_this2, vectorBucketName);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Lists all vector buckets with optional filtering and pagination
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Optional filters (prefix, maxResults, nextToken)
-	* @returns Promise with list of buckets or error
-	*
-	* @example List vector buckets
-	* ```typescript
-	* const { data, error } = await supabase
-	*   .storage
-	*   .vectors
-	*   .listBuckets({ prefix: 'embeddings-' })
-	*
-	* data?.vectorBuckets.forEach(bucket => {
-	*   console.log(bucket.vectorBucketName)
-	* })
-	* ```
-	*/
-	async listBuckets(options = {}) {
-		var _superprop_getListBuckets = () => super.listBuckets, _this3 = this;
-		return _superprop_getListBuckets().call(_this3, options);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Deletes a vector bucket (bucket must be empty)
-	* All indexes must be deleted before deleting the bucket
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param vectorBucketName - Name of the vector bucket to delete
-	* @returns Promise with empty response on success or error
-	*
-	* @example Delete a vector bucket
-	* ```typescript
-	* const { data, error } = await supabase
-	*   .storage
-	*   .vectors
-	*   .deleteBucket('embeddings-old')
-	* ```
-	*/
-	async deleteBucket(vectorBucketName) {
-		var _superprop_getDeleteBucket = () => super.deleteBucket, _this4 = this;
-		return _superprop_getDeleteBucket().call(_this4, vectorBucketName);
-	}
-};
-/**
-*
-* @alpha
-*
-* Scoped client for operations within a specific vector bucket
-* Provides index management and access to vector operations
-*
-* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-*/
-var VectorBucketScope = class extends VectorIndexApi {
-	/**
-	* @alpha
-	*
-	* Creates a helper that automatically scopes all index operations to the provided bucket.
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @example Creating a vector bucket scope
-	* ```typescript
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* ```
-	*/
-	constructor(url, headers, vectorBucketName, fetch$1) {
-		super(url, headers, fetch$1);
-		this.vectorBucketName = vectorBucketName;
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Creates a new vector index in this bucket
-	* Convenience method that automatically includes the bucket name
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Index configuration (vectorBucketName is automatically set)
-	* @returns Promise with empty response on success or error
-	*
-	* @example Creating a vector index
-	* ```typescript
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* await bucket.createIndex({
-	*   indexName: 'documents-openai',
-	*   dataType: 'float32',
-	*   dimension: 1536,
-	*   distanceMetric: 'cosine',
-	*   metadataConfiguration: {
-	*     nonFilterableMetadataKeys: ['raw_text']
-	*   }
-	* })
-	* ```
-	*/
-	async createIndex(options) {
-		var _superprop_getCreateIndex = () => super.createIndex, _this5 = this;
-		return _superprop_getCreateIndex().call(_this5, dist_objectSpread2(dist_objectSpread2({}, options), {}, { vectorBucketName: _this5.vectorBucketName }));
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Lists indexes in this bucket
-	* Convenience method that automatically includes the bucket name
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Listing options (vectorBucketName is automatically set)
-	* @returns Promise with response containing indexes array and pagination token or error
-	*
-	* @example List indexes
-	* ```typescript
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* const { data } = await bucket.listIndexes({ prefix: 'documents-' })
-	* ```
-	*/
-	async listIndexes(options = {}) {
-		var _superprop_getListIndexes = () => super.listIndexes, _this6 = this;
-		return _superprop_getListIndexes().call(_this6, dist_objectSpread2(dist_objectSpread2({}, options), {}, { vectorBucketName: _this6.vectorBucketName }));
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Retrieves metadata for a specific index in this bucket
-	* Convenience method that automatically includes the bucket name
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param indexName - Name of the index to retrieve
-	* @returns Promise with index metadata or error
-	*
-	* @example Get index metadata
-	* ```typescript
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* const { data } = await bucket.getIndex('documents-openai')
-	* console.log('Dimension:', data?.index.dimension)
-	* ```
-	*/
-	async getIndex(indexName) {
-		var _superprop_getGetIndex = () => super.getIndex, _this7 = this;
-		return _superprop_getGetIndex().call(_this7, _this7.vectorBucketName, indexName);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Deletes an index from this bucket
-	* Convenience method that automatically includes the bucket name
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param indexName - Name of the index to delete
-	* @returns Promise with empty response on success or error
-	*
-	* @example Delete an index
-	* ```typescript
-	* const bucket = supabase.storage.vectors.from('embeddings-prod')
-	* await bucket.deleteIndex('old-index')
-	* ```
-	*/
-	async deleteIndex(indexName) {
-		var _superprop_getDeleteIndex = () => super.deleteIndex, _this8 = this;
-		return _superprop_getDeleteIndex().call(_this8, _this8.vectorBucketName, indexName);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Access operations for a specific index within this bucket
-	* Returns a scoped client for vector data operations
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param indexName - Name of the index
-	* @returns Index-scoped client with vector data operations
-	*
-	* @example Accessing an index
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	*
-	* // Insert vectors
-	* await index.putVectors({
-	*   vectors: [
-	*     { key: 'doc-1', data: { float32: [...] }, metadata: { title: 'Intro' } }
-	*   ]
-	* })
-	*
-	* // Query similar vectors
-	* const { data } = await index.queryVectors({
-	*   queryVector: { float32: [...] },
-	*   topK: 5
-	* })
-	* ```
-	*/
-	index(indexName) {
-		return new VectorIndexScope(this.url, this.headers, this.vectorBucketName, indexName, this.fetch);
-	}
-};
-/**
-*
-* @alpha
-*
-* Scoped client for operations within a specific vector index
-* Provides vector data operations (put, get, list, query, delete)
-*
-* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-*/
-var VectorIndexScope = class extends VectorDataApi {
-	/**
-	*
-	* @alpha
-	*
-	* Creates a helper that automatically scopes all vector operations to the provided bucket/index names.
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @example Creating a vector index scope
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	* ```
-	*/
-	constructor(url, headers, vectorBucketName, indexName, fetch$1) {
-		super(url, headers, fetch$1);
-		this.vectorBucketName = vectorBucketName;
-		this.indexName = indexName;
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Inserts or updates vectors in this index
-	* Convenience method that automatically includes bucket and index names
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Vector insertion options (bucket and index names automatically set)
-	* @returns Promise with empty response on success or error
-	*
-	* @example Insert vectors into an index
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	* await index.putVectors({
-	*   vectors: [
-	*     {
-	*       key: 'doc-1',
-	*       data: { float32: [0.1, 0.2, ...] },
-	*       metadata: { title: 'Introduction', page: 1 }
-	*     }
-	*   ]
-	* })
-	* ```
-	*/
-	async putVectors(options) {
-		var _superprop_getPutVectors = () => super.putVectors, _this9 = this;
-		return _superprop_getPutVectors().call(_this9, dist_objectSpread2(dist_objectSpread2({}, options), {}, {
-			vectorBucketName: _this9.vectorBucketName,
-			indexName: _this9.indexName
-		}));
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Retrieves vectors by keys from this index
-	* Convenience method that automatically includes bucket and index names
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Vector retrieval options (bucket and index names automatically set)
-	* @returns Promise with response containing vectors array or error
-	*
-	* @example Get vectors by keys
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	* const { data } = await index.getVectors({
-	*   keys: ['doc-1', 'doc-2'],
-	*   returnMetadata: true
-	* })
-	* ```
-	*/
-	async getVectors(options) {
-		var _superprop_getGetVectors = () => super.getVectors, _this10 = this;
-		return _superprop_getGetVectors().call(_this10, dist_objectSpread2(dist_objectSpread2({}, options), {}, {
-			vectorBucketName: _this10.vectorBucketName,
-			indexName: _this10.indexName
-		}));
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Lists vectors in this index with pagination
-	* Convenience method that automatically includes bucket and index names
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Listing options (bucket and index names automatically set)
-	* @returns Promise with response containing vectors array and pagination token or error
-	*
-	* @example List vectors with pagination
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	* const { data } = await index.listVectors({
-	*   maxResults: 500,
-	*   returnMetadata: true
-	* })
-	* ```
-	*/
-	async listVectors(options = {}) {
-		var _superprop_getListVectors = () => super.listVectors, _this11 = this;
-		return _superprop_getListVectors().call(_this11, dist_objectSpread2(dist_objectSpread2({}, options), {}, {
-			vectorBucketName: _this11.vectorBucketName,
-			indexName: _this11.indexName
-		}));
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Queries for similar vectors in this index
-	* Convenience method that automatically includes bucket and index names
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Query options (bucket and index names automatically set)
-	* @returns Promise with response containing vectors ordered by distance, an optional pagination token, or an error
-	*
-	* @example Query similar vectors
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	* const { data } = await index.queryVectors({
-	*   queryVector: { float32: [0.1, 0.2, ...] },
-	*   topK: 5,
-	*   filter: { category: 'technical' },
-	*   returnDistance: true,
-	*   returnMetadata: true
-	* })
-	* ```
-	*/
-	async queryVectors(options) {
-		var _superprop_getQueryVectors = () => super.queryVectors, _this12 = this;
-		return _superprop_getQueryVectors().call(_this12, dist_objectSpread2(dist_objectSpread2({}, options), {}, {
-			vectorBucketName: _this12.vectorBucketName,
-			indexName: _this12.indexName
-		}));
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Deletes vectors by keys from this index
-	* Convenience method that automatically includes bucket and index names
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	* @param options - Deletion options (bucket and index names automatically set)
-	* @returns Promise with empty response on success or error
-	*
-	* @example Delete vectors by keys
-	* ```typescript
-	* const index = supabase.storage.vectors.from('embeddings-prod').index('documents-openai')
-	* await index.deleteVectors({
-	*   keys: ['doc-1', 'doc-2', 'doc-3']
-	* })
-	* ```
-	*/
-	async deleteVectors(options) {
-		var _superprop_getDeleteVectors = () => super.deleteVectors, _this13 = this;
-		return _superprop_getDeleteVectors().call(_this13, dist_objectSpread2(dist_objectSpread2({}, options), {}, {
-			vectorBucketName: _this13.vectorBucketName,
-			indexName: _this13.indexName
-		}));
-	}
-};
-
-//#endregion
-//#region src/StorageClient.ts
-var StorageClient = class extends StorageBucketApi {
-	/**
-	* Creates a client for Storage buckets, files, analytics, and vectors.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	*
-	* @example Using supabase-js (recommended)
-	* ```ts
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
-	* const avatars = supabase.storage.from('avatars')
-	* ```
-	*
-	* @example Standalone import for bundle-sensitive environments
-	* ```ts
-	* import { StorageClient } from '@supabase/storage-js'
-	*
-	* const storage = new StorageClient('https://xyzcompany.supabase.co/storage/v1', {
-	*   apikey: 'your-publishable-key',
-	* })
-	* const avatars = storage.from('avatars')
-	* ```
-	*/
-	constructor(url, headers = {}, fetch$1, opts) {
-		super(url, headers, fetch$1, opts);
-	}
-	/**
-	* Perform file operation in a bucket.
-	*
-	* @category Storage
-	* @subcategory File Buckets
-	*
-	* @param id The bucket id to operate on.
-	*
-	* @example Accessing a bucket
-	* ```typescript
-	* const avatars = supabase.storage.from('avatars')
-	* ```
-	*/
-	from(id) {
-		return new StorageFileApi(this.url, this.headers, id, this.fetch);
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Access vector storage operations.
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Vector Buckets
-	*
-	* @returns A StorageVectorsClient instance configured with the current storage settings.
-	*/
-	get vectors() {
-		return new StorageVectorsClient(this.url + "/vector", {
-			headers: this.headers,
-			fetch: this.fetch
-		});
-	}
-	/**
-	*
-	* @alpha
-	*
-	* Access analytics storage operations using Iceberg tables.
-	*
-	* **Public alpha:** This API is part of a public alpha release and may not be available to your account type.
-	*
-	* @category Storage
-	* @subcategory Analytics Buckets
-	*
-	* @returns A StorageAnalyticsClient instance configured with the current storage settings.
-	*/
-	get analytics() {
-		return new StorageAnalyticsClient(this.url + "/iceberg", this.headers, this.fetch);
-	}
-};
-
-//#endregion
-
-//# sourceMappingURL=index.mjs.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@supabase+auth-js@2.117.2/node_modules/@supabase/auth-js/dist/main/index.js
-var auth_js_dist_main = __nccwpck_require__(3543);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@supabase+supabase-js@2.117.2/node_modules/@supabase/supabase-js/dist/index.mjs
-
-
-
-
-
-
-
-
-
-
-
-//#region src/lib/version.ts
-const dist_version = "2.117.2";
-
-//#endregion
-//#region src/lib/constants.ts
-let JS_ENV = "";
-let JS_RUNTIME_VERSION;
-if (typeof Deno !== "undefined") {
-	var _Deno$version;
-	JS_ENV = "deno";
-	JS_RUNTIME_VERSION = (_Deno$version = Deno.version) === null || _Deno$version === void 0 ? void 0 : _Deno$version.deno;
-} else if (typeof document !== "undefined") JS_ENV = "web";
-else if (typeof navigator !== "undefined" && navigator.product === "ReactNative") JS_ENV = "react-native";
-else {
-	var _process$version;
-	JS_ENV = "node";
-	const _process = globalThis["process"];
-	JS_RUNTIME_VERSION = _process === null || _process === void 0 || (_process$version = _process["version"]) === null || _process$version === void 0 ? void 0 : _process$version.replace(/^v/, "");
-}
-const _runtimeMeta = [`runtime=${JS_ENV}`];
-if (JS_RUNTIME_VERSION) _runtimeMeta.push(`runtime-version=${JS_RUNTIME_VERSION}`);
-const dist_DEFAULT_HEADERS = { "X-Client-Info": `supabase-js/${dist_version}; ${_runtimeMeta.join("; ")}` };
-const DEFAULT_GLOBAL_OPTIONS = { headers: dist_DEFAULT_HEADERS };
-const DEFAULT_DB_OPTIONS = { schema: "public" };
-const DEFAULT_AUTH_OPTIONS = {
-	autoRefreshToken: true,
-	persistSession: true,
-	detectSessionInUrl: true,
-	flowType: "implicit"
-};
-const DEFAULT_REALTIME_OPTIONS = {};
-const DEFAULT_TRACE_PROPAGATION_OPTIONS = {
-	enabled: false,
-	respectSamplingDecision: true
-};
-
-//#endregion
-//#region ../../shared/tracing/dist/module/parse.js
-/**
-* Parse W3C traceparent header according to the specification.
-*
-* The traceparent header format is: version-traceid-parentid-traceflags
-* - version: 2 hex digits (currently always "00")
-* - traceid: 32 hex digits (128-bit trace identifier)
-* - parentid: 16 hex digits (64-bit span/parent identifier)
-* - traceflags: 2 hex digits (8-bit flags, bit 0 is sampled flag)
-*
-* @param traceparent - The traceparent header value
-* @returns Parsed traceparent object, or null if invalid format
-*
-* @see https://www.w3.org/TR/trace-context/#traceparent-header
-*
-* @example
-* ```typescript
-* const parsed = parseTraceParent('00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01')
-*
-* console.log(parsed)
-* // {
-* //   version: '00',
-* //   traceId: '0af7651916cd43dd8448eb211c80319c',
-* //   parentId: 'b7ad6b7169203331',
-* //   traceFlags: '01',
-* //   isSampled: true
-* // }
-* ```
-*/
-function parseTraceParent(traceparent) {
-	if (!traceparent || typeof traceparent !== "string") return null;
-	const parts = traceparent.split("-");
-	if (parts.length !== 4) return null;
-	const [version$1, traceId, parentId, traceFlags] = parts;
-	if (version$1.length !== 2 || traceId.length !== 32 || parentId.length !== 16 || traceFlags.length !== 2) return null;
-	const hexRegex = /^[0-9a-f]+$/i;
-	if (!hexRegex.test(version$1) || !hexRegex.test(traceId) || !hexRegex.test(parentId) || !hexRegex.test(traceFlags)) return null;
-	if (traceId === "00000000000000000000000000000000" || parentId === "0000000000000000") return null;
-	return {
-		version: version$1,
-		traceId,
-		parentId,
-		traceFlags,
-		isSampled: (parseInt(traceFlags, 16) & 1) === 1
-	};
-}
-
-//#endregion
-//#region ../../shared/tracing/dist/module/validate.js
-/**
-* Check if trace context should be propagated to the target URL.
-*
-* This function checks if the target URL matches any of the configured
-* propagation targets. Targets can be:
-* - String: Exact hostname match or wildcard domain (*.example.com)
-* - RegExp: Pattern matching hostname
-* - Function: Custom logic to determine if URL should receive trace context
-*
-* @param targetUrl - The URL to check
-* @param targets - Array of propagation targets
-* @returns True if trace context should be propagated, false otherwise
-*
-* @example
-* ```typescript
-* const targets = [
-*   'myproject.supabase.co',           // Exact match
-*   '*.supabase.co',                   // Wildcard domain
-*   /.*\.supabase\.co$/,               // Regex pattern
-*   (url) => url.hostname === 'localhost' // Custom function
-* ]
-*
-* shouldPropagateToTarget('https://myproject.supabase.co/rest/v1/table', targets)
-* // true
-*
-* shouldPropagateToTarget('https://evil.com/api', targets)
-* // false
-* ```
-*/
-function shouldPropagateToTarget(targetUrl, targets) {
-	if (!targetUrl || !targets || targets.length === 0) return false;
-	let url;
-	if (targetUrl instanceof URL) url = targetUrl;
-	else try {
-		url = new URL(targetUrl);
-	} catch (error) {
-		return false;
-	}
-	for (const target of targets) try {
-		if (typeof target === "string") {
-			if (matchStringTarget(url.hostname, target)) return true;
-		} else if (target instanceof RegExp) {
-			if (target.test(url.hostname)) return true;
-		} else if (typeof target === "function") {
-			if (target(url)) return true;
-		}
-	} catch (error) {
-		continue;
-	}
-	return false;
+ * On OSX/Linux, true if path starts with '/'. On Windows, true for paths like:
+ * \, \hello, \\hello\share, C:, and C:\hello (and corresponding alternate separator cases).
+ */
+function isRooted(p) {
+    p = normalizeSeparators(p);
+    if (!p) {
+        throw new Error('isRooted() parameter "p" cannot be empty');
+    }
+    if (IS_WINDOWS) {
+        return (p.startsWith('\\') || /^[A-Z]:/i.test(p) // e.g. \ or \hello or \\hello
+        ); // e.g. C: or C:\hello
+    }
+    return p.startsWith('/');
 }
 /**
-* Match hostname against string target (exact match or wildcard)
-*
-* @param hostname - The hostname to check
-* @param target - The target pattern (exact or wildcard)
-* @returns True if hostname matches target
-*/
-function matchStringTarget(hostname, target) {
-	if (target === hostname) return true;
-	if (target.startsWith("*.")) {
-		const domain = target.slice(2);
-		if (hostname.endsWith(domain)) {
-			if (hostname === domain || hostname.endsWith("." + domain)) return true;
-		}
-	}
-	return false;
+ * Best effort attempt to determine whether a file exists and is executable.
+ * @param filePath    file path to check
+ * @param extensions  additional file extensions to try
+ * @return if file exists and is executable, returns the file path. otherwise empty string.
+ */
+function tryGetExecutablePath(filePath, extensions) {
+    return io_util_awaiter(this, void 0, void 0, function* () {
+        let stats = undefined;
+        try {
+            // test file exists
+            stats = yield stat(filePath);
+        }
+        catch (err) {
+            if (err.code !== 'ENOENT') {
+                // eslint-disable-next-line no-console
+                console.log(`Unexpected error attempting to determine if executable file exists '${filePath}': ${err}`);
+            }
+        }
+        if (stats && stats.isFile()) {
+            if (IS_WINDOWS) {
+                // on Windows, test for valid extension
+                const upperExt = external_path_namespaceObject.extname(filePath).toUpperCase();
+                if (extensions.some(validExt => validExt.toUpperCase() === upperExt)) {
+                    return filePath;
+                }
+            }
+            else {
+                if (isUnixExecutable(stats)) {
+                    return filePath;
+                }
+            }
+        }
+        // try each extension
+        const originalFilePath = filePath;
+        for (const extension of extensions) {
+            filePath = originalFilePath + extension;
+            stats = undefined;
+            try {
+                stats = yield stat(filePath);
+            }
+            catch (err) {
+                if (err.code !== 'ENOENT') {
+                    // eslint-disable-next-line no-console
+                    console.log(`Unexpected error attempting to determine if executable file exists '${filePath}': ${err}`);
+                }
+            }
+            if (stats && stats.isFile()) {
+                if (IS_WINDOWS) {
+                    // preserve the case of the actual file (since an extension was appended)
+                    try {
+                        const directory = external_path_namespaceObject.dirname(filePath);
+                        const upperName = external_path_namespaceObject.basename(filePath).toUpperCase();
+                        for (const actualName of yield readdir(directory)) {
+                            if (upperName === actualName.toUpperCase()) {
+                                filePath = external_path_namespaceObject.join(directory, actualName);
+                                break;
+                            }
+                        }
+                    }
+                    catch (err) {
+                        // eslint-disable-next-line no-console
+                        console.log(`Unexpected error attempting to determine the actual case of the file '${filePath}': ${err}`);
+                    }
+                    return filePath;
+                }
+                else {
+                    if (isUnixExecutable(stats)) {
+                        return filePath;
+                    }
+                }
+            }
+        }
+        return '';
+    });
 }
-
-//#endregion
-//#region ../../shared/tracing/dist/module/defaults.js
-/**
-* Generate default propagation targets based on the Supabase project URL.
-*
-* By default, trace context is only propagated to Supabase domains for
-* security. This prevents leaking trace context to potentially malicious
-* third-party services.
-*
-* Wildcard strings (e.g. `*.supabase.co`) are matched with linear string
-* operations rather than regex, avoiding ReDoS risk.
-*
-* @param supabaseUrl - The Supabase project URL
-* @returns Array of default propagation targets
-*/
-function getDefaultPropagationTargets(supabaseUrl) {
-	const targets = [];
-	try {
-		const url = new URL(supabaseUrl);
-		targets.push(url.hostname);
-	} catch (error) {}
-	targets.push("*.supabase.co", "*.supabase.in");
-	targets.push("localhost", "127.0.0.1", "[::1]");
-	return targets;
+function normalizeSeparators(p) {
+    p = p || '';
+    if (IS_WINDOWS) {
+        // convert slashes on Windows
+        p = p.replace(/\//g, '\\');
+        // remove redundant slashes
+        return p.replace(/\\\\+/g, '\\');
+    }
+    // remove redundant slashes
+    return p.replace(/\/\/+/g, '/');
 }
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/typeof.js
-function supabase_js_dist_typeof(o) {
-	"@babel/helpers - typeof";
-	return supabase_js_dist_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o$1) {
-		return typeof o$1;
-	} : function(o$1) {
-		return o$1 && "function" == typeof Symbol && o$1.constructor === Symbol && o$1 !== Symbol.prototype ? "symbol" : typeof o$1;
-	}, supabase_js_dist_typeof(o);
+// on Mac/Linux, test the execute bit
+//     R   W  X  R  W X R W X
+//   256 128 64 32 16 8 4 2 1
+function isUnixExecutable(stats) {
+    return ((stats.mode & 1) > 0 ||
+        ((stats.mode & 8) > 0 &&
+            process.getgid !== undefined &&
+            stats.gid === process.getgid()) ||
+        ((stats.mode & 64) > 0 &&
+            process.getuid !== undefined &&
+            stats.uid === process.getuid()));
 }
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/toPrimitive.js
-function supabase_js_dist_toPrimitive(t, r) {
-	if ("object" != supabase_js_dist_typeof(t) || !t) return t;
-	var e = t[Symbol.toPrimitive];
-	if (void 0 !== e) {
-		var i = e.call(t, r || "default");
-		if ("object" != supabase_js_dist_typeof(i)) return i;
-		throw new TypeError("@@toPrimitive must return a primitive value.");
-	}
-	return ("string" === r ? String : Number)(t);
+// Get the path of cmd.exe in windows
+function getCmdPath() {
+    var _a;
+    return (_a = process.env['COMSPEC']) !== null && _a !== void 0 ? _a : `cmd.exe`;
 }
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/toPropertyKey.js
-function supabase_js_dist_toPropertyKey(t) {
-	var i = supabase_js_dist_toPrimitive(t, "string");
-	return "symbol" == supabase_js_dist_typeof(i) ? i : i + "";
-}
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/defineProperty.js
-function supabase_js_dist_defineProperty(e, r, t) {
-	return (r = supabase_js_dist_toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
-		value: t,
-		enumerable: !0,
-		configurable: !0,
-		writable: !0
-	}) : e[r] = t, e;
-}
-
-//#endregion
-//#region \0@oxc-project+runtime@0.103.0/helpers/objectSpread2.js
-function supabase_js_dist_ownKeys(e, r) {
-	var t = Object.keys(e);
-	if (Object.getOwnPropertySymbols) {
-		var o = Object.getOwnPropertySymbols(e);
-		r && (o = o.filter(function(r$1) {
-			return Object.getOwnPropertyDescriptor(e, r$1).enumerable;
-		})), t.push.apply(t, o);
-	}
-	return t;
-}
-function supabase_js_dist_objectSpread2(e) {
-	for (var r = 1; r < arguments.length; r++) {
-		var t = null != arguments[r] ? arguments[r] : {};
-		r % 2 ? supabase_js_dist_ownKeys(Object(t), !0).forEach(function(r$1) {
-			supabase_js_dist_defineProperty(e, r$1, t[r$1]);
-		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : supabase_js_dist_ownKeys(Object(t)).forEach(function(r$1) {
-			Object.defineProperty(e, r$1, Object.getOwnPropertyDescriptor(t, r$1));
-		});
-	}
-	return e;
-}
-
-//#endregion
-//#region src/lib/fetch.ts
-const dist_resolveFetch = (customFetch) => {
-	if (customFetch) return (...args) => customFetch(...args);
-	return (...args) => fetch(...args);
-};
-const resolveHeadersConstructor = () => {
-	return Headers;
-};
-/**
-* New-format Supabase API keys (`sb_publishable_…` / `sb_secret_…`) are not JWTs and
-* must never be sent as a Bearer token — they belong only in the `apikey` header.
-* All other keys (legacy JWT keys, `sb_temp_…` temporary keys, unrecognized `sb_`
-* subtypes) keep the Bearer fallback.
-*/
-const isNewApiKey = (key) => key.startsWith("sb_publishable_") || key.startsWith("sb_secret_");
-const TEMP_KEY_PREFIX = "sb_temp_";
-const warnedKeySubtypes = /* @__PURE__ */ new Set();
-/**
-* Warn (once per subtype) when an `sb_` key isn't a subtype this SDK version recognizes.
-* Never throws — the server, not the SDK, decides key validity. The key value is never
-* included in the message.
-*/
-const checkApiKeyFormat = (key) => {
-	var _key$match$, _key$match;
-	if (!key.startsWith("sb_") || isNewApiKey(key) || key.startsWith(TEMP_KEY_PREFIX)) return;
-	const subtype = (_key$match$ = (_key$match = key.match(/^sb_[a-zA-Z0-9]+_/)) === null || _key$match === void 0 ? void 0 : _key$match[0]) !== null && _key$match$ !== void 0 ? _key$match$ : "unknown";
-	if (warnedKeySubtypes.has(subtype)) return;
-	warnedKeySubtypes.add(subtype);
-	console.warn("@supabase/supabase-js: Unrecognized Supabase API key format. The client will proceed and send this key as-is; if you see authentication errors you may need to upgrade @supabase/supabase-js to a version that recognizes this key type.");
-};
-const fetchWithAuth = (supabaseKey, supabaseUrl, getAccessToken, customFetch, tracePropagationOptions, options) => {
-	const fetch$1 = dist_resolveFetch(customFetch);
-	const HeadersConstructor = resolveHeadersConstructor();
-	const traceEnabled = (tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.enabled) === true;
-	const respectSampling = (tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.respectSamplingDecision) !== false;
-	const traceTargets = traceEnabled ? getDefaultPropagationTargets(supabaseUrl) : null;
-	const allowKeyAsBearer = !((options === null || options === void 0 ? void 0 : options.omitApiKeyAsBearer) && isNewApiKey(supabaseKey));
-	return async (input, init) => {
-		const realToken = await getAccessToken();
-		let headers = new HeadersConstructor(init === null || init === void 0 ? void 0 : init.headers);
-		if (!headers.has("apikey")) headers.set("apikey", supabaseKey);
-		if (!headers.has("Authorization")) {
-			const bearer = realToken !== null && realToken !== void 0 ? realToken : allowKeyAsBearer ? supabaseKey : null;
-			if (bearer) headers.set("Authorization", `Bearer ${bearer}`);
-		}
-		if (traceTargets) {
-			const traceHeaders = getTraceHeaders(input, traceTargets, respectSampling);
-			if (traceHeaders) {
-				if (traceHeaders.traceparent && !headers.has("traceparent")) headers.set("traceparent", traceHeaders.traceparent);
-				if (traceHeaders.tracestate && !headers.has("tracestate")) headers.set("tracestate", traceHeaders.tracestate);
-				if (traceHeaders.baggage && !headers.has("baggage")) headers.set("baggage", traceHeaders.baggage);
-			}
-		}
-		return fetch$1(input, supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, init), {}, { headers }));
-	};
-};
-let warnedMissingTracingRuntime = false;
-let warnedNonW3CPropagator = false;
-function getTraceHeaders(input, targets, respectSampling) {
-	const extractTraceContext = getTraceContextExtractor();
-	if (!extractTraceContext) {
-		if (!warnedMissingTracingRuntime) {
-			warnedMissingTracingRuntime = true;
-			console.warn("@supabase/supabase-js: tracePropagation is enabled but the tracing runtime is not loaded, so trace headers will not be attached. Add `import '@supabase/supabase-js/tracing'` at your application entry point (requires the OpenTelemetry API package to be installed). The CDN/UMD build does not support trace propagation.");
-		}
-		return null;
-	}
-	if (!shouldPropagateToTarget(typeof input === "string" ? input : input instanceof URL ? input : input.url, targets)) return null;
-	const traceContext = extractTraceContext();
-	if (!traceContext || !traceContext.traceparent) {
-		var _traceContext$carrier;
-		if ((traceContext === null || traceContext === void 0 || (_traceContext$carrier = traceContext.carrierKeys) === null || _traceContext$carrier === void 0 ? void 0 : _traceContext$carrier.length) && !warnedNonW3CPropagator) {
-			warnedNonW3CPropagator = true;
-			const sentryHint = traceContext.carrierKeys.includes("sentry-trace") ? " Sentry detected: set `propagateTraceparent: true` in Sentry.init() to emit it." : " Configure your tracing SDK to emit W3C trace context on outgoing requests.";
-			console.warn(`@supabase/supabase-js: tracePropagation is enabled and a tracing SDK is active, but its propagator wrote [${traceContext.carrierKeys.join(", ")}] and no W3C traceparent header, so trace headers will not be attached.` + sentryHint);
-		}
-		return null;
-	}
-	if (respectSampling) {
-		const parsed = parseTraceParent(traceContext.traceparent);
-		if (parsed && !parsed.isSampled) return { traceparent: traceContext.traceparent };
-	}
-	return traceContext;
-}
-
-//#endregion
-//#region src/lib/helpers.ts
-function normalizeTracePropagation(value) {
-	return typeof value === "boolean" ? { enabled: value } : value;
-}
-function ensureTrailingSlash(url) {
-	return url.endsWith("/") ? url : url + "/";
-}
-let warnedTopLevelSchema = false;
-/**
-* Warn (once per process) when `schema` is passed at the top level of the client options
-* instead of under `db`. A top-level `schema` is not part of the options shape and is
-* ignored, so queries silently go to the default schema. Never throws.
-*
-* Only `undefined` counts as unset, matching `db.schema`, where any other value is sent
-* as the profile header.
-*/
-function checkTopLevelSchemaOption(options) {
-	if (warnedTopLevelSchema) return;
-	if (typeof options !== "object" || options === null || !("schema" in options) || options.schema === void 0) return;
-	warnedTopLevelSchema = true;
-	console.warn("@supabase/supabase-js: The \"schema\" option must be nested under \"db\", e.g. createClient(url, key, { db: { schema: 'myschema' } }). A top-level \"schema\" is ignored and queries go to the default schema.");
-}
-function applySettingDefaults(options, defaults) {
-	var _DEFAULT_GLOBAL_OPTIO, _globalOptions$header, _ref, _tracePropagationOpti, _ref2, _tracePropagationOpti2;
-	const { db: dbOptions, auth: authOptions, realtime: realtimeOptions, global: globalOptions } = options;
-	const { db: DEFAULT_DB_OPTIONS$1, auth: DEFAULT_AUTH_OPTIONS$1, realtime: DEFAULT_REALTIME_OPTIONS$1, global: DEFAULT_GLOBAL_OPTIONS$1 } = defaults;
-	const tracePropagationOptions = normalizeTracePropagation(options.tracePropagation);
-	const DEFAULT_TRACE_PROPAGATION_OPTIONS$1 = normalizeTracePropagation(defaults.tracePropagation);
-	const result = {
-		db: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, DEFAULT_DB_OPTIONS$1), dbOptions),
-		auth: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, DEFAULT_AUTH_OPTIONS$1), authOptions),
-		realtime: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, DEFAULT_REALTIME_OPTIONS$1), realtimeOptions),
-		storage: {},
-		global: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, DEFAULT_GLOBAL_OPTIONS$1), globalOptions), {}, { headers: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, (_DEFAULT_GLOBAL_OPTIO = DEFAULT_GLOBAL_OPTIONS$1 === null || DEFAULT_GLOBAL_OPTIONS$1 === void 0 ? void 0 : DEFAULT_GLOBAL_OPTIONS$1.headers) !== null && _DEFAULT_GLOBAL_OPTIO !== void 0 ? _DEFAULT_GLOBAL_OPTIO : {}), (_globalOptions$header = globalOptions === null || globalOptions === void 0 ? void 0 : globalOptions.headers) !== null && _globalOptions$header !== void 0 ? _globalOptions$header : {}) }),
-		tracePropagation: {
-			enabled: (_ref = (_tracePropagationOpti = tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.enabled) !== null && _tracePropagationOpti !== void 0 ? _tracePropagationOpti : DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === null || DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === void 0 ? void 0 : DEFAULT_TRACE_PROPAGATION_OPTIONS$1.enabled) !== null && _ref !== void 0 ? _ref : false,
-			respectSamplingDecision: (_ref2 = (_tracePropagationOpti2 = tracePropagationOptions === null || tracePropagationOptions === void 0 ? void 0 : tracePropagationOptions.respectSamplingDecision) !== null && _tracePropagationOpti2 !== void 0 ? _tracePropagationOpti2 : DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === null || DEFAULT_TRACE_PROPAGATION_OPTIONS$1 === void 0 ? void 0 : DEFAULT_TRACE_PROPAGATION_OPTIONS$1.respectSamplingDecision) !== null && _ref2 !== void 0 ? _ref2 : true
-		},
-		accessToken: async () => ""
-	};
-	if (options.accessToken) result.accessToken = options.accessToken;
-	else delete result.accessToken;
-	return result;
-}
-/**
-* Validates a Supabase client URL
-*
-* @param {string} supabaseUrl - The Supabase client URL string.
-* @returns {URL} - The validated base URL.
-* @throws {Error}
-*/
-function validateSupabaseUrl(supabaseUrl) {
-	const trimmedUrl = supabaseUrl === null || supabaseUrl === void 0 ? void 0 : supabaseUrl.trim();
-	if (!trimmedUrl) throw new Error("supabaseUrl is required.");
-	if (!trimmedUrl.match(/^https?:\/\//i)) throw new Error("Invalid supabaseUrl: Must be a valid HTTP or HTTPS URL.");
-	try {
-		return new URL(ensureTrailingSlash(trimmedUrl));
-	} catch (_unused) {
-		throw Error("Invalid supabaseUrl: Provided URL is malformed.");
-	}
-}
-
-//#endregion
-//#region src/lib/SupabaseAuthClient.ts
-var SupabaseAuthClient = class extends auth_js_dist_main.AuthClient {
-	constructor(options) {
-		super(options);
-	}
+//# sourceMappingURL=io-util.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+io@3.0.2/node_modules/@actions/io/lib/io.js
+var io_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
 };
 
-//#endregion
-//#region src/SupabaseClient.ts
-/**
-* Supabase Client.
-*
-* An isomorphic Javascript client for interacting with Postgres.
-*/
-var SupabaseClient = class {
-	/**
-	* Create a new client for use in the browser.
-	*
-	* @category Initializing
-	*
-	* @param supabaseUrl The unique Supabase URL which is supplied when you create a new project in your project dashboard.
-	* @param supabaseKey The unique Supabase Key which is supplied when you create a new project in your project dashboard.
-	* @param options Optional configuration for the client:
-	* - `db.schema` — You can switch in between schemas. The schema needs to be on the list of exposed schemas inside Supabase.
-	* - `auth.autoRefreshToken` — Set to `true` if you want to automatically refresh the token before expiring.
-	* - `auth.persistSession` — Set to `true` if you want to automatically save the user session into local storage.
-	* - `auth.detectSessionInUrl` — Set to `true` if you want to automatically detect OAuth grants in the URL and sign in the user.
-	* - `realtime` — Options passed along to the realtime-js constructor.
-	* - `storage` — Options passed along to the storage-js constructor.
-	* - `global.fetch` — A custom fetch implementation.
-	* - `global.headers` — Any additional headers to send with each network request.
-	*
-	* @example Creating a client
-	* ```js
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* // Create a single supabase client for interacting with your database
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
-	* ```
-	*
-	* @example With a custom domain
-	* ```js
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* // Use a custom domain as the supabase URL
-	* const supabase = createClient('https://my-custom-domain.com', 'your-publishable-key')
-	* ```
-	*
-	* @example With additional parameters
-	* ```js
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const options = {
-	*   db: {
-	*     schema: 'public',
-	*   },
-	*   auth: {
-	*     autoRefreshToken: true,
-	*     persistSession: true,
-	*     detectSessionInUrl: true
-	*   },
-	*   global: {
-	*     headers: { 'x-my-custom-header': 'my-app-name' },
-	*   },
-	* }
-	* const supabase = createClient("https://xyzcompany.supabase.co", "your-publishable-key", options)
-	* ```
-	*
-	* @exampleDescription With custom schemas
-	* By default the API server points to the `public` schema. You can enable other database schemas within the Dashboard.
-	* Go to [Settings > API > Exposed schemas](/dashboard/project/_/settings/api) and add the schema which you want to expose to the API.
-	*
-	* Note: each client connection can only access a single schema, so the code above can access the `other_schema` schema but cannot access the `public` schema.
-	*
-	* @example With custom schemas
-	* ```js
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key', {
-	*   // Provide a custom schema. Defaults to "public".
-	*   db: { schema: 'other_schema' }
-	* })
-	* ```
-	*
-	* @exampleDescription Custom fetch implementation
-	* `supabase-js` uses the runtime's global `fetch` to make HTTP requests,
-	* but an alternative `fetch` implementation can be provided as an option.
-	* This is useful in environments where the global `fetch` is unavailable or where you want to customize request behavior.
-	*
-	* @example Custom fetch implementation
-	* ```js
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key', {
-	*   global: { fetch: fetch.bind(globalThis) }
-	* })
-	* ```
-	*
-	* @exampleDescription React Native options with AsyncStorage
-	* For React Native we recommend using `AsyncStorage` as the storage implementation for Supabase Auth.
-	*
-	* @example React Native options with AsyncStorage
-	* ```js
-	* import 'react-native-url-polyfill/auto'
-	* import { createClient } from '@supabase/supabase-js'
-	* import AsyncStorage from "@react-native-async-storage/async-storage";
-	*
-	* const supabase = createClient("https://xyzcompany.supabase.co", "your-publishable-key", {
-	*   auth: {
-	*     storage: AsyncStorage,
-	*     autoRefreshToken: true,
-	*     persistSession: true,
-	*     detectSessionInUrl: false,
-	*   },
-	* });
-	* ```
-	*
-	* @exampleDescription React Native options with Expo SecureStore
-	* If you wish to encrypt the user's session information, you can use `aes-js` and store the encryption key in Expo SecureStore.
-	* The `aes-js` library, a reputable JavaScript-only implementation of the AES encryption algorithm in CTR mode.
-	* A new 256-bit encryption key is generated using the `react-native-get-random-values` library.
-	* This key is stored inside Expo's SecureStore, while the value is encrypted and placed inside AsyncStorage.
-	*
-	* Please make sure that:
-	* - You keep the `expo-secure-store`, `aes-js` and `react-native-get-random-values` libraries up-to-date.
-	* - Choose the correct [`SecureStoreOptions`](https://docs.expo.dev/versions/latest/sdk/securestore/#securestoreoptions) for your app's needs.
-	*   E.g. [`SecureStore.WHEN_UNLOCKED`](https://docs.expo.dev/versions/latest/sdk/securestore/#securestorewhen_unlocked) regulates when the data can be accessed.
-	* - Carefully consider optimizations or other modifications to the above example, as those can lead to introducing subtle security vulnerabilities.
-	*
-	* @example React Native options with Expo SecureStore
-	* ```ts
-	* import 'react-native-url-polyfill/auto'
-	* import { createClient } from '@supabase/supabase-js'
-	* import AsyncStorage from '@react-native-async-storage/async-storage';
-	* import * as SecureStore from 'expo-secure-store';
-	* import * as aesjs from 'aes-js';
-	* import 'react-native-get-random-values';
-	*
-	* // As Expo's SecureStore does not support values larger than 2048
-	* // bytes, an AES-256 key is generated and stored in SecureStore, while
-	* // it is used to encrypt/decrypt values stored in AsyncStorage.
-	* class LargeSecureStore {
-	*   private async _encrypt(key: string, value: string) {
-	*     const encryptionKey = crypto.getRandomValues(new Uint8Array(256 / 8));
-	*
-	*     const cipher = new aesjs.ModeOfOperation.ctr(encryptionKey, new aesjs.Counter(1));
-	*     const encryptedBytes = cipher.encrypt(aesjs.utils.utf8.toBytes(value));
-	*
-	*     await SecureStore.setItemAsync(key, aesjs.utils.hex.fromBytes(encryptionKey));
-	*
-	*     return aesjs.utils.hex.fromBytes(encryptedBytes);
-	*   }
-	*
-	*   private async _decrypt(key: string, value: string) {
-	*     const encryptionKeyHex = await SecureStore.getItemAsync(key);
-	*     if (!encryptionKeyHex) {
-	*       return encryptionKeyHex;
-	*     }
-	*
-	*     const cipher = new aesjs.ModeOfOperation.ctr(aesjs.utils.hex.toBytes(encryptionKeyHex), new aesjs.Counter(1));
-	*     const decryptedBytes = cipher.decrypt(aesjs.utils.hex.toBytes(value));
-	*
-	*     return aesjs.utils.utf8.fromBytes(decryptedBytes);
-	*   }
-	*
-	*   async getItem(key: string) {
-	*     const encrypted = await AsyncStorage.getItem(key);
-	*     if (!encrypted) { return encrypted; }
-	*
-	*     return await this._decrypt(key, encrypted);
-	*   }
-	*
-	*   async removeItem(key: string) {
-	*     await AsyncStorage.removeItem(key);
-	*     await SecureStore.deleteItemAsync(key);
-	*   }
-	*
-	*   async setItem(key: string, value: string) {
-	*     const encrypted = await this._encrypt(key, value);
-	*
-	*     await AsyncStorage.setItem(key, encrypted);
-	*   }
-	* }
-	*
-	* const supabase = createClient("https://xyzcompany.supabase.co", "your-publishable-key", {
-	*   auth: {
-	*     storage: new LargeSecureStore(),
-	*     autoRefreshToken: true,
-	*     persistSession: true,
-	*     detectSessionInUrl: false,
-	*   },
-	* });
-	* ```
-	*
-	* @example With a database query
-	* ```ts
-	* import { createClient } from '@supabase/supabase-js'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
-	*
-	* const { data } = await supabase.from('profiles').select('*')
-	* ```
-	*
-	* @exampleDescription With OpenTelemetry tracing
-	* Opt in to W3C trace context propagation so the `trace_id` from your
-	* client-side spans is attached to Supabase requests and appears in API
-	* Gateway and Edge Function logs. Requires `@opentelemetry/api` to be
-	* installed in your application and the tracing runtime to be loaded via
-	* `import '@supabase/supabase-js/tracing'`. See [Tracing with the JS SDK](https://supabase.com/docs/guides/telemetry/client-side-tracing).
-	*
-	* @example With OpenTelemetry tracing
-	* ```ts
-	* import '@supabase/supabase-js/tracing'
-	* import { createClient } from '@supabase/supabase-js'
-	* import { trace } from '@opentelemetry/api'
-	*
-	* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key', {
-	*   tracePropagation: true,
-	* })
-	*
-	* const tracer = trace.getTracer('my-app')
-	*
-	* await tracer.startActiveSpan('fetch-users', async (span) => {
-	*   // Outgoing request carries the active trace context.
-	*   const { data, error } = await supabase.from('users').select('*')
-	*   span.end()
-	* })
-	* ```
-	*/
-	constructor(supabaseUrl, supabaseKey, options) {
-		var _settings$auth$storag, _settings$global$head;
-		this.supabaseUrl = supabaseUrl;
-		this.supabaseKey = supabaseKey;
-		const baseUrl = validateSupabaseUrl(supabaseUrl);
-		if (!supabaseKey) throw new Error("supabaseKey is required.");
-		checkApiKeyFormat(supabaseKey);
-		checkTopLevelSchemaOption(options);
-		this.realtimeUrl = new URL("realtime/v1", baseUrl);
-		this.realtimeUrl.protocol = this.realtimeUrl.protocol.replace("http", "ws");
-		this.authUrl = new URL("auth/v1", baseUrl);
-		this.storageUrl = new URL("storage/v1", baseUrl);
-		this.functionsUrl = new URL("functions/v1", baseUrl);
-		const defaultStorageKey = `sb-${baseUrl.hostname.split(".")[0]}-auth-token`;
-		const DEFAULTS = {
-			db: DEFAULT_DB_OPTIONS,
-			realtime: DEFAULT_REALTIME_OPTIONS,
-			auth: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, DEFAULT_AUTH_OPTIONS), {}, { storageKey: defaultStorageKey }),
-			global: DEFAULT_GLOBAL_OPTIONS,
-			tracePropagation: DEFAULT_TRACE_PROPAGATION_OPTIONS
-		};
-		const settings = applySettingDefaults(options !== null && options !== void 0 ? options : {}, DEFAULTS);
-		this.settings = settings;
-		this.storageKey = (_settings$auth$storag = settings.auth.storageKey) !== null && _settings$auth$storag !== void 0 ? _settings$auth$storag : "";
-		this.headers = (_settings$global$head = settings.global.headers) !== null && _settings$global$head !== void 0 ? _settings$global$head : {};
-		if (!settings.accessToken) {
-			var _settings$auth;
-			this.auth = this._initSupabaseAuthClient((_settings$auth = settings.auth) !== null && _settings$auth !== void 0 ? _settings$auth : {}, this.headers, settings.global.fetch);
-		} else {
-			this.accessToken = settings.accessToken;
-			this.auth = new Proxy({}, { get: (_, prop) => {
-				throw new Error(`@supabase/supabase-js: Supabase Client is configured with the accessToken option, accessing supabase.auth.${String(prop)} is not possible`);
-			} });
-		}
-		this.fetch = fetchWithAuth(supabaseKey, supabaseUrl, this._getSessionToken.bind(this), settings.global.fetch, settings.tracePropagation);
-		this.functionsFetch = fetchWithAuth(supabaseKey, supabaseUrl, this._getSessionToken.bind(this), settings.global.fetch, settings.tracePropagation, { omitApiKeyAsBearer: true });
-		this.realtime = this._initRealtimeClient(supabase_js_dist_objectSpread2({
-			headers: this.headers,
-			accessToken: this._getAccessToken.bind(this),
-			fetch: this.fetch
-		}, settings.realtime));
-		if (this.accessToken) Promise.resolve(this.accessToken()).then((token) => this.realtime.setAuth(token)).catch((e) => console.warn("Failed to set initial Realtime auth token:", e));
-		this.rest = new PostgrestClient(new URL("rest/v1", baseUrl).href, {
-			headers: this.headers,
-			schema: settings.db.schema,
-			fetch: this.fetch,
-			timeout: settings.db.timeout,
-			urlLengthLimit: settings.db.urlLengthLimit,
-			retry: settings.db.retry
-		});
-		this.storage = new StorageClient(this.storageUrl.href, this.headers, this.fetch, options === null || options === void 0 ? void 0 : options.storage);
-		if (!settings.accessToken) this._listenForAuthEvents();
-	}
-	/**
-	* Supabase Functions allows you to deploy and invoke edge functions.
-	*/
-	get functions() {
-		return new main/* FunctionsClient */.FS(this.functionsUrl.href, {
-			headers: this.headers,
-			customFetch: this.functionsFetch
-		});
-	}
-	/**
-	* Perform a query on a table or a view.
-	*
-	* @param relation - The table or view name to query
-	*/
-	from(relation) {
-		return this.rest.from(relation);
-	}
-	/**
-	* Select a schema to query or perform an function (rpc) call.
-	*
-	* The schema needs to be on the list of exposed schemas inside Supabase.
-	*
-	* @param schema - The schema to query
-	*/
-	schema(schema) {
-		return this.rest.schema(schema);
-	}
-	/**
-	* Fetch the OpenAPI description PostgREST publishes for this client's schema.
-	*
-	* The document lists only the tables, views and functions the caller's role
-	* holds privileges on. The request carries the same `apikey` and
-	* `Authorization` headers as every other query, so the description is scoped
-	* to the signed-in user. Call `.schema()` first to describe a schema other
-	* than the client default.
-	*
-	* @example
-	* ```ts
-	* const { data, error } = await supabase.getOpenApiSpec()
-	* ```
-	*/
-	getOpenApiSpec() {
-		return this.rest.getOpenApiSpec();
-	}
-	/**
-	* Perform a function call.
-	*
-	* @param fn - The function name to call
-	* @param args - The arguments to pass to the function call
-	* @param options - Named parameters
-	* @param options.head - When set to `true`, `data` will not be returned.
-	* Useful if you only need the count.
-	* @param options.get - When set to `true`, the function will be called with
-	* read-only access mode.
-	* @param options.count - Count algorithm to use to count rows returned by the
-	* function. Only applicable for [set-returning
-	* functions](https://www.postgresql.org/docs/current/functions-srf.html).
-	*
-	* `"exact"`: Exact but slow count algorithm. Performs a `COUNT(*)` under the
-	* hood.
-	*
-	* `"planned"`: Approximated but fast count algorithm. Uses the Postgres
-	* statistics under the hood.
-	*
-	* `"estimated"`: Uses exact count for low numbers and planned count for high
-	* numbers.
-	*/
-	rpc(fn, args = {}, options = {
-		head: false,
-		get: false,
-		count: void 0
-	}) {
-		return this.rest.rpc(fn, args, options);
-	}
-	/**
-	* Creates a Realtime channel with Broadcast, Presence, and Postgres Changes.
-	*
-	* @param {string} name - The name of the Realtime channel.
-	* @param {Object} opts - The options to pass to the Realtime channel.
-	*
-	* @category Realtime
-	*/
-	channel(name, opts = { config: {} }) {
-		return this.realtime.channel(name, opts);
-	}
-	/**
-	* Returns all Realtime channels.
-	*
-	* @category Realtime
-	*
-	* @example Get all channels
-	* ```js
-	* const channels = supabase.getChannels()
-	* ```
-	*/
-	getChannels() {
-		return this.realtime.getChannels();
-	}
-	/**
-	* Unsubscribes and removes Realtime channel from Realtime client.
-	*
-	* @param {RealtimeChannel} channel - The name of the Realtime channel.
-	*
-	*
-	* @category Realtime
-	*
-	* @remarks
-	* - Removing a channel is a great way to maintain the performance of your project's Realtime service as well as your database if you're listening to Postgres changes. Supabase will automatically handle cleanup 30 seconds after a client is disconnected, but unused channels may cause degradation as more clients are simultaneously subscribed.
-	*
-	* @example Removes a channel
-	* ```js
-	* supabase.removeChannel(myChannel)
-	* ```
-	*/
-	removeChannel(channel) {
-		return this.realtime.removeChannel(channel);
-	}
-	/**
-	* Unsubscribes and removes all Realtime channels from Realtime client.
-	*
-	* @category Realtime
-	*
-	* @remarks
-	* - Removing channels is a great way to maintain the performance of your project's Realtime service as well as your database if you're listening to Postgres changes. Supabase will automatically handle cleanup 30 seconds after a client is disconnected, but unused channels may cause degradation as more clients are simultaneously subscribed.
-	*
-	* @example Remove all channels
-	* ```js
-	* supabase.removeAllChannels()
-	* ```
-	*/
-	removeAllChannels() {
-		return this.realtime.removeAllChannels();
-	}
-	/**
-	* The raw session token — the custom `accessToken` result or the signed-in user's JWT —
-	* or `null` when there is no session. Unlike {@link _getAccessToken} it does not fall back
-	* to `supabaseKey`, so callers can distinguish "no session" from "has session".
-	*/
-	async _getSessionToken() {
-		var _this = this;
-		var _data$session$access_, _data$session;
-		if (_this.accessToken) return await _this.accessToken();
-		const { data } = await _this.auth.getSession();
-		return (_data$session$access_ = (_data$session = data.session) === null || _data$session === void 0 ? void 0 : _data$session.access_token) !== null && _data$session$access_ !== void 0 ? _data$session$access_ : null;
-	}
-	async _getAccessToken() {
-		var _this2 = this;
-		var _await$this$_getSessi;
-		return (_await$this$_getSessi = await _this2._getSessionToken()) !== null && _await$this$_getSessi !== void 0 ? _await$this$_getSessi : _this2.supabaseKey;
-	}
-	_initSupabaseAuthClient({ autoRefreshToken, persistSession, detectSessionInUrl, storage, userStorage, storageKey, flowType, lock, debug, throwOnError, experimental, lockAcquireTimeout, skipAutoInitialize }, headers, fetch$1) {
-		const authHeaders = {
-			Authorization: `Bearer ${this.supabaseKey}`,
-			apikey: `${this.supabaseKey}`
-		};
-		return new SupabaseAuthClient({
-			url: this.authUrl.href,
-			headers: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, authHeaders), headers),
-			storageKey,
-			autoRefreshToken,
-			persistSession,
-			detectSessionInUrl,
-			storage,
-			userStorage,
-			flowType,
-			lock,
-			debug,
-			throwOnError,
-			experimental,
-			fetch: fetch$1,
-			lockAcquireTimeout,
-			skipAutoInitialize,
-			hasCustomAuthorizationHeader: Object.keys(this.headers).some((key) => key.toLowerCase() === "authorization")
-		});
-	}
-	_initRealtimeClient(options) {
-		return new dist_main/* RealtimeClient */.d1(this.realtimeUrl.href, supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, options), {}, { params: supabase_js_dist_objectSpread2(supabase_js_dist_objectSpread2({}, { apikey: this.supabaseKey }), options === null || options === void 0 ? void 0 : options.params) }));
-	}
-	_listenForAuthEvents() {
-		return this.auth.onAuthStateChange((event, session) => {
-			this._handleTokenChanged(event, "CLIENT", session === null || session === void 0 ? void 0 : session.access_token);
-		});
-	}
-	_handleTokenChanged(event, source, token) {
-		if ((event === "TOKEN_REFRESHED" || event === "SIGNED_IN" || event === "INITIAL_SESSION") && this.changedAccessToken !== token) {
-			this.changedAccessToken = token;
-			this.realtime.setAuth(token);
-		} else if (event === "SIGNED_OUT") {
-			this.realtime.setAuth();
-			if (source == "STORAGE") this.auth.signOut();
-			this.changedAccessToken = void 0;
-		}
-	}
-};
 
-//#endregion
-//#region src/index.ts
+
 /**
-* Creates a new Supabase Client.
-*
-* @example Creating a Supabase client
-* ```ts
-* import { createClient } from '@supabase/supabase-js'
-*
-* const supabase = createClient('https://xyzcompany.supabase.co', 'your-publishable-key')
-* const { data, error } = await supabase.from('profiles').select('*')
-* ```
-*/
-const createClient = (supabaseUrl, supabaseKey, options) => {
-	return new SupabaseClient(supabaseUrl, supabaseKey, options);
-};
-function shouldShowDeprecationWarning() {
-	if (typeof window !== "undefined" || globalThis["Deno"] !== void 0) return false;
-	const _process = globalThis["process"];
-	if (!_process) return false;
-	const processVersion = _process["version"];
-	if (processVersion === void 0 || processVersion === null) return false;
-	const versionMatch = processVersion.match(/^v(\d+)\./);
-	if (!versionMatch) return false;
-	return parseInt(versionMatch[1], 10) <= 20;
+ * Copies a file or folder.
+ * Based off of shelljs - https://github.com/shelljs/shelljs/blob/9237f66c52e5daa40458f94f9565e18e8132f5a6/src/cp.js
+ *
+ * @param     source    source path
+ * @param     dest      destination path
+ * @param     options   optional. See CopyOptions.
+ */
+function cp(source_1, dest_1) {
+    return io_awaiter(this, arguments, void 0, function* (source, dest, options = {}) {
+        const { force, recursive, copySourceDirectory } = readCopyOptions(options);
+        const destStat = (yield ioUtil.exists(dest)) ? yield ioUtil.stat(dest) : null;
+        // Dest is an existing file, but not forcing
+        if (destStat && destStat.isFile() && !force) {
+            return;
+        }
+        // If dest is an existing directory, should copy inside.
+        const newDest = destStat && destStat.isDirectory() && copySourceDirectory
+            ? path.join(dest, path.basename(source))
+            : dest;
+        if (!(yield ioUtil.exists(source))) {
+            throw new Error(`no such file or directory: ${source}`);
+        }
+        const sourceStat = yield ioUtil.stat(source);
+        if (sourceStat.isDirectory()) {
+            if (!recursive) {
+                throw new Error(`Failed to copy. ${source} is a directory, but tried to copy without recursive flag.`);
+            }
+            else {
+                yield cpDirRecursive(source, newDest, 0, force);
+            }
+        }
+        else {
+            if (path.relative(source, newDest) === '') {
+                // a file cannot be copied to itself
+                throw new Error(`'${newDest}' and '${source}' are the same file`);
+            }
+            yield io_copyFile(source, newDest, force);
+        }
+    });
 }
-if (shouldShowDeprecationWarning()) console.warn("⚠️  Node.js 20 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 22 or later. For more information, visit: https://github.com/orgs/supabase/discussions/45715");
+/**
+ * Moves a path.
+ *
+ * @param     source    source path
+ * @param     dest      destination path
+ * @param     options   optional. See MoveOptions.
+ */
+function mv(source_1, dest_1) {
+    return io_awaiter(this, arguments, void 0, function* (source, dest, options = {}) {
+        if (yield ioUtil.exists(dest)) {
+            let destExists = true;
+            if (yield ioUtil.isDirectory(dest)) {
+                // If dest is directory copy src into dest
+                dest = path.join(dest, path.basename(source));
+                destExists = yield ioUtil.exists(dest);
+            }
+            if (destExists) {
+                if (options.force == null || options.force) {
+                    yield rmRF(dest);
+                }
+                else {
+                    throw new Error('Destination already exists');
+                }
+            }
+        }
+        yield mkdirP(path.dirname(dest));
+        yield ioUtil.rename(source, dest);
+    });
+}
+/**
+ * Remove a path recursively with force
+ *
+ * @param inputPath path to remove
+ */
+function rmRF(inputPath) {
+    return io_awaiter(this, void 0, void 0, function* () {
+        if (ioUtil.IS_WINDOWS) {
+            // Check for invalid characters
+            // https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+            if (/[*"<>|]/.test(inputPath)) {
+                throw new Error('File path must not contain `*`, `"`, `<`, `>` or `|` on Windows');
+            }
+        }
+        try {
+            // note if path does not exist, error is silent
+            yield ioUtil.rm(inputPath, {
+                force: true,
+                maxRetries: 3,
+                recursive: true,
+                retryDelay: 300
+            });
+        }
+        catch (err) {
+            throw new Error(`File was unable to be removed ${err}`);
+        }
+    });
+}
+/**
+ * Make a directory.  Creates the full path with folders in between
+ * Will throw if it fails
+ *
+ * @param   fsPath        path to create
+ * @returns Promise<void>
+ */
+function mkdirP(fsPath) {
+    return io_awaiter(this, void 0, void 0, function* () {
+        ok(fsPath, 'a path argument must be provided');
+        yield ioUtil.mkdir(fsPath, { recursive: true });
+    });
+}
+/**
+ * Returns path of a tool had the tool actually been invoked.  Resolves via paths.
+ * If you check and the tool does not exist, it will throw.
+ *
+ * @param     tool              name of the tool
+ * @param     check             whether to check if tool exists
+ * @returns   Promise<string>   path to tool
+ */
+function which(tool, check) {
+    return io_awaiter(this, void 0, void 0, function* () {
+        if (!tool) {
+            throw new Error("parameter 'tool' is required");
+        }
+        // recursive when check=true
+        if (check) {
+            const result = yield which(tool, false);
+            if (!result) {
+                if (IS_WINDOWS) {
+                    throw new Error(`Unable to locate executable file: ${tool}. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also verify the file has a valid extension for an executable file.`);
+                }
+                else {
+                    throw new Error(`Unable to locate executable file: ${tool}. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also check the file mode to verify the file is executable.`);
+                }
+            }
+            return result;
+        }
+        const matches = yield findInPath(tool);
+        if (matches && matches.length > 0) {
+            return matches[0];
+        }
+        return '';
+    });
+}
+/**
+ * Returns a list of all occurrences of the given tool on the system path.
+ *
+ * @returns   Promise<string[]>  the paths of the tool
+ */
+function findInPath(tool) {
+    return io_awaiter(this, void 0, void 0, function* () {
+        if (!tool) {
+            throw new Error("parameter 'tool' is required");
+        }
+        // build the list of extensions to try
+        const extensions = [];
+        if (IS_WINDOWS && process.env['PATHEXT']) {
+            for (const extension of process.env['PATHEXT'].split(external_path_namespaceObject.delimiter)) {
+                if (extension) {
+                    extensions.push(extension);
+                }
+            }
+        }
+        // if it's rooted, return it if exists. otherwise return empty.
+        if (isRooted(tool)) {
+            const filePath = yield tryGetExecutablePath(tool, extensions);
+            if (filePath) {
+                return [filePath];
+            }
+            return [];
+        }
+        // if any path separators, return empty
+        if (tool.includes(external_path_namespaceObject.sep)) {
+            return [];
+        }
+        // build the list of directories
+        //
+        // Note, technically "where" checks the current directory on Windows. From a toolkit perspective,
+        // it feels like we should not do this. Checking the current directory seems like more of a use
+        // case of a shell, and the which() function exposed by the toolkit should strive for consistency
+        // across platforms.
+        const directories = [];
+        if (process.env.PATH) {
+            for (const p of process.env.PATH.split(external_path_namespaceObject.delimiter)) {
+                if (p) {
+                    directories.push(p);
+                }
+            }
+        }
+        // find all matches
+        const matches = [];
+        for (const directory of directories) {
+            const filePath = yield tryGetExecutablePath(external_path_namespaceObject.join(directory, tool), extensions);
+            if (filePath) {
+                matches.push(filePath);
+            }
+        }
+        return matches;
+    });
+}
+function readCopyOptions(options) {
+    const force = options.force == null ? true : options.force;
+    const recursive = Boolean(options.recursive);
+    const copySourceDirectory = options.copySourceDirectory == null
+        ? true
+        : Boolean(options.copySourceDirectory);
+    return { force, recursive, copySourceDirectory };
+}
+function cpDirRecursive(sourceDir, destDir, currentDepth, force) {
+    return io_awaiter(this, void 0, void 0, function* () {
+        // Ensure there is not a run away recursive copy
+        if (currentDepth >= 255)
+            return;
+        currentDepth++;
+        yield mkdirP(destDir);
+        const files = yield ioUtil.readdir(sourceDir);
+        for (const fileName of files) {
+            const srcFile = `${sourceDir}/${fileName}`;
+            const destFile = `${destDir}/${fileName}`;
+            const srcFileStat = yield ioUtil.lstat(srcFile);
+            if (srcFileStat.isDirectory()) {
+                // Recurse
+                yield cpDirRecursive(srcFile, destFile, currentDepth, force);
+            }
+            else {
+                yield io_copyFile(srcFile, destFile, force);
+            }
+        }
+        // Change the mode for the newly created directory
+        yield ioUtil.chmod(destDir, (yield ioUtil.stat(sourceDir)).mode);
+    });
+}
+// Buffered file copy
+function io_copyFile(srcFile, destFile, force) {
+    return io_awaiter(this, void 0, void 0, function* () {
+        if ((yield ioUtil.lstat(srcFile)).isSymbolicLink()) {
+            // unlink/re-link it
+            try {
+                yield ioUtil.lstat(destFile);
+                yield ioUtil.unlink(destFile);
+            }
+            catch (e) {
+                // Try to override file permission
+                if (e.code === 'EPERM') {
+                    yield ioUtil.chmod(destFile, '0666');
+                    yield ioUtil.unlink(destFile);
+                }
+                // other errors = it doesn't exist, no work to do
+            }
+            // Copy over symlink
+            const symlinkFull = yield ioUtil.readlink(srcFile);
+            yield ioUtil.symlink(symlinkFull, destFile, ioUtil.IS_WINDOWS ? 'junction' : null);
+        }
+        else if (!(yield ioUtil.exists(destFile)) || force) {
+            yield ioUtil.copyFile(srcFile, destFile);
+        }
+    });
+}
+//# sourceMappingURL=io.js.map
+;// CONCATENATED MODULE: external "timers"
+const external_timers_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("timers");
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+exec@3.0.0/node_modules/@actions/exec/lib/toolrunner.js
+var toolrunner_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
-//#endregion
 
-//# sourceMappingURL=index.mjs.map
+
+
+
+
+
+/* eslint-disable @typescript-eslint/unbound-method */
+const toolrunner_IS_WINDOWS = process.platform === 'win32';
+/*
+ * Class for running command line tools. Handles quoting and arg parsing in a platform agnostic way.
+ */
+class ToolRunner extends external_events_.EventEmitter {
+    constructor(toolPath, args, options) {
+        super();
+        if (!toolPath) {
+            throw new Error("Parameter 'toolPath' cannot be null or empty.");
+        }
+        this.toolPath = toolPath;
+        this.args = args || [];
+        this.options = options || {};
+    }
+    _debug(message) {
+        if (this.options.listeners && this.options.listeners.debug) {
+            this.options.listeners.debug(message);
+        }
+    }
+    _getCommandString(options, noPrefix) {
+        const toolPath = this._getSpawnFileName();
+        const args = this._getSpawnArgs(options);
+        let cmd = noPrefix ? '' : '[command]'; // omit prefix when piped to a second tool
+        if (toolrunner_IS_WINDOWS) {
+            // Windows + cmd file
+            if (this._isCmdFile()) {
+                cmd += toolPath;
+                for (const a of args) {
+                    cmd += ` ${a}`;
+                }
+            }
+            // Windows + verbatim
+            else if (options.windowsVerbatimArguments) {
+                cmd += `"${toolPath}"`;
+                for (const a of args) {
+                    cmd += ` ${a}`;
+                }
+            }
+            // Windows (regular)
+            else {
+                cmd += this._windowsQuoteCmdArg(toolPath);
+                for (const a of args) {
+                    cmd += ` ${this._windowsQuoteCmdArg(a)}`;
+                }
+            }
+        }
+        else {
+            // OSX/Linux - this can likely be improved with some form of quoting.
+            // creating processes on Unix is fundamentally different than Windows.
+            // on Unix, execvp() takes an arg array.
+            cmd += toolPath;
+            for (const a of args) {
+                cmd += ` ${a}`;
+            }
+        }
+        return cmd;
+    }
+    _processLineBuffer(data, strBuffer, onLine) {
+        try {
+            let s = strBuffer + data.toString();
+            let n = s.indexOf(external_os_namespaceObject.EOL);
+            while (n > -1) {
+                const line = s.substring(0, n);
+                onLine(line);
+                // the rest of the string ...
+                s = s.substring(n + external_os_namespaceObject.EOL.length);
+                n = s.indexOf(external_os_namespaceObject.EOL);
+            }
+            return s;
+        }
+        catch (err) {
+            // streaming lines to console is best effort.  Don't fail a build.
+            this._debug(`error processing line. Failed with error ${err}`);
+            return '';
+        }
+    }
+    _getSpawnFileName() {
+        if (toolrunner_IS_WINDOWS) {
+            if (this._isCmdFile()) {
+                return process.env['COMSPEC'] || 'cmd.exe';
+            }
+        }
+        return this.toolPath;
+    }
+    _getSpawnArgs(options) {
+        if (toolrunner_IS_WINDOWS) {
+            if (this._isCmdFile()) {
+                let argline = `/D /S /C "${this._windowsQuoteCmdArg(this.toolPath)}`;
+                for (const a of this.args) {
+                    argline += ' ';
+                    argline += options.windowsVerbatimArguments
+                        ? a
+                        : this._windowsQuoteCmdArg(a);
+                }
+                argline += '"';
+                return [argline];
+            }
+        }
+        return this.args;
+    }
+    _endsWith(str, end) {
+        return str.endsWith(end);
+    }
+    _isCmdFile() {
+        const upperToolPath = this.toolPath.toUpperCase();
+        return (this._endsWith(upperToolPath, '.CMD') ||
+            this._endsWith(upperToolPath, '.BAT'));
+    }
+    _windowsQuoteCmdArg(arg) {
+        // for .exe, apply the normal quoting rules that libuv applies
+        if (!this._isCmdFile()) {
+            return this._uvQuoteCmdArg(arg);
+        }
+        // otherwise apply quoting rules specific to the cmd.exe command line parser.
+        // the libuv rules are generic and are not designed specifically for cmd.exe
+        // command line parser.
+        //
+        // for a detailed description of the cmd.exe command line parser, refer to
+        // http://stackoverflow.com/questions/4094699/how-does-the-windows-command-interpreter-cmd-exe-parse-scripts/7970912#7970912
+        // need quotes for empty arg
+        if (!arg) {
+            return '""';
+        }
+        // determine whether the arg needs to be quoted
+        const cmdSpecialChars = [
+            ' ',
+            '\t',
+            '&',
+            '(',
+            ')',
+            '[',
+            ']',
+            '{',
+            '}',
+            '^',
+            '=',
+            ';',
+            '!',
+            "'",
+            '+',
+            ',',
+            '`',
+            '~',
+            '|',
+            '<',
+            '>',
+            '"'
+        ];
+        let needsQuotes = false;
+        for (const char of arg) {
+            if (cmdSpecialChars.some(x => x === char)) {
+                needsQuotes = true;
+                break;
+            }
+        }
+        // short-circuit if quotes not needed
+        if (!needsQuotes) {
+            return arg;
+        }
+        // the following quoting rules are very similar to the rules that by libuv applies.
+        //
+        // 1) wrap the string in quotes
+        //
+        // 2) double-up quotes - i.e. " => ""
+        //
+        //    this is different from the libuv quoting rules. libuv replaces " with \", which unfortunately
+        //    doesn't work well with a cmd.exe command line.
+        //
+        //    note, replacing " with "" also works well if the arg is passed to a downstream .NET console app.
+        //    for example, the command line:
+        //          foo.exe "myarg:""my val"""
+        //    is parsed by a .NET console app into an arg array:
+        //          [ "myarg:\"my val\"" ]
+        //    which is the same end result when applying libuv quoting rules. although the actual
+        //    command line from libuv quoting rules would look like:
+        //          foo.exe "myarg:\"my val\""
+        //
+        // 3) double-up slashes that precede a quote,
+        //    e.g.  hello \world    => "hello \world"
+        //          hello\"world    => "hello\\""world"
+        //          hello\\"world   => "hello\\\\""world"
+        //          hello world\    => "hello world\\"
+        //
+        //    technically this is not required for a cmd.exe command line, or the batch argument parser.
+        //    the reasons for including this as a .cmd quoting rule are:
+        //
+        //    a) this is optimized for the scenario where the argument is passed from the .cmd file to an
+        //       external program. many programs (e.g. .NET console apps) rely on the slash-doubling rule.
+        //
+        //    b) it's what we've been doing previously (by deferring to node default behavior) and we
+        //       haven't heard any complaints about that aspect.
+        //
+        // note, a weakness of the quoting rules chosen here, is that % is not escaped. in fact, % cannot be
+        // escaped when used on the command line directly - even though within a .cmd file % can be escaped
+        // by using %%.
+        //
+        // the saving grace is, on the command line, %var% is left as-is if var is not defined. this contrasts
+        // the line parsing rules within a .cmd file, where if var is not defined it is replaced with nothing.
+        //
+        // one option that was explored was replacing % with ^% - i.e. %var% => ^%var^%. this hack would
+        // often work, since it is unlikely that var^ would exist, and the ^ character is removed when the
+        // variable is used. the problem, however, is that ^ is not removed when %* is used to pass the args
+        // to an external program.
+        //
+        // an unexplored potential solution for the % escaping problem, is to create a wrapper .cmd file.
+        // % can be escaped within a .cmd file.
+        let reverse = '"';
+        let quoteHit = true;
+        for (let i = arg.length; i > 0; i--) {
+            // walk the string in reverse
+            reverse += arg[i - 1];
+            if (quoteHit && arg[i - 1] === '\\') {
+                reverse += '\\'; // double the slash
+            }
+            else if (arg[i - 1] === '"') {
+                quoteHit = true;
+                reverse += '"'; // double the quote
+            }
+            else {
+                quoteHit = false;
+            }
+        }
+        reverse += '"';
+        return reverse.split('').reverse().join('');
+    }
+    _uvQuoteCmdArg(arg) {
+        // Tool runner wraps child_process.spawn() and needs to apply the same quoting as
+        // Node in certain cases where the undocumented spawn option windowsVerbatimArguments
+        // is used.
+        //
+        // Since this function is a port of quote_cmd_arg from Node 4.x (technically, lib UV,
+        // see https://github.com/nodejs/node/blob/v4.x/deps/uv/src/win/process.c for details),
+        // pasting copyright notice from Node within this function:
+        //
+        //      Copyright Joyent, Inc. and other Node contributors. All rights reserved.
+        //
+        //      Permission is hereby granted, free of charge, to any person obtaining a copy
+        //      of this software and associated documentation files (the "Software"), to
+        //      deal in the Software without restriction, including without limitation the
+        //      rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+        //      sell copies of the Software, and to permit persons to whom the Software is
+        //      furnished to do so, subject to the following conditions:
+        //
+        //      The above copyright notice and this permission notice shall be included in
+        //      all copies or substantial portions of the Software.
+        //
+        //      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        //      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        //      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        //      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        //      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        //      FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+        //      IN THE SOFTWARE.
+        if (!arg) {
+            // Need double quotation for empty argument
+            return '""';
+        }
+        if (!arg.includes(' ') && !arg.includes('\t') && !arg.includes('"')) {
+            // No quotation needed
+            return arg;
+        }
+        if (!arg.includes('"') && !arg.includes('\\')) {
+            // No embedded double quotes or backslashes, so I can just wrap
+            // quote marks around the whole thing.
+            return `"${arg}"`;
+        }
+        // Expected input/output:
+        //   input : hello"world
+        //   output: "hello\"world"
+        //   input : hello""world
+        //   output: "hello\"\"world"
+        //   input : hello\world
+        //   output: hello\world
+        //   input : hello\\world
+        //   output: hello\\world
+        //   input : hello\"world
+        //   output: "hello\\\"world"
+        //   input : hello\\"world
+        //   output: "hello\\\\\"world"
+        //   input : hello world\
+        //   output: "hello world\\" - note the comment in libuv actually reads "hello world\"
+        //                             but it appears the comment is wrong, it should be "hello world\\"
+        let reverse = '"';
+        let quoteHit = true;
+        for (let i = arg.length; i > 0; i--) {
+            // walk the string in reverse
+            reverse += arg[i - 1];
+            if (quoteHit && arg[i - 1] === '\\') {
+                reverse += '\\';
+            }
+            else if (arg[i - 1] === '"') {
+                quoteHit = true;
+                reverse += '\\';
+            }
+            else {
+                quoteHit = false;
+            }
+        }
+        reverse += '"';
+        return reverse.split('').reverse().join('');
+    }
+    _cloneExecOptions(options) {
+        options = options || {};
+        const result = {
+            cwd: options.cwd || process.cwd(),
+            env: options.env || process.env,
+            silent: options.silent || false,
+            windowsVerbatimArguments: options.windowsVerbatimArguments || false,
+            failOnStdErr: options.failOnStdErr || false,
+            ignoreReturnCode: options.ignoreReturnCode || false,
+            delay: options.delay || 10000
+        };
+        result.outStream = options.outStream || process.stdout;
+        result.errStream = options.errStream || process.stderr;
+        return result;
+    }
+    _getSpawnOptions(options, toolPath) {
+        options = options || {};
+        const result = {};
+        result.cwd = options.cwd;
+        result.env = options.env;
+        result['windowsVerbatimArguments'] =
+            options.windowsVerbatimArguments || this._isCmdFile();
+        if (options.windowsVerbatimArguments) {
+            result.argv0 = `"${toolPath}"`;
+        }
+        return result;
+    }
+    /**
+     * Exec a tool.
+     * Output will be streamed to the live console.
+     * Returns promise with return code
+     *
+     * @param     tool     path to tool to exec
+     * @param     options  optional exec options.  See ExecOptions
+     * @returns   number
+     */
+    exec() {
+        return toolrunner_awaiter(this, void 0, void 0, function* () {
+            // root the tool path if it is unrooted and contains relative pathing
+            if (!isRooted(this.toolPath) &&
+                (this.toolPath.includes('/') ||
+                    (toolrunner_IS_WINDOWS && this.toolPath.includes('\\')))) {
+                // prefer options.cwd if it is specified, however options.cwd may also need to be rooted
+                this.toolPath = external_path_namespaceObject.resolve(process.cwd(), this.options.cwd || process.cwd(), this.toolPath);
+            }
+            // if the tool is only a file name, then resolve it from the PATH
+            // otherwise verify it exists (add extension on Windows if necessary)
+            this.toolPath = yield which(this.toolPath, true);
+            return new Promise((resolve, reject) => toolrunner_awaiter(this, void 0, void 0, function* () {
+                this._debug(`exec tool: ${this.toolPath}`);
+                this._debug('arguments:');
+                for (const arg of this.args) {
+                    this._debug(`   ${arg}`);
+                }
+                const optionsNonNull = this._cloneExecOptions(this.options);
+                if (!optionsNonNull.silent && optionsNonNull.outStream) {
+                    optionsNonNull.outStream.write(this._getCommandString(optionsNonNull) + external_os_namespaceObject.EOL);
+                }
+                const state = new ExecState(optionsNonNull, this.toolPath);
+                state.on('debug', (message) => {
+                    this._debug(message);
+                });
+                if (this.options.cwd && !(yield exists(this.options.cwd))) {
+                    return reject(new Error(`The cwd: ${this.options.cwd} does not exist!`));
+                }
+                const fileName = this._getSpawnFileName();
+                const cp = external_child_process_namespaceObject.spawn(fileName, this._getSpawnArgs(optionsNonNull), this._getSpawnOptions(this.options, fileName));
+                let stdbuffer = '';
+                if (cp.stdout) {
+                    cp.stdout.on('data', (data) => {
+                        if (this.options.listeners && this.options.listeners.stdout) {
+                            this.options.listeners.stdout(data);
+                        }
+                        if (!optionsNonNull.silent && optionsNonNull.outStream) {
+                            optionsNonNull.outStream.write(data);
+                        }
+                        stdbuffer = this._processLineBuffer(data, stdbuffer, (line) => {
+                            if (this.options.listeners && this.options.listeners.stdline) {
+                                this.options.listeners.stdline(line);
+                            }
+                        });
+                    });
+                }
+                let errbuffer = '';
+                if (cp.stderr) {
+                    cp.stderr.on('data', (data) => {
+                        state.processStderr = true;
+                        if (this.options.listeners && this.options.listeners.stderr) {
+                            this.options.listeners.stderr(data);
+                        }
+                        if (!optionsNonNull.silent &&
+                            optionsNonNull.errStream &&
+                            optionsNonNull.outStream) {
+                            const s = optionsNonNull.failOnStdErr
+                                ? optionsNonNull.errStream
+                                : optionsNonNull.outStream;
+                            s.write(data);
+                        }
+                        errbuffer = this._processLineBuffer(data, errbuffer, (line) => {
+                            if (this.options.listeners && this.options.listeners.errline) {
+                                this.options.listeners.errline(line);
+                            }
+                        });
+                    });
+                }
+                cp.on('error', (err) => {
+                    state.processError = err.message;
+                    state.processExited = true;
+                    state.processClosed = true;
+                    state.CheckComplete();
+                });
+                cp.on('exit', (code) => {
+                    state.processExitCode = code;
+                    state.processExited = true;
+                    this._debug(`Exit code ${code} received from tool '${this.toolPath}'`);
+                    state.CheckComplete();
+                });
+                cp.on('close', (code) => {
+                    state.processExitCode = code;
+                    state.processExited = true;
+                    state.processClosed = true;
+                    this._debug(`STDIO streams have closed for tool '${this.toolPath}'`);
+                    state.CheckComplete();
+                });
+                state.on('done', (error, exitCode) => {
+                    if (stdbuffer.length > 0) {
+                        this.emit('stdline', stdbuffer);
+                    }
+                    if (errbuffer.length > 0) {
+                        this.emit('errline', errbuffer);
+                    }
+                    cp.removeAllListeners();
+                    if (error) {
+                        reject(error);
+                    }
+                    else {
+                        resolve(exitCode);
+                    }
+                });
+                if (this.options.input) {
+                    if (!cp.stdin) {
+                        throw new Error('child process missing stdin');
+                    }
+                    cp.stdin.end(this.options.input);
+                }
+            }));
+        });
+    }
+}
+/**
+ * Convert an arg string to an array of args. Handles escaping
+ *
+ * @param    argString   string of arguments
+ * @returns  string[]    array of arguments
+ */
+function argStringToArray(argString) {
+    const args = [];
+    let inQuotes = false;
+    let escaped = false;
+    let arg = '';
+    function append(c) {
+        // we only escape double quotes.
+        if (escaped && c !== '"') {
+            arg += '\\';
+        }
+        arg += c;
+        escaped = false;
+    }
+    for (let i = 0; i < argString.length; i++) {
+        const c = argString.charAt(i);
+        if (c === '"') {
+            if (!escaped) {
+                inQuotes = !inQuotes;
+            }
+            else {
+                append(c);
+            }
+            continue;
+        }
+        if (c === '\\' && escaped) {
+            append(c);
+            continue;
+        }
+        if (c === '\\' && inQuotes) {
+            escaped = true;
+            continue;
+        }
+        if (c === ' ' && !inQuotes) {
+            if (arg.length > 0) {
+                args.push(arg);
+                arg = '';
+            }
+            continue;
+        }
+        append(c);
+    }
+    if (arg.length > 0) {
+        args.push(arg.trim());
+    }
+    return args;
+}
+class ExecState extends external_events_.EventEmitter {
+    constructor(options, toolPath) {
+        super();
+        this.processClosed = false; // tracks whether the process has exited and stdio is closed
+        this.processError = '';
+        this.processExitCode = 0;
+        this.processExited = false; // tracks whether the process has exited
+        this.processStderr = false; // tracks whether stderr was written to
+        this.delay = 10000; // 10 seconds
+        this.done = false;
+        this.timeout = null;
+        if (!toolPath) {
+            throw new Error('toolPath must not be empty');
+        }
+        this.options = options;
+        this.toolPath = toolPath;
+        if (options.delay) {
+            this.delay = options.delay;
+        }
+    }
+    CheckComplete() {
+        if (this.done) {
+            return;
+        }
+        if (this.processClosed) {
+            this._setResult();
+        }
+        else if (this.processExited) {
+            this.timeout = (0,external_timers_namespaceObject.setTimeout)(ExecState.HandleTimeout, this.delay, this);
+        }
+    }
+    _debug(message) {
+        this.emit('debug', message);
+    }
+    _setResult() {
+        // determine whether there is an error
+        let error;
+        if (this.processExited) {
+            if (this.processError) {
+                error = new Error(`There was an error when attempting to execute the process '${this.toolPath}'. This may indicate the process failed to start. Error: ${this.processError}`);
+            }
+            else if (this.processExitCode !== 0 && !this.options.ignoreReturnCode) {
+                error = new Error(`The process '${this.toolPath}' failed with exit code ${this.processExitCode}`);
+            }
+            else if (this.processStderr && this.options.failOnStdErr) {
+                error = new Error(`The process '${this.toolPath}' failed because one or more lines were written to the STDERR stream`);
+            }
+        }
+        // clear the timeout
+        if (this.timeout) {
+            clearTimeout(this.timeout);
+            this.timeout = null;
+        }
+        this.done = true;
+        this.emit('done', error, this.processExitCode);
+    }
+    static HandleTimeout(state) {
+        if (state.done) {
+            return;
+        }
+        if (!state.processClosed && state.processExited) {
+            const message = `The STDIO streams did not close within ${state.delay / 1000} seconds of the exit event from process '${state.toolPath}'. This may indicate a child process inherited the STDIO streams and has not yet exited.`;
+            state._debug(message);
+        }
+        state._setResult();
+    }
+}
+//# sourceMappingURL=toolrunner.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+exec@3.0.0/node_modules/@actions/exec/lib/exec.js
+var exec_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+/**
+ * Exec a command.
+ * Output will be streamed to the live console.
+ * Returns promise with return code
+ *
+ * @param     commandLine        command to execute (can include additional args). Must be correctly escaped.
+ * @param     args               optional arguments for tool. Escaping is handled by the lib.
+ * @param     options            optional exec options.  See ExecOptions
+ * @returns   Promise<number>    exit code
+ */
+function exec_exec(commandLine, args, options) {
+    return exec_awaiter(this, void 0, void 0, function* () {
+        const commandArgs = tr.argStringToArray(commandLine);
+        if (commandArgs.length === 0) {
+            throw new Error(`Parameter 'commandLine' cannot be null or empty.`);
+        }
+        // Path to tool to execute should be first arg
+        const toolPath = commandArgs[0];
+        args = commandArgs.slice(1).concat(args || []);
+        const runner = new tr.ToolRunner(toolPath, args, options);
+        return runner.exec();
+    });
+}
+/**
+ * Exec a command and get the output.
+ * Output will be streamed to the live console.
+ * Returns promise with the exit code and collected stdout and stderr
+ *
+ * @param     commandLine           command to execute (can include additional args). Must be correctly escaped.
+ * @param     args                  optional arguments for tool. Escaping is handled by the lib.
+ * @param     options               optional exec options.  See ExecOptions
+ * @returns   Promise<ExecOutput>   exit code, stdout, and stderr
+ */
+function getExecOutput(commandLine, args, options) {
+    return exec_awaiter(this, void 0, void 0, function* () {
+        var _a, _b;
+        let stdout = '';
+        let stderr = '';
+        //Using string decoder covers the case where a mult-byte character is split
+        const stdoutDecoder = new StringDecoder('utf8');
+        const stderrDecoder = new StringDecoder('utf8');
+        const originalStdoutListener = (_a = options === null || options === void 0 ? void 0 : options.listeners) === null || _a === void 0 ? void 0 : _a.stdout;
+        const originalStdErrListener = (_b = options === null || options === void 0 ? void 0 : options.listeners) === null || _b === void 0 ? void 0 : _b.stderr;
+        const stdErrListener = (data) => {
+            stderr += stderrDecoder.write(data);
+            if (originalStdErrListener) {
+                originalStdErrListener(data);
+            }
+        };
+        const stdOutListener = (data) => {
+            stdout += stdoutDecoder.write(data);
+            if (originalStdoutListener) {
+                originalStdoutListener(data);
+            }
+        };
+        const listeners = Object.assign(Object.assign({}, options === null || options === void 0 ? void 0 : options.listeners), { stdout: stdOutListener, stderr: stdErrListener });
+        const exitCode = yield exec_exec(commandLine, args, Object.assign(Object.assign({}, options), { listeners }));
+        //flush any remaining characters
+        stdout += stdoutDecoder.end();
+        stderr += stderrDecoder.end();
+        return {
+            exitCode,
+            stdout,
+            stderr
+        };
+    });
+}
+//# sourceMappingURL=exec.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/platform.js
+var platform_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+const getWindowsInfo = () => platform_awaiter(void 0, void 0, void 0, function* () {
+    const { stdout: version } = yield exec.getExecOutput('powershell -command "(Get-CimInstance -ClassName Win32_OperatingSystem).Version"', undefined, {
+        silent: true
+    });
+    const { stdout: name } = yield exec.getExecOutput('powershell -command "(Get-CimInstance -ClassName Win32_OperatingSystem).Caption"', undefined, {
+        silent: true
+    });
+    return {
+        name: name.trim(),
+        version: version.trim()
+    };
+});
+const getMacOsInfo = () => platform_awaiter(void 0, void 0, void 0, function* () {
+    var _a, _b, _c, _d;
+    const { stdout } = yield exec.getExecOutput('sw_vers', undefined, {
+        silent: true
+    });
+    const version = (_b = (_a = stdout.match(/ProductVersion:\s*(.+)/)) === null || _a === void 0 ? void 0 : _a[1]) !== null && _b !== void 0 ? _b : '';
+    const name = (_d = (_c = stdout.match(/ProductName:\s*(.+)/)) === null || _c === void 0 ? void 0 : _c[1]) !== null && _d !== void 0 ? _d : '';
+    return {
+        name,
+        version
+    };
+});
+const getLinuxInfo = () => platform_awaiter(void 0, void 0, void 0, function* () {
+    const { stdout } = yield exec.getExecOutput('lsb_release', ['-i', '-r', '-s'], {
+        silent: true
+    });
+    const [name, version] = stdout.trim().split('\n');
+    return {
+        name,
+        version
+    };
+});
+const platform = external_os_namespaceObject.platform();
+const arch = external_os_namespaceObject.arch();
+const isWindows = platform === 'win32';
+const isMacOS = platform === 'darwin';
+const isLinux = platform === 'linux';
+function getDetails() {
+    return platform_awaiter(this, void 0, void 0, function* () {
+        return Object.assign(Object.assign({}, (yield (isWindows
+            ? getWindowsInfo()
+            : isMacOS
+                ? getMacOsInfo()
+                : getLinuxInfo()))), { platform,
+            arch,
+            isWindows,
+            isMacOS,
+            isLinux });
+    });
+}
+//# sourceMappingURL=platform.js.map
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+core@3.0.1/node_modules/@actions/core/lib/core.js
+var core_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+
+
+/**
+ * The code to exit an action
+ */
+var ExitCode;
+(function (ExitCode) {
+    /**
+     * A code indicating that the action was successful
+     */
+    ExitCode[ExitCode["Success"] = 0] = "Success";
+    /**
+     * A code indicating that the action was a failure
+     */
+    ExitCode[ExitCode["Failure"] = 1] = "Failure";
+})(ExitCode || (ExitCode = {}));
+//-----------------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------------
+/**
+ * Sets env variable for this action and future actions in the job
+ * @param name the name of the variable to set
+ * @param val the value of the variable. Non-string values will be converted to a string via JSON.stringify
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function exportVariable(name, val) {
+    const convertedVal = toCommandValue(val);
+    process.env[name] = convertedVal;
+    const filePath = process.env['GITHUB_ENV'] || '';
+    if (filePath) {
+        return issueFileCommand('ENV', prepareKeyValueMessage(name, val));
+    }
+    issueCommand('set-env', { name }, convertedVal);
+}
+/**
+ * Registers a secret which will get masked from logs
+ *
+ * @param secret - Value of the secret to be masked
+ * @remarks
+ * This function instructs the Actions runner to mask the specified value in any
+ * logs produced during the workflow run. Once registered, the secret value will
+ * be replaced with asterisks (***) whenever it appears in console output, logs,
+ * or error messages.
+ *
+ * This is useful for protecting sensitive information such as:
+ * - API keys
+ * - Access tokens
+ * - Authentication credentials
+ * - URL parameters containing signatures (SAS tokens)
+ *
+ * Note that masking only affects future logs; any previous appearances of the
+ * secret in logs before calling this function will remain unmasked.
+ *
+ * @example
+ * ```typescript
+ * // Register an API token as a secret
+ * const apiToken = "abc123xyz456";
+ * setSecret(apiToken);
+ *
+ * // Now any logs containing this value will show *** instead
+ * console.log(`Using token: ${apiToken}`); // Outputs: "Using token: ***"
+ * ```
+ */
+function core_setSecret(secret) {
+    issueCommand('add-mask', {}, secret);
+}
+/**
+ * Prepends inputPath to the PATH (for this action and future actions)
+ * @param inputPath
+ */
+function addPath(inputPath) {
+    const filePath = process.env['GITHUB_PATH'] || '';
+    if (filePath) {
+        issueFileCommand('PATH', inputPath);
+    }
+    else {
+        issueCommand('add-path', {}, inputPath);
+    }
+    process.env['PATH'] = `${inputPath}${path.delimiter}${process.env['PATH']}`;
+}
+/**
+ * Gets the value of an input.
+ * Unless trimWhitespace is set to false in InputOptions, the value is also trimmed.
+ * Returns an empty string if the value is not defined.
+ *
+ * @param     name     name of the input to get
+ * @param     options  optional. See InputOptions.
+ * @returns   string
+ */
+function getInput(name, options) {
+    const val = process.env[`INPUT_${name.replace(/ /g, '_').toUpperCase()}`] || '';
+    if (options && options.required && !val) {
+        throw new Error(`Input required and not supplied: ${name}`);
+    }
+    if (options && options.trimWhitespace === false) {
+        return val;
+    }
+    return val.trim();
+}
+/**
+ * Gets the values of an multiline input.  Each value is also trimmed.
+ *
+ * @param     name     name of the input to get
+ * @param     options  optional. See InputOptions.
+ * @returns   string[]
+ *
+ */
+function getMultilineInput(name, options) {
+    const inputs = getInput(name, options)
+        .split('\n')
+        .filter(x => x !== '');
+    if (options && options.trimWhitespace === false) {
+        return inputs;
+    }
+    return inputs.map(input => input.trim());
+}
+/**
+ * Gets the input value of the boolean type in the YAML 1.2 "core schema" specification.
+ * Support boolean input list: `true | True | TRUE | false | False | FALSE` .
+ * The return value is also in boolean type.
+ * ref: https://yaml.org/spec/1.2/spec.html#id2804923
+ *
+ * @param     name     name of the input to get
+ * @param     options  optional. See InputOptions.
+ * @returns   boolean
+ */
+function getBooleanInput(name, options) {
+    const trueValue = ['true', 'True', 'TRUE'];
+    const falseValue = ['false', 'False', 'FALSE'];
+    const val = getInput(name, options);
+    if (trueValue.includes(val))
+        return true;
+    if (falseValue.includes(val))
+        return false;
+    throw new TypeError(`Input does not meet YAML 1.2 "Core Schema" specification: ${name}\n` +
+        `Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
+}
+/**
+ * Sets the value of an output.
+ *
+ * @param     name     name of the output to set
+ * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function setOutput(name, value) {
+    const filePath = process.env['GITHUB_OUTPUT'] || '';
+    if (filePath) {
+        return issueFileCommand('OUTPUT', prepareKeyValueMessage(name, value));
+    }
+    process.stdout.write(os.EOL);
+    issueCommand('set-output', { name }, toCommandValue(value));
+}
+/**
+ * Enables or disables the echoing of commands into stdout for the rest of the step.
+ * Echoing is disabled by default if ACTIONS_STEP_DEBUG is not set.
+ *
+ */
+function setCommandEcho(enabled) {
+    issue('echo', enabled ? 'on' : 'off');
+}
+//-----------------------------------------------------------------------
+// Results
+//-----------------------------------------------------------------------
+/**
+ * Sets the action status to failed.
+ * When the action exits it will be with an exit code of 1
+ * @param message add error issue message
+ */
+function setFailed(message) {
+    process.exitCode = ExitCode.Failure;
+    error(message);
+}
+//-----------------------------------------------------------------------
+// Logging Commands
+//-----------------------------------------------------------------------
+/**
+ * Gets whether Actions Step Debug is on or not
+ */
+function isDebug() {
+    return process.env['RUNNER_DEBUG'] === '1';
+}
+/**
+ * Writes debug message to user log
+ * @param message debug message
+ */
+function core_debug(message) {
+    issueCommand('debug', {}, message);
+}
+/**
+ * Adds an error issue
+ * @param message error issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
+ */
+function error(message, properties = {}) {
+    command_issueCommand('error', utils_toCommandProperties(properties), message instanceof Error ? message.toString() : message);
+}
+/**
+ * Adds a warning issue
+ * @param message warning issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
+ */
+function warning(message, properties = {}) {
+    command_issueCommand('warning', utils_toCommandProperties(properties), message instanceof Error ? message.toString() : message);
+}
+/**
+ * Adds a notice issue
+ * @param message notice issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
+ */
+function notice(message, properties = {}) {
+    issueCommand('notice', toCommandProperties(properties), message instanceof Error ? message.toString() : message);
+}
+/**
+ * Writes info to log with console.log.
+ * @param message info message
+ */
+function info(message) {
+    process.stdout.write(message + external_os_namespaceObject.EOL);
+}
+/**
+ * Begin an output group.
+ *
+ * Output until the next `groupEnd` will be foldable in this group
+ *
+ * @param name The name of the output group
+ */
+function startGroup(name) {
+    command_issue('group', name);
+}
+/**
+ * End an output group.
+ */
+function endGroup() {
+    command_issue('endgroup');
+}
+/**
+ * Wrap an asynchronous function call in a group.
+ *
+ * Returns the same type as the function itself.
+ *
+ * @param name The name of the group
+ * @param fn The function to wrap in the group
+ */
+function group(name, fn) {
+    return core_awaiter(this, void 0, void 0, function* () {
+        startGroup(name);
+        let result;
+        try {
+            result = yield fn();
+        }
+        finally {
+            endGroup();
+        }
+        return result;
+    });
+}
+//-----------------------------------------------------------------------
+// Wrapper action state
+//-----------------------------------------------------------------------
+/**
+ * Saves state for current action, the state can only be retrieved by this action's post job execution.
+ *
+ * @param     name     name of the state to store
+ * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function saveState(name, value) {
+    const filePath = process.env['GITHUB_STATE'] || '';
+    if (filePath) {
+        return issueFileCommand('STATE', prepareKeyValueMessage(name, value));
+    }
+    issueCommand('save-state', { name }, toCommandValue(value));
+}
+/**
+ * Gets the value of an state set by this action's main execution.
+ *
+ * @param     name     name of the state to get
+ * @returns   string
+ */
+function getState(name) {
+    return process.env[`STATE_${name}`] || '';
+}
+function getIDToken(aud) {
+    return core_awaiter(this, void 0, void 0, function* () {
+        return yield OidcClient.getIDToken(aud);
+    });
+}
+/**
+ * Summary exports
+ */
+
+/**
+ * @deprecated use core.summary
+ */
+
+/**
+ * Path exports
+ */
+
+/**
+ * Platform utilities exports
+ */
+
+//# sourceMappingURL=core.js.map
 ;// CONCATENATED MODULE: external "node:child_process"
 const external_node_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:child_process");
 ;// CONCATENATED MODULE: ./lib/exec.js
@@ -56126,7 +57948,6 @@ async function getChangedFolders(root, manifestFile, manifest) {
 
 ;// CONCATENATED MODULE: ./lib/discord.js
 
-const WEBSITE = "https://waspscripts.com";
 // Same color the website uses for its script notifications.
 const COLOR = 0xf56f27;
 // Discord's limit of embeds per message.
@@ -56142,7 +57963,7 @@ function describe(commits) {
 }
 // Posts the uploaded scripts to a Discord webhook. Unpublished scripts are left out since their
 // page isn't public. Failing to notify only warns, the scripts are already uploaded at this point.
-async function notifyDiscord(supabase, webhook, updates, versions) {
+async function notifyDiscord(supabase, website, webhook, updates, versions) {
     const { data, error } = await supabase
         .schema("scripts")
         .from("scripts")
@@ -56161,7 +57982,7 @@ async function notifyDiscord(supabase, webhook, updates, versions) {
         }
         embeds.push({
             title: "Script Updated: " + script.title,
-            url: `${WEBSITE}/scripts/${script.url}`,
+            url: `${website}/scripts/${script.url}`,
             description: describe(update.commits),
             color: COLOR,
             fields: [
@@ -56197,6 +58018,7 @@ const promises_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.ur
 
 const WASPLIB_REPO = "https://github.com/WaspScripts/WaspLib.git";
 const COMPILE_TIMEOUT = 5 * 60 * 1000;
+const SIMBA_ARCHIVE = "https://raw.githubusercontent.com/Villavu/Simba-Build-Archive/refs/heads/main/README.md";
 async function getLatestVersion(supabase, table) {
     const { data, error } = await supabase
         .schema("scripts")
@@ -56217,13 +58039,32 @@ async function getVersions(supabase, simba, wasplib) {
     ]);
     return { simba: latestSimba, wasplib: latestWaspLib, plugins };
 }
-async function downloadAndExtract(supabase, bucket, path, dest) {
+async function downloadFromStorage(supabase, bucket, path) {
     info(`Downloading ${bucket}/${path}`);
     const { data, error } = await supabase.storage.from(bucket).download(path);
     if (error)
         throw new Error(`Failed to download ${bucket}/${path}: ${error.message}`);
+    return data.arrayBuffer();
+}
+// Not every Simba version has its Linux build on waspscripts.com, but every build is in the Simba
+// build archive, which is also where WaspLib's tests get Simba from.
+async function downloadFromArchive(version) {
+    const res = await fetch(SIMBA_ARCHIVE);
+    if (!res.ok)
+        throw new Error(`Failed to fetch the Simba build archive: ${res.status}`);
+    const line = (await res.text()).split("\n").find((line) => line.includes(`[${version}]`));
+    const url = line?.match(/\((https:\/\/[^)]+\/Simba_linux_x86_64\.zip)\)/)?.[1];
+    if (!url)
+        throw new Error(`Simba ${version} has no Linux build in the Simba build archive`);
+    info("Downloading " + url);
+    const zip = await fetch(url);
+    if (!zip.ok)
+        throw new Error(`Failed to download ${url}: ${zip.status}`);
+    return zip.arrayBuffer();
+}
+async function extract(data, dest) {
     const zip = dest + ".zip";
-    await (0,promises_namespaceObject.writeFile)(zip, Buffer.from(await data.arrayBuffer()));
+    await (0,promises_namespaceObject.writeFile)(zip, Buffer.from(data));
     (0,external_node_fs_namespaceObject.rmSync)(dest, { recursive: true, force: true });
     await execOrThrow("unzip", ["-q", "-o", zip, "-d", dest]);
     (0,external_node_fs_namespaceObject.rmSync)(zip);
@@ -56239,7 +58080,11 @@ async function installSimba(supabase, versions, dir) {
     const wasplib = (0,external_node_path_namespaceObject.join)(dir, "Includes", "WaspLib");
     await Promise.all([
         (async () => {
-            await downloadAndExtract(supabase, "simba", `${versions.simba}/linux64.zip`, simbaZip);
+            const data = await downloadFromStorage(supabase, "simba", `${versions.simba}/linux64.zip`).catch((err) => {
+                info(err.message + ", downloading it from the Simba build archive instead.");
+                return downloadFromArchive(versions.simba);
+            });
+            await extract(data, simbaZip);
             const files = (0,external_node_fs_namespaceObject.readdirSync)(simbaZip);
             if (files.length !== 1) {
                 throw new Error(`Expected 1 file in the Simba zip, found: ${files.join(", ")}`);
@@ -56249,7 +58094,7 @@ async function installSimba(supabase, versions, dir) {
             (0,external_node_fs_namespaceObject.chmodSync)(exe, 0o755);
         })(),
         (async () => {
-            await downloadAndExtract(supabase, "plugins", `${versions.plugins}.zip`, plugins);
+            await extract(await downloadFromStorage(supabase, "plugins", `${versions.plugins}.zip`), plugins);
             // RemoteInput requests an executable stack which newer glibc versions refuse to load.
             const remoteInput = (0,external_node_path_namespaceObject.join)(plugins, "libremoteinput", "libremoteinput64.so");
             if ((0,external_node_fs_namespaceObject.existsSync)(remoteInput)) {
@@ -56327,7 +58172,769 @@ function annotate(output, simbaDir, sources) {
     }
 }
 
-;// CONCATENATED MODULE: ./lib/upload.js
+// EXTERNAL MODULE: ./node_modules/.pnpm/@supabase+ssr@0.12.7_@supabase+supabase-js@2.117.2/node_modules/@supabase/ssr/dist/main/index.js
+var main = __nccwpck_require__(9045);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/devalue@5.9.4/node_modules/devalue/src/base64.js
+/* Baseline 2025 runtimes */
+
+/**	@type {(array_buffer: ArrayBuffer) => string} */
+function encode_native(array_buffer) {
+	return new Uint8Array(array_buffer).toBase64();
+}
+
+/**	@type {(base64: string) => ArrayBuffer} */
+function decode_native(base64) {
+	return Uint8Array.fromBase64(base64).buffer;
+}
+
+/* Node-compatible runtimes */
+
+/** @type {(array_buffer: ArrayBuffer) => string} */
+function encode_buffer(array_buffer) {
+	return Buffer.from(array_buffer).toString('base64');
+}
+
+/**	@type {(base64: string) => ArrayBuffer} */
+function decode_buffer(base64) {
+	return Uint8Array.from(Buffer.from(base64, 'base64')).buffer;
+}
+
+/* Legacy runtimes */
+
+/** @type {(array_buffer: ArrayBuffer) => string} */
+function encode_legacy(array_buffer) {
+	const array = new Uint8Array(array_buffer);
+	let binary = '';
+
+	// the maximum number of arguments to String.fromCharCode.apply
+	// should be around 0xFFFF in modern engines
+	const chunk_size = 0x8000;
+	for (let i = 0; i < array.length; i += chunk_size) {
+		const chunk = array.subarray(i, i + chunk_size);
+		binary += String.fromCharCode.apply(null, chunk);
+	}
+
+	return btoa(binary);
+}
+
+/**	@type {(base64: string) => ArrayBuffer} */
+function decode_legacy(base64) {
+	const binary_string = atob(base64);
+	const len = binary_string.length;
+	const array = new Uint8Array(len);
+
+	for (let i = 0; i < len; i++) {
+		array[i] = binary_string.charCodeAt(i);
+	}
+
+	return array.buffer;
+}
+
+const base64_native = typeof Uint8Array.fromBase64 === 'function';
+const buffer = typeof process === 'object' && process.versions?.node !== undefined;
+
+const encode64 = (/* unused pure expression or super */ null && (base64_native ? encode_native : buffer ? encode_buffer : encode_legacy));
+const decode64 = base64_native ? decode_native : buffer ? decode_buffer : decode_legacy;
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/devalue@5.9.4/node_modules/devalue/src/constants.js
+const UNDEFINED = -1;
+const HOLE = -2;
+const NAN = -3;
+const POSITIVE_INFINITY = -4;
+const NEGATIVE_INFINITY = -5;
+const NEGATIVE_ZERO = -6;
+const SPARSE = -7;
+
+// The largest valid value for a JavaScript array's `length` property,
+// and the largest valid array index (one less than the max length).
+const MAX_ARRAY_LEN = 2 ** 32 - 1;
+const MAX_ARRAY_INDEX = MAX_ARRAY_LEN - 1;
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/devalue@5.9.4/node_modules/devalue/src/utils.js
+
+
+/** @type {Record<string, string>} */
+const escaped = {
+	'<': '\\u003C',
+	'\\': '\\\\',
+	'\b': '\\b',
+	'\f': '\\f',
+	'\n': '\\n',
+	'\r': '\\r',
+	'\t': '\\t',
+	'\u2028': '\\u2028',
+	'\u2029': '\\u2029'
+};
+
+class DevalueError extends Error {
+	/**
+	 * @param {string} message
+	 * @param {string[]} keys
+	 * @param {any} [value] - The value that failed to be serialized
+	 * @param {any} [root] - The root value being serialized
+	 */
+	constructor(message, keys, value, root) {
+		super(message);
+		this.name = 'DevalueError';
+		this.path = keys.join('');
+		this.value = value;
+		this.root = root;
+	}
+}
+
+/** @param {any} thing */
+function is_primitive(thing) {
+	return thing === null || (typeof thing !== 'object' && typeof thing !== 'function');
+}
+
+const object_proto_names = /* @__PURE__ */ Object.getOwnPropertyNames(Object.prototype)
+	.sort()
+	.join('\0');
+
+/** @param {any} thing */
+function is_plain_object(thing) {
+	const proto = Object.getPrototypeOf(thing);
+
+	return (
+		proto === Object.prototype ||
+		proto === null ||
+		Object.getPrototypeOf(proto) === null ||
+		Object.getOwnPropertyNames(proto).sort().join('\0') === object_proto_names
+	);
+}
+
+/** @param {any} thing */
+function get_type(thing) {
+	return Object.prototype.toString.call(thing).slice(8, -1);
+}
+
+/** @param {any} thing */
+function is_buffer(thing) {
+	return typeof Buffer !== 'undefined' && Buffer.isBuffer(thing);
+}
+
+/** @param {string} char */
+function get_escaped_char(char) {
+	switch (char) {
+		case '"':
+			return '\\"';
+		case '<':
+			return '\\u003C';
+		case '\\':
+			return '\\\\';
+		case '\n':
+			return '\\n';
+		case '\r':
+			return '\\r';
+		case '\t':
+			return '\\t';
+		case '\b':
+			return '\\b';
+		case '\f':
+			return '\\f';
+		case '\u2028':
+			return '\\u2028';
+		case '\u2029':
+			return '\\u2029';
+		default:
+			return char < ' ' ? `\\u${char.charCodeAt(0).toString(16).padStart(4, '0')}` : '';
+	}
+}
+
+/** @param {string} str */
+function stringify_string(str) {
+	let result = '';
+	let last_pos = 0;
+	const len = str.length;
+
+	for (let i = 0; i < len; i += 1) {
+		const char = str[i];
+		const replacement = get_escaped_char(char);
+		if (replacement) {
+			result += str.slice(last_pos, i) + replacement;
+			last_pos = i + 1;
+		}
+	}
+
+	return `"${last_pos === 0 ? str : result + str.slice(last_pos)}"`;
+}
+
+/** @param {Record<string | symbol, any>} object */
+function enumerable_symbols(object) {
+	return Object.getOwnPropertySymbols(object).filter(
+		(symbol) => Object.getOwnPropertyDescriptor(object, symbol).enumerable
+	);
+}
+
+const is_identifier = /^[a-zA-Z_$][a-zA-Z_$0-9]*$/;
+
+/** @param {string} key */
+function stringify_key(key) {
+	return is_identifier.test(key) ? '.' + key : '[' + JSON.stringify(key) + ']';
+}
+
+/** @param {number} n */
+function is_valid_array_index(n) {
+	if (!Number.isInteger(n)) return false;
+	if (n < 0) return false;
+	if (n > MAX_ARRAY_INDEX) return false;
+	return true;
+}
+
+/** @param {number} n */
+function is_valid_array_len(n) {
+	if (!Number.isInteger(n)) return false;
+	if (n < 0) return false;
+	if (n > MAX_ARRAY_LEN) return false;
+	return true;
+}
+
+/** @param {string} s */
+function is_valid_array_index_string(s) {
+	if (s.length === 0) return false;
+	if (s.length > 1 && s.charCodeAt(0) === 48) return false; // leading zero
+	for (let i = 0; i < s.length; i++) {
+		const c = s.charCodeAt(i);
+		if (c < 48 || c > 57) return false;
+	}
+	// by this point we know it's a string of digits, but it has to be within
+	// the range of valid array indices
+	return is_valid_array_index(+s);
+}
+
+/**
+ * Returns the length of the leading run of valid array indices in `keys`.
+ * @param {readonly string[]} keys
+ */
+function array_index_cut(keys) {
+	for (var i = keys.length - 1; i >= 0; i--) {
+		if (is_valid_array_index_string(keys[i])) {
+			break;
+		}
+	}
+	return i + 1;
+}
+
+/**
+ * Finds the populated indices of an array.
+ * @param {unknown[]} array
+ */
+function valid_array_indices(array) {
+	const keys = Object.keys(array);
+	keys.length = array_index_cut(keys);
+	return keys;
+}
+
+/**
+ * Given the own enumerable string keys of an array-like value, in property
+ * order, returns the leading run of them that are valid array indices.
+ *
+ * This is the filtering half of the `indicesOf` stringify operation,
+ * exposed so that custom operations — which typically already have the keys
+ * in hand, e.g. from a foreign runtime — don't have to reimplement it.
+ *
+ * Does not modify `keys`.
+ *
+ * @param {readonly string[]} keys
+ * @returns {string[]}
+ */
+function filter_array_indices(keys) {
+	return keys.slice(0, array_index_cut(keys));
+}
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/devalue@5.9.4/node_modules/devalue/src/operations.js
+
+
+
+/**
+ * Merges caller-provided operation overrides over the defaults. Iterating the
+ * default keys (rather than the override's own keys) means nullish members
+ * fall back to the default, and inherited members — e.g. from a class
+ * instance — are picked up.
+ *
+ * @template {Record<string, any>} T
+ * @param {T} defaults
+ * @param {Partial<T> | undefined} overrides
+ * @returns {T}
+ */
+function merge_operations(defaults, overrides) {
+	if (!overrides) return defaults;
+
+	const merged = /** @type {T} */ ({});
+
+	for (const key of /** @type {(keyof T)[]} */ (Object.keys(defaults))) {
+		merged[key] = overrides[key] ?? defaults[key];
+	}
+
+	return merged;
+}
+
+/** @type {{ kind: 'not-plain' }} */
+const NOT_PLAIN = /* @__PURE__ */ Object.freeze({ kind: 'not-plain' });
+
+/** @type {{ kind: 'symbol-keys' }} */
+const SYMBOL_KEYS = /* @__PURE__ */ Object.freeze({ kind: 'symbol-keys' });
+
+/**
+ * The default implementations of every introspection/extraction operation
+ * `stringify` performs on the value being serialized. Each one uses native
+ * JavaScript semantics (property access, iteration, prototype methods, etc).
+ *
+ * Pass overrides via the `operations` option of `stringify`/`stringifyAsync`
+ * to customize how values are inspected — e.g. to serialize values without
+ * triggering getters, proxy traps, or patched prototype methods, or to
+ * serialize values that live in a different JavaScript runtime (a `node:vm`
+ * context, a WASM-hosted engine, a remote process) through handle objects.
+ *
+ * The object is frozen — it is shared by every `stringify` call that does
+ * not override a given operation.
+ *
+ */
+/** @type {import('./types.js').DefaultStringifyOperations} */
+const stringify_operations = {
+	identify: (value) => value,
+
+	typeOf: (value) => (value === null ? 'null' : typeof value),
+
+	toPrimitive: (value) => value,
+
+	tagOf: (value) => get_type(value),
+
+	isThenable: (value) => typeof value.then === 'function',
+
+	toPromise: (thenable) => Promise.resolve(thenable),
+
+	unbox: (boxed) => boxed.valueOf(),
+
+	toISOString: (date) => (isNaN(date.getDate()) ? '' : date.toISOString()),
+
+	toStringValue: (value) => value.toString(),
+
+	regExpInfo: (regexp) => ({ source: regexp.source, flags: regexp.flags }),
+
+	valuesOf: (set) => set,
+
+	entriesOf: (map) => map,
+
+	viewInfo: (view) => {
+		// Node Buffers may share a pool containing unrelated, sensitive data.
+		// Copy only the visible bytes, without using Buffer's pooling or slice.
+		if (is_buffer(view)) view = new Uint8Array(view);
+
+		return {
+			buffer: view.buffer,
+			byteOffset: view.byteOffset,
+			byteLength: view.byteLength,
+			length: view.length,
+			bufferByteLength: view.buffer.byteLength
+		};
+	},
+
+	toArrayBuffer: (buffer) => buffer,
+
+	lengthOf: (array) => array.length,
+
+	hasOwn: (value, key) => Object.hasOwn(value, key),
+
+	indicesOf: (array) => valid_array_indices(array),
+
+	shapeOf: (value) => {
+		if (!is_plain_object(value)) return NOT_PLAIN;
+		if (enumerable_symbols(value).length > 0) return SYMBOL_KEYS;
+
+		return {
+			kind: Object.getPrototypeOf(value) === null ? 'null-proto' : 'plain',
+			keys: Object.keys(value)
+		};
+	},
+
+	get: (value, key) => value[key]
+};
+
+const default_stringify_operations = /* @__PURE__ */ (/* unused pure expression or super */ null && (Object.freeze(stringify_operations)));
+
+const array_buffer_byte_length = Object.getOwnPropertyDescriptor(
+	ArrayBuffer.prototype,
+	'byteLength'
+).get;
+
+const shared_array_buffer_byte_length =
+	typeof SharedArrayBuffer === 'undefined'
+		? undefined
+		: Object.getOwnPropertyDescriptor(SharedArrayBuffer.prototype, 'byteLength').get;
+
+/**
+ * The default implementations of every construction operation `parse` and
+ * `unflatten` perform while reviving a value. Each one uses native
+ * JavaScript semantics (built-in constructors, property assignment, etc).
+ *
+ * Pass overrides via the `operations` option of `parse`/`unflatten` to
+ * customize how values are built — e.g. to construct them from the
+ * intrinsics of a different realm (a `node:vm` context), or to build up
+ * values inside another JavaScript runtime (a WASM-hosted engine, a remote
+ * process) through handle objects.
+ *
+ * The object is frozen — it is shared by every `parse` call that does not
+ * override a given operation.
+ *
+ */
+/** @type {import('./types.js').DefaultParseOperations} */
+const parse_operations = {
+	fromPrimitive: (primitive) => primitive,
+
+	fromISOString: (iso) => new Date(iso),
+
+	fromStringValue: (tag, text) => {
+		if (tag === 'URL') return new URL(text);
+		if (tag === 'URLSearchParams') return new URLSearchParams(text);
+		// 'Temporal.Instant', 'Temporal.PlainDate', ...
+		// @ts-expect-error TS doesn't know about Temporal yet
+		return Temporal[tag.slice(9)].from(text);
+	},
+
+	fromArrayBuffer: (buffer) => buffer,
+
+	fromRegExpInfo: (source, flags) => new RegExp(source, flags),
+
+	fromViewInfo: (tag, buffer, byteOffset, length) => {
+		// A reviver can replace an ArrayBuffer with a length or array-like value,
+		// which a typed array constructor would use to allocate a new buffer.
+		// The native getters check internal slots, so they work across realms
+		// and cannot be fooled by a forged prototype or Symbol.toStringTag.
+		try {
+			array_buffer_byte_length.call(buffer);
+		} catch (error) {
+			if (!shared_array_buffer_byte_length) throw error;
+			shared_array_buffer_byte_length.call(buffer);
+		}
+
+		const Constructor = /** @type {any} */ (globalThis)[tag];
+		return byteOffset !== undefined
+			? new Constructor(buffer, byteOffset, length)
+			: new Constructor(buffer);
+	},
+
+	box: (value) => Object(value),
+
+	createArray: (length) => new Array(length),
+
+	createSparseArray: (length) => {
+		/** @type {any[]} */
+		const array = [];
+
+		// Setting `array.length = length` (or equivalently calling
+		// `new Array(length)`) on an untrusted length is a DoS vector: V8
+		// eagerly allocates a contiguous backing store for array lengths below
+		// ~10^8, so a small payload with a huge declared length can force
+		// arbitrary memory allocation. Touching the largest-possible index
+		// first forces V8 into dictionary-elements mode, where `length` is
+		// just a number and no contiguous allocation occurs.
+		array[MAX_ARRAY_INDEX] = undefined;
+		delete array[MAX_ARRAY_INDEX];
+		array.length = length;
+
+		return array;
+	},
+
+	createObject: () => ({}),
+
+	createNullPrototypeObject: () => Object.create(null),
+
+	createSet: () => new Set(),
+
+	createMap: () => new Map(),
+
+	set: (target, key, value) => {
+		target[key] = value;
+	},
+
+	addValue: (set, value) => {
+		set.add(value);
+	},
+
+	addEntry: (map, key, value) => {
+		map.set(key, value);
+	}
+};
+
+const default_parse_operations = /* @__PURE__ */ Object.freeze(parse_operations);
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/devalue@5.9.4/node_modules/devalue/src/parse.js
+
+
+
+
+
+/**
+ * Revive a value serialized with `devalue.stringify`
+ * @param {string} serialized
+ * @param {Record<string, (value: any) => any>} [revivers]
+ * @param {import('./types.js').ParseOptions} [options]
+ */
+function parse(serialized, revivers, options) {
+	return unflatten(JSON.parse(serialized), revivers, options);
+}
+
+/**
+ * Revive a value flattened with `devalue.stringify`
+ * @param {number | any[]} parsed
+ * @param {Record<string, (value: any) => any>} [revivers]
+ * @param {import('./types.js').ParseOptions} [options]
+ */
+function unflatten(parsed, revivers, options) {
+	/** @type {import('./types.js').ParseOperations} */
+	const ops = merge_operations(default_parse_operations, options?.operations);
+
+	if (typeof parsed === 'number') return hydrate(parsed, true);
+
+	if (!Array.isArray(parsed) || parsed.length === 0) {
+		throw new Error('Invalid input');
+	}
+
+	const values = /** @type {any[]} */ (parsed);
+
+	const hydrated = Array(values.length);
+
+	/**
+	 * A set of values currently being hydrated with custom revivers,
+	 * used to detect invalid cyclical dependencies
+	 * @type {Set<number> | null}
+	 */
+	let hydrating = null;
+
+	/**
+	 * @param {number} index
+	 * @returns {any}
+	 */
+	function hydrate(index, standalone = false) {
+		if (index === UNDEFINED) return ops.fromPrimitive(undefined);
+		if (index === NAN) return ops.fromPrimitive(NaN);
+		if (index === POSITIVE_INFINITY) return ops.fromPrimitive(Infinity);
+		if (index === NEGATIVE_INFINITY) return ops.fromPrimitive(-Infinity);
+		if (index === NEGATIVE_ZERO) return ops.fromPrimitive(-0);
+
+		if (standalone || typeof index !== 'number') {
+			throw new Error(`Invalid input`);
+		}
+
+		if (index in hydrated) return hydrated[index];
+
+		if (index >= values.length) {
+			throw new Error(`Invalid input`);
+		}
+
+		const value = values[index];
+
+		if (!value || typeof value !== 'object') {
+			hydrated[index] = ops.fromPrimitive(value);
+		} else if (Array.isArray(value)) {
+			if (typeof value[0] === 'string') {
+				const type = value[0];
+
+				const reviver = revivers && Object.hasOwn(revivers, type) ? revivers[type] : undefined;
+
+				if (reviver) {
+					let i = value[1];
+					if (typeof i !== 'number') {
+						// if it's not a number, it was serialized by a builtin reviver
+						// so we need to munge it into the format expected by a custom reviver
+						i = values.push(value[1]) - 1;
+					}
+
+					// If the payload is already hydrated, its recursion has already
+					// terminated (e.g. a self-referential object cached itself before
+					// following its own back-reference), so revive it directly. Falling
+					// through to the `hydrating` guard here would wrongly reject a valid
+					// cycle. An actually infinite payload (e.g. `[["Custom", 0]]`) is never
+					// cached, so it still hits the guard below.
+					if (Object.hasOwn(hydrated, i)) {
+						return (hydrated[index] = reviver(hydrated[i]));
+					}
+
+					hydrating ??= new Set();
+
+					if (hydrating.has(i)) {
+						throw new Error('Invalid circular reference');
+					}
+
+					hydrating.add(i);
+					hydrated[index] = reviver(hydrate(i));
+					hydrating.delete(i);
+
+					return hydrated[index];
+				}
+
+				switch (type) {
+					case 'Date':
+						hydrated[index] = ops.fromISOString(value[1]);
+						break;
+
+					case 'Set':
+						const set = ops.createSet();
+						hydrated[index] = set;
+						for (let i = 1; i < value.length; i += 1) {
+							ops.addValue(set, hydrate(value[i]));
+						}
+						break;
+
+					case 'Map':
+						const map = ops.createMap();
+						hydrated[index] = map;
+						for (let i = 1; i < value.length; i += 2) {
+							ops.addEntry(map, hydrate(value[i]), hydrate(value[i + 1]));
+						}
+						break;
+
+					case 'RegExp':
+						hydrated[index] = ops.fromRegExpInfo(value[1], value[2]);
+						break;
+
+					case 'Object': {
+						const wrapped_index = value[1];
+
+						if (
+							typeof values[wrapped_index] === 'object' &&
+							values[wrapped_index][0] !== 'BigInt'
+						) {
+							// avoid infinite recusion in case of malformed input
+							throw new Error('Invalid input');
+						}
+
+						hydrated[index] = ops.box(hydrate(wrapped_index));
+						break;
+					}
+
+					case 'BigInt':
+						hydrated[index] = ops.fromPrimitive(BigInt(value[1]));
+						break;
+
+					case 'null':
+						const obj = ops.createNullPrototypeObject();
+						hydrated[index] = obj;
+						for (let i = 1; i < value.length; i += 2) {
+							const key = value[i];
+							if (typeof key !== 'string') {
+								throw new Error('Cannot parse an object with a non-string key');
+							}
+
+							if (key === '__proto__') {
+								throw new Error('Cannot parse an object with a `__proto__` property');
+							}
+
+							ops.set(obj, key, hydrate(value[i + 1]));
+						}
+						break;
+
+					case 'Int8Array':
+					case 'Uint8Array':
+					case 'Uint8ClampedArray':
+					case 'Int16Array':
+					case 'Uint16Array':
+					case 'Float16Array':
+					case 'Int32Array':
+					case 'Uint32Array':
+					case 'Float32Array':
+					case 'Float64Array':
+					case 'BigInt64Array':
+					case 'BigUint64Array':
+					case 'DataView': {
+						if (values[value[1]][0] !== 'ArrayBuffer') {
+							// without this, if we receive malformed input we could
+							// end up trying to hydrate in a circle or allocate
+							// huge amounts of memory when we call `new TypedArrayConstructor(buffer)`
+							throw new Error('Invalid data');
+						}
+
+						const buffer = hydrate(value[1]);
+
+						hydrated[index] = ops.fromViewInfo(type, buffer, value[2], value[3]);
+
+						break;
+					}
+
+					case 'ArrayBuffer': {
+						const base64 = value[1];
+						if (typeof base64 !== 'string') {
+							throw new Error('Invalid ArrayBuffer encoding');
+						}
+						hydrated[index] = ops.fromArrayBuffer(decode64(base64));
+						break;
+					}
+
+					case 'URL':
+					case 'URLSearchParams':
+					case 'Temporal.Duration':
+					case 'Temporal.Instant':
+					case 'Temporal.PlainDate':
+					case 'Temporal.PlainTime':
+					case 'Temporal.PlainDateTime':
+					case 'Temporal.PlainMonthDay':
+					case 'Temporal.PlainYearMonth':
+					case 'Temporal.ZonedDateTime': {
+						// the same tags `toStringValue` serializes on the stringify side
+						hydrated[index] = ops.fromStringValue(type, value[1]);
+						break;
+					}
+
+					default:
+						throw new Error(`Unknown type ${type}`);
+				}
+			} else if (value[0] === SPARSE) {
+				// Sparse array encoding: [SPARSE, length, idx, val, idx, val, ...]
+				const len = value[1];
+
+				if (!is_valid_array_len(len)) {
+					throw new Error('Invalid input');
+				}
+
+				// `len` comes from the input rather than being bounded by it, so
+				// `createSparseArray` is responsible for not allocating storage
+				// proportional to it.
+				const array = ops.createSparseArray(len);
+				hydrated[index] = array;
+
+				for (let i = 2; i < value.length; i += 2) {
+					const idx = value[i];
+
+					if (!is_valid_array_index(idx) || idx >= len) {
+						throw new Error('Invalid input');
+					}
+
+					ops.set(array, idx, hydrate(value[i + 1]));
+				}
+			} else {
+				const array = ops.createArray(value.length);
+				hydrated[index] = array;
+
+				for (let i = 0; i < value.length; i += 1) {
+					const n = value[i];
+					if (n === HOLE) continue;
+
+					ops.set(array, i, hydrate(n));
+				}
+			}
+		} else {
+			const object = ops.createObject();
+			hydrated[index] = object;
+
+			for (const key of Object.keys(value)) {
+				if (key === '__proto__') {
+					throw new Error('Cannot parse an object with a `__proto__` property');
+				}
+
+				ops.set(object, key, hydrate(value[key]));
+			}
+		}
+
+		return hydrated[index];
+	}
+
+	return hydrate(0);
+}
+
+;// CONCATENATED MODULE: ./lib/website.js
+
+
 
 
 
@@ -56335,14 +58942,38 @@ const CONTENT_TYPES = {
     ".png": "image/png",
     ".bmp": "image/bmp",
     ".json": "application/json",
-    ".zip": "application/zip",
-    ".bin": "application/octet-stream"
+    ".txt": "text/plain",
+    ".zip": "application/zip"
 };
-const pad = (n, size) => n.toString().padStart(size, "0");
-async function login(supabase, email, password) {
+// The website only accepts logins through the cookies @supabase/ssr makes, so the client is
+// created the same way and keeps the cookies it sets to send them along with the uploads.
+function createSession(url, key) {
+    const cookies = new Map();
+    const supabase = (0,main.createServerClient)(url, key, {
+        cookies: {
+            getAll: () => [...cookies].map(([name, value]) => ({ name, value })),
+            setAll: (list) => {
+                for (const { name, value, options } of list) {
+                    if (value && options.maxAge !== 0)
+                        cookies.set(name, value);
+                    else
+                        cookies.delete(name);
+                }
+            }
+        }
+    });
+    // Same client, @supabase/ssr just resolves the CommonJS typings of supabase-js.
+    return { supabase: supabase, cookies };
+}
+async function login({ supabase, cookies }, email, password) {
     const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error)
-        throw new Error("Failed to log in to waspscripts.com: " + error.message);
+    if (error) {
+        throw new Error("Failed to log in to waspscripts.com: " +
+            error.message +
+            ". Set a password for your account on your waspscripts.com profile page.");
+    }
+    if (cookies.size === 0)
+        throw new Error("Logged in but no session cookies were created");
     info("Logged in to waspscripts.com as " + data.user.id);
 }
 async function getRevision(supabase, id) {
@@ -56356,53 +58987,80 @@ async function getRevision(supabase, id) {
         throw new Error(`Failed to get the revision of ${id}: ${error.message}`);
     return data.revision;
 }
-// Uploads a new revision of the script the same way the "edit files" page of waspscripts.com does
-// and returns the new revision number.
-async function uploadScript(supabase, script, versions) {
-    const id = script.id;
-    const revision = (await getRevision(supabase, id)) + 1;
-    const path = `${id}/${pad(revision, 9)}/`;
-    await Promise.all(script.files.map(async (file) => {
-        info(`Uploading ${file.name} to scripts/${path}${file.name}`);
-        const { error } = await supabase.storage
-            .from("scripts")
-            .upload(path + file.name, (0,external_node_fs_namespaceObject.readFileSync)(file.source), {
-            upsert: true,
-            contentType: CONTENT_TYPES[(0,external_node_path_namespaceObject.extname)(file.name)] ?? "text/plain;charset=UTF-8"
-        });
-        if (error)
-            throw new Error(`Failed to upload ${file.name}: ${error.message}`);
-    }));
-    const { error } = await supabase
-        .schema("scripts")
-        .from("versions")
-        .upsert({
-        id,
-        revision,
-        simba: versions.simba,
-        wasplib: versions.wasplib,
-        files: script.files.map((file) => file.name)
-    });
-    if (error)
-        throw new Error(`Failed to add revision ${revision} to scripts.versions: ${error.message}`);
-    // The database may already bump the revision on its own when a version is added.
-    if ((await getRevision(supabase, id)) < revision) {
-        const { data, error } = await supabase
-            .schema("scripts")
-            .from("protected")
-            .update({ revision })
-            .eq("id", id)
-            .select("revision");
-        if (error || data.length === 0) {
-            throw new Error(`Revision ${revision} was uploaded but scripts.protected.revision couldn't be updated` +
-                (error ? ": " + error.message : ", this account is not allowed to update it"));
-        }
+// Collects every message in a superforms errors object, e.g. { simba: ["Invalid"], _errors: [] }.
+function collectErrors(value, path = "") {
+    if (typeof value === "string")
+        return [path ? `${path}: ${value}` : value];
+    if (Array.isArray(value))
+        return value.flatMap((item) => collectErrors(item, path));
+    if (value && typeof value === "object") {
+        return Object.entries(value).flatMap(([key, item]) => collectErrors(item, key === "_errors" ? path : path ? `${path}.${key}` : key));
     }
-    return revision;
+    return [];
+}
+function describeFailure(data) {
+    try {
+        const form = parse(data)?.form;
+        const errors = collectErrors(form?.errors);
+        return errors.length > 0 ? errors.join("\n") : (form?.message ?? data);
+    }
+    catch {
+        return data;
+    }
+}
+// Uploads the script through the "edit files" form of the website, exactly like a scripter does
+// by hand, and returns the new revision.
+async function uploadScript(website, { supabase, cookies }, script, versions) {
+    const id = script.id;
+    // Refreshes the access token if it expired while compiling, which updates the cookies.
+    const { error } = await supabase.auth.getSession();
+    if (error)
+        throw new Error("Failed to refresh the waspscripts.com session: " + error.message);
+    // The website renames the main file to script.simba itself, so the original names are sent.
+    const form = new FormData();
+    form.append("simba", versions.simba);
+    form.append("wasplib", versions.wasplib);
+    form.append("main", script.main);
+    for (const file of script.files) {
+        const name = (0,external_node_path_namespaceObject.basename)(file.source);
+        info("Uploading " + name);
+        const type = CONTENT_TYPES[(0,external_node_path_namespaceObject.extname)(name).toLowerCase()] ?? "";
+        form.append("script", new File([(0,external_node_fs_namespaceObject.readFileSync)(file.source)], name, { type }));
+    }
+    const url = new URL(`/scripts/${id}/edit/files`, website);
+    const res = await fetch(url, {
+        method: "POST",
+        body: form,
+        redirect: "manual",
+        headers: {
+            cookie: [...cookies].map(([name, value]) => `${name}=${value}`).join("; "),
+            // SvelteKit refuses form posts from other origins.
+            origin: url.origin,
+            // Makes SvelteKit reply with the action result as JSON instead of the page.
+            accept: "application/json"
+        }
+    });
+    const text = await res.text();
+    let result;
+    try {
+        result = JSON.parse(text);
+    }
+    catch {
+        throw new Error(`${url} replied with ${res.status}: ${text.slice(0, 500)}`);
+    }
+    switch (result.type) {
+        case "success":
+            return getRevision(supabase, id);
+        case "failure":
+            throw new Error("The website refused the upload:\n" + describeFailure(result.data));
+        case "redirect":
+            throw new Error(`The website redirected to ${result.location}, it didn't accept the login`);
+        default:
+            throw new Error(`The website failed to upload the script (${res.status}): ${text.slice(0, 500)}`);
+    }
 }
 
 ;// CONCATENATED MODULE: ./lib/index.js
-
 
 
 
@@ -56466,12 +59124,12 @@ async function run() {
         setFailed("None of the scripts are valid.");
         return;
     }
-    const supabase = createClient(getInput("SUPABASE_URL", { required: true }), getInput("SUPABASE_ANON_KEY", { required: true }), {
-        auth: { autoRefreshToken: false, persistSession: false }
-    });
+    const website = getInput("WEBSITE") || "https://waspscripts.com";
+    const session = createSession(getInput("SUPABASE_URL", { required: true }), getInput("SUPABASE_ANON_KEY", { required: true }));
+    const { supabase } = session;
     const uploading = !dryRun && scripts.some((script) => script.id);
     if (uploading) {
-        await login(supabase, getInput("EMAIL", { required: true }), getInput("PASSWORD", { required: true }));
+        await login(session, getInput("EMAIL", { required: true }), getInput("PASSWORD", { required: true }));
     }
     try {
         const versions = await getVersions(supabase, getInput("SIMBA_VERSION") || "latest", getInput("WASPLIB_VERSION") || "latest");
@@ -56509,7 +59167,7 @@ async function run() {
             }
             else {
                 try {
-                    const revision = await uploadScript(supabase, script, versions);
+                    const revision = await uploadScript(website, session, script, versions);
                     result.uploaded = "✅ Revision " + revision;
                     const commits = await getCommitMessages(root, script.folder);
                     updates.push({ id: script.id, revision, commits });
@@ -56524,7 +59182,7 @@ async function run() {
         }
         const webhook = getInput("DISCORD_WEBHOOK");
         if (webhook && updates.length > 0)
-            await notifyDiscord(supabase, webhook, updates, versions);
+            await notifyDiscord(supabase, website, webhook, updates, versions);
         await summary
             .addHeading("WaspScripts", 3)
             .addRaw(`Simba <code>${versions.simba}</code> · WaspLib <code>${versions.wasplib}</code>`, true)
@@ -56545,8 +59203,9 @@ async function run() {
             .write();
     }
     finally {
+        // Only ends this session, the default would log the account out everywhere.
         if (uploading)
-            await supabase.auth.signOut();
+            await supabase.auth.signOut({ scope: "local" });
     }
     const failed = results.filter((result) => result.failed).map((result) => result.folder);
     if (failed.length > 0)

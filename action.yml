@@ -24,6 +24,10 @@ inputs:
     description: Directory with the script folders, relative to the repository root
     required: false
     default: "."
+  WEBSITE:
+    description: Website the scripts are uploaded through
+    required: false
+    default: "https://waspscripts.com"
   MANIFEST:
     description: JSON file inside PATH that maps script folders to their waspscripts.com IDs
     required: false
@@ -70,6 +74,7 @@ runs:
         INPUT_EMAIL: ${{ inputs.EMAIL }}
         INPUT_PASSWORD: ${{ inputs.PASSWORD }}
         INPUT_PATH: ${{ inputs.PATH }}
+        INPUT_WEBSITE: ${{ inputs.WEBSITE }}
         INPUT_MANIFEST: ${{ inputs.MANIFEST }}
         INPUT_SCRIPTS: ${{ inputs.SCRIPTS }}
         INPUT_DRY_RUN: ${{ inputs.DRY_RUN }}
